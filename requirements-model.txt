@@ -1,0 +1,4 @@
+# model/ and train/ (cluster image is frozen at these versions; tests run on CPU with the same wheels)
+torch==2.13.0
+numpy
+pytest
