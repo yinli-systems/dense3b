@@ -1,0 +1,198 @@
+{
+  "snapshot_utc": "2026-10-09T20:39:11.654910+00:00",
+  "repository": "dense3b",
+  "states": [
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "phase": "mc-status.json",
+      "status": {
+        "index": 0,
+        "job_id": "1681615",
+        "started_utc": "2026-10-09T20:12:16.932892+00:00",
+        "state": "running",
+        "tasks": [
+          "arc_easy",
+          "arc_challenge",
+          "hellaswag",
+          "winogrande",
+          "boolq",
+          "openbookqa",
+          "sciq",
+          "mmlu_cf",
+          "mmlu_mc5"
+        ],
+        "current_task": "mmlu_mc5"
+      }
+    }
+  ],
+  "metrics": [
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "arc_easy",
+      "metric": "acc",
+      "value": 0.6321548821548821,
+      "n": 2376,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "arc_easy",
+      "metric": "acc_norm",
+      "value": 0.5837542087542088,
+      "n": 2376,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "arc_challenge",
+      "metric": "acc",
+      "value": 0.2790102389078498,
+      "n": 1172,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "arc_challenge",
+      "metric": "acc_norm",
+      "value": 0.3122866894197952,
+      "n": 1172,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "hellaswag",
+      "metric": "acc",
+      "value": 0.3091017725552679,
+      "n": 10042,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "hellaswag",
+      "metric": "acc_norm",
+      "value": 0.3545110535749851,
+      "n": 10042,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "winogrande",
+      "metric": "acc",
+      "value": 0.500394632991318,
+      "n": 1267,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "winogrande",
+      "metric": "acc_norm",
+      "value": 0.500394632991318,
+      "n": 1267,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "boolq",
+      "metric": "acc",
+      "value": 0.5422018348623853,
+      "n": 3270,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "boolq",
+      "metric": "acc_norm",
+      "value": 0.6174311926605505,
+      "n": 3270,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "openbookqa",
+      "metric": "acc",
+      "value": 0.212,
+      "n": 500,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "openbookqa",
+      "metric": "acc_norm",
+      "value": 0.316,
+      "n": 500,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "sciq",
+      "metric": "acc",
+      "value": 0.856,
+      "n": 1000,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "sciq",
+      "metric": "acc_norm",
+      "value": 0.821,
+      "n": 1000,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "mmlu_cf",
+      "metric": "acc",
+      "value": 0.28528699615439396,
+      "n": 14042,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    },
+    {
+      "checkpoint": "dense3b-step_00005999",
+      "step": 5999,
+      "task": "mmlu_cf",
+      "metric": "acc_norm",
+      "value": 0.30223614869676685,
+      "n": 14042,
+      "protocol": "checkpoint-backfill-mc-v2",
+      "verified_sample_flags": true
+    }
+  ],
+  "per_example_records_checked": 33669,
+  "all_jobs_finished": false,
+  "job_arrays": {
+    "pilot": "1681614",
+    "mc_remainder": "1681638",
+    "mc_final_rescan": "1681668",
+    "generation": "1681670"
+  }
+}

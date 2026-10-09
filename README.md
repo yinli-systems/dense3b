@@ -1,5 +1,10 @@
 # dense3b
 
+## Spare-GPU checkpoint backfill
+
+[Execution status and newly measured results](reports/backfill-20261009T2000Z/STATUS.md) — bounded campaign; queued/running/completed tasks are distinguished.
+
+
 Dense 3B-class code pretraining: deployed implementation, data pipeline, checkpoint results and auditable training curves.
 
 **Training-curve snapshot (UTC): 2026-10-09T18:34:41Z.** This is an archived measurement, not a live status feed.

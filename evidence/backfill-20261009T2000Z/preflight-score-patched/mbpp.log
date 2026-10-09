@@ -1,0 +1,15 @@
+Computing expected output...
+Expected outputs computed in 0.00s
+Reading samples...
+mbpp (base tests)
+pass@1:	1.000
+mbpp+ (base + extra tests)
+pass@1:	1.000
+
+
+0it [00:00, ?it/s]
+3it [00:00, 216.97it/s]
+
+  0%|          | 0/3 [00:00<?, ?it/s]
+ 33%|███▎      | 1/3 [00:00<00:00,  6.20it/s]
+100%|██████████| 3/3 [00:00<00:00, 12.24it/s]

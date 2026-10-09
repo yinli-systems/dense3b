@@ -1,0 +1,213 @@
+{
+  "snapshot_utc": "2026-10-09T20:39:11.654910+00:00",
+  "records": [
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/arc_challenge.details.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/arc_challenge.details.json",
+      "sha256_uncompressed": "6746766e96e3b86160b5ed68a91c968efeb2676bdeff3937319e1bb5b6467976",
+      "stored_sha256": "6746766e96e3b86160b5ed68a91c968efeb2676bdeff3937319e1bb5b6467976",
+      "bytes_uncompressed": 1076249,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/arc_easy.details.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/arc_easy.details.json",
+      "sha256_uncompressed": "3f9823215f80e86cc4b1434625b1e4772cfad185eaeb31cc3ef766bc2533139d",
+      "stored_sha256": "3f9823215f80e86cc4b1434625b1e4772cfad185eaeb31cc3ef766bc2533139d",
+      "bytes_uncompressed": 2179595,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/boolq.details.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/boolq.details.json",
+      "sha256_uncompressed": "a6109445800eea0e0f631786bf3b15babf9f54f615bf2d02f3c55bb32a6436f3",
+      "stored_sha256": "a6109445800eea0e0f631786bf3b15babf9f54f615bf2d02f3c55bb32a6436f3",
+      "bytes_uncompressed": 1929758,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/hellaswag.details.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/hellaswag.details.json",
+      "sha256_uncompressed": "64c1c322c97c9e26d3f2303a39d6b9cc5eeac3fc71ce4b5c9064c37964db9b1b",
+      "stored_sha256": "64c1c322c97c9e26d3f2303a39d6b9cc5eeac3fc71ce4b5c9064c37964db9b1b",
+      "bytes_uncompressed": 9283448,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mc-manifest.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mc-manifest.json",
+      "sha256_uncompressed": "eb37288d0210e8d740fe4fd8e471bebda7cbc9f8f03655b6d8cc1671e61bdc0d",
+      "stored_sha256": "eb37288d0210e8d740fe4fd8e471bebda7cbc9f8f03655b6d8cc1671e61bdc0d",
+      "bytes_uncompressed": 2600,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mc-status.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mc-status.json",
+      "sha256_uncompressed": "8c36e36d6f5ea7083f78e38b8600e4a397fb4da0b494b45750900518cf571c8f",
+      "stored_sha256": "8c36e36d6f5ea7083f78e38b8600e4a397fb4da0b494b45750900518cf571c8f",
+      "bytes_uncompressed": 308,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mc.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mc.json",
+      "sha256_uncompressed": "579ca1640851d079d9804aa24f023a36812e19974818f2420cc65fe04be6a022",
+      "stored_sha256": "579ca1640851d079d9804aa24f023a36812e19974818f2420cc65fe04be6a022",
+      "bytes_uncompressed": 4160,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mmlu_cf.details.json.gz",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mmlu_cf.details.json",
+      "sha256_uncompressed": "2146d1e557901717610f492d6cadc1692cd817a8db593551f50a5301b9d97d15",
+      "stored_sha256": "498216d6e6674b04cba2827eabd98a15c323efb5779cc30de7ec4042db73bf7e",
+      "bytes_uncompressed": 12914692,
+      "encoding": "gzip",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/openbookqa.details.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/openbookqa.details.json",
+      "sha256_uncompressed": "e1e271bcd8aac015f99b37f81f2234269cb0b6f555481f7dd998ac3c3df217b9",
+      "stored_sha256": "e1e271bcd8aac015f99b37f81f2234269cb0b6f555481f7dd998ac3c3df217b9",
+      "bytes_uncompressed": 458204,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/sciq.details.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/sciq.details.json",
+      "sha256_uncompressed": "14ebb9cba1d92a407702e202d9fe20f83d2b0df8af9c50b07ffbf45bbe0b10c3",
+      "stored_sha256": "14ebb9cba1d92a407702e202d9fe20f83d2b0df8af9c50b07ffbf45bbe0b10c3",
+      "bytes_uncompressed": 914844,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/winogrande.details.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/winogrande.details.json",
+      "sha256_uncompressed": "5e6c26ea8c01faec62bcaafa9b83ae92dc6cd02fc07c7b160337d72933a2e97d",
+      "stored_sha256": "5e6c26ea8c01faec62bcaafa9b83ae92dc6cd02fc07c7b160337d72933a2e97d",
+      "bytes_uncompressed": 751359,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/humaneval.jsonl",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/humaneval.jsonl",
+      "sha256_uncompressed": "56cbb473a7cd7bf169f40dcaa456dc348195928f68dea1f68ed2bf8f68cdcfe5",
+      "stored_sha256": "56cbb473a7cd7bf169f40dcaa456dc348195928f68dea1f68ed2bf8f68cdcfe5",
+      "bytes_uncompressed": 2648,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/humaneval.log",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/humaneval.log",
+      "sha256_uncompressed": "b6a3d95ddba21f38a8cafd7d55e01d49c3b9cc0c561eb09a12ab994253a5033d",
+      "stored_sha256": "b6a3d95ddba21f38a8cafd7d55e01d49c3b9cc0c561eb09a12ab994253a5033d",
+      "bytes_uncompressed": 436,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/humaneval_eval_results.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/humaneval_eval_results.json",
+      "sha256_uncompressed": "f7f14efa5efbb38b668aef4d5862fc5c1579a1a37c82b17f6ed9501463482df9",
+      "stored_sha256": "f7f14efa5efbb38b668aef4d5862fc5c1579a1a37c82b17f6ed9501463482df9",
+      "bytes_uncompressed": 3061,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/incorrect-32.jsonl",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/incorrect-32.jsonl",
+      "sha256_uncompressed": "a63c8cbc8cb6816a9c4ed860af6447f3e478f416fcd74b53270805dc2b5e6f53",
+      "stored_sha256": "a63c8cbc8cb6816a9c4ed860af6447f3e478f416fcd74b53270805dc2b5e6f53",
+      "bytes_uncompressed": 2335,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/incorrect-32_eval_results.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/incorrect-32_eval_results.json",
+      "sha256_uncompressed": "c57c0af223d6f97b85f11ff7b654c4ec00c63f84e2dfde181b756380f092ef54",
+      "stored_sha256": "c57c0af223d6f97b85f11ff7b654c4ec00c63f84e2dfde181b756380f092ef54",
+      "bytes_uncompressed": 42475,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/mbpp.jsonl",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/mbpp.jsonl",
+      "sha256_uncompressed": "ed49e9e372e38c9db0fe6ad1d0166549e0863dd31626337e6f8c416858d9238b",
+      "stored_sha256": "ed49e9e372e38c9db0fe6ad1d0166549e0863dd31626337e6f8c416858d9238b",
+      "bytes_uncompressed": 1005,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/mbpp.log",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/mbpp.log",
+      "sha256_uncompressed": "9299b307e4c4fbec04e99e3964cdb082883f17c2a1d8e1ec9bcacb4c27999682",
+      "stored_sha256": "9299b307e4c4fbec04e99e3964cdb082883f17c2a1d8e1ec9bcacb4c27999682",
+      "bytes_uncompressed": 360,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/mbpp_eval_results.json",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/mbpp_eval_results.json",
+      "sha256_uncompressed": "c77f0c0a26c418a90f5430d2a971ff98ae19c3077cb03f87fd9b803d3dc0b03c",
+      "stored_sha256": "c77f0c0a26c418a90f5430d2a971ff98ae19c3077cb03f87fd9b803d3dc0b03c",
+      "bytes_uncompressed": 1402,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/negative-32.log",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/negative-32.log",
+      "sha256_uncompressed": "a8e5b444c3ca549311e7d6a433b4f309112c7e2b3723b208b08d38e35a469ed2",
+      "stored_sha256": "a8e5b444c3ca549311e7d6a433b4f309112c7e2b3723b208b08d38e35a469ed2",
+      "bytes_uncompressed": 470,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/official-humaneval.jsonl",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/official-humaneval.jsonl",
+      "sha256_uncompressed": "728ab8e4327647ac65d9bc12dd7328fbf96068eff908cb5f52db9430f67dd699",
+      "stored_sha256": "728ab8e4327647ac65d9bc12dd7328fbf96068eff908cb5f52db9430f67dd699",
+      "bytes_uncompressed": 119526,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/official-mbpp.jsonl",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/official-mbpp.jsonl",
+      "sha256_uncompressed": "67c5fbafefcd2da97412b90d701161e5e30a4ce181123ca3c42c8e58ca2ef013",
+      "stored_sha256": "67c5fbafefcd2da97412b90d701161e5e30a4ce181123ca3c42c8e58ca2ef013",
+      "bytes_uncompressed": 16568,
+      "encoding": "identity",
+      "changed_during_read": false
+    },
+    {
+      "repo_path": "evidence/backfill-20261009T2000Z/preflight-score-patched/probe.log",
+      "source": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/preflight-score-patched/probe.log",
+      "sha256_uncompressed": "50e1afaabf79030d44fc5f2eb7291ed30bab565f8b697559242586448952ad5b",
+      "stored_sha256": "50e1afaabf79030d44fc5f2eb7291ed30bab565f8b697559242586448952ad5b",
+      "bytes_uncompressed": 129,
+      "encoding": "identity",
+      "changed_during_read": false
+    }
+  ],
+  "tensor_files": 0
+}

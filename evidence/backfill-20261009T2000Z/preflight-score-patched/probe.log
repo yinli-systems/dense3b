@@ -1,0 +1,2 @@
+{"landlock_abi": 1, "filesystem": "allowlisted runtime plus own temporary area", "syscalls": "allowlist", "new_sockets": false}
+
