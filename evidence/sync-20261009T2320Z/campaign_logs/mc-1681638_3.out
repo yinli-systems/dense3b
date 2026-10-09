@@ -1,0 +1,11 @@
+MC_START {"repo": "dense-moe-1b", "preset": "dense1b_l", "step": 1199, "original_checkpoint": "/data/run01/scxi253/routing/ckpt-dense1b_l/step_00001199", "found_tasks": [], "missing_tasks": ["arc_challenge", "arc_easy", "boolq", "cruxeval", "gsm8k", "hellaswag", "humaneval", "mbpp", "mmlu_cf", "mmlu_mc5", "openbookqa", "sciq", "winogrande"], "pinned_checkpoint": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/dense-moe-1b/dense1b_l-step_00001199", "metadata_sha256": "ef548a3460bedc0cb876e2e1f0eefb00da30c58cf87ef557a39dd780ee6f01ca", "model_bytes": 2259605323, "model_inode": 1503636168, "model_device": 46, "hardlink": true, "index": 3}
+{"arc_easy": {"acc": 0.5744949494949495, "acc_norm": 0.5286195286195287, "n": 2376, "seconds": 6.885267496109009}}
+{"arc_challenge": {"acc": 0.24658703071672355, "acc_norm": 0.2790102389078498, "n": 1172, "seconds": 3.803213119506836}}
+{"hellaswag": {"acc": 0.2847042421828321, "acc_norm": 0.30193188607847044, "n": 10042, "seconds": 53.6947238445282}}
+{"winogrande": {"acc": 0.4980268350434096, "acc_norm": 0.4980268350434096, "n": 1267, "seconds": 1.5730113983154297}}
+{"boolq": {"acc": 0.6070336391437309, "acc_norm": 0.6217125382262997, "n": 3270, "seconds": 14.772324085235596}}
+{"openbookqa": {"acc": 0.198, "acc_norm": 0.314, "n": 500, "seconds": 1.2053580284118652}}
+{"sciq": {"acc": 0.778, "acc_norm": 0.689, "n": 1000, "seconds": 7.632651090621948}}
+{"mmlu_cf": {"acc": 0.2678393391254807, "acc_norm": 0.28122774533542233, "n": 14042, "seconds": 68.19739031791687}}
+{"mmlu_mc5": {"acc": 0.23906850875943597, "acc_norm": 0.23906850875943597, "n": 14042, "seconds": 574.8740804195404}}
+MC_DONE /data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense-moe-1b/dense1b_l-step_00001199/mc.json

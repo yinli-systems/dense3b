@@ -1,0 +1,7 @@
+{
+  "manifest": "provenance/sync-20261009T2320Z/manifest.json",
+  "checkpoint_inventory": "provenance/sync-20261009T2320Z/checkpoint_inventory.json",
+  "campaign_plan": "provenance/sync-20261009T2320Z/campaign_plan.json",
+  "capture": "provenance/sync-20261009T2320Z/capture.json",
+  "pinned_inventory": "provenance/sync-20261009T2320Z/pinned_inventory.json"
+}

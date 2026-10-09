@@ -1,0 +1,455 @@
+{
+  "capture_utc": "2026-10-09T23:20:38.827803+00:00",
+  "rows": [
+    {
+      "repo": "dense3b",
+      "preset": "dense3b",
+      "step": 5999,
+      "original_checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005999",
+      "found_tasks": [],
+      "missing_tasks": [
+        "arc_challenge",
+        "arc_easy",
+        "boolq",
+        "cruxeval",
+        "gsm8k",
+        "hellaswag",
+        "humaneval",
+        "mbpp",
+        "mmlu_cf",
+        "mmlu_mc5",
+        "openbookqa",
+        "sciq",
+        "winogrande"
+      ],
+      "pinned_checkpoint": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/dense3b/dense3b-step_00005999",
+      "metadata_sha256": "81427380b316f53c642f856a41e81a4435e458b7980e15e93cc7302fc766345d",
+      "model_bytes": 6492811343,
+      "model_inode": 1503498228,
+      "model_device": 46,
+      "hardlink": true,
+      "index": 0
+    },
+    {
+      "repo": "dense3b",
+      "preset": "dense3b",
+      "step": 2499,
+      "original_checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00002499",
+      "found_tasks": [
+        "cruxeval",
+        "gsm8k",
+        "humaneval",
+        "mbpp"
+      ],
+      "missing_tasks": [
+        "arc_challenge",
+        "arc_easy",
+        "boolq",
+        "hellaswag",
+        "mmlu_cf",
+        "mmlu_mc5",
+        "openbookqa",
+        "sciq",
+        "winogrande"
+      ],
+      "pinned_checkpoint": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/dense3b/dense3b-step_00002499",
+      "metadata_sha256": "7d661d26c70b21868ac7bcbf4fd2e5cf2895b4e18d3bfcb4a6a036d573cfa982",
+      "model_bytes": 6492811343,
+      "model_inode": 1492194206,
+      "model_device": 46,
+      "hardlink": true,
+      "index": 4
+    }
+  ],
+  "graph": {
+    "created_utc": "2026-10-09T20:35:59.134331+00:00",
+    "max_concurrent_gpu_jobs": 2,
+    "partition": "gpu_5090",
+    "nice": 10000,
+    "job_arrays": {
+      "pilot": "1681614",
+      "mc_remainder": "1681638",
+      "mc_final_rescan": "1681668",
+      "generation": "1681670"
+    },
+    "checkpoints": 21,
+    "mc_tasks": 21,
+    "generation_tasks": 20,
+    "lanes": [
+      [
+        {
+          "index": 0,
+          "phase": "mc",
+          "job": "1681614_0",
+          "repo": "dense3b",
+          "preset": "dense3b",
+          "step": 5999
+        },
+        {
+          "index": 0,
+          "phase": "generation",
+          "job": "1681670_0",
+          "repo": "dense3b",
+          "preset": "dense3b",
+          "step": 5999,
+          "dependency": "afterany:1681614_0"
+        },
+        {
+          "index": 3,
+          "phase": "mc",
+          "job": "1681638_3",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 1199,
+          "dependency": "afterany:1681670_0"
+        },
+        {
+          "index": 3,
+          "phase": "generation",
+          "job": "1681670_3",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 1199,
+          "dependency": "afterany:1681638_3"
+        },
+        {
+          "index": 4,
+          "phase": "mc",
+          "job": "1681638_4",
+          "repo": "dense3b",
+          "preset": "dense3b",
+          "step": 2499,
+          "dependency": "afterany:1681670_3"
+        },
+        {
+          "index": 7,
+          "phase": "mc",
+          "job": "1681638_7",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 1079,
+          "dependency": "afterany:1681638_4"
+        },
+        {
+          "index": 7,
+          "phase": "generation",
+          "job": "1681670_7",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 1079,
+          "dependency": "afterany:1681638_7"
+        },
+        {
+          "index": 8,
+          "phase": "mc",
+          "job": "1681638_8",
+          "repo": "moe1b",
+          "preset": "moe1b",
+          "step": 3999,
+          "dependency": "afterany:1681670_7"
+        },
+        {
+          "index": 8,
+          "phase": "generation",
+          "job": "1681670_8",
+          "repo": "moe1b",
+          "preset": "moe1b",
+          "step": 3999,
+          "dependency": "afterany:1681638_8"
+        },
+        {
+          "index": 10,
+          "phase": "mc",
+          "job": "1681638_10",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 959,
+          "dependency": "afterany:1681670_8"
+        },
+        {
+          "index": 10,
+          "phase": "generation",
+          "job": "1681670_10",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 959,
+          "dependency": "afterany:1681638_10"
+        },
+        {
+          "index": 12,
+          "phase": "mc",
+          "job": "1681638_12",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 839,
+          "dependency": "afterany:1681670_10"
+        },
+        {
+          "index": 12,
+          "phase": "generation",
+          "job": "1681670_12",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 839,
+          "dependency": "afterany:1681638_12"
+        },
+        {
+          "index": 14,
+          "phase": "mc",
+          "job": "1681638_14",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 479,
+          "dependency": "afterany:1681670_12"
+        },
+        {
+          "index": 14,
+          "phase": "generation",
+          "job": "1681670_14",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 479,
+          "dependency": "afterany:1681638_14"
+        },
+        {
+          "index": 16,
+          "phase": "mc",
+          "job": "1681638_16",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 239,
+          "dependency": "afterany:1681670_14"
+        },
+        {
+          "index": 16,
+          "phase": "generation",
+          "job": "1681670_16",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 239,
+          "dependency": "afterany:1681638_16"
+        },
+        {
+          "index": 18,
+          "phase": "mc",
+          "job": "1681668_18",
+          "repo": "reason3b",
+          "preset": "r3b_s",
+          "step": 4499,
+          "dependency": "afterany:1681670_16"
+        },
+        {
+          "index": 18,
+          "phase": "generation",
+          "job": "1681670_18",
+          "repo": "reason3b",
+          "preset": "r3b_s",
+          "step": 4499,
+          "dependency": "afterany:1681668_18"
+        },
+        {
+          "index": 20,
+          "phase": "mc",
+          "job": "1681668_20",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_s",
+          "step": 119,
+          "dependency": "afterany:1681670_18"
+        },
+        {
+          "index": 20,
+          "phase": "generation",
+          "job": "1681670_20",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_s",
+          "step": 119,
+          "dependency": "afterany:1681668_20"
+        }
+      ],
+      [
+        {
+          "index": 2,
+          "phase": "mc",
+          "job": "1681614_2",
+          "repo": "reason3b",
+          "preset": "r3b_s",
+          "step": 4249
+        },
+        {
+          "index": 2,
+          "phase": "generation",
+          "job": "1681670_2",
+          "repo": "reason3b",
+          "preset": "r3b_s",
+          "step": 4249,
+          "dependency": "afterany:1681614_2"
+        },
+        {
+          "index": 1,
+          "phase": "mc",
+          "job": "1681638_1",
+          "repo": "moe1b",
+          "preset": "moe1b",
+          "step": 4499,
+          "dependency": "afterany:1681670_2"
+        },
+        {
+          "index": 1,
+          "phase": "generation",
+          "job": "1681670_1",
+          "repo": "moe1b",
+          "preset": "moe1b",
+          "step": 4499,
+          "dependency": "afterany:1681638_1"
+        },
+        {
+          "index": 5,
+          "phase": "mc",
+          "job": "1681638_5",
+          "repo": "moe1b",
+          "preset": "moe1b",
+          "step": 4249,
+          "dependency": "afterany:1681670_1"
+        },
+        {
+          "index": 5,
+          "phase": "generation",
+          "job": "1681670_5",
+          "repo": "moe1b",
+          "preset": "moe1b",
+          "step": 4249,
+          "dependency": "afterany:1681638_5"
+        },
+        {
+          "index": 6,
+          "phase": "mc",
+          "job": "1681638_6",
+          "repo": "reason3b",
+          "preset": "r3b_s",
+          "step": 3999,
+          "dependency": "afterany:1681670_5"
+        },
+        {
+          "index": 6,
+          "phase": "generation",
+          "job": "1681670_6",
+          "repo": "reason3b",
+          "preset": "r3b_s",
+          "step": 3999,
+          "dependency": "afterany:1681638_6"
+        },
+        {
+          "index": 9,
+          "phase": "mc",
+          "job": "1681638_9",
+          "repo": "reason3b",
+          "preset": "r3b_s",
+          "step": 2499,
+          "dependency": "afterany:1681670_6"
+        },
+        {
+          "index": 9,
+          "phase": "generation",
+          "job": "1681670_9",
+          "repo": "reason3b",
+          "preset": "r3b_s",
+          "step": 2499,
+          "dependency": "afterany:1681638_9"
+        },
+        {
+          "index": 11,
+          "phase": "mc",
+          "job": "1681638_11",
+          "repo": "moe1b",
+          "preset": "moe1b",
+          "step": 2499,
+          "dependency": "afterany:1681670_9"
+        },
+        {
+          "index": 11,
+          "phase": "generation",
+          "job": "1681670_11",
+          "repo": "moe1b",
+          "preset": "moe1b",
+          "step": 2499,
+          "dependency": "afterany:1681638_11"
+        },
+        {
+          "index": 13,
+          "phase": "mc",
+          "job": "1681638_13",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 599,
+          "dependency": "afterany:1681670_11"
+        },
+        {
+          "index": 13,
+          "phase": "generation",
+          "job": "1681670_13",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 599,
+          "dependency": "afterany:1681638_13"
+        },
+        {
+          "index": 15,
+          "phase": "mc",
+          "job": "1681638_15",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 359,
+          "dependency": "afterany:1681670_13"
+        },
+        {
+          "index": 15,
+          "phase": "generation",
+          "job": "1681670_15",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 359,
+          "dependency": "afterany:1681638_15"
+        },
+        {
+          "index": 17,
+          "phase": "mc",
+          "job": "1681638_17",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 119,
+          "dependency": "afterany:1681670_15"
+        },
+        {
+          "index": 17,
+          "phase": "generation",
+          "job": "1681670_17",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 119,
+          "dependency": "afterany:1681638_17"
+        },
+        {
+          "index": 19,
+          "phase": "mc",
+          "job": "1681668_19",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 1319,
+          "dependency": "afterany:1681670_17"
+        },
+        {
+          "index": 19,
+          "phase": "generation",
+          "job": "1681670_19",
+          "repo": "dense-moe-1b",
+          "preset": "dense1b_l",
+          "step": 1319,
+          "dependency": "afterany:1681668_19"
+        }
+      ]
+    ],
+    "training_jobs_modified": false,
+    "already_evaluated_duplicate_excluded": 1,
+    "released_utc": "2026-10-09T20:35:59.944477+00:00"
+  }
+}
