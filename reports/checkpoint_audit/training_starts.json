@@ -1,0 +1,29 @@
+[
+  {
+    "variant": "dense3b",
+    "job_id": 1667439,
+    "start": 0,
+    "seq": 4096,
+    "tokens_per_step": 1048576,
+    "source": "evidence/raw/logs/dense3b-train-1667439.out",
+    "source_line": 35
+  },
+  {
+    "variant": "dense3b",
+    "job_id": 1674956,
+    "start": 5500,
+    "seq": 4096,
+    "tokens_per_step": 1048576,
+    "source": "evidence/raw/logs/dense3b-train-1674956.out",
+    "source_line": 51
+  },
+  {
+    "variant": "dense3b",
+    "job_id": 1680260,
+    "start": 5750,
+    "seq": 4096,
+    "tokens_per_step": 1048576,
+    "source": "evidence/checkpoint_audit/3e46059502abfe5b/IgM-dense3b-1680260.out",
+    "source_line": 51
+  }
+]

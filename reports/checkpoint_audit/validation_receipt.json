@@ -1,0 +1,30 @@
+{
+  "source_integrity": "pass",
+  "unit_tests": 39,
+  "credential_pattern_scan": "pass",
+  "python_syntax": "pass",
+  "gpu_tests_run": false,
+  "checkpoint_tensor_loads": 0,
+  "summary": {
+    "repository": "dense3b",
+    "snapshot_utc": "2026-10-09T18:52:28.188993+00:00",
+    "checkpoint_entries": 11,
+    "retained_checkpoint_steps": 6,
+    "checkpoint_directories": 7,
+    "checkpoints_with_results": 6,
+    "checkpoints_without_results": 5,
+    "retained_without_results": 1,
+    "unique_json_evaluation_versions": 18,
+    "metric_rows": 463,
+    "sample_recounted_rows": 42,
+    "source_origins": 779,
+    "unique_source_blobs_verified": 249,
+    "issues_by_kind": {},
+    "variants_without_checkpoints": [],
+    "tensor_files_loaded": 0,
+    "gpu_evaluations_launched": 0,
+    "unconfirmed_schedule_slots": 13,
+    "checkpoints_with_exact_validation_loss": 8,
+    "diagnostic_json_with_nccl_banner": 16
+  }
+}

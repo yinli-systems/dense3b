@@ -1,0 +1,2576 @@
+[
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "heldout",
+    "metric": "swallow-code",
+    "value": 0.7329,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "heldout",
+    "metric": "stackv2-edu",
+    "value": 1.266,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "heldout",
+    "metric": "web",
+    "value": 3.2446,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "heldout",
+    "metric": "seconds",
+    "value": 64,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "humaneval",
+    "metric": "humaneval",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "humaneval",
+    "metric": "humaneval_plus",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "humaneval",
+    "metric": "seconds",
+    "value": 7,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "mbpp",
+    "metric": "mbpp",
+    "value": 0.1667,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "mbpp",
+    "metric": "mbpp_plus",
+    "value": 0.1667,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "mbpp",
+    "metric": "seconds",
+    "value": 19,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 2,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.pass_rate",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.exact",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.terminated",
+    "value": 0.1667,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.suffix_dup",
+    "value": 0.1667,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.mean_overgen_chars",
+    "value": 578.7,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.mean_excess_tokens",
+    "value": 167.5,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.p95_excess_tokens",
+    "value": 188,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.pass_rate",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.exact",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.terminated",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.suffix_dup",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.mean_overgen_chars",
+    "value": 588.5,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.mean_excess_tokens",
+    "value": 176.2,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.p95_excess_tokens",
+    "value": 180,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "seconds",
+    "value": 8,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "gsm8k",
+    "metric": "gsm8k",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "gsm8k",
+    "metric": "seconds",
+    "value": 12,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v1",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v2",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v3",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v4",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v5",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v6",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_v6_slice_175_post_cutoff",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_release_v6_cumulative",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "seconds",
+    "value": 130,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "heldout",
+    "metric": "swallow-code",
+    "value": 0.7329,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "heldout",
+    "metric": "stackv2-edu",
+    "value": 1.266,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "heldout",
+    "metric": "web",
+    "value": 3.2446,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "heldout",
+    "metric": "seconds",
+    "value": 47,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "humaneval",
+    "metric": "humaneval",
+    "value": 0.0671,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "humaneval",
+    "metric": "humaneval_plus",
+    "value": 0.061,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "humaneval",
+    "metric": "seconds",
+    "value": 178,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "mbpp",
+    "metric": "mbpp",
+    "value": 0.0529,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "mbpp",
+    "metric": "mbpp_plus",
+    "value": 0.045,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "mbpp",
+    "metric": "seconds",
+    "value": 478,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.025,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 179,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.pass_rate",
+    "value": 0.0488,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.exact",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.terminated",
+    "value": 0.0793,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.suffix_dup",
+    "value": 0.2805,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.mean_overgen_chars",
+    "value": 528.1,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.mean_excess_tokens",
+    "value": 171.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "single.p95_excess_tokens",
+    "value": 188,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.pass_rate",
+    "value": 0.0171,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.exact",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.terminated",
+    "value": 0.094,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.suffix_dup",
+    "value": 0.2222,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.mean_overgen_chars",
+    "value": 464.6,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.mean_excess_tokens",
+    "value": 153.9,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "multi.p95_excess_tokens",
+    "value": 183,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "fim",
+    "metric": "seconds",
+    "value": 143,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "gsm8k",
+    "metric": "gsm8k",
+    "value": 0.0258,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "gsm8k",
+    "metric": "seconds",
+    "value": 985,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.12,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.025,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 184,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v1",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v2",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v3",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v4",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v5",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v6",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_v6_slice_175_post_cutoff",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "lcb_release_v6_cumulative",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "task": "lcb",
+    "metric": "seconds",
+    "value": 3222,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "heldout",
+    "metric": "swallow-code",
+    "value": 0.6384,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "heldout",
+    "metric": "stackv2-edu",
+    "value": 1.1224,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "heldout",
+    "metric": "web",
+    "value": 2.9727,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "heldout",
+    "metric": "seconds",
+    "value": 60,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "humaneval",
+    "metric": "humaneval",
+    "value": 0.1463,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "humaneval",
+    "metric": "humaneval_plus",
+    "value": 0.1341,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "humaneval",
+    "metric": "seconds",
+    "value": 241,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "mbpp",
+    "metric": "mbpp",
+    "value": 0.1614,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "mbpp",
+    "metric": "mbpp_plus",
+    "value": 0.1243,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "mbpp",
+    "metric": "seconds",
+    "value": 514,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.1588,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.0675,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 264,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "single.pass_rate",
+    "value": 0.1037,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "single.exact",
+    "value": 0.0793,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "single.terminated",
+    "value": 0.4329,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "single.suffix_dup",
+    "value": 0.2256,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "single.mean_overgen_chars",
+    "value": 348.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "single.mean_excess_tokens",
+    "value": 114.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "single.p95_excess_tokens",
+    "value": 188,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "multi.pass_rate",
+    "value": 0.0427,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "multi.exact",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "multi.terminated",
+    "value": 0.3761,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "multi.suffix_dup",
+    "value": 0.1453,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "multi.mean_overgen_chars",
+    "value": 344.6,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "multi.mean_excess_tokens",
+    "value": 114.6,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "multi.p95_excess_tokens",
+    "value": 183,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "fim",
+    "metric": "seconds",
+    "value": 155,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "gsm8k",
+    "metric": "gsm8k",
+    "value": 0.0334,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "gsm8k",
+    "metric": "seconds",
+    "value": 937,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v1",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v2",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v3",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v4",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v5",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v6",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "lcb_v6_slice_175_post_cutoff",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "lcb_release_v6_cumulative",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "lcb",
+    "metric": "seconds",
+    "value": 3118,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "heldout",
+    "metric": "swallow-code",
+    "value": 0.5606,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "heldout",
+    "metric": "stackv2-edu",
+    "value": 1.0031,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "heldout",
+    "metric": "web",
+    "value": 2.7086,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "heldout",
+    "metric": "seconds",
+    "value": 51,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "humaneval",
+    "metric": "humaneval",
+    "value": 0.2134,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "humaneval",
+    "metric": "humaneval_plus",
+    "value": 0.189,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "humaneval",
+    "metric": "seconds",
+    "value": 165,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "mbpp",
+    "metric": "mbpp",
+    "value": 0.2989,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "mbpp",
+    "metric": "mbpp_plus",
+    "value": 0.2302,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "mbpp",
+    "metric": "seconds",
+    "value": 442,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.1938,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.0887,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 252,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.pass_rate",
+    "value": 0.2256,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.exact",
+    "value": 0.1463,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.terminated",
+    "value": 0.4939,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.suffix_dup",
+    "value": 0.1829,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.mean_overgen_chars",
+    "value": 271.6,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.mean_excess_tokens",
+    "value": 95.4,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.p95_excess_tokens",
+    "value": 188,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.pass_rate",
+    "value": 0.1453,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.exact",
+    "value": 0.0342,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.terminated",
+    "value": 0.4957,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.suffix_dup",
+    "value": 0.0769,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.mean_overgen_chars",
+    "value": 250.5,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.mean_excess_tokens",
+    "value": 88.4,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.p95_excess_tokens",
+    "value": 179,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "seconds",
+    "value": 149,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "gsm8k",
+    "metric": "gsm8k",
+    "value": 0.0842,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "gsm8k",
+    "metric": "seconds",
+    "value": 863,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v1",
+    "value": 0.0025,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v2",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v3",
+    "value": 0.0099,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v4",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v5",
+    "value": 0.006,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v6",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_v6_slice_175_post_cutoff",
+    "value": 0.0,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_release_v6_cumulative",
+    "value": 0.0028,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "seconds",
+    "value": 3630,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "heldout",
+    "metric": "swallow-code",
+    "value": 0.57,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "heldout",
+    "metric": "stackv2-edu",
+    "value": 1.0161,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "heldout",
+    "metric": "web",
+    "value": 2.7511,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "heldout",
+    "metric": "seconds",
+    "value": 56,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "humaneval",
+    "metric": "humaneval",
+    "value": 0.1951,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "humaneval",
+    "metric": "humaneval_plus",
+    "value": 0.1829,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "humaneval",
+    "metric": "seconds",
+    "value": 214,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "mbpp",
+    "metric": "mbpp",
+    "value": 0.1984,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "mbpp",
+    "metric": "mbpp_plus",
+    "value": 0.1587,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "mbpp",
+    "metric": "seconds",
+    "value": 469,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.2025,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.095,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 214,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "single.pass_rate",
+    "value": 0.1951,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "single.exact",
+    "value": 0.128,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "single.terminated",
+    "value": 0.4817,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "single.suffix_dup",
+    "value": 0.1707,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "single.mean_overgen_chars",
+    "value": 297.1,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "single.mean_excess_tokens",
+    "value": 101.9,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "single.p95_excess_tokens",
+    "value": 188,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "multi.pass_rate",
+    "value": 0.0855,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "multi.exact",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "multi.terminated",
+    "value": 0.453,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "multi.suffix_dup",
+    "value": 0.1709,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "multi.mean_overgen_chars",
+    "value": 269.7,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "multi.mean_excess_tokens",
+    "value": 96.2,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "multi.p95_excess_tokens",
+    "value": 179,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "fim",
+    "metric": "seconds",
+    "value": 143,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "gsm8k",
+    "metric": "gsm8k",
+    "value": 0.0644,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "gsm8k",
+    "metric": "seconds",
+    "value": 882,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v1",
+    "value": 0.005,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v2",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v3",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v4",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v5",
+    "value": 0.006,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "lcb_added_in_v6",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "lcb_v6_slice_175_post_cutoff",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "lcb_release_v6_cumulative",
+    "value": 0.0028,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "task": "lcb",
+    "metric": "seconds",
+    "value": 3468,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "heldout",
+    "metric": "swallow-code",
+    "value": 0.5606,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "heldout",
+    "metric": "stackv2-edu",
+    "value": 1.0031,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "heldout",
+    "metric": "web",
+    "value": 2.7086,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "heldout",
+    "metric": "seconds",
+    "value": 52,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "humaneval",
+    "metric": "humaneval",
+    "value": 0.2134,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "humaneval",
+    "metric": "humaneval_plus",
+    "value": 0.189,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "humaneval",
+    "metric": "seconds",
+    "value": 165,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "mbpp",
+    "metric": "mbpp",
+    "value": 0.2989,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "mbpp",
+    "metric": "mbpp_plus",
+    "value": 0.2302,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "mbpp",
+    "metric": "seconds",
+    "value": 443,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.1938,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.0887,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 236,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.pass_rate",
+    "value": 0.2256,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.exact",
+    "value": 0.1463,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.terminated",
+    "value": 0.4939,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.suffix_dup",
+    "value": 0.1829,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.mean_overgen_chars",
+    "value": 271.6,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.mean_excess_tokens",
+    "value": 95.4,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "single.p95_excess_tokens",
+    "value": 188,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.pass_rate",
+    "value": 0.1453,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.exact",
+    "value": 0.0342,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.terminated",
+    "value": 0.4957,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.suffix_dup",
+    "value": 0.0769,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.mean_overgen_chars",
+    "value": 250.5,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.mean_excess_tokens",
+    "value": 88.4,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "multi.p95_excess_tokens",
+    "value": 179,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "fim",
+    "metric": "seconds",
+    "value": 148,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 6
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "gsm8k",
+    "metric": "gsm8k",
+    "value": 0.0842,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "gsm8k",
+    "metric": "seconds",
+    "value": 865,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v1",
+    "value": 0.0025,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v2",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v3",
+    "value": 0.0099,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v4",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v5",
+    "value": 0.006,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_added_in_v6",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_v6_slice_175_post_cutoff",
+    "value": 0.0,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "lcb_release_v6_cumulative",
+    "value": 0.0028,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "task": "lcb",
+    "metric": "seconds",
+    "value": 3639,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "humaneval",
+    "metric": "humaneval",
+    "value": 0.2195,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "humaneval",
+    "metric": "humaneval_plus",
+    "value": 0.2012,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "humaneval",
+    "metric": "seconds",
+    "value": 205,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "mbpp",
+    "metric": "mbpp",
+    "value": 0.2646,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "mbpp",
+    "metric": "mbpp_plus",
+    "value": 0.2196,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "mbpp",
+    "metric": "seconds",
+    "value": 515,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.2075,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.1975,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 261,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "gsm8k",
+    "metric": "gsm8k",
+    "value": 0.0758,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "task": "gsm8k",
+    "metric": "seconds",
+    "value": 774,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "humaneval",
+    "metric": "humaneval",
+    "value": 0.2378,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "humaneval",
+    "metric": "humaneval_plus",
+    "value": 0.2134,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "humaneval",
+    "metric": "seconds",
+    "value": 136,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 2
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mbpp",
+    "metric": "mbpp",
+    "value": 0.3095,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mbpp",
+    "metric": "mbpp_plus",
+    "value": 0.2619,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mbpp",
+    "metric": "seconds",
+    "value": 337,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 3
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "cruxeval",
+    "metric": "cruxeval_o",
+    "value": 0.195,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "cruxeval",
+    "metric": "cruxeval_i",
+    "value": 0.1725,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "cruxeval",
+    "metric": "seconds",
+    "value": 189,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 4
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "gsm8k",
+    "metric": "gsm8k",
+    "value": 0.0963,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "gsm8k",
+    "metric": "seconds",
+    "value": 487,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 5
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "arc_easy",
+    "metric": "acc",
+    "value": 0.6305,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "arc_easy",
+    "metric": "acc_norm",
+    "value": 0.5694,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "arc_easy",
+    "metric": "seconds",
+    "value": 17,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 7
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "arc_challenge",
+    "metric": "acc",
+    "value": 0.2671,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "arc_challenge",
+    "metric": "acc_norm",
+    "value": 0.3063,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "arc_challenge",
+    "metric": "seconds",
+    "value": 10,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 8
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "hellaswag",
+    "metric": "acc",
+    "value": 0.3052,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 9
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "hellaswag",
+    "metric": "acc_norm",
+    "value": 0.3477,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 9
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "hellaswag",
+    "metric": "seconds",
+    "value": 142,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 9
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "winogrande",
+    "metric": "acc",
+    "value": 0.5122,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 10
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "winogrande",
+    "metric": "acc_norm",
+    "value": 0.5122,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 10
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "winogrande",
+    "metric": "seconds",
+    "value": 4,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 10
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "boolq",
+    "metric": "acc",
+    "value": 0.578,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 11
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "boolq",
+    "metric": "acc_norm",
+    "value": 0.6196,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 11
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "boolq",
+    "metric": "seconds",
+    "value": 41,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 11
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "openbookqa",
+    "metric": "acc",
+    "value": 0.214,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 12
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "openbookqa",
+    "metric": "acc_norm",
+    "value": 0.344,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 12
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "openbookqa",
+    "metric": "seconds",
+    "value": 4,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 12
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "sciq",
+    "metric": "acc",
+    "value": 0.858,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 13
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "sciq",
+    "metric": "acc_norm",
+    "value": 0.806,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 13
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "sciq",
+    "metric": "seconds",
+    "value": 21,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 13
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mmlu_cf",
+    "metric": "acc",
+    "value": 0.2829,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 14
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mmlu_cf",
+    "metric": "acc_norm",
+    "value": 0.2945,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 14
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mmlu_cf",
+    "metric": "seconds",
+    "value": 180,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 14
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mmlu_mc5",
+    "metric": "acc",
+    "value": 0.2394,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 15
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mmlu_mc5",
+    "metric": "acc_norm",
+    "value": 0.2394,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 15
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "task": "mmlu_mc5",
+    "metric": "seconds",
+    "value": 1612,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "source_line": 15
+  }
+]

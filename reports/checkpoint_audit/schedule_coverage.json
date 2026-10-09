@@ -1,0 +1,290 @@
+[
+  {
+    "variant": "dense3b",
+    "step": 249,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 499,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": 2.0462760403752327,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 500,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 749,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 999,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": 1.1133002284914255,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 1000,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 1249,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": 0.9961523560341448,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 1500,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 1749,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 1999,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": 0.9396781015675515,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 2000,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 2249,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": 0.8892477283952758,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 2500,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 2749,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 2999,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": 0.8578466994222254,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 3000,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 3249,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 3499,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": 0.8366089580813423,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 3500,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 3749,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 3999,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": 0.8188264694181271,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 4000,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 4249,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": 0.8025699210702442,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 4500,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 4749,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": false,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "schedule-derived candidate only; file creation and retention unconfirmed"
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": 0.789960207126569,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 5000,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 5249,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": 0.7816448789671995,
+    "validation_source": "evidence/raw/results/train-1667439/metrics.jsonl",
+    "validation_source_line": 5500,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": null,
+    "validation_source": null,
+    "validation_source_line": null,
+    "interpretation": "recorded checkpoint entry"
+  },
+  {
+    "variant": "dense3b",
+    "step": 5999,
+    "observed_save_intervals": [
+      250
+    ],
+    "has_direct_or_resume_evidence": true,
+    "exact_validation_loss": 0.7727383772726171,
+    "validation_source": "evidence/checkpoint_audit/e85d2497f4533360/metrics.jsonl",
+    "validation_source_line": 250,
+    "interpretation": "recorded checkpoint entry"
+  }
+]

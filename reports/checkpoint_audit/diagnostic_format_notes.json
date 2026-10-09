@@ -1,0 +1,66 @@
+[
+  {
+    "source": "evidence/raw/results/node-1666311/nccl.wqd10naf13g8.2561226.log",
+    "format": "Communication startup stdout with 0 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/checkpoints/ckpt-v0/step_00005249/COMPLETE",
+    "format": "Communication startup stdout with 0 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1667177/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1667178/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1667179/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1667439/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1674956/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1674957/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1676410/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1676411/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1676412/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1676413/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1676739/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1676740/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1676811/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  },
+  {
+    "source": "evidence/raw/results/train-1680260/preflight.json",
+    "format": "Communication startup stdout with 1 parseable JSON diagnostic record(s); raw banners/errors retained unchanged"
+  }
+]

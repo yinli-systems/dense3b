@@ -1,0 +1,25 @@
+variant,step,observed_save_intervals,has_direct_or_resume_evidence,exact_validation_loss,validation_source,validation_source_line,interpretation
+dense3b,249,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,499,[250],False,2.0462760403752327,evidence/raw/results/train-1667439/metrics.jsonl,500,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,749,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,999,[250],False,1.1133002284914255,evidence/raw/results/train-1667439/metrics.jsonl,1000,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,1249,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,1499,[250],True,0.9961523560341448,evidence/raw/results/train-1667439/metrics.jsonl,1500,recorded checkpoint entry
+dense3b,1749,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,1999,[250],False,0.9396781015675515,evidence/raw/results/train-1667439/metrics.jsonl,2000,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,2249,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,2499,[250],True,0.8892477283952758,evidence/raw/results/train-1667439/metrics.jsonl,2500,recorded checkpoint entry
+dense3b,2749,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,2999,[250],True,0.8578466994222254,evidence/raw/results/train-1667439/metrics.jsonl,3000,recorded checkpoint entry
+dense3b,3249,[250],True,,,,recorded checkpoint entry
+dense3b,3499,[250],True,0.8366089580813423,evidence/raw/results/train-1667439/metrics.jsonl,3500,recorded checkpoint entry
+dense3b,3749,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,3999,[250],False,0.8188264694181271,evidence/raw/results/train-1667439/metrics.jsonl,4000,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,4249,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,4499,[250],True,0.8025699210702442,evidence/raw/results/train-1667439/metrics.jsonl,4500,recorded checkpoint entry
+dense3b,4749,[250],False,,,,schedule-derived candidate only; file creation and retention unconfirmed
+dense3b,4999,[250],True,0.789960207126569,evidence/raw/results/train-1667439/metrics.jsonl,5000,recorded checkpoint entry
+dense3b,5249,[250],True,,,,recorded checkpoint entry
+dense3b,5499,[250],True,0.7816448789671995,evidence/raw/results/train-1667439/metrics.jsonl,5500,recorded checkpoint entry
+dense3b,5749,[250],True,,,,recorded checkpoint entry
+dense3b,5999,[250],True,0.7727383772726171,evidence/checkpoint_audit/e85d2497f4533360/metrics.jsonl,250,recorded checkpoint entry

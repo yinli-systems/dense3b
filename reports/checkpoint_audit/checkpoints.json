@@ -1,0 +1,931 @@
+[
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "evidence_kinds": [
+      "metadata",
+      "filesystem_inventory",
+      "evaluation_summary"
+    ],
+    "sources": [
+      "evidence/checkpoints/milestones/step_00001499/meta.json",
+      "provenance/checkpoint_inventory.json",
+      "evidence/raw/results/eval-step_00001499.json",
+      "evidence/raw/results/suite-step_00001499-1670852.json",
+      "evidence/raw/results/suite-step_00001499-lcb-crux.json",
+      "evidence/raw/results/suite-step_00001499.json",
+      "evidence/imported/moe1b/mc-dense3b-step1499.json"
+    ],
+    "locations": [
+      {
+        "path": "/data/run01/scxi253/code3b-train/milestones/step_00001499",
+        "resolved_path": "/data/run01/scxi253/backup/backup/code3b-train/milestones/step_00001499",
+        "model_file_present": true,
+        "model_bytes": 6492811343,
+        "optimizer_files": 0,
+        "expected_writers": 8,
+        "complete_marker": false,
+        "milestone_marker": false,
+        "tensor_deserialization_tested": false
+      }
+    ],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 1572864000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 1.572864,
+    "weights_present": true,
+    "storage_status": "retained_model_files",
+    "model_hashes_recorded_in_evaluations": [
+      "333fdee25243a8dfe75e5f73a893e12026eb0eb6b944d409c8896550f3e4baf8"
+    ],
+    "evaluation_ids": [
+      "037d479dd478d738",
+      "1ff767d0fe38c5fb",
+      "2064e48b7be1d2a0",
+      "6d48e5da15b3b278",
+      "eefbd27cfb6d2b2c"
+    ],
+    "metric_rows": 113,
+    "full_count_tasks": [
+      "arc_challenge",
+      "arc_easy",
+      "boolq",
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "hellaswag",
+      "humaneval",
+      "lcb",
+      "mbpp",
+      "mmlu_cf",
+      "mmlu_mc5",
+      "openbookqa",
+      "sciq",
+      "winogrande"
+    ],
+    "missing_primary_tasks": [],
+    "evaluation_status": "primary_task_counts_present",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 0,
+        "step": 1499,
+        "loss": 2.908327579498291,
+        "val_loss": 2.8113585636019707,
+        "lr": 1.1676405126429313e-06,
+        "grad_norm": 0.18244725465774536,
+        "tok_per_s": 17552.4907355677,
+        "mfu": 0.7242002705577029,
+        "source": "evidence/raw/results/ab-bf16-1666412/metrics.jsonl",
+        "source_line": 1500
+      },
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 1499,
+        "loss": 1.4038617610931396,
+        "val_loss": 0.9961523560341448,
+        "lr": 0.0005250000000000001,
+        "grad_norm": 0.19194938242435455,
+        "tok_per_s": 38683.670969286795,
+        "mfu": 0.6304247997442622,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 1500
+      }
+    ],
+    "validation_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 0,
+        "step": 1499,
+        "loss": 2.908327579498291,
+        "val_loss": 2.8113585636019707,
+        "lr": 1.1676405126429313e-06,
+        "grad_norm": 0.18244725465774536,
+        "tok_per_s": 17552.4907355677,
+        "mfu": 0.7242002705577029,
+        "source": "evidence/raw/results/ab-bf16-1666412/metrics.jsonl",
+        "source_line": 1500
+      },
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 1499,
+        "loss": 1.4038617610931396,
+        "val_loss": 0.9961523560341448,
+        "lr": 0.0005250000000000001,
+        "grad_norm": 0.19194938242435455,
+        "tok_per_s": 38683.670969286795,
+        "mfu": 0.6304247997442622,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 1500
+      }
+    ]
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "evidence_kinds": [
+      "metadata",
+      "filesystem_inventory",
+      "evaluation_summary"
+    ],
+    "sources": [
+      "evidence/checkpoints/milestones/step_00002499/meta.json",
+      "provenance/checkpoint_inventory.json",
+      "evidence/raw/results/suite-step_00002499.json"
+    ],
+    "locations": [
+      {
+        "path": "/data/run01/scxi253/code3b-train/milestones/step_00002499",
+        "resolved_path": "/data/run01/scxi253/backup/backup/code3b-train/milestones/step_00002499",
+        "model_file_present": true,
+        "model_bytes": 6492811343,
+        "optimizer_files": 0,
+        "expected_writers": 8,
+        "complete_marker": false,
+        "milestone_marker": false,
+        "tensor_deserialization_tested": false
+      }
+    ],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 2621440000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 2.62144,
+    "weights_present": true,
+    "storage_status": "retained_model_files",
+    "model_hashes_recorded_in_evaluations": [
+      "c54d7a89368dec2bd04b603409cc9941a4a21815052163f2965ab1fdaebdd66c"
+    ],
+    "evaluation_ids": [
+      "2b5f512e6227ca9f"
+    ],
+    "metric_rows": 39,
+    "full_count_tasks": [
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "humaneval",
+      "lcb",
+      "mbpp"
+    ],
+    "missing_primary_tasks": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "evaluation_status": "partial_task_coverage",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 2499,
+        "loss": 1.149617314338684,
+        "val_loss": 0.8892477283952758,
+        "lr": 0.0007,
+        "grad_norm": 0.11480225622653961,
+        "tok_per_s": 39767.81404130241,
+        "mfu": 0.6480929957025058,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 2500
+      }
+    ],
+    "validation_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 2499,
+        "loss": 1.149617314338684,
+        "val_loss": 0.8892477283952758,
+        "lr": 0.0007,
+        "grad_norm": 0.11480225622653961,
+        "tok_per_s": 39767.81404130241,
+        "mfu": 0.6480929957025058,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 2500
+      }
+    ]
+  },
+  {
+    "variant": "dense3b",
+    "step": 2999,
+    "evidence_kinds": [
+      "metadata"
+    ],
+    "sources": [
+      "evidence/checkpoint_audit/3285c878f050ad92/meta.json"
+    ],
+    "locations": [],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 3145728000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 3.145728,
+    "weights_present": false,
+    "storage_status": "historical_metadata_only",
+    "model_hashes_recorded_in_evaluations": [],
+    "evaluation_ids": [],
+    "metric_rows": 0,
+    "full_count_tasks": [],
+    "missing_primary_tasks": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "evaluation_status": "no_result_found",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 2999,
+        "loss": 1.200160264968872,
+        "val_loss": 0.8578466994222254,
+        "lr": 0.0007,
+        "grad_norm": 0.08720100671052933,
+        "tok_per_s": 39796.33748446609,
+        "mfu": 0.6485578400539831,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 3000
+      }
+    ],
+    "validation_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 2999,
+        "loss": 1.200160264968872,
+        "val_loss": 0.8578466994222254,
+        "lr": 0.0007,
+        "grad_norm": 0.08720100671052933,
+        "tok_per_s": 39796.33748446609,
+        "mfu": 0.6485578400539831,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 3000
+      }
+    ]
+  },
+  {
+    "variant": "dense3b",
+    "step": 3249,
+    "evidence_kinds": [
+      "metadata"
+    ],
+    "sources": [
+      "evidence/checkpoint_audit/1dc8b70a84ccf628/meta.json"
+    ],
+    "locations": [],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 3407872000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 3.407872,
+    "weights_present": false,
+    "storage_status": "historical_metadata_only",
+    "model_hashes_recorded_in_evaluations": [],
+    "evaluation_ids": [],
+    "metric_rows": 0,
+    "full_count_tasks": [],
+    "missing_primary_tasks": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "evaluation_status": "no_result_found",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 3249,
+        "loss": 1.0953335762023926,
+        "val_loss": null,
+        "lr": 0.0007,
+        "grad_norm": 0.08375944942235947,
+        "tok_per_s": 39928.49652773736,
+        "mfu": 0.6507116257806488,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 3250
+      }
+    ],
+    "validation_observations": []
+  },
+  {
+    "variant": "dense3b",
+    "step": 3499,
+    "evidence_kinds": [
+      "metadata"
+    ],
+    "sources": [
+      "evidence/checkpoint_audit/a820ccf227f50203/meta.json"
+    ],
+    "locations": [],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 3670016000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 3.670016,
+    "weights_present": false,
+    "storage_status": "historical_metadata_only",
+    "model_hashes_recorded_in_evaluations": [],
+    "evaluation_ids": [],
+    "metric_rows": 0,
+    "full_count_tasks": [],
+    "missing_primary_tasks": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "evaluation_status": "no_result_found",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 3499,
+        "loss": 1.1103010177612305,
+        "val_loss": 0.8366089580813423,
+        "lr": 0.0007,
+        "grad_norm": 0.09285807609558105,
+        "tok_per_s": 38114.612852868966,
+        "mfu": 0.6211509035473272,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 3500
+      }
+    ],
+    "validation_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 3499,
+        "loss": 1.1103010177612305,
+        "val_loss": 0.8366089580813423,
+        "lr": 0.0007,
+        "grad_norm": 0.09285807609558105,
+        "tok_per_s": 38114.612852868966,
+        "mfu": 0.6211509035473272,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 3500
+      }
+    ]
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "evidence_kinds": [
+      "evaluation_summary"
+    ],
+    "sources": [
+      "evidence/imported/moe1b/mc-dense3b-step4499.json",
+      "evidence/imported/moe1b/suite-step_00004499-1673608.json"
+    ],
+    "locations": [],
+    "metadata_versions": 0,
+    "config_hashes": [],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 4718592000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 4.718592,
+    "weights_present": false,
+    "storage_status": "historical_result_only",
+    "model_hashes_recorded_in_evaluations": [
+      "d823c750632ab45d5d5a0bde4327fee812c5ac6be21531a5d06921cf678cce74"
+    ],
+    "evaluation_ids": [
+      "7b1c28bffad71131",
+      "f72a3017e876a62d"
+    ],
+    "metric_rows": 66,
+    "full_count_tasks": [
+      "arc_challenge",
+      "arc_easy",
+      "boolq",
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "hellaswag",
+      "humaneval",
+      "lcb",
+      "mbpp",
+      "mmlu_cf",
+      "mmlu_mc5",
+      "openbookqa",
+      "sciq",
+      "winogrande"
+    ],
+    "missing_primary_tasks": [],
+    "evaluation_status": "primary_task_counts_present",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 4499,
+        "loss": 1.077358603477478,
+        "val_loss": 0.8025699210702442,
+        "lr": 0.0007,
+        "grad_norm": 0.07700823247432709,
+        "tok_per_s": 39585.37067895438,
+        "mfu": 0.6451197303093572,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 4500
+      }
+    ],
+    "validation_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 4499,
+        "loss": 1.077358603477478,
+        "val_loss": 0.8025699210702442,
+        "lr": 0.0007,
+        "grad_norm": 0.07700823247432709,
+        "tok_per_s": 39585.37067895438,
+        "mfu": 0.6451197303093572,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 4500
+      }
+    ]
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "evidence_kinds": [
+      "metadata",
+      "filesystem_inventory",
+      "evaluation_summary"
+    ],
+    "sources": [
+      "evidence/checkpoints/ckpt-v0/step_00004999/meta.json",
+      "provenance/checkpoint_inventory.json",
+      "evidence/raw/results/suite-step_00004999.json",
+      "evidence/imported/moe1b/mc-dense3b-step4999.json",
+      "evidence/imported/moe1b/suite-step_00004999-1673758.json"
+    ],
+    "locations": [
+      {
+        "path": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00004999",
+        "resolved_path": "/data/run01/scxi253/backup/backup/code3b-train/ckpt-v0/step_00004999",
+        "model_file_present": true,
+        "model_bytes": 6492811343,
+        "optimizer_files": 0,
+        "expected_writers": 8,
+        "complete_marker": false,
+        "milestone_marker": true,
+        "tensor_deserialization_tested": false
+      },
+      {
+        "path": "/data/run01/scxi253/code3b-train/milestones/step_00004999",
+        "resolved_path": "/data/run01/scxi253/backup/backup/code3b-train/milestones/step_00004999",
+        "model_file_present": true,
+        "model_bytes": 6492811343,
+        "optimizer_files": 0,
+        "expected_writers": 8,
+        "complete_marker": false,
+        "milestone_marker": false,
+        "tensor_deserialization_tested": false
+      }
+    ],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 5242880000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 5.24288,
+    "weights_present": true,
+    "storage_status": "retained_model_files",
+    "model_hashes_recorded_in_evaluations": [
+      "35552cb96f8e6a993d5a41cf062716efa6b218bddb5db849f137534dbc5d1859"
+    ],
+    "evaluation_ids": [
+      "36a83f7a9d6a9597",
+      "64cfa7191be500c8",
+      "94194351206854bb"
+    ],
+    "metric_rows": 105,
+    "full_count_tasks": [
+      "arc_challenge",
+      "arc_easy",
+      "boolq",
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "hellaswag",
+      "humaneval",
+      "lcb",
+      "mbpp",
+      "mmlu_cf",
+      "mmlu_mc5",
+      "openbookqa",
+      "sciq",
+      "winogrande"
+    ],
+    "missing_primary_tasks": [],
+    "evaluation_status": "primary_task_counts_present",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 4999,
+        "loss": 1.0421111583709717,
+        "val_loss": 0.789960207126569,
+        "lr": 0.0007,
+        "grad_norm": 0.08129312098026276,
+        "tok_per_s": 39228.05000954423,
+        "mfu": 0.639296502942021,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 5000
+      }
+    ],
+    "validation_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 4999,
+        "loss": 1.0421111583709717,
+        "val_loss": 0.789960207126569,
+        "lr": 0.0007,
+        "grad_norm": 0.08129312098026276,
+        "tok_per_s": 39228.05000954423,
+        "mfu": 0.639296502942021,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 5000
+      }
+    ]
+  },
+  {
+    "variant": "dense3b",
+    "step": 5249,
+    "evidence_kinds": [
+      "metadata"
+    ],
+    "sources": [
+      "evidence/checkpoints/ckpt-v0/step_00005249/meta.json"
+    ],
+    "locations": [],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 5505024000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 5.505024,
+    "weights_present": false,
+    "storage_status": "historical_metadata_only",
+    "model_hashes_recorded_in_evaluations": [],
+    "evaluation_ids": [],
+    "metric_rows": 0,
+    "full_count_tasks": [],
+    "missing_primary_tasks": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "evaluation_status": "no_result_found",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 5249,
+        "loss": 0.9821556806564331,
+        "val_loss": null,
+        "lr": 0.0007,
+        "grad_norm": 0.06465455889701843,
+        "tok_per_s": 39364.31678445301,
+        "mfu": 0.6415172320541022,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 5250
+      }
+    ],
+    "validation_observations": []
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "evidence_kinds": [
+      "metadata",
+      "filesystem_inventory",
+      "resume_start_inference",
+      "evaluation_summary"
+    ],
+    "sources": [
+      "evidence/checkpoints/ckpt-v0/step_00005499/meta.json",
+      "provenance/checkpoint_inventory.json",
+      "evidence/raw/logs/dense3b-train-1674956.out",
+      "evidence/imported/moe1b/mc-dense3b-step5499.json",
+      "evidence/imported/moe1b/suite-step_00005499-1675015.json",
+      "evidence/checkpoint_audit/c6984406fc92ac78/dense3b-5499.json"
+    ],
+    "locations": [
+      {
+        "path": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005499",
+        "resolved_path": "/data/run01/scxi253/backup/backup/code3b-train/ckpt-v0/step_00005499",
+        "model_file_present": true,
+        "model_bytes": 6492811343,
+        "optimizer_files": 8,
+        "expected_writers": 8,
+        "complete_marker": true,
+        "milestone_marker": false,
+        "tensor_deserialization_tested": false
+      }
+    ],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 5767168000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 5.767168,
+    "weights_present": true,
+    "storage_status": "retained_model_files",
+    "model_hashes_recorded_in_evaluations": [
+      "58c1ed209abbe6a23c149ac4b86b7d1f8a5de4229fb8a6979f65d88708536497"
+    ],
+    "evaluation_ids": [
+      "40f8ea54be656dc6",
+      "8c0da3676eaebe91",
+      "c6984406fc92ac78"
+    ],
+    "metric_rows": 72,
+    "full_count_tasks": [
+      "arc_challenge",
+      "arc_easy",
+      "boolq",
+      "cruxeval",
+      "gsm8k",
+      "hellaswag",
+      "humaneval",
+      "mbpp",
+      "mmlu_cf",
+      "mmlu_mc5",
+      "openbookqa",
+      "sciq",
+      "winogrande"
+    ],
+    "missing_primary_tasks": [],
+    "evaluation_status": "primary_task_counts_present",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 5499,
+        "loss": 1.1004359722137451,
+        "val_loss": 0.7816448789671995,
+        "lr": 0.0007,
+        "grad_norm": 0.07289861887693405,
+        "tok_per_s": 38390.15788631298,
+        "mfu": 0.6256414396876896,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 5500
+      }
+    ],
+    "validation_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1667439,
+        "step": 5499,
+        "loss": 1.1004359722137451,
+        "val_loss": 0.7816448789671995,
+        "lr": 0.0007,
+        "grad_norm": 0.07289861887693405,
+        "tok_per_s": 38390.15788631298,
+        "mfu": 0.6256414396876896,
+        "source": "evidence/raw/results/train-1667439/metrics.jsonl",
+        "source_line": 5500
+      }
+    ]
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "evidence_kinds": [
+      "metadata",
+      "filesystem_inventory",
+      "resume_start_inference",
+      "evaluation_summary"
+    ],
+    "sources": [
+      "evidence/checkpoints/ckpt-v0/step_00005749/meta.json",
+      "provenance/checkpoint_inventory.json",
+      "evidence/checkpoint_audit/3e46059502abfe5b/IgM-dense3b-1680260.out",
+      "evidence/checkpoint_audit/a8831eeac3919fff/mc-step_00005749.json",
+      "evidence/raw/results/suite-step_00005749.json",
+      "evidence/raw/results/mc-step_00005749.json",
+      "evidence/checkpoint_audit/2a644bec76eceeb8/mc-step_00005749.json"
+    ],
+    "locations": [
+      {
+        "path": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749",
+        "resolved_path": "/data/run01/scxi253/backup/backup/code3b-train/ckpt-v0/step_00005749",
+        "model_file_present": true,
+        "model_bytes": 6492811343,
+        "optimizer_files": 8,
+        "expected_writers": 8,
+        "complete_marker": true,
+        "milestone_marker": false,
+        "tensor_deserialization_tested": false
+      }
+    ],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 6029312000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 6.029312,
+    "weights_present": true,
+    "storage_status": "retained_model_files",
+    "model_hashes_recorded_in_evaluations": [
+      "517f8e13fa018c25e4ddea45870bde2d9d2b07338505c94afd3d82804d07f428"
+    ],
+    "evaluation_ids": [
+      "2a644bec76eceeb8",
+      "420057a931269855",
+      "a8831eeac3919fff",
+      "a9b5830cfdb3f46d"
+    ],
+    "metric_rows": 68,
+    "full_count_tasks": [
+      "arc_challenge",
+      "arc_easy",
+      "boolq",
+      "cruxeval",
+      "gsm8k",
+      "hellaswag",
+      "humaneval",
+      "mbpp",
+      "mmlu_cf",
+      "mmlu_mc5",
+      "openbookqa",
+      "sciq",
+      "winogrande"
+    ],
+    "missing_primary_tasks": [],
+    "evaluation_status": "primary_task_counts_present",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1674956,
+        "step": 5749,
+        "loss": 1.0538760423660278,
+        "val_loss": null,
+        "lr": 0.0007,
+        "grad_norm": 0.0680997222661972,
+        "tok_per_s": 26752.952793113473,
+        "mfu": 0.4359908065746123,
+        "source": "evidence/raw/results/train-1674956/metrics.jsonl",
+        "source_line": 250
+      }
+    ],
+    "validation_observations": []
+  },
+  {
+    "variant": "dense3b",
+    "step": 5999,
+    "evidence_kinds": [
+      "metadata",
+      "filesystem_inventory"
+    ],
+    "sources": [
+      "evidence/checkpoints/ckpt-v0/step_00005999/meta.json",
+      "provenance/checkpoint_inventory.json"
+    ],
+    "locations": [
+      {
+        "path": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005999",
+        "resolved_path": "/data/run01/scxi253/backup/backup/code3b-train/ckpt-v0/step_00005999",
+        "model_file_present": true,
+        "model_bytes": 6492811343,
+        "optimizer_files": 8,
+        "expected_writers": 8,
+        "complete_marker": true,
+        "milestone_marker": false,
+        "tensor_deserialization_tested": false
+      }
+    ],
+    "metadata_versions": 1,
+    "config_hashes": [
+      "cdfadfd9a1aa5fbef75b51f174206fa0491f095ccca50b574863ac34e1fb5da4"
+    ],
+    "tokens_from_metadata": null,
+    "tokens_schedule_reconstruction": 6291456000,
+    "token_status": "constant_observed_schedule_reconstruction_not_metadata_verified",
+    "tokens_B": 6.291456,
+    "weights_present": true,
+    "storage_status": "retained_model_files",
+    "model_hashes_recorded_in_evaluations": [],
+    "evaluation_ids": [],
+    "metric_rows": 0,
+    "full_count_tasks": [],
+    "missing_primary_tasks": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "evaluation_status": "no_result_found",
+    "nearby_training_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1680260,
+        "step": 5999,
+        "loss": 0.928167998790741,
+        "val_loss": 0.7727383772726171,
+        "lr": 0.0007,
+        "grad_norm": 0.058809660375118256,
+        "tok_per_s": 41710.0016112333,
+        "mfu": 0.6797446766097186,
+        "source": "evidence/checkpoint_audit/e85d2497f4533360/metrics.jsonl",
+        "source_line": 250
+      }
+    ],
+    "validation_observations": [
+      {
+        "variant": "dense3b",
+        "job_id": 1680260,
+        "step": 5999,
+        "loss": 0.928167998790741,
+        "val_loss": 0.7727383772726171,
+        "lr": 0.0007,
+        "grad_norm": 0.058809660375118256,
+        "tok_per_s": 41710.0016112333,
+        "mfu": 0.6797446766097186,
+        "source": "evidence/checkpoint_audit/e85d2497f4533360/metrics.jsonl",
+        "source_line": 250
+      }
+    ]
+  }
+]

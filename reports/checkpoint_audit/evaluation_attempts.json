@@ -1,0 +1,122 @@
+[
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "source": "evidence/raw/logs/dense3b-eval-1670427.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": true,
+    "corroborated_metrics": 0,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "source": "evidence/raw/logs/dense3b-eval-1670432.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": false,
+    "corroborated_metrics": 0,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "source": "evidence/raw/logs/dense3b-eval-1670852.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": false,
+    "corroborated_metrics": 39,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "source": "evidence/raw/logs/dense3b-eval-1670853.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": true,
+    "corroborated_metrics": 30,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 1499,
+    "source": "evidence/raw/logs/dense3b-eval-1670945.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": false,
+    "corroborated_metrics": 12,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "source": "evidence/raw/logs/dense3b-eval-1671024.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": false,
+    "corroborated_metrics": 39,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "source": "evidence/raw/logs/dense3b-eval-1673756.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": false,
+    "corroborated_metrics": 39,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 4499,
+    "source": "evidence/checkpoint_audit/9a56f971338f3c41/moe1b-eval-1673608.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": false,
+    "corroborated_metrics": 39,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 4999,
+    "source": "evidence/checkpoint_audit/00d628e90b34ce90/moe1b-eval-1673758.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": false,
+    "corroborated_metrics": 39,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 5499,
+    "source": "evidence/checkpoint_audit/690777c4447a9bc0/moe1b-eval-1675015.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": false,
+    "corroborated_metrics": 11,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "source": "evidence/checkpoint_audit/9cfbee79d922bb89/eval-IgM-1681339.out",
+    "eval_start": true,
+    "eval_done": false,
+    "has_traceback": true,
+    "corroborated_metrics": 0,
+    "recovered_metrics": 0
+  },
+  {
+    "variant": "dense3b",
+    "step": 5749,
+    "source": "evidence/checkpoint_audit/43824fe1bffe5bcb/eval-IgM-1681369.out",
+    "eval_start": true,
+    "eval_done": true,
+    "has_traceback": false,
+    "corroborated_metrics": 38,
+    "recovered_metrics": 0
+  }
+]

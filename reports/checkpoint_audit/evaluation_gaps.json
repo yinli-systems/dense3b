@@ -1,0 +1,134 @@
+[
+  {
+    "variant": "dense3b",
+    "step": 2499,
+    "weights_present_at_snapshot": true,
+    "storage_status": "retained_model_files",
+    "missing_full_count_task_families": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "candidate_paths": [
+      "/data/run01/scxi253/code3b-train/milestones/step_00002499"
+    ]
+  },
+  {
+    "variant": "dense3b",
+    "step": 2999,
+    "weights_present_at_snapshot": false,
+    "storage_status": "historical_metadata_only",
+    "missing_full_count_task_families": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "candidate_paths": []
+  },
+  {
+    "variant": "dense3b",
+    "step": 3249,
+    "weights_present_at_snapshot": false,
+    "storage_status": "historical_metadata_only",
+    "missing_full_count_task_families": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "candidate_paths": []
+  },
+  {
+    "variant": "dense3b",
+    "step": 3499,
+    "weights_present_at_snapshot": false,
+    "storage_status": "historical_metadata_only",
+    "missing_full_count_task_families": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "candidate_paths": []
+  },
+  {
+    "variant": "dense3b",
+    "step": 5249,
+    "weights_present_at_snapshot": false,
+    "storage_status": "historical_metadata_only",
+    "missing_full_count_task_families": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "candidate_paths": []
+  },
+  {
+    "variant": "dense3b",
+    "step": 5999,
+    "weights_present_at_snapshot": true,
+    "storage_status": "retained_model_files",
+    "missing_full_count_task_families": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k",
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "candidate_paths": [
+      "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005999"
+    ]
+  }
+]
