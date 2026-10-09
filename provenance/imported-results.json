@@ -4,111 +4,127 @@
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/mc-dense3b-step1499.json",
     "sha256": "eefbd27cfb6d2b2c8351ba42cbc0f49f5ae09f5c618be3b48a60320fa7e58d62",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791401392000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/mc-dense3b-step4499.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/mc-dense3b-step4499.json",
     "sha256": "7b1c28bffad71131c265ddc8863aa156cd889ee0661a2b99b0f501fb1514d68d",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791401527000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/mc-dense3b-step4999.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/mc-dense3b-step4999.json",
     "sha256": "94194351206854bbd0c2b3b3ae72e12c366df12ebfc98453942ad43e8b114d97",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791413251000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/mc-dense3b-step5499.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/mc-dense3b-step5499.json",
     "sha256": "40f8ea54be656dc631bc3fc76bfa6b064c2896f17527d19925750b7fd4f9efb3",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791439394000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00004499-1673608.evalplus-humaneval.jsonl",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00004499-1673608.evalplus-humaneval.jsonl",
     "sha256": "a83d3817cdacbbc4f7b7cd3f0d4a06f794a02ec60bcd6aa8b1ecd584953399af",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791406792000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00004499-1673608.evalplus-mbpp.jsonl",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00004499-1673608.evalplus-mbpp.jsonl",
     "sha256": "e9580e7c3968c9b55000cacd02380aa32cc71500f9413fb0bf5dc4db959194c1",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791406792000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00004499-1673608.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00004499-1673608.json",
     "sha256": "f72a3017e876a62d6658613c96c46951eb159c9e24cde55c7e1171e10136b58c",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791406792000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00004499-1673608.details.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00004499-1673608.details.json",
     "sha256": "dfcc23fd0b51d8e48e6e2ad84e6a27a6fdb405644c361b89677917eaf84a4e20",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791406792000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00004999-1673758.details.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00004999-1673758.details.json",
     "sha256": "53c4917b479b795b0211518ef3bb576e43726003bfda9ff272de6d6db2ff23d2",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791415807000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00004999-1673758.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00004999-1673758.json",
     "sha256": "36a83f7a9d6a9597b58d9a3267a2c18153c9620a5333393fab5f93a059fa9eef",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791415807000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00004999-1673758.evalplus-mbpp.jsonl",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00004999-1673758.evalplus-mbpp.jsonl",
     "sha256": "4dfa7337a2f4149e298d10450e72f72a6658968936660d4de222ad4b9212b78d",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791415808000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00004999-1673758.evalplus-humaneval.jsonl",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00004999-1673758.evalplus-humaneval.jsonl",
     "sha256": "7c4de6a42b6ce0ba521e825189a49f4fa61d641d50e727275d6c8f5bbe60531f",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791415807000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00005499-1675015.evalplus-mbpp.jsonl",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00005499-1675015.evalplus-mbpp.jsonl",
     "sha256": "6451c5d9eeddb40b30ae76c7e54494c91af2cdfd5b622b3114213628c8cfd1c2",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791438219000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00005499-1675015.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00005499-1675015.json",
     "sha256": "8c0da3676eaebe91dd8ab8bb9f353fde0b9f53b8f492124af770d2500762beb6",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791438218000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00005499-1675015.details.json",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00005499-1675015.details.json",
     "sha256": "0522753178b89e2d801cbddb9a00cb0b81a2f501a086ce480a9df87003971683",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791438218000000000
   },
   {
     "repo_path": "evidence/imported/moe1b/suite-step_00005499-1675015.evalplus-humaneval.jsonl",
     "source_repository_snapshot": "moe1b",
     "source_archive_path": "moe1b/evidence/raw/results/suite-step_00005499-1675015.evalplus-humaneval.jsonl",
     "sha256": "2baaad0a7dc5b43a2e24e0f22e03a480f91910357b45ceaf64cb49f578bdc72a",
-    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory."
+    "reason": "Checkpoint identity routes this artifact to its model rather than its original result directory.",
+    "source_mtime_ns": 1791438218000000000
   }
 ]

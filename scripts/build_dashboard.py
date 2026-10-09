@@ -102,6 +102,13 @@ def load_evals(root: Path, cfg: dict, issues: list[dict]) -> tuple[list[dict], l
                                 'sequence_length': d.get('args', {}).get('seq_len'), 'tokens_verified': tokens,
                                 'source': str(f.relative_to(root)), 'sha256': sha(f), 'config': d.get('config'), 'args': d.get('args')})
     rows = []; seen = set()
+    source_times = {}
+    for record in json.loads((root/'provenance/snapshot.json').read_text())['records']:
+        source_times[record['repo_path']] = record.get('mtime_ns', 0) // 1_000_000_000
+    imported_path = root/'provenance/imported-results.json'
+    if imported_path.exists():
+        for record in json.loads(imported_path.read_text()):
+            source_times[record['repo_path']] = record.get('source_mtime_ns', 0) // 1_000_000_000
     paths = sorted((root/'evidence/raw/results').glob('*.json')) + sorted((root/'evidence/imported').rglob('*.json'))
     for f in paths:
         if '.details.' in f.name: continue
@@ -137,7 +144,7 @@ def load_evals(root: Path, cfg: dict, issues: list[dict]) -> tuple[list[dict], l
                              'tokens_reported_B': reported, 'tokens_verified_B': tokens/1e9 if tokens is not None else None,
                              'token_count_mismatch': mismatch, 'protocol_id': protocol_id, 'protocol_name': manifest.get('protocol', 'not recorded'),
                              'checkpoint': checkpoint, 'source': str(f.relative_to(root)), 'source_sha256': digest,
-                             'source_mtime': int(f.stat().st_mtime)})
+                             'source_mtime': source_times.get(str(f.relative_to(root)), 0)})
     return rows, checkpoint_rows
 
 def create_plots(root: Path, cfg: dict, runs: list[dict], retained: list[dict], evals: list[dict]) -> list[str]:
@@ -219,13 +226,23 @@ def build(root: Path) -> dict:
            '## Experiment coverage','', '| Variant | Latest retained step | Retained observations | Mean loss, last ≤100 | Median global tok/s, last ≤100 |','|---|---:|---:|---:|---:|']
     for v,s in summary['variants'].items():
         lines.append('| '+v+' | '+('—' if s['latest_step'] is None else str(s['latest_step']))+' | '+str(s['observations'])+' | '+('—' if s['recent_loss_mean'] is None else f"{s['recent_loss_mean']:.4f}")+' | '+('—' if s['recent_global_tok_per_s_median'] is None else f"{s['recent_global_tok_per_s_median']:,.0f}")+' |')
+    if cfg.get('parameter_counts'):
+        lines += ['', '### Archived architecture presets', '', '| Variant | Total parameters | Active parameters |', '|---|---:|---:|']
+        for variant, counts in cfg['parameter_counts'].items():
+            lines.append(f"| {variant} | {counts['total']:,} | {counts['active']:,} |")
+        lines += ['', 'Counts are computed by the archived `model/config.py` accounting function, including embeddings. They are configuration counts, not measurements of task quality.']
+    if cfg.get('parameter_counts'):
+        lines += ['', '### Archived architecture presets', '', '| Variant | Total parameters | Active parameters |', '|---|---:|---:|']
+        for variant, counts in cfg['parameter_counts'].items():
+            lines.append(f"| {variant} | {counts['total']:,} | {counts['active']:,} |")
+        lines += ['', 'Counts are computed by the archived `model/config.py` accounting function, including embeddings. They are configuration counts, not measurements of task quality.']
     lines+=['','A missing series means no completed training metric record was found in this snapshot; it is not a zero result. Full failed-run logs and all configured research variants are preserved. Throughput is the training-loop measurement, not end-to-end wall-clock throughput.','',
             '## Learning curves','']
     for fig in ['loss','val_loss','tok_per_s','code_scores']:
         if fig in figs:lines+=['!['+fig+'](reports/figures/'+fig+'.png)','']
     lines+=['[All figures](reports/figures/) · [All production runs including rollbacks](reports/figures/loss_all_runs.png) · [Raw training CSV](reports/training_all.csv) · [Run index](reports/run_index.json)','',
             '## Latest observed evaluation metrics','',
-            'Selection is by checkpoint step, then source timestamp—not by the highest score. Different protocols, sample counts, tokenizers and custom MMLU variants are not treated as directly comparable. Benchmark figures use points rather than connecting different evaluations.','',
+            'Selection is by checkpoint step, then archived archived source timestamp—not by the highest score. Different protocols, sample counts, tokenizers and custom MMLU variants are not treated as directly comparable. Benchmark figures use points rather than connecting different evaluations.','',
             '| Variant | Task / metric | Step | Score | n | Verified tokens (B) | Evidence |','|---|---|---:|---:|---:|---:|---|']
     for r in sorted(latest_rows,key=lambda r:(r['variant'],r['task'],r['metric'])):
         tokens='—' if r['tokens_verified_B'] is None else f"{r['tokens_verified_B']:.3f}"
@@ -249,7 +266,7 @@ def build(root: Path) -> dict:
 All JSONL observations retain their source path and 1-based line number. The raw table includes diagnostic runs. The main figure excludes explicitly named smoke/profiling/sweep runs, orders production jobs by numeric job ID, and replaces the earlier suffix at the first logged step of a later run. This is a transparent display reconstruction, not independent verification of optimizer-state ancestry. The all-runs figure and raw CSV retain superseded tails. No interpolated training observations are created. Smoothing is a trailing arithmetic mean of at most 50 retained observations. Sequence length, world size and tokens per step are retained from start events in the run index; those fields are reported runtime values, not a physical topology audit.
 
 ## Evaluations
-Model identity comes from the recorded checkpoint path, not the directory holding the result. Foreign and unidentified summaries are excluded and logged. Exact duplicate summary files are counted once. Task/metric names, sample counts, declared protocols and evaluator hashes are retained; unversioned evaluations remain labeled unversioned. Accuracy and normalized accuracy remain separate. Latest tables choose largest step then newest source timestamp, never the highest score. Points do not establish a controlled trend across protocol changes. No missing benchmark is entered as zero. Original summary scores are rounded source values; sample-level outputs are preserved separately and were not rescored for this publication.
+Model identity comes from the recorded checkpoint path, not the directory holding the result. Foreign and unidentified summaries are excluded and logged. Exact duplicate summary files are counted once. Task/metric names, sample counts, declared protocols and evaluator hashes are retained; unversioned evaluations remain labeled unversioned. Accuracy and normalized accuracy remain separate. Latest tables choose largest step then newest archived source timestamp, never the highest score. Checkout filesystem timestamps are never used. Points do not establish a controlled trend across protocol changes. No missing benchmark is entered as zero. Original summary scores are rounded source values; sample-level outputs are preserved separately and were not rescored for this publication.
 
 ## Token accounting
 Only checkpoint metadata with recorded samples_consumed and args.seq_len establishes a verified token count. Formula: samples_consumed * args.seq_len. A checkpoint's declared configuration and sample counter are evidence, not a new audit of the original data loader. The source tokens_B field is also retained. Differences exceeding 0.02 billion tokens are flagged (allowing source rounding). Missing metadata is not reconstructed from a guessed batch size or context length.

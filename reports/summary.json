@@ -1,0 +1,30 @@
+{
+  "model": "dense3b",
+  "snapshot_utc": "2026-10-09T18:34:41Z",
+  "variants": {
+    "dense3b": {
+      "latest_step": 6031,
+      "observations": 6032,
+      "recent_loss_mean": 1.0275019657611848,
+      "recent_global_tok_per_s_median": 41789.462978738375
+    }
+  },
+  "training_observations": 7780,
+  "retained_observations": 6032,
+  "evaluation_metric_records": 200,
+  "issues": [],
+  "figures": [
+    "loss",
+    "val_loss",
+    "tok_per_s",
+    "mfu",
+    "lr",
+    "grad_norm",
+    "max_mem_gb",
+    "loss_all_runs",
+    "code_scores",
+    "reasoning_scores",
+    "mc_accuracy",
+    "mc_normalized"
+  ]
+}

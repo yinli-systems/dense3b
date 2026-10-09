@@ -1,0 +1,8 @@
+{
+  "snapshot_utc": "2026-10-09T18:34:41Z",
+  "inventory_records": 380,
+  "verified_records": 380,
+  "python_sources_parsed": 74,
+  "failures": [],
+  "cuda_or_training_executed": false
+}

@@ -3,5 +3,23 @@
   "presets": [
     "dense3b"
   ],
-  "description": "Dense 3B-class code pretraining: deployed implementation, data pipeline, checkpoint results and auditable training curves."
+  "description": "Dense 3B-class code pretraining: deployed implementation, data pipeline, checkpoint results and auditable training curves.",
+  "parameter_counts": {
+    "dense3b": {
+      "embed": 154533888,
+      "head": 0,
+      "final_norm": 3072,
+      "attention": 968891392,
+      "norms": 172032,
+      "dense_ffn": 2113929216,
+      "routed_experts": 0,
+      "shared_experts": 0,
+      "router": 0,
+      "total": 3237529600,
+      "active_routed": 0,
+      "active": 3237529600,
+      "active_nonembed": 3082995712,
+      "active_matmul": 3237354496
+    }
+  }
 }
