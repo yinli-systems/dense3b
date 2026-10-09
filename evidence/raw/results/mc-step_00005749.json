@@ -14,6 +14,42 @@
    "acc_norm": 0.3063,
    "n": 1172,
    "seconds": 10
+  },
+  "hellaswag": {
+   "acc": 0.3052,
+   "acc_norm": 0.3477,
+   "n": 10042,
+   "seconds": 142
+  },
+  "winogrande": {
+   "acc": 0.5122,
+   "acc_norm": 0.5122,
+   "n": 1267,
+   "seconds": 4
+  },
+  "boolq": {
+   "acc": 0.578,
+   "acc_norm": 0.6196,
+   "n": 3270,
+   "seconds": 41
+  },
+  "openbookqa": {
+   "acc": 0.214,
+   "acc_norm": 0.344,
+   "n": 500,
+   "seconds": 4
+  },
+  "sciq": {
+   "acc": 0.858,
+   "acc_norm": 0.806,
+   "n": 1000,
+   "seconds": 21
+  },
+  "mmlu_cf": {
+   "acc": 0.2829,
+   "acc_norm": 0.2945,
+   "n": 14042,
+   "seconds": 180
   }
  }
 }

@@ -105,3 +105,42 @@ NCCL version 2.29.7+cuda13.2
 {"step": 5960, "lr": 0.0007, "loss": 1.01353, "grad_norm": 0.06463, "tok_per_s": 41849.12834, "tok_per_s_gpu": 5231.14104, "mfu": 0.68201, "step_s": 25.0561, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
 {"step": 5970, "lr": 0.0007, "loss": 0.97051, "grad_norm": 0.06506, "tok_per_s": 41477.71122, "tok_per_s_gpu": 5184.7139, "mfu": 0.67596, "step_s": 25.28047, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
 {"step": 5980, "lr": 0.0007, "loss": 1.02827, "grad_norm": 0.06197, "tok_per_s": 41864.8042, "tok_per_s_gpu": 5233.10053, "mfu": 0.68227, "step_s": 25.04672, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5990, "lr": 0.0007, "loss": 1.04742, "grad_norm": 0.06413, "tok_per_s": 41815.27836, "tok_per_s_gpu": 5226.9098, "mfu": 0.68146, "step_s": 25.07638, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+{"step": 6000, "lr": 0.0007, "loss": 0.99565, "grad_norm": 0.0658, "tok_per_s": 42553.55011, "tok_per_s_gpu": 5319.19376, "mfu": 0.69349, "step_s": 24.64133, "max_mem_gb": 22.41178, "mem_fwd_bwd_gb": 22.41178}
+{"step": 6010, "lr": 0.0007, "loss": 1.01111, "grad_norm": 0.07224, "tok_per_s": 42082.47681, "tok_per_s_gpu": 5260.3096, "mfu": 0.68581, "step_s": 24.91716, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 6020, "lr": 0.0007, "loss": 1.04501, "grad_norm": 0.06382, "tok_per_s": 41053.40266, "tok_per_s_gpu": 5131.67533, "mfu": 0.66904, "step_s": 25.54176, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 6030, "lr": 0.0007, "loss": 0.99666, "grad_norm": 0.06395, "tok_per_s": 41385.13462, "tok_per_s_gpu": 5173.14183, "mfu": 0.67445, "step_s": 25.33702, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
