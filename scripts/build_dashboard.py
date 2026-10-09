@@ -228,6 +228,9 @@ def create_plots(root: Path, cfg: dict, runs: list[dict], retained: list[dict], 
     return made
 
 def build(root: Path) -> dict:
+    if (root/'provenance/sync_latest.json').exists():
+        from build_all_results import build as build_complete
+        return build_complete(root)
     cfg=json.loads((root/'publication.json').read_text()); snap=json.loads((root/'provenance/snapshot.json').read_text())
     issues=[]; runs=load_metrics(root,cfg,issues); retained=reconstruct(runs)
     evals,checkpoints=load_evals(root,cfg,issues)
@@ -310,4 +313,4 @@ Run scripts/verify_publication.py before rebuilding. It verifies the archived so
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--root',type=Path,default=Path.cwd());args=parser.parse_args()
     result=build(args.root.resolve())
-    print(json.dumps({k:result[k] for k in ['model','snapshot_utc','training_observations','retained_observations','evaluation_metric_records','figures']},indent=2))
+    print(json.dumps(result,indent=2))
