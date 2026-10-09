@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.parquet
+*.bin
+*.safetensors
+.DS_Store
+results/
