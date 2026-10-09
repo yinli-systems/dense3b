@@ -1,0 +1,24 @@
+== variant 1: NCCL_NET_GDR_LEVEL=LOC
+[launch] wqd10nba08g4 nproc=1 CUDA_VISIBLE_DEVICES=0
+[launch] wqd10nba07g4 nproc=1 CUDA_VISIBLE_DEVICES=0
+[launch] wqd10naf13g1 nproc=2 CUDA_VISIBLE_DEVICES=0,1
+{"world": 2, "hosts": "wqd10naf13g1,wqd10nba07g4,wqd10nba08g4", "reduce_scatter_64MB_per_rank": {"seconds": 0.0065, "busbw_gbs": 10.36}, "all_gather_64MB_per_rank": {"seconds": 0.0065, "busbw_gbs": 10.33}}
+   exit=143  last NCCL lines:       1 wqd10naf13g1:3743287:3743287 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault       1 wqd10naf13g1:3743288:3743288 [1] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault 
+== variant 2: NCCL_NET_GDR_LEVEL=LOC NCCL_IB_DISABLE=1
+[launch] wqd10nba07g4 nproc=1 CUDA_VISIBLE_DEVICES=0
+[launch] wqd10nba08g4 nproc=1 CUDA_VISIBLE_DEVICES=0
+[launch] wqd10naf13g1 nproc=2 CUDA_VISIBLE_DEVICES=0,1
+{"world": 2, "hosts": "wqd10naf13g1,wqd10nba07g4,wqd10nba08g4", "reduce_scatter_64MB_per_rank": {"seconds": 0.0065, "busbw_gbs": 10.38}, "all_gather_64MB_per_rank": {"seconds": 0.0065, "busbw_gbs": 10.34}}
+   exit=1  last NCCL lines:       1 wqd10naf13g1:3743428:3743428 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault       1 wqd10naf13g1:3743429:3743429 [1] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault 
+== variant 3: NCCL_NET_GDR_LEVEL=LOC NCCL_SHM_DISABLE=1
+[launch] wqd10nba07g4 nproc=1 CUDA_VISIBLE_DEVICES=0
+[launch] wqd10nba08g4 nproc=1 CUDA_VISIBLE_DEVICES=0
+[launch] wqd10naf13g1 nproc=2 CUDA_VISIBLE_DEVICES=0,1
+{"world": 2, "hosts": "wqd10naf13g1,wqd10nba07g4,wqd10nba08g4", "reduce_scatter_64MB_per_rank": {"seconds": 0.022, "busbw_gbs": 3.06}, "all_gather_64MB_per_rank": {"seconds": 0.0222, "busbw_gbs": 3.02}}
+   exit=1  last NCCL lines:       1 wqd10naf13g1:3743565:3743565 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault       1 wqd10naf13g1:3743566:3743566 [1] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault 
+== variant 4: NCCL_NET_GDR_LEVEL=LOC NCCL_GIN_ENABLE=0 NCCL_NET_PLUGIN=none
+[launch] wqd10nba08g4 nproc=1 CUDA_VISIBLE_DEVICES=0
+[launch] wqd10nba07g4 nproc=1 CUDA_VISIBLE_DEVICES=0
+[launch] wqd10naf13g1 nproc=2 CUDA_VISIBLE_DEVICES=0,1
+{"world": 2, "hosts": "wqd10naf13g1,wqd10nba07g4,wqd10nba08g4", "reduce_scatter_64MB_per_rank": {"seconds": 0.0065, "busbw_gbs": 10.39}, "all_gather_64MB_per_rank": {"seconds": 0.0065, "busbw_gbs": 10.39}}
+   exit=1  last NCCL lines:       1 wqd10naf13g1:3743665:3743665 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault       1 wqd10naf13g1:3743666:3743666 [1] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault 

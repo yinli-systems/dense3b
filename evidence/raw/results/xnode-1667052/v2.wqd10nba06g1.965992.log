@@ -1,0 +1,42 @@
+wqd10nba06g1:965992:965992 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wqd10nba06g1:965992:965992 [0] NCCL INFO cudaDriverVersion 13000
+wqd10nba06g1:965992:965992 [0] NCCL INFO Stack size limit (unlimited) is unsafe; will use 8192KB for newly launched threads
+wqd10nba06g1:965992:965992 [0] NCCL INFO Bootstrap: Using bond0:[PRIVATE_CLUSTER_IP]<0>
+wqd10nba06g1:965992:965992 [0] NCCL INFO NCCL version 2.29.7+cuda13.2
+wqd10nba06g1:965992:965992 [0] NCCL INFO NCCL git version stable b81d6a5a3
+wqd10nba06g1:965992:965992 [0] NCCL INFO Comm config Blocking set to 1
+wqd10nba06g1:965992:965992 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wqd10nba06g1:965992:965992 [0] NCCL INFO NET/IB : Using [0]mlx5_bond_0:1/RoCE [RO]; OOB bond0:[PRIVATE_CLUSTER_IP]<0>
+wqd10nba06g1:965992:965992 [0] NCCL INFO Initialized NET plugin IB
+wqd10nba06g1:965992:965992 [0] NCCL INFO Assigned NET plugin IB to comm
+wqd10nba06g1:965992:965992 [0] NCCL INFO GIN/Plugin: Could not find: libnccl-gin.so
+wqd10nba06g1:965992:965992 [0] NCCL INFO Assigned GIN plugin GIN_IB_GDAKI to comm
+wqd10nba06g1:965992:965992 [0] NCCL INFO Assigned RMA plugin GIN_IB_PROXY to comm
+wqd10nba06g1:965992:965992 [0] NCCL INFO Using network IB
+wqd10nba06g1:965992:965992 [0] NCCL INFO [Rank 1] ncclCommInitRankConfig comm 0x55d2818ad8f0 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId 25000 commId 0x5bf9e7861687236c - Init START
+wqd10nba06g1:965992:965992 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wqd10nba06g1:965992:965992 [0] NCCL INFO Bootstrap timings total 0.049877 (create 0.000050, send 0.000266, recv 0.000548, ring 0.048552, delay 0.000001)
+wqd10nba06g1:965992:965992 [0] NCCL INFO NCCL_P2P_DISABLE set by environment to 1
+wqd10nba06g1:965992:965992 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 18-23. (GPU affinity = 16-23 ; CPU affinity = 18-23).
+wqd10nba06g1:965992:965992 [0] NCCL INFO comm 0x55d2818ad8f0 rank 1 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+wqd10nba06g1:965992:965992 [0] NCCL INFO Trees [0] -1/-1/-1->1->0 [1] 0/-1/-1->1->-1
+wqd10nba06g1:965992:965992 [0] NCCL INFO P2P Chunksize set to 131072
+wqd10nba06g1:965992:965992 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wqd10nba06g1:965992:965992 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wqd10nba06g1:965992:966154 [0] NCCL INFO [Proxy Service] Device 0 CPU core 20
+wqd10nba06g1:965992:966155 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 18
+wqd10nba06g1:965992:965992 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wqd10nba06g1:965992:965992 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+wqd10nba06g1:965992:965992 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+wqd10nba06g1:965992:965992 [0] NCCL INFO Symmetric VA size=24GB
+wqd10nba06g1:965992:965992 [0] NCCL INFO Symmetric memory is not supported. cuMemEnable 1, globalGinSupport 0, globalNicFused 0 cuMemGdrSupport 0
+wqd10nba06g1:965992:965992 [0] NCCL INFO ncclCommInitRankConfig comm 0x55d2818ad8f0 rank 1 nranks 2 cudaDev 0 nvmlDev 0 busId 25000 commId 0x5bf9e7861687236c - Init COMPLETE
+wqd10nba06g1:965992:965992 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 1 nranks 2 total 0.49 (kernels 0.13, alloc 0.30, bootstrap 0.05, allgathers 0.00, topo 0.01, graphs 0.00, connections 0.00, rest 0.00)
+wqd10nba06g1:965992:966156 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 21
+wqd10nba06g1:965992:965992 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+wqd10nba06g1:965992:965992 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [receive] via NET/IB/0
+wqd10nba06g1:965992:965992 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [send] via NET/IB/0
+wqd10nba06g1:965992:965992 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [send] via NET/IB/0
+wqd10nba06g1:965992:965992 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 0
+wqd10nba06g1:965992:965992 [0] NCCL INFO comm 0x55d2818ad8f0 rank 1 nranks 2 cudaDev 0 busId 25000 - Destroy COMPLETE
+wqd10nba06g1:965992:965992 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault

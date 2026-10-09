@@ -1,0 +1,61 @@
+{
+ "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00004999",
+ "step": 4999,
+ "preset": "dense3b",
+ "tasks": {
+  "arc_easy": {
+   "acc": 0.6263,
+   "acc_norm": 0.5547,
+   "n": 2376,
+   "seconds": 25
+  },
+  "arc_challenge": {
+   "acc": 0.2799,
+   "acc_norm": 0.3029,
+   "n": 1172,
+   "seconds": 15
+  },
+  "hellaswag": {
+   "acc": 0.3043,
+   "acc_norm": 0.3452,
+   "n": 10042,
+   "seconds": 218
+  },
+  "winogrande": {
+   "acc": 0.498,
+   "acc_norm": 0.498,
+   "n": 1267,
+   "seconds": 6
+  },
+  "boolq": {
+   "acc": 0.593,
+   "acc_norm": 0.6205,
+   "n": 3270,
+   "seconds": 61
+  },
+  "openbookqa": {
+   "acc": 0.22,
+   "acc_norm": 0.324,
+   "n": 500,
+   "seconds": 5
+  },
+  "sciq": {
+   "acc": 0.84,
+   "acc_norm": 0.786,
+   "n": 1000,
+   "seconds": 31
+  },
+  "mmlu_cf": {
+   "acc": 0.2797,
+   "acc_norm": 0.2977,
+   "n": 14042,
+   "seconds": 273
+  },
+  "mmlu_mc5": {
+   "acc": 0.2708,
+   "acc_norm": 0.2708,
+   "n": 14042,
+   "seconds": 2383
+  }
+ }
+}

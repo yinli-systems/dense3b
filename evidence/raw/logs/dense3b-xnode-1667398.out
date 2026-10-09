@@ -1,0 +1,39 @@
+nodes: wqd10naf13g1,wqd10nba06g[3,5],wqd10nba07g[3-6],wqd10nba10g8
+wqd10naf13g1 hca_id: mlx5_bond_0  state: PORT_ACTIVE (4)  link_layer: Ethernet 
+wqd10nba06g3 hca_id: mlx5_bond_0  state: PORT_ACTIVE (4)  link_layer: Ethernet 
+wqd10nba06g5 hca_id: mlx5_bond_0  state: PORT_ACTIVE (4)  link_layer: Ethernet 
+wqd10nba07g3 hca_id: mlx5_bond_0  state: PORT_ACTIVE (4)  link_layer: Ethernet 
+wqd10nba07g4 hca_id: mlx5_bond_0  state: PORT_ACTIVE (4)  link_layer: Ethernet 
+wqd10nba07g5 hca_id: mlx5_bond_0  state: PORT_ACTIVE (4)  link_layer: Ethernet 
+wqd10nba07g6 hca_id: mlx5_bond_0  state: PORT_ACTIVE (4)  link_layer: Ethernet 
+wqd10nba10g8 hca_id: mlx5_bond_0  state: PORT_ACTIVE (4)  link_layer: Ethernet 
+== variant 1: NCCL_NET_GDR_LEVEL=LOC
+   per-node last NCCL line:
+     v1.wqd10naf13g1.log: wqd10naf13g1:3747300:3747326 [0] NCCL INFO ncclOsSocketStartConnect: connect to [LINK_LOCAL_ADDRESS]<37377> returned Connection timed out, retrying (1/34) after sleep for 100 msec
+     v1.wqd10nba06g3.log: wqd10nba06g3:2391188:2391188 [0] NCCL INFO [Rank 1] ncclCommInitRankConfig comm 0x55cb8a5bb9a0 rank 1 nranks 8 cudaDev 0 nvmlDev 0 busId 61000 commId 0xa3855407736a0627 -
+     v1.wqd10nba06g5.log: wqd10nba06g5:2682161:2682161 [0] NCCL INFO [Rank 2] ncclCommInitRankConfig comm 0x560827a3b430 rank 2 nranks 8 cudaDev 0 nvmlDev 0 busId 25000 commId 0xa3855407736a0627 -
+     v1.wqd10nba07g3.log: wqd10nba07g3:810487:810487 [0] NCCL INFO [Rank 3] ncclCommInitRankConfig comm 0x5584d7486650 rank 3 nranks 8 cudaDev 0 nvmlDev 0 busId 25000 commId 0xa3855407736a0627 - I
+     v1.wqd10nba07g4.log: wqd10nba07g4:1859349:1859349 [0] NCCL INFO [Rank 4] ncclCommInitRankConfig comm 0x564e081390f0 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId a1000 commId 0xa3855407736a0627 -
+     v1.wqd10nba07g5.log: wqd10nba07g5:172828:172828 [0] NCCL INFO [Rank 5] ncclCommInitRankConfig comm 0x565508d3e680 rank 5 nranks 8 cudaDev 0 nvmlDev 0 busId c1000 commId 0xa3855407736a0627 - I
+     v1.wqd10nba07g6.log: wqd10nba07g6:2301508:2301508 [0] NCCL INFO [Rank 6] ncclCommInitRankConfig comm 0x55fd14116530 rank 6 nranks 8 cudaDev 0 nvmlDev 0 busId a1000 commId 0xa3855407736a0627 -
+     v1.wqd10nba10g8.log: wqd10nba10g8:3605799:3605799 [0] NCCL INFO [Rank 7] ncclCommInitRankConfig comm 0x55cd89c61f80 rank 7 nranks 8 cudaDev 0 nvmlDev 0 busId 41000 commId 0xa3855407736a0627 -
+== variant 2: NCCL_NET_GDR_LEVEL=LOC NCCL_IB_GID_INDEX=3
+   per-node last NCCL line:
+     v2.wqd10naf13g1.log: wqd10naf13g1:3747850:3747884 [0] NCCL INFO ncclOsSocketStartConnect: connect to [LINK_LOCAL_ADDRESS]<49129> returned Connection timed out, retrying (1/34) after sleep for 100 msec
+     v2.wqd10nba06g3.log: wqd10nba06g3:2394153:2394153 [0] NCCL INFO [Rank 1] ncclCommInitRankConfig comm 0x5648c0509170 rank 1 nranks 8 cudaDev 0 nvmlDev 0 busId 61000 commId 0x8cb5e7ab10d6dbb8 -
+     v2.wqd10nba06g5.log: wqd10nba06g5:2685551:2685551 [0] NCCL INFO [Rank 2] ncclCommInitRankConfig comm 0x5590fd1a52d0 rank 2 nranks 8 cudaDev 0 nvmlDev 0 busId 25000 commId 0x8cb5e7ab10d6dbb8 -
+     v2.wqd10nba07g3.log: wqd10nba07g3:816502:816502 [0] NCCL INFO [Rank 3] ncclCommInitRankConfig comm 0x562b6e08e620 rank 3 nranks 8 cudaDev 0 nvmlDev 0 busId 25000 commId 0x8cb5e7ab10d6dbb8 - I
+     v2.wqd10nba07g4.log: wqd10nba07g4:1862023:1862023 [0] NCCL INFO [Rank 4] ncclCommInitRankConfig comm 0x5573d7ebcb90 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId a1000 commId 0x8cb5e7ab10d6dbb8 -
+     v2.wqd10nba07g5.log: wqd10nba07g5:175243:175243 [0] NCCL INFO [Rank 5] ncclCommInitRankConfig comm 0x55d6411a8150 rank 5 nranks 8 cudaDev 0 nvmlDev 0 busId c1000 commId 0x8cb5e7ab10d6dbb8 - I
+     v2.wqd10nba07g6.log: wqd10nba07g6:2303859:2303859 [0] NCCL INFO [Rank 6] ncclCommInitRankConfig comm 0x559a2af72250 rank 6 nranks 8 cudaDev 0 nvmlDev 0 busId a1000 commId 0x8cb5e7ab10d6dbb8 -
+     v2.wqd10nba10g8.log: wqd10nba10g8:3605852:3605852 [0] NCCL INFO [Rank 7] ncclCommInitRankConfig comm 0x561d83d651b0 rank 7 nranks 8 cudaDev 0 nvmlDev 0 busId 41000 commId 0x8cb5e7ab10d6dbb8 -
+== variant 3: NCCL_IB_DISABLE=1
+   per-node last NCCL line:
+     v3.wqd10naf13g1.log: wqd10naf13g1:3748519:3748554 [0] NCCL INFO ncclOsSocketStartConnect: connect to [LINK_LOCAL_ADDRESS]<48945> returned Connection timed out, retrying (1/34) after sleep for 100 msec
+     v3.wqd10nba06g3.log: wqd10nba06g3:2397083:2397083 [0] NCCL INFO [Rank 1] ncclCommInitRankConfig comm 0x560615401090 rank 1 nranks 8 cudaDev 0 nvmlDev 0 busId 61000 commId 0x493f08c546669584 -
+     v3.wqd10nba06g5.log: wqd10nba06g5:2691285:2691285 [0] NCCL INFO [Rank 2] ncclCommInitRankConfig comm 0x55e6edfd6960 rank 2 nranks 8 cudaDev 0 nvmlDev 0 busId 25000 commId 0x493f08c546669584 -
+     v3.wqd10nba07g3.log: wqd10nba07g3:821635:821635 [0] NCCL INFO ncclOsSocketPollConnect: connect to [LINK_LOCAL_ADDRESS]<35589> returned Connection timed out, retrying (1/34) after sleep for 100 msec
+     v3.wqd10nba07g4.log: wqd10nba07g4:1864910:1864910 [0] NCCL INFO [Rank 4] ncclCommInitRankConfig comm 0x55e1565160e0 rank 4 nranks 8 cudaDev 0 nvmlDev 0 busId a1000 commId 0x493f08c546669584 -
+     v3.wqd10nba07g5.log: wqd10nba07g5:178112:178112 [0] NCCL INFO [Rank 5] ncclCommInitRankConfig comm 0x562bad896540 rank 5 nranks 8 cudaDev 0 nvmlDev 0 busId c1000 commId 0x493f08c546669584 - I
+     v3.wqd10nba07g6.log: wqd10nba07g6:2306878:2306878 [0] NCCL INFO [Rank 6] ncclCommInitRankConfig comm 0x558e542f4850 rank 6 nranks 8 cudaDev 0 nvmlDev 0 busId a1000 commId 0x493f08c546669584 -
+     v3.wqd10nba10g8.log: wqd10nba10g8:3605940:3605940 [0] NCCL INFO [Rank 7] ncclCommInitRankConfig comm 0x55834f6c1130 rank 7 nranks 8 cudaDev 0 nvmlDev 0 busId 41000 commId 0x493f08c546669584 -

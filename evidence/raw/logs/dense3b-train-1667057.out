@@ -1,0 +1,24 @@
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+srun: error: wqd10nba07g6: task 2: Exited with exit code 124
+srun: Terminating StepId=1667057.0
+srun: error: wqd10naf13g1: task 0: Exited with exit code 124
+srun: error: wqd10nba07g7: task 3: Exited with exit code 124
+srun: error: wqd10nba07g1: task 1: Exited with exit code 124
+srun: error: wqd10nba07g8: task 7: Exited with exit code 124
+srun: error: wqd10nba07g8: tasks 4-5: Exited with exit code 124
+srun: error: wqd10nba07g8: task 6: Exited with exit code 124

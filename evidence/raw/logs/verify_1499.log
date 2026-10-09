@@ -1,0 +1,11 @@
+{
+ "path": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00001499",
+ "step": 1499,
+ "writers": 8,
+ "rank_files": 8,
+ "params": 226,
+ "owned": 226,
+ "elements": 3237529600,
+ "ok": true,
+ "problems": []
+}

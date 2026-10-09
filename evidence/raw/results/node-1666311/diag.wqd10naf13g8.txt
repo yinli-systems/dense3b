@@ -1,0 +1,164 @@
+Tue Oct  6 17:36:06 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.105.08             Driver Version: 580.105.08     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA GeForce RTX 4090        On  |   00000000:01:00.0  On |                  Off |
+|  0%   31C    P0             65W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA GeForce RTX 4090        On  |   00000000:24:00.0 Off |                  Off |
+|  0%   31C    P5             54W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA GeForce RTX 4090        On  |   00000000:41:00.0 Off |                  Off |
+|  0%   30C    P5             51W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA GeForce RTX 4090        On  |   00000000:61:00.0 Off |                  Off |
+|  0%   30C    P5             63W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA GeForce RTX 4090        On  |   00000000:81:00.0 Off |                  Off |
+|  0%   29C    P5             37W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA GeForce RTX 4090        On  |   00000000:A1:00.0 Off |                  Off |
+|  0%   31C    P5             52W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA GeForce RTX 4090        On  |   00000000:C1:00.0 Off |                  Off |
+|  0%   29C    P5             30W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA GeForce RTX 4090        On  |   00000000:E1:00.0 Off |                  Off |
+|  0%   31C    P5             41W /  450W |       0MiB /  24564MiB |      0%      Default |
+|                                         |                        |                  N/A |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+	[4mGPU0	GPU1	GPU2	GPU3	GPU4	GPU5	GPU6	GPU7	NIC0	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	SYS	SYS	SYS	SYS	SYS	SYS	SYS	SYS	18-20,66-68	3		N/A
+GPU1	SYS	 X 	SYS	SYS	SYS	SYS	SYS	SYS	SYS	12-14,60-62	2		N/A
+GPU2	SYS	SYS	 X 	SYS	SYS	SYS	SYS	SYS	SYS	6-8,54-56	1		N/A
+GPU3	SYS	SYS	SYS	 X 	SYS	SYS	SYS	SYS	SYS	0-2,48-50	0		N/A
+GPU4	SYS	SYS	SYS	SYS	 X 	SYS	SYS	SYS	SYS	42-44,90-92	7		N/A
+GPU5	SYS	SYS	SYS	SYS	SYS	 X 	SYS	SYS	SYS	36-38,84-86	6		N/A
+GPU6	SYS	SYS	SYS	SYS	SYS	SYS	 X 	SYS	PHB	30-32,78-80	5		N/A
+GPU7	SYS	SYS	SYS	SYS	SYS	SYS	SYS	 X 	SYS	24-26,72-74	4		N/A
+NIC0	SYS	SYS	SYS	SYS	SYS	SYS	PHB	SYS	 X 				
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
+
+NIC Legend:
+
+  NIC0: mlx5_bond_0
+
+/usr/bin/bash: line 3: numactl: command not found
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           43 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  96
+On-line CPU(s) list:                     0-95
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD EPYC 7402 24-Core Processor
+CPU family:                              23
+Model:                                   49
+Thread(s) per core:                      2
+Core(s) per socket:                      24
+Socket(s):                               2
+Stepping:                                0
+Frequency boost:                         enabled
+CPU max MHz:                             2800.0000
+CPU min MHz:                             1500.0000
+BogoMIPS:                                5600.41
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpuid extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_lm cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_nb bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mbm_local clzero irperf xsaveerptr rdpru wbnoinvd amd_ppin arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbyasid decodeassists pausefilter pfthreshold avic v_vmsave_vmload vgif v_spec_ctrl umip rdpid overflow_recov succor smca sme sev sev_es ibpb_exit_to_user
+Virtualization:                          AMD-V
+L1d cache:                               1.5 MiB (48 instances)
+L1i cache:                               1.5 MiB (48 instances)
+L2 cache:                                24 MiB (48 instances)
+L3 cache:                                256 MiB (16 instances)
+NUMA node(s):                            8
+Ethernet Channel Bonding Driver: v5.15.0-186-generic
+
+Bonding Mode: IEEE 802.3ad Dynamic link aggregation
+Transmit Hash Policy: layer3+4 (1)
+MII Status: up
+MII Polling Interval (ms): 100
+Up Delay (ms): 0
+Down Delay (ms): 0
+Peer Notification Delay (ms): 0
+
+802.3ad info
+LACP active: on
+LACP rate: fast
+Min links: 0
+Aggregator selection policy (ad_select): stable
+
+Slave Interface: enp194s0f1np1
+MII Status: up
+Speed: 25000 Mbps
+Duplex: full
+Link Failure Count: 0
+Permanent HW addr: e8:eb:d3:c1:f4:85
+Slave queue ID: 0
+Aggregator ID: 2
+Actor Churn State: none
+Partner Churn State: none
+Actor Churned Count: 0
+Partner Churned Count: 0
+
+Slave Interface: enp194s0f0np0
+MII Status: up
+Speed: 25000 Mbps
+Duplex: full
+Link Failure Count: 0
+Permanent HW addr: e8:eb:d3:c1:f4:84
+Slave queue ID: 0
+Aggregator ID: 2
+Actor Churn State: none
+Partner Churn State: none
+Actor Churned Count: 0
+Partner Churned Count: 0
+hca_id:	mlx5_bond_0
+	transport:			InfiniBand (0)
+	fw_ver:				16.35.3502
+	node_guid:			e8eb:d303:00c1:f484
+	sys_image_guid:			e8eb:d303:00c1:f484
+	vendor_id:			0x02c9
+	vendor_part_id:			4119
+	hw_ver:				0x0
+	board_id:			MT_0000000425
+	phys_port_cnt:			1
+		port:	1
+			state:			PORT_ACTIVE (4)
+			max_mtu:		4096 (5)
+			active_mtu:		1024 (3)
+			sm_lid:			0
+			port_lid:		0
+			port_lmc:		0x00
+			link_layer:		Ethernet
+
+               total        used        free      shared  buff/cache   available
+Mem:             503           7         184           0         312         493
+Swap:              7           0           7
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda3       874G  353G  477G  43% /tmp

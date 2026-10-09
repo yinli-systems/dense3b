@@ -1,0 +1,4 @@
+{"world": 8, "hosts": "wqd10naf06g1,wqd10naf13g7,wqd10nah05g4,wqd10nba06g[2-5],wqd10nba07g6", "reduce_scatter_64MB_per_rank": {"seconds": 0.2359, "busbw_gbs": 1.99}, "all_gather_64MB_per_rank": {"seconds": 0.2025, "busbw_gbs": 2.32}}
+NCCL version 2.29.7+cuda13.2
+
+[2026-10-09 00:35:07] wqd10naf06g1:1154951:1154951 [0] ras/client_support.cc:182 NCCL WARN Call to bind failed: Address already in use

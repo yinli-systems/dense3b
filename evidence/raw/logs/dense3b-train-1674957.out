@@ -1,0 +1,44 @@
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+{"world": 8, "hosts": "wqd10naf06g1,wqd10naf13g[7-8],wqd10nba06g[2,7],wqd10nba07g[6-8]", "reduce_scatter_64MB_per_rank": {"seconds": 0.2149, "busbw_gbs": 2.19}, "all_gather_64MB_per_rank": {"seconds": 0.2275, "busbw_gbs": 2.06}}
+NCCL version 2.29.7+cuda13.2
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: *** STEP 1674957.2 ON wqd10naf06g1 CANCELLED AT 2026-10-08T17:19:12 ***
+slurmstepd: error: *** JOB 1674957 ON wqd10naf06g1 CANCELLED AT 2026-10-08T17:19:12 ***
+srun: error: wqd10nba07g7: task 6: Terminated
+srun: Terminating StepId=1674957.2
+srun: error: wqd10nba07g6: task 5: Terminated
+srun: error: wqd10nba07g8: task 7: Terminated
+srun: error: wqd10nba06g7: task 4: Terminated
+srun: error: wqd10nba06g2: task 3: Terminated
+srun: error: wqd10naf06g1: task 0: Terminated

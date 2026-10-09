@@ -1,0 +1,2 @@
+{"world": 8, "hosts": "wqd10naf05g2,wqd10nah05g4,wqd10nba06g[1-5],wqd10nba07g6", "reduce_scatter_64MB_per_rank": {"seconds": 0.2401, "busbw_gbs": 1.96}, "all_gather_64MB_per_rank": {"seconds": 0.2326, "busbw_gbs": 2.02}}
+NCCL version 2.29.7+cuda13.2

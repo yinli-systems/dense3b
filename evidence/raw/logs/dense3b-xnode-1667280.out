@@ -1,0 +1,21 @@
+MASTER_ADDR=wqd10nba07g1 nodes=wqd10nba07g[1,6],wqd10nba08g4
+wqd10nba07g1: resolves wqd10nba07g1 -> [PRIVATE_CLUSTER_IP]   wqd10nba07g1; my ips: [PRIVATE_CLUSTER_IP] 
+wqd10nba08g4: resolves wqd10nba07g1 -> [PRIVATE_CLUSTER_IP]   wqd10nba07g1; my ips: [PRIVATE_CLUSTER_IP] 
+wqd10nba07g6: resolves wqd10nba07g1 -> [PRIVATE_CLUSTER_IP]   wqd10nba07g1; my ips: [PRIVATE_CLUSTER_IP] 
+wqd10nba08g4: frame #45: Py_RunMain + 0xbf (0x557f08e82e6f in /ssd/scxi253/model_deployment/envs/frontier_torch213/bin/python)
+wqd10nba08g4: frame #46: Py_BytesMain + 0x37 (0x557f08e52f47 in /ssd/scxi253/model_deployment/envs/frontier_torch213/bin/python)
+wqd10nba08g4: frame #47: <unknown function> + 0x29d90 (0x15232a2a2d90 in /lib/x86_64-linux-gnu/libc.so.6)
+wqd10nba08g4: frame #48: __libc_start_main + 0x80 (0x15232a2a2e40 in /lib/x86_64-linux-gnu/libc.so.6)
+wqd10nba08g4: frame #49: <unknown function> + 0x1c7e2e (0x557f08e52e2e in /ssd/scxi253/model_deployment/envs/frontier_torch213/bin/python)
+wqd10nba08g4: W1006 07:43:22.286000 3114791 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1298] The node 'wqd10nba08g4_3114791_0' has failed to shutdown the rendezvous 'd1667280' due to an error of type RendezvousConnectionError.
+wqd10nba07g1: wqd10nba07g1 RANK 0 WORLD 3
+wqd10nba07g6: frame #45: Py_RunMain + 0xbf (0x55a8464d7e6f in /ssd/scxi253/model_deployment/envs/frontier_torch213/bin/python)
+wqd10nba07g6: frame #46: Py_BytesMain + 0x37 (0x55a8464a7f47 in /ssd/scxi253/model_deployment/envs/frontier_torch213/bin/python)
+wqd10nba07g6: frame #47: <unknown function> + 0x29d90 (0x147e0d735d90 in /lib/x86_64-linux-gnu/libc.so.6)
+wqd10nba07g6: frame #48: __libc_start_main + 0x80 (0x147e0d735e40 in /lib/x86_64-linux-gnu/libc.so.6)
+wqd10nba07g6: frame #49: <unknown function> + 0x1c7e2e (0x55a8464a7e2e in /ssd/scxi253/model_deployment/envs/frontier_torch213/bin/python)
+wqd10nba07g6: W1006 07:43:22.279000 2265948 torch/distributed/elastic/rendezvous/dynamic_rendezvous.py:1298] The node 'wqd10nba07g6_2265948_0' has failed to shutdown the rendezvous 'd1667280' due to an error of type RendezvousConnectionError.
+== static rendezvous (MASTER_ADDR/PORT env, no c10d)
+wqd10nba08g4: wqd10nba08g4 RANK 2 WORLD 3
+wqd10nba07g1: wqd10nba07g1 RANK 0 WORLD 3
+wqd10nba07g6: wqd10nba07g6 RANK 1 WORLD 3

@@ -1,0 +1,22 @@
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO cudaDriverVersion 13000
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Stack size limit (unlimited) is unsafe; will use 8192KB for newly launched threads
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Bootstrap: Using enxb03af2b6059f:[LINK_LOCAL_ADDRESS]<0>
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO NCCL version 2.29.7+cuda13.2
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO NCCL git version stable b81d6a5a3
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO transport/net_ib/init.cc:396 -> 3
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Failed to initialize NET plugin IB
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO NET/Socket : Using [0]enxb03af2b6059f:[LINK_LOCAL_ADDRESS]<0> [1]bond0:[PRIVATE_CLUSTER_IP]<0>
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Initialized NET plugin Socket
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Could not get speed from /sys/class/net/enxb03af2b6059f/speed. Defaulting to 10 Gbps.
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Assigned NET plugin Socket to comm
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO GIN/Plugin: Could not find: libnccl-gin.so
+
+[2026-10-06 08:19:54] wqd10nba06g3:2397083:2397083 [0] misc/ibvwrap.cc:173 NCCL WARN lib wrapper not initialized.
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO transport/net_ib/gdr.cc:56 -> 3
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Unable to use GIN: Peermem is not supported, nor DMA-BUF.
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Unable to use GIN: Peermem is not supported, nor DMA-BUF.
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Failed to initialize any GIN plugin
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO Using network Socket
+wqd10nba06g3:2397083:2397083 [0] NCCL INFO [Rank 1] ncclCommInitRankConfig comm 0x560615401090 rank 1 nranks 8 cudaDev 0 nvmlDev 0 busId 61000 commId 0x493f08c546669584 - Init START

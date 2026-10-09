@@ -1,0 +1,30 @@
+== gpu tests
+....                                                                     [100%]
+=============================== warnings summary ===============================
+tests/dense/test_fp8_gpu.py::test_fp8_linear_matches_bf16[4096-3072-8192]
+  /ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/autograd/graph.py:979: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:408.)
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+
+tests/dense/test_fp8_gpu.py: 14 warnings
+  /ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+4 passed, 15 warnings in 46.88s
+== fp8 train 2 layers 
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 1, "nodes": 1, "seq": 4096, "n_micro": 2, "tokens_per_step": 8192, "flops_per_token": 2399404032.0, "owner_segment": 374750720, "ckpt_layers": [], "compile": false, "fp8": true, "start": 0}
+{"step": 0, "lr": 0.0007, "loss": 11.40778, "grad_norm": 9.97258, "tok_per_s": 630.31538, "tok_per_s_gpu": 630.31538, "mfu": 0.00915, "step_s": 12.99667, "max_mem_gb": 6.67253, "mem_fwd_bwd_gb": 6.16896}
+{"step": 1, "lr": 0.0007, "loss": 10.91833, "grad_norm": 6.96919, "tok_per_s": 29483.54355, "tok_per_s_gpu": 29483.54355, "mfu": 0.42823, "step_s": 0.27785, "max_mem_gb": 8.28616, "mem_fwd_bwd_gb": 8.28616}
+{"step": 2, "lr": 0.0007, "loss": 10.45396, "grad_norm": 6.76337, "tok_per_s": 21149.43914, "tok_per_s_gpu": 21149.43914, "mfu": 0.30718, "step_s": 0.38734, "max_mem_gb": 8.28616, "mem_fwd_bwd_gb": 8.28616}
+{"step": 3, "lr": 0.0007, "loss": 9.42971, "grad_norm": 11.79944, "tok_per_s": 29551.95961, "tok_per_s_gpu": 29551.95961, "mfu": 0.42922, "step_s": 0.27721, "max_mem_gb": 8.18545, "mem_fwd_bwd_gb": 8.18545}
+== fp8 train 2 layers --compile
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 1, "nodes": 1, "seq": 4096, "n_micro": 2, "tokens_per_step": 8192, "flops_per_token": 2399404032.0, "owner_segment": 374750720, "ckpt_layers": [], "compile": true, "fp8": true, "start": 0}
+{"step": 0, "lr": 0.0007, "loss": 11.40852, "grad_norm": 9.94083, "tok_per_s": 249.59924, "tok_per_s_gpu": 249.59924, "mfu": 0.00363, "step_s": 32.82061, "max_mem_gb": 6.57182, "mem_fwd_bwd_gb": 5.3363}
+{"step": 1, "lr": 0.0007, "loss": 10.91834, "grad_norm": 6.98306, "tok_per_s": 50330.59125, "tok_per_s_gpu": 50330.59125, "mfu": 0.73101, "step_s": 0.16276, "max_mem_gb": 8.13235, "mem_fwd_bwd_gb": 7.4535}
+{"step": 2, "lr": 0.0007, "loss": 10.45382, "grad_norm": 6.7433, "tok_per_s": 50540.54728, "tok_per_s_gpu": 50540.54728, "mfu": 0.73406, "step_s": 0.16209, "max_mem_gb": 8.13235, "mem_fwd_bwd_gb": 7.4535}
+{"step": 3, "lr": 0.0007, "loss": 9.43488, "grad_norm": 11.77378, "tok_per_s": 48560.40257, "tok_per_s_gpu": 48560.40257, "mfu": 0.7053, "step_s": 0.1687, "max_mem_gb": 8.13235, "mem_fwd_bwd_gb": 7.4535}
+== fp8 debug probe
+loss 11.413755416870117
+no nonfinite grad_inputs
+torch.float8_e4m3fn roundtrip rel err 0.026345180347561836
+torch.float8_e5m2 roundtrip rel err 0.053947675973176956

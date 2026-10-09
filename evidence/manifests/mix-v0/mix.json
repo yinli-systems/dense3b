@@ -1,0 +1,52 @@
+{
+ "per_source": {
+  "swallow-code": {
+   "shards": 142,
+   "repeat": 2,
+   "unique_B": 19.6,
+   "seen_B": 39.19,
+   "share": 0.339
+  },
+  "stackv2-edu": {
+   "shards": 94,
+   "repeat": 1,
+   "unique_B": 19.0,
+   "seen_B": 19.0,
+   "share": 0.164
+  },
+  "opc-annealing": {
+   "shards": 191,
+   "repeat": 2,
+   "unique_B": 6.72,
+   "seen_B": 13.44,
+   "share": 0.116
+  },
+  "nemotron-cc-math-4plus": {
+   "shards": 23,
+   "repeat": 1,
+   "unique_B": 22.06,
+   "seen_B": 22.06,
+   "share": 0.191
+  },
+  "swallow-math": {
+   "shards": 25,
+   "repeat": 2,
+   "unique_B": 3.54,
+   "seen_B": 7.07,
+   "share": 0.061
+  },
+  "web": {
+   "shards": 30,
+   "repeat": 1,
+   "unique_B": 15.0,
+   "seen_B": 15.0,
+   "share": 0.13
+  }
+ },
+ "epoch_tokens_B": 115.76,
+ "val": [
+  "/data/run01/scxi253/code3b-data-20261003/v0/shards/swallow-code/swallow-code__01a89e93621f3962.u16",
+  "/data/run01/scxi253/code3b-data-20261003/v0/shards/stackv2-edu/stackv2-edu__006e6aa034e0c6a2.u16",
+  "/data/run01/scxi253/code3b-train/web15b/val_0000.u16"
+ ]
+}

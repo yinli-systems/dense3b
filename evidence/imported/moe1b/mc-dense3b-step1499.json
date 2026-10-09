@@ -1,0 +1,61 @@
+{
+ "checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00001499",
+ "step": 1499,
+ "preset": "dense3b",
+ "tasks": {
+  "arc_easy": {
+   "acc": 0.5063,
+   "acc_norm": 0.4596,
+   "n": 2376,
+   "seconds": 24
+  },
+  "arc_challenge": {
+   "acc": 0.2167,
+   "acc_norm": 0.2594,
+   "n": 1172,
+   "seconds": 14
+  },
+  "hellaswag": {
+   "acc": 0.2755,
+   "acc_norm": 0.29,
+   "n": 10042,
+   "seconds": 202
+  },
+  "winogrande": {
+   "acc": 0.5217,
+   "acc_norm": 0.5217,
+   "n": 1267,
+   "seconds": 5
+  },
+  "boolq": {
+   "acc": 0.6024,
+   "acc_norm": 0.6217,
+   "n": 3270,
+   "seconds": 57
+  },
+  "openbookqa": {
+   "acc": 0.172,
+   "acc_norm": 0.256,
+   "n": 500,
+   "seconds": 4
+  },
+  "sciq": {
+   "acc": 0.755,
+   "acc_norm": 0.679,
+   "n": 1000,
+   "seconds": 29
+  },
+  "mmlu_cf": {
+   "acc": 0.2525,
+   "acc_norm": 0.2675,
+   "n": 14042,
+   "seconds": 255
+  },
+  "mmlu_mc5": {
+   "acc": 0.2522,
+   "acc_norm": 0.2522,
+   "n": 14042,
+   "seconds": 2232
+  }
+ }
+}

@@ -1,0 +1,12 @@
+....                                                                     [100%]
+=============================== warnings summary ===============================
+tests/dense/test_fp8_gpu.py::test_fp8_linear_matches_bf16[4096-3072-8192]
+  /ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/autograd/graph.py:979: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /__w/pytorch/pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:408.)
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+
+tests/dense/test_fp8_gpu.py: 14 warnings
+  /ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/jit/_script.py:365: DeprecationWarning: `torch.jit.script_method` is deprecated. Please switch to `torch.compile` or `torch.export`.
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+4 passed, 15 warnings in 41.22s

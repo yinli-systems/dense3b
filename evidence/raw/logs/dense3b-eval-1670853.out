@@ -1,0 +1,38 @@
+evaluating /data/run01/scxi253/code3b-train/milestones/step_00001499 -> /data/run01/scxi253/code3b-train/results/suite-step_00001499.json ()
+{"heldout": {"swallow-code": 0.7329, "stackv2-edu": 1.266, "web": 3.2446, "seconds": 47}}
+{"humaneval": {"humaneval": 0.0671, "humaneval_plus": 0.061, "n": 164, "seconds": 178}}
+{"mbpp": {"mbpp": 0.0529, "mbpp_plus": 0.045, "n": 378, "seconds": 478}}
+{"cruxeval": {"cruxeval_o": 0.0, "cruxeval_i": 0.025, "n": 800, "seconds": 179}}
+{"fim": {"single": {"n": 164, "pass_rate": 0.0488, "exact": 0.0, "terminated": 0.0793, "suffix_dup": 0.2805, "mean_overgen_chars": 528.1, "mean_excess_tokens": 171.0, "p95_excess_tokens": 188}, "multi": {"n": 117, "pass_rate": 0.0171, "exact": 0.0, "terminated": 0.094, "suffix_dup": 0.2222, "mean_overgen_chars": 464.6, "mean_excess_tokens": 153.9, "p95_excess_tokens": 183}, "seconds": 143}}
+{"gsm8k": {"gsm8k": 0.0258, "n": 1319, "seconds": 985}}
+[W1007 04:27:20.775106284 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 574619648 bytes (free: 15400960, total: 25250627584).
+[W1007 04:34:02.150202631 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 782237696 bytes (free: 288030720, total: 25250627584).
+[W1007 04:38:34.147855168 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1113587712 bytes (free: 340459520, total: 25250627584).
+[W1007 04:41:36.612730074 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 1843396608 bytes (free: 959119360, total: 25250627584).
+[W1007 04:41:36.383568967 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 461373440 bytes (free: 327876608, total: 25250627584).
+[W1007 04:41:37.266047578 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 461373440 bytes (free: 424345600, total: 25250627584).
+[W1007 04:41:37.266266819 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 461373440 bytes (free: 424345600, total: 25250627584).
+Traceback (most recent call last):
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/data/run01/scxi253/code3b-dense3b-src/bench/eval_suite.py", line 433, in <module>
+    
+  File "/data/run01/scxi253/code3b-dense3b-src/bench/eval_suite.py", line 412, in main
+    details = {}
+  File "/data/run01/scxi253/code3b-dense3b-src/bench/eval_suite.py", line 230, in task_lcb
+    else:
+  File "/data/run01/scxi253/code3b-dense3b-src/bench/eval_suite.py", line 71, in run
+    outs = greedy(self.m, [ids[i][-3500:] for i in idx], max_new, EOS, stop_fn=stop_fn, ban_from=BAN)
+  File "/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/run01/scxi253/code3b-dense3b-src/model/generate.py", line 74, in greedy
+    logits, caches = forward_cached(model, toks, pos, valid, None)
+  File "/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/data/run01/scxi253/code3b-dense3b-src/model/generate.py", line 53, in forward_cached
+    h, kv = _attn(blk.attn, blk.attn_norm(x), model.cos, model.sin, pos, caches[i] if caches else None, mask)
+  File "/data/run01/scxi253/code3b-dense3b-src/model/generate.py", line 35, in _attn
+    o = F.scaled_dot_product_attention(q, k, v, attn_mask=mask, enable_gqa=a.kv != a.h)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 440.00 MiB. GPU 0 has a total capacity of 23.52 GiB of which 404.69 MiB is free. Including non-PyTorch memory, this process has 23.11 GiB memory in use. Of the allocated memory 18.98 GiB is allocated by PyTorch, and 3.68 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)

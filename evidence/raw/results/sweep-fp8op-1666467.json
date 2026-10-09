@@ -1,0 +1,62 @@
+{
+ "gpu": "NVIDIA GeForce RTX 4090",
+ "configs": {
+  "s4096_compile_doc_fp8": {
+   "d2_stored": {
+    "step_s": 0.39075231552124023,
+    "fwd_bwd_s": 0.21609735488891602,
+    "mem_gb": 7.86668288,
+    "mem_step_gb": 8.18273536
+   },
+   "d2_ckpt": {
+    "step_s": 0.42990684509277344,
+    "fwd_bwd_s": 0.2551918029785156,
+    "mem_gb": 6.881209856,
+    "mem_step_gb": 8.18273536
+   },
+   "d6_stored": {
+    "step_s": 0.9080400466918945,
+    "fwd_bwd_s": 0.4317021369934082,
+    "mem_gb": 15.223524864,
+    "mem_step_gb": 16.99138816
+   },
+   "d6_ckpt": {
+    "step_s": 1.0211172103881836,
+    "fwd_bwd_s": 0.545011043548584,
+    "mem_gb": 12.267105792,
+    "mem_step_gb": 16.99138816
+   },
+   "per_layer": {
+    "seq": 4096,
+    "micro": 1,
+    "peak_tflops": 165.2,
+    "t_stored_s": 0.026950597763061523,
+    "t_ckpt_s": 0.036227405071258545,
+    "const_s": 0.05414748191833496,
+    "act_stored_gb": 0.5179266194285714,
+    "act_ckpt_gb": 0.02519010742857164,
+    "const_mem_gb": 1.5,
+    "fp8": true,
+    "layer_mfu": 0.677238394778418,
+    "plans": {
+     "23.0GB": {
+      "ckpt_layers": 22,
+      "mem_gb": 22.59,
+      "step_s": 33.67,
+      "tok_per_s_node": 31142,
+      "tokens_per_day_node_B": 2.69,
+      "mfu": 0.508
+     },
+     "31.0GB": {
+      "ckpt_layers": 5,
+      "mem_gb": 30.96,
+      "step_s": 28.62,
+      "tok_per_s_node": 36633,
+      "tokens_per_day_node_B": 3.17,
+      "mfu": 0.597
+     }
+    }
+   }
+  }
+ }
+}

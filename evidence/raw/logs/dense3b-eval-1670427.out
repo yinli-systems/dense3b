@@ -1,0 +1,9 @@
+evaluating /data/run01/scxi253/code3b-train/ckpt-v0/step_00001499 -> /data/run01/scxi253/code3b-train/results/eval-step_00001499.json
+Traceback (most recent call last):
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/data/run01/scxi253/code3b-dense3b-src/bench/eval_ckpt.py", line 16, in <module>
+    import pyarrow.parquet as pq
+ModuleNotFoundError: No module named 'pyarrow'

@@ -1,0 +1,4 @@
+evaluating /data/run01/scxi253/code3b-train/milestones/step_00001499 -> /data/run01/scxi253/code3b-train/results/suite-step_00001499-lcb-crux.json (--tasks cruxeval,lcb)
+{"cruxeval": {"cruxeval_o": 0.12, "cruxeval_i": 0.025, "n": 800, "seconds": 184}}
+{"lcb": {"lcb_added_in_v1": 0.0, "lcb_added_in_v2": 0.0, "lcb_added_in_v3": 0.0, "lcb_added_in_v4": 0.0, "lcb_added_in_v5": 0.0, "lcb_added_in_v6": 0.0, "lcb_v6_slice_175_post_cutoff": 0.0, "lcb_release_v6_cumulative": 0.0, "n": {"added_in_v1": 400, "added_in_v2": 111, "added_in_v3": 101, "added_in_v4": 101, "added_in_v5": 167, "added_in_v6": 175, "release_v6_cumulative": 1055}, "seconds": 3222}}
+DONE /data/run01/scxi253/code3b-train/results/suite-step_00001499-lcb-crux.json

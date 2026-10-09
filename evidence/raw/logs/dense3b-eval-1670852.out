@@ -1,0 +1,9 @@
+evaluating /data/run01/scxi253/code3b-train/milestones/step_00001499 -> /data/run01/scxi253/code3b-train/results/suite-step_00001499-1670852.json (--limit 6)
+{"heldout": {"swallow-code": 0.7329, "stackv2-edu": 1.266, "web": 3.2446, "seconds": 64}}
+{"humaneval": {"humaneval": 0.0, "humaneval_plus": 0.0, "n": 6, "seconds": 7}}
+{"mbpp": {"mbpp": 0.1667, "mbpp_plus": 0.1667, "n": 6, "seconds": 19}}
+{"cruxeval": {"cruxeval_o": 0.0, "cruxeval_i": 0.0, "n": 6, "seconds": 2}}
+{"fim": {"single": {"n": 6, "pass_rate": 0.0, "exact": 0.0, "terminated": 0.1667, "suffix_dup": 0.1667, "mean_overgen_chars": 578.7, "mean_excess_tokens": 167.5, "p95_excess_tokens": 188}, "multi": {"n": 4, "pass_rate": 0.0, "exact": 0.0, "terminated": 0.0, "suffix_dup": 0.0, "mean_overgen_chars": 588.5, "mean_excess_tokens": 176.2, "p95_excess_tokens": 180}, "seconds": 8}}
+{"gsm8k": {"gsm8k": 0.0, "n": 6, "seconds": 12}}
+{"lcb": {"lcb_added_in_v1": 0.0, "lcb_added_in_v2": 0.0, "lcb_added_in_v3": 0.0, "lcb_added_in_v4": 0.0, "lcb_added_in_v5": 0.0, "lcb_added_in_v6": 0.0, "lcb_v6_slice_175_post_cutoff": 0.0, "lcb_release_v6_cumulative": 0.0, "n": {"added_in_v1": 6, "added_in_v2": 6, "added_in_v3": 6, "added_in_v4": 6, "added_in_v5": 6, "added_in_v6": 6, "release_v6_cumulative": 36}, "seconds": 130}}
+DONE /data/run01/scxi253/code3b-train/results/suite-step_00001499-1670852.json

@@ -1,0 +1,50 @@
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO ENV/Plugin: Could not find: libnccl-env.so
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Stack size limit (unlimited) is unsafe; will use 8192KB for newly launched threads
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Bootstrap: Using bond0:[PRIVATE_CLUSTER_IP]<0>
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO cudaDriverVersion 13000
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO NCCL version 2.29.7+cuda13.2
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO NCCL git version stable b81d6a5a3
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Comm config Blocking set to 1
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO NET/Plugin: Could not find: libnccl-net.so
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO NCCL_IB_DISABLE set by environment to 1.
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO transport/net_ib/init.cc:396 -> 3
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Failed to initialize NET plugin IB
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO NET/Socket : Using [0]bond0:[PRIVATE_CLUSTER_IP]<0>
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Initialized NET plugin Socket
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Assigned NET plugin Socket to comm
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO GIN/Plugin: Could not find: libnccl-gin.so
+
+[2026-10-06 06:26:46] wqd10naf06g3:2083462:2083462 [0] misc/ibvwrap.cc:173 NCCL WARN lib wrapper not initialized.
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO transport/net_ib/gdr.cc:56 -> 3
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Failed to initialize any GIN plugin
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Using network Socket
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO [Rank 0] ncclCommInitRankConfig comm 0x55ca7e0765a0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId a1000 commId 0x45aec692c1166166 - Init START
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO RAS client listening socket at 127.0.0.1<28028>
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Bootstrap timings total 0.286446 (create 0.000041, send 0.000125, recv 0.238875, ring 0.000124, delay 0.000001)
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO NCCL_P2P_DISABLE set by environment to 1
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO ncclTopoGetCpuAffinity: Affinity for GPU 0 is 36-38,84-86. (GPU affinity = 36-41,84-89 ; CPU affinity = 36-38,84-86).
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO comm 0x55ca7e0765a0 rank 0 nRanks 2 nNodes 2 localRanks 1 localRank 0 MNNVL 0
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Channel 00/02 : 0 1
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Channel 01/02 : 0 1
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Trees [0] 1/-1/-1->0->-1 [1] -1/-1/-1->0->1
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO P2P Chunksize set to 131072
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO PROFILER/Plugin: Could not find: libnccl-profiler.so
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Check P2P Type isAllDirectP2p 1 directMode 0 isAllCudaP2p 1
+wqd10naf06g3:2083462:2083496 [0] NCCL INFO [Proxy Service] Device 0 CPU core 85
+wqd10naf06g3:2083462:2083497 [0] NCCL INFO [Proxy Service UDS] Device 0 CPU core 36
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO TUNER/Plugin: Could not find: libnccl-tuner.so
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO threadThresholds 8/8/64 | 16/8/64 | 512 | 512
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO 2 coll channels, 2 collnet channels, 0 nvls channels, 2 p2p channels, 1 p2p channels per peer
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Symmetric VA size=24GB
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Symmetric memory is not supported. cuMemEnable 1, globalGinSupport 0, globalNicFused 0 cuMemGdrSupport 0
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO CC Off, workFifoBytes 1048576
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO ncclCommInitRankConfig comm 0x55ca7e0765a0 rank 0 nranks 2 cudaDev 0 nvmlDev 0 busId a1000 commId 0x45aec692c1166166 - Init COMPLETE
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Init timings - ncclCommInitRankConfig: rank 0 nranks 2 total 0.49 (kernels 0.15, alloc 0.04, bootstrap 0.29, allgathers 0.00, topo 0.00, graphs 0.00, connections 0.00, rest 0.00)
+wqd10naf06g3:2083462:2083498 [0] NCCL INFO [Proxy Progress] Device 0 CPU core 36
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Channel 00/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Channel 01/0 : 1[0] -> 0[0] [receive] via NET/Socket/0
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Channel 00/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Channel 01/0 : 0[0] -> 1[0] [send] via NET/Socket/0
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO Connected all rings, use ring PXN 0 GDR 0
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO comm 0x55ca7e0765a0 rank 0 nranks 2 cudaDev 0 busId a1000 - Destroy COMPLETE
+wqd10naf06g3:2083462:2083462 [0] NCCL INFO ENV/Plugin: Closing env plugin ncclEnvDefault

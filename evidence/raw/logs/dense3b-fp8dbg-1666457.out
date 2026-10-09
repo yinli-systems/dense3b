@@ -1,0 +1,13 @@
+== --override {"n_layers": 8, "n_dense_layers": 8} --global-batch 64 --compile
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 1, "nodes": 1, "seq": 4096, "n_micro": 64, "tokens_per_step": 262144, "flops_per_token": 6816006144.0, "owner_segment": 1035392000, "ckpt_layers": [], "compile": true, "fp8": true, "start": 0}
+{"event": "nonfinite_grad", "step": 0, "micro": 0, "loss": 11.381739616394043, "params": ["layers.0.attn.wqkvg.weight", "layers.1.attn.wqkvg.weight", "layers.2.attn.wqkvg.weight", "layers.3.attn.wqkvg.weight", "layers.4.attn.wqkvg.weight", "layers.5.attn.wqkvg.weight", "layers.6.attn.wqkvg.weight", "layers.7.attn.wqkvg.weight"], "n_params": 8}
+== --override {"n_layers": 8, "n_dense_layers": 8} --global-batch 64
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 1, "nodes": 1, "seq": 4096, "n_micro": 64, "tokens_per_step": 262144, "flops_per_token": 6816006144.0, "owner_segment": 1035392000, "ckpt_layers": [], "compile": false, "fp8": true, "start": 0}
+{"step": 0, "lr": 0.0, "loss": 11.40315, "grad_norm": 5.26114, "tok_per_s": 6575.09008, "tok_per_s_gpu": 6575.09008, "mfu": 0.27128, "step_s": 39.86926, "max_mem_gb": 16.58541, "mem_fwd_bwd_gb": 15.66896}
+{"step": 1, "lr": 1e-05, "loss": 11.4085, "grad_norm": 5.10878, "tok_per_s": 10917.3251, "tok_per_s_gpu": 10917.3251, "mfu": 0.45044, "step_s": 24.01174, "max_mem_gb": 21.34533, "mem_fwd_bwd_gb": 20.32816}
+== --override {"n_layers": 8, "n_dense_layers": 8} --global-batch 4 --compile
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 1, "nodes": 1, "seq": 4096, "n_micro": 4, "tokens_per_step": 16384, "flops_per_token": 6816006144.0, "owner_segment": 1035392000, "ckpt_layers": [], "compile": true, "fp8": true, "start": 0}
+{"event": "nonfinite_grad", "step": 0, "micro": 0, "loss": 11.381739616394043, "params": ["layers.0.attn.wqkvg.weight", "layers.1.attn.wqkvg.weight", "layers.2.attn.wqkvg.weight", "layers.3.attn.wqkvg.weight", "layers.4.attn.wqkvg.weight", "layers.5.attn.wqkvg.weight", "layers.6.attn.wqkvg.weight", "layers.7.attn.wqkvg.weight"], "n_params": 8}
+== --override {"n_layers": 2, "n_dense_layers": 2} --global-batch 64 --compile
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 1, "nodes": 1, "seq": 4096, "n_micro": 64, "tokens_per_step": 262144, "flops_per_token": 2399404032.0, "owner_segment": 374750720, "ckpt_layers": [], "compile": true, "fp8": true, "start": 0}
+{"event": "nonfinite_grad", "step": 0, "micro": 0, "loss": 11.418773651123047, "params": ["layers.0.attn.wqkvg.weight", "layers.1.attn.wqkvg.weight"], "n_params": 2}

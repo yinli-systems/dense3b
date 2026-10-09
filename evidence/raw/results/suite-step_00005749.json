@@ -1,0 +1,76 @@
+{
+ "ckpt": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749",
+ "step": 5749,
+ "tokens_B": 6.03,
+ "manifest": {
+  "git_commit": null,
+  "eval_suite_sha256": "079eb417c5e7fd03b4e8efd8773826d0079dfa763b317968f52791d562bbd656",
+  "generate_sha256": "9e1208a703fec2a2abc14cdb21c1b375840b7d7cb58599530f8bcfbf5cca2f08",
+  "protocol": "dense3b-base-suite-v1",
+  "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+  "checkpoint_model_sha256": "517f8e13fa018c25e4ddea45870bde2d9d2b07338505c94afd3d82804d07f428",
+  "checkpoint_step": 5749,
+  "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+  "dtype": "bfloat16",
+  "temperature": 0,
+  "batch": 16,
+  "max_new": {
+   "humaneval": 512,
+   "mbpp": 512,
+   "cruxeval": 96,
+   "lcb": 768,
+   "fim": 192,
+   "gsm8k": 320
+  },
+  "stops": {
+   "humaneval": [
+    "\ndef ",
+    "\nclass ",
+    "\nif __name__",
+    "\nprint(",
+    "\n#",
+    "\nassert"
+   ],
+   "lcb": [
+    "```"
+   ],
+   "cruxeval": [
+    "\n"
+   ]
+  },
+  "exec_timeout_s": {
+   "base": 15,
+   "plus": 60,
+   "lcb_case": 8
+  },
+  "python": "3.10.20",
+  "torch": "2.13.0+cu130",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "host": "wqd10nbj03g1"
+ },
+ "tasks": {
+  "humaneval": {
+   "humaneval": 0.2378,
+   "humaneval_plus": 0.2134,
+   "n": 164,
+   "seconds": 136
+  },
+  "mbpp": {
+   "mbpp": 0.3095,
+   "mbpp_plus": 0.2619,
+   "n": 378,
+   "seconds": 337
+  },
+  "cruxeval": {
+   "cruxeval_o": 0.195,
+   "cruxeval_i": 0.1725,
+   "n": 800,
+   "seconds": 189
+  },
+  "gsm8k": {
+   "gsm8k": 0.0963,
+   "n": 1319,
+   "seconds": 487
+  }
+ }
+}

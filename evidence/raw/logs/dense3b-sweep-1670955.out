@@ -1,0 +1,6 @@
+{"1.0": {"t_layer_ms": 22.71, "act_gb_layer": 0.424}}
+{"0.6": {"t_layer_ms": 23.18, "act_gb_layer": 0.198}}
+{"0.4": {"t_layer_ms": 24.64, "act_gb_layer": 0.13}}
+{"0.3": {"t_layer_ms": 25.76, "act_gb_layer": 0.063}}
+{"0.2": {"t_layer_ms": 26.41, "act_gb_layer": 0.038}}
+{"full_block_ckpt": {"t_layer_ms": 28.87, "act_gb_layer": -0.042}}

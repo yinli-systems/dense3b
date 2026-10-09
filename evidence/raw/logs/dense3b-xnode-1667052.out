@@ -1,0 +1,12 @@
+== variant 1: defaults
+{"world": 2, "hosts": "wqd10naf06g3,wqd10nba06g1", "reduce_scatter_256MB_per_rank": {"seconds": 0.0961, "busbw_gbs": 2.79}, "all_gather_256MB_per_rank": {"seconds": 0.1103, "busbw_gbs": 2.43}, "reduce_scatter_1024MB_per_rank": {"seconds": 0.4083, "busbw_gbs": 2.63}, "all_gather_1024MB_per_rank": {"seconds": 0.4277, "busbw_gbs": 2.51}}
+   exit=0 transport:       8 via NET/IB/0 
+== variant 2: NCCL_NET_GDR_LEVEL=LOC
+{"world": 2, "hosts": "wqd10naf06g3,wqd10nba06g1", "reduce_scatter_256MB_per_rank": {"seconds": 0.0727, "busbw_gbs": 3.69}, "all_gather_256MB_per_rank": {"seconds": 0.0559, "busbw_gbs": 4.8}, "reduce_scatter_1024MB_per_rank": {"seconds": 0.2584, "busbw_gbs": 4.15}, "all_gather_1024MB_per_rank": {"seconds": 0.2226, "busbw_gbs": 4.82}}
+   exit=0 transport:       8 via NET/IB/0 
+== variant 3: NCCL_NET_GDR_LEVEL=LOC NCCL_IB_GID_INDEX=3
+{"world": 2, "hosts": "wqd10naf06g3,wqd10nba06g1", "reduce_scatter_256MB_per_rank": {"seconds": 0.0782, "busbw_gbs": 3.43}, "all_gather_256MB_per_rank": {"seconds": 0.065, "busbw_gbs": 4.13}, "reduce_scatter_1024MB_per_rank": {"seconds": 0.3434, "busbw_gbs": 3.13}, "all_gather_1024MB_per_rank": {"seconds": 0.2227, "busbw_gbs": 4.82}}
+   exit=0 transport:       8 via NET/IB/0 
+== variant 4: NCCL_IB_DISABLE=1
+{"world": 2, "hosts": "wqd10naf06g3,wqd10nba06g1", "reduce_scatter_256MB_per_rank": {"seconds": 0.2347, "busbw_gbs": 1.14}, "all_gather_256MB_per_rank": {"seconds": 0.2442, "busbw_gbs": 1.1}, "reduce_scatter_1024MB_per_rank": {"seconds": 0.9503, "busbw_gbs": 1.13}, "all_gather_1024MB_per_rank": {"seconds": 0.9352, "busbw_gbs": 1.15}}
+   exit=0 transport:       8 via NET/Socket/0 

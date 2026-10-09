@@ -1,0 +1,4 @@
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 1, "nodes": 1, "seq": 4096, "n_micro": 64, "tokens_per_step": 262144, "flops_per_token": 6816006144.0, "owner_segment": 1035392000, "ckpt_layers": [], "compile": true, "fp8": true, "start": 0}
+{"step": 0, "lr": 0.0, "loss": 11.4032, "grad_norm": NaN, "tok_per_s": 6092.52788, "tok_per_s_gpu": 6092.52788, "mfu": 0.25137, "step_s": 43.02713, "max_mem_gb": 16.58541, "mem_fwd_bwd_gb": 12.64045}
+{"step": 20, "lr": 0.0001, "loss": NaN, "grad_norm": NaN, "tok_per_s": 24822.00929, "tok_per_s_gpu": 24822.00929, "mfu": 1.02413, "step_s": 10.56095, "max_mem_gb": 21.34533, "mem_fwd_bwd_gb": 17.40037}
+slurmstepd: error: *** JOB 1666413 ON wqd10nba06g7 CANCELLED AT 2026-10-06T02:55:44 ***

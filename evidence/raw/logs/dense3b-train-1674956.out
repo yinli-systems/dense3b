@@ -1,0 +1,133 @@
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+{"world": 8, "hosts": "wqd10naf06g1,wqd10naf13g7,wqd10nba06g[1,7],wqd10nba07g[6-7],wqd10nba08g4,wqd10nba10g8", "reduce_scatter_64MB_per_rank": {"seconds": 0.2415, "busbw_gbs": 1.95}, "all_gather_64MB_per_rank": {"seconds": 0.3188, "busbw_gbs": 1.47}}
+NCCL version 2.29.7+cuda13.2
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 8, "nodes": 1, "seq": 4096, "n_micro": 32, "tokens_per_step": 1048576, "flops_per_token": 21538013184.0, "owner_segment": 405798912, "ckpt_layers": [0, 1, 2, 4, 5, 6, 8, 9, 10, 12, 13, 14, 16, 17, 18, 20, 21, 22, 24, 25, 26], "compile": true, "fp8": false, "start": 5500}
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.reduce_scatter_tensor` is deprecated. Please use `torch.distributed.reduce_scatter_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: FutureWarning: `torch.distributed.all_gather_into_tensor` is deprecated. Please use `torch.distributed.all_gather_single` instead.
+  return func(*args, **kwargs)
+{"step": 5500, "lr": 0.0007, "loss": 1.0353, "grad_norm": 0.07294, "tok_per_s": 17175.58314, "tok_per_s_gpu": 2146.94789, "mfu": 0.27991, "step_s": 61.05039, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5510, "lr": 0.0007, "loss": 1.04386, "grad_norm": 0.07102, "tok_per_s": 39603.92916, "tok_per_s_gpu": 4950.49114, "mfu": 0.64542, "step_s": 26.47656, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5520, "lr": 0.0007, "loss": 1.00623, "grad_norm": 0.06628, "tok_per_s": 40341.4227, "tok_per_s_gpu": 5042.67784, "mfu": 0.65744, "step_s": 25.99254, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5530, "lr": 0.0007, "loss": 1.00079, "grad_norm": 0.06361, "tok_per_s": 39875.65158, "tok_per_s_gpu": 4984.45645, "mfu": 0.64985, "step_s": 26.29615, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5540, "lr": 0.0007, "loss": 0.97286, "grad_norm": 0.06306, "tok_per_s": 39699.02599, "tok_per_s_gpu": 4962.37825, "mfu": 0.64697, "step_s": 26.41314, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5550, "lr": 0.0007, "loss": 1.0529, "grad_norm": 0.0756, "tok_per_s": 40671.45919, "tok_per_s_gpu": 5083.9324, "mfu": 0.66282, "step_s": 25.78162, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5560, "lr": 0.0007, "loss": 1.09219, "grad_norm": 0.067, "tok_per_s": 39385.75732, "tok_per_s_gpu": 4923.21967, "mfu": 0.64187, "step_s": 26.62323, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5570, "lr": 0.0007, "loss": 1.03721, "grad_norm": 0.06534, "tok_per_s": 39779.48929, "tok_per_s_gpu": 4972.43616, "mfu": 0.64828, "step_s": 26.35971, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5580, "lr": 0.0007, "loss": 1.05144, "grad_norm": 0.06602, "tok_per_s": 37357.91189, "tok_per_s_gpu": 4669.73899, "mfu": 0.60882, "step_s": 28.06838, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5590, "lr": 0.0007, "loss": 1.01621, "grad_norm": 0.06193, "tok_per_s": 39809.15082, "tok_per_s_gpu": 4976.14385, "mfu": 0.64877, "step_s": 26.34007, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5600, "lr": 0.0007, "loss": 1.00726, "grad_norm": 0.07088, "tok_per_s": 39600.52792, "tok_per_s_gpu": 4950.06599, "mfu": 0.64537, "step_s": 26.47884, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5610, "lr": 0.0007, "loss": 1.06778, "grad_norm": 0.06885, "tok_per_s": 40141.96223, "tok_per_s_gpu": 5017.74528, "mfu": 0.65419, "step_s": 26.12169, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5620, "lr": 0.0007, "loss": 1.03571, "grad_norm": 0.06954, "tok_per_s": 39743.28739, "tok_per_s_gpu": 4967.91092, "mfu": 0.64769, "step_s": 26.38373, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5630, "lr": 0.0007, "loss": 1.06975, "grad_norm": 0.07679, "tok_per_s": 40003.50105, "tok_per_s_gpu": 5000.43763, "mfu": 0.65193, "step_s": 26.21211, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5640, "lr": 0.0007, "loss": 1.07998, "grad_norm": 0.07235, "tok_per_s": 40426.47542, "tok_per_s_gpu": 5053.30943, "mfu": 0.65883, "step_s": 25.93785, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5650, "lr": 0.0007, "loss": 1.04791, "grad_norm": 0.06272, "tok_per_s": 40180.9897, "tok_per_s_gpu": 5022.62371, "mfu": 0.65483, "step_s": 26.09632, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5660, "lr": 0.0007, "loss": 1.07323, "grad_norm": 0.06785, "tok_per_s": 40258.19925, "tok_per_s_gpu": 5032.27491, "mfu": 0.65608, "step_s": 26.04627, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5670, "lr": 0.0007, "loss": 0.97094, "grad_norm": 0.07489, "tok_per_s": 40025.46378, "tok_per_s_gpu": 5003.18297, "mfu": 0.65229, "step_s": 26.19772, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5680, "lr": 0.0007, "loss": 1.08352, "grad_norm": 0.06863, "tok_per_s": 37452.46968, "tok_per_s_gpu": 4681.55871, "mfu": 0.61036, "step_s": 27.99751, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5690, "lr": 0.0007, "loss": 0.97131, "grad_norm": 0.06882, "tok_per_s": 40126.67955, "tok_per_s_gpu": 5015.83494, "mfu": 0.65394, "step_s": 26.13164, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5700, "lr": 0.0007, "loss": 1.10549, "grad_norm": 0.07366, "tok_per_s": 39690.23956, "tok_per_s_gpu": 4961.27994, "mfu": 0.64683, "step_s": 26.41899, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5710, "lr": 0.0007, "loss": 1.00277, "grad_norm": 0.06714, "tok_per_s": 39856.30126, "tok_per_s_gpu": 4982.03766, "mfu": 0.64954, "step_s": 26.30891, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5720, "lr": 0.0007, "loss": 1.10407, "grad_norm": 0.0659, "tok_per_s": 39902.08208, "tok_per_s_gpu": 4987.76026, "mfu": 0.65028, "step_s": 26.27873, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5730, "lr": 0.0007, "loss": 1.08682, "grad_norm": 0.07189, "tok_per_s": 38985.22196, "tok_per_s_gpu": 4873.15274, "mfu": 0.63534, "step_s": 26.89676, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5740, "lr": 0.0007, "loss": 1.04772, "grad_norm": 0.0701, "tok_per_s": 40277.32736, "tok_per_s_gpu": 5034.66592, "mfu": 0.6564, "step_s": 26.0339, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+/ssd/scxi253/model_deployment/envs/frontier_torch213/lib/python3.10/site-packages/torch/distributed/c10d_logger.py:83: UserWarning: barrier(): using the device under current context. You can specify `device_id` in `init_process_group` to mute this warning.
+  return func(*args, **kwargs)
+{"step": 5750, "lr": 0.0007, "loss": 1.02699, "grad_norm": 0.06247, "tok_per_s": 40533.74349, "tok_per_s_gpu": 5066.71794, "mfu": 0.66058, "step_s": 25.86921, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5760, "lr": 0.0007, "loss": 1.02718, "grad_norm": 0.06431, "tok_per_s": 40006.10938, "tok_per_s_gpu": 5000.76367, "mfu": 0.65198, "step_s": 26.2104, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5770, "lr": 0.0007, "loss": 1.05612, "grad_norm": 0.06263, "tok_per_s": 39868.09684, "tok_per_s_gpu": 4983.5121, "mfu": 0.64973, "step_s": 26.30113, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5780, "lr": 0.0007, "loss": 1.04115, "grad_norm": 0.07225, "tok_per_s": 40018.6609, "tok_per_s_gpu": 5002.33261, "mfu": 0.65218, "step_s": 26.20218, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5790, "lr": 0.0007, "loss": 1.03124, "grad_norm": 0.06373, "tok_per_s": 39757.85455, "tok_per_s_gpu": 4969.73182, "mfu": 0.64793, "step_s": 26.37406, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5800, "lr": 0.0007, "loss": 0.94639, "grad_norm": 0.05921, "tok_per_s": 40081.31291, "tok_per_s_gpu": 5010.16411, "mfu": 0.6532, "step_s": 26.16122, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5810, "lr": 0.0007, "loss": 0.95116, "grad_norm": 0.07163, "tok_per_s": 38954.95045, "tok_per_s_gpu": 4869.36881, "mfu": 0.63485, "step_s": 26.91766, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5820, "lr": 0.0007, "loss": 0.98084, "grad_norm": 0.0607, "tok_per_s": 40006.49695, "tok_per_s_gpu": 5000.81212, "mfu": 0.65198, "step_s": 26.21014, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5830, "lr": 0.0007, "loss": 1.08763, "grad_norm": 0.06593, "tok_per_s": 40037.66479, "tok_per_s_gpu": 5004.7081, "mfu": 0.65249, "step_s": 26.18974, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5840, "lr": 0.0007, "loss": 1.03112, "grad_norm": 0.07174, "tok_per_s": 40529.81801, "tok_per_s_gpu": 5066.22725, "mfu": 0.66051, "step_s": 25.87172, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5850, "lr": 0.0007, "loss": 1.03142, "grad_norm": 0.0652, "tok_per_s": 39687.37858, "tok_per_s_gpu": 4960.92232, "mfu": 0.64678, "step_s": 26.42089, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5860, "lr": 0.0007, "loss": 0.99848, "grad_norm": 0.06401, "tok_per_s": 37911.62686, "tok_per_s_gpu": 4738.95336, "mfu": 0.61784, "step_s": 27.65843, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5870, "lr": 0.0007, "loss": 0.9661, "grad_norm": 0.06671, "tok_per_s": 40243.95587, "tok_per_s_gpu": 5030.49448, "mfu": 0.65585, "step_s": 26.05549, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5880, "lr": 0.0007, "loss": 0.99478, "grad_norm": 0.06695, "tok_per_s": 36241.49623, "tok_per_s_gpu": 4530.18703, "mfu": 0.59062, "step_s": 28.93302, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5890, "lr": 0.0007, "loss": 0.99247, "grad_norm": 0.06279, "tok_per_s": 38030.06972, "tok_per_s_gpu": 4753.75871, "mfu": 0.61977, "step_s": 27.57229, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5900, "lr": 0.0007, "loss": 1.06738, "grad_norm": 0.06258, "tok_per_s": 39540.74487, "tok_per_s_gpu": 4942.59311, "mfu": 0.64439, "step_s": 26.51887, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5910, "lr": 0.0007, "loss": 1.03809, "grad_norm": 0.06716, "tok_per_s": 38555.74234, "tok_per_s_gpu": 4819.46779, "mfu": 0.62834, "step_s": 27.19636, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5920, "lr": 0.0007, "loss": 1.02447, "grad_norm": 0.06974, "tok_per_s": 39404.4761, "tok_per_s_gpu": 4925.55951, "mfu": 0.64217, "step_s": 26.61058, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5930, "lr": 0.0007, "loss": 1.01141, "grad_norm": 0.06859, "tok_per_s": 39977.564, "tok_per_s_gpu": 4997.1955, "mfu": 0.65151, "step_s": 26.22911, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+{"step": 5940, "lr": 0.0007, "loss": 1.04644, "grad_norm": 0.06398, "tok_per_s": 36568.30759, "tok_per_s_gpu": 4571.03845, "mfu": 0.59595, "step_s": 28.67445, "max_mem_gb": 22.38656, "mem_fwd_bwd_gb": 22.38656}
+srun: Job step aborted: Waiting up to 62 seconds for job step to finish.
+slurmstepd: error: *** STEP 1674956.2 ON wqd10naf06g1 CANCELLED AT 2026-10-08T17:14:05 ***
+slurmstepd: error: *** JOB 1674956 ON wqd10naf06g1 CANCELLED AT 2026-10-08T17:14:05 ***

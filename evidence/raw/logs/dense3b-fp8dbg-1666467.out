@@ -1,0 +1,10 @@
+== --override {"n_layers": 8, "n_dense_layers": 8} --global-batch 64 --compile
+{"event": "start", "gpu": "NVIDIA GeForce RTX 4090", "world": 1, "nodes": 1, "seq": 4096, "n_micro": 64, "tokens_per_step": 262144, "flops_per_token": 6816006144.0, "owner_segment": 1035392000, "ckpt_layers": [], "compile": true, "fp8": true, "start": 0}
+{"step": 0, "lr": 0.0, "loss": 11.40338, "grad_norm": 5.25733, "tok_per_s": 4831.24927, "tok_per_s_gpu": 4831.24927, "mfu": 0.19933, "step_s": 54.26009, "max_mem_gb": 16.58541, "mem_fwd_bwd_gb": 14.09164}
+{"step": 1, "lr": 1e-05, "loss": 11.40818, "grad_norm": 5.10662, "tok_per_s": 12254.09556, "tok_per_s_gpu": 12254.09556, "mfu": 0.50559, "step_s": 21.39236, "max_mem_gb": 21.34533, "mem_fwd_bwd_gb": 18.85156}
+== gpu tests
+=========================== short test summary info ============================
+FAILED tests/dense/test_fp8_gpu.py::test_compiled_fp8_blocks_match_eager_and_are_finite
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 4 passed, 15 warnings in 113.47s (0:01:53)
+{"config": "s4096_compile_doc_fp8", "per_layer": {"seq": 4096, "micro": 1, "peak_tflops": 165.2, "t_stored_s": 0.026950597763061523, "t_ckpt_s": 0.036227405071258545, "const_s": 0.05414748191833496, "act_stored_gb": 0.5179266194285714, "act_ckpt_gb": 0.02519010742857164, "const_mem_gb": 1.5, "fp8": true, "layer_mfu": 0.677238394778418, "plans": {"23.0GB": {"ckpt_layers": 22, "mem_gb": 22.59, "step_s": 33.67, "tok_per_s_node": 31142, "tokens_per_day_node_B": 2.69, "mfu": 0.508}, "31.0GB": {"ckpt_layers": 5, "mem_gb": 30.96, "step_s": 28.62, "tok_per_s_node": 36633, "tokens_per_day_node_B": 3.17, "mfu": 0.597}}}}
