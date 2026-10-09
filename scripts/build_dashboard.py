@@ -90,6 +90,31 @@ def load_metrics(root: Path, cfg: dict, issues: list[dict]) -> list[dict]:
     return runs
 
 def load_evals(root: Path, cfg: dict, issues: list[dict]) -> tuple[list[dict], list[dict]]:
+    # The comprehensive audit supersedes the original top-level-only result parser.
+    audit = root/'reports/checkpoint_audit/all_metrics.json'
+    if audit.exists():
+        records = json.loads((root/'provenance/checkpoint_audit_sources.json').read_text())['records']
+        times = {}; live = set()
+        for record in records:
+            h = record['sha256']
+            times[h] = max(times.get(h, 0), record.get('mtime_ns', 0)//1_000_000_000)
+            if record['origin'] == 'remote_snapshot': live.add(h)
+        versions = {x['evaluation_id']:x for x in json.loads((root/'reports/checkpoint_audit/evaluation_versions.json').read_text())}
+        rows = []
+        for r in json.loads(audit.read_text()):
+            if r['unit'] not in ['fraction', 'cross_entropy']: continue
+            tokens = r['tokens_from_metadata']; e = versions.get(r['evaluation_id'], {})
+            reported = r.get('reported_tokens_B')
+            mismatch = finite(reported) and tokens is not None and abs(reported-tokens/1e9) > .00501
+            rows.append({'variant':r['variant'], 'step':r['step'], 'task':r['task'], 'metric':r['metric'],
+                'value':r['reported_value'], 'unit':r['unit'], 'n':r['n'], 'coverage':r['coverage'],
+                'verification':r['verification'], 'tokens_reported_B':reported, 'tokens_verified_B':tokens/1e9 if tokens is not None else None,
+                'token_count_mismatch':mismatch, 'protocol_id':r['protocol_id'],
+                'protocol_name':e.get('protocol_fields',{}).get('protocol', 'not recorded'),
+                'checkpoint':r['checkpoint'], 'source':r['source'], 'source_sha256':r['source_sha256'],
+                'source_mtime':times.get(r['source_sha256'],0), 'snapshot_current':r['source_sha256'] in live})
+        issues.extend(json.loads((root/'reports/checkpoint_audit/issues.json').read_text()))
+        return rows, json.loads((root/'reports/checkpoint_audit/checkpoints.json').read_text())
     metas: dict[tuple, list[tuple]] = collections.defaultdict(list)
     checkpoint_rows = []
     for f in sorted((root/'evidence/checkpoints').rglob('meta.json')):
@@ -127,7 +152,7 @@ def load_evals(root: Path, cfg: dict, issues: list[dict]) -> tuple[list[dict], l
         token_set = {v[0] for v in evidence if v[0] is not None}
         tokens = next(iter(token_set)) if len(token_set) == 1 else None
         reported = d.get('tokens_B')
-        mismatch = finite(reported) and tokens is not None and abs(reported - tokens/1e9) > 0.02
+        mismatch = finite(reported) and tokens is not None and abs(reported - tokens/1e9) > 0.00501
         if mismatch:
             issues.append({'kind': 'token_count_mismatch', 'source': str(f.relative_to(root)), 'step': step,
                            'reported_tokens_B': reported, 'verified_tokens_B': tokens/1e9, 'metadata': [v[1] for v in evidence]})
@@ -139,8 +164,8 @@ def load_evals(root: Path, cfg: dict, issues: list[dict]) -> tuple[list[dict], l
             if result.get('error') or result.get('skipped'):
                 issues.append({'kind': 'task_not_completed', 'source': str(f.relative_to(root)), 'task': task, 'detail': result})
             for metric, value in result.items():
-                if metric in ['n', 'seconds', 'time', 'total', 'correct', 'passed', 'failed', 'tokens', 'count', 'samples'] or not finite(value) or not 0 <= value <= 1: continue
-                rows.append({'variant': variant, 'step': step, 'task': task, 'metric': metric, 'value': value, 'n': result.get('n'),
+                if metric in ['n', 'seconds', 'time', 'total', 'correct', 'passed', 'failed', 'tokens', 'count', 'samples'] or not finite(value) or not ((task == 'heldout' and value >= 0) or 0 <= value <= 1): continue
+                rows.append({'variant': variant, 'step': step, 'task': task, 'metric': metric, 'value': value, 'unit': 'cross_entropy' if task == 'heldout' else 'fraction', 'n': (result.get('n', {}).get(metric.removeprefix('lcb_')) if isinstance(result.get('n'), dict) else result.get('n')),
                              'tokens_reported_B': reported, 'tokens_verified_B': tokens/1e9 if tokens is not None else None,
                              'token_count_mismatch': mismatch, 'protocol_id': protocol_id, 'protocol_name': manifest.get('protocol', 'not recorded'),
                              'checkpoint': checkpoint, 'source': str(f.relative_to(root)), 'source_sha256': digest,
@@ -214,7 +239,7 @@ def build(root: Path) -> dict:
     run_index=[{k:v for k,v in r.items() if k!='rows'} | {'observations':len(r['rows']),'first_step':r['rows'][0]['step'] if r['rows'] else None,'last_step':r['rows'][-1]['step'] if r['rows'] else None} for r in runs]
     dump(reports/'run_index.json',run_index);dump(reports/'checkpoint_registry.json',checkpoints)
     latest={}
-    for r in sorted(evals,key=lambda r:(r['step'] if finite(r['step']) else -1,r['source_mtime'],r['source'])):
+    for r in sorted(evals,key=lambda r:(r['step'] if finite(r['step']) else -1,r.get('snapshot_current',False),r['source_mtime'],r['source'])):
         latest[(r['variant'],r['task'],r['metric'])]=r
     latest_rows=list(latest.values());write_csv(reports/'evaluation_latest.csv',latest_rows)
     summary={'model':cfg['name'],'snapshot_utc':snap['snapshot_utc'],'variants':{},'training_observations':sum(len(r['rows']) for r in runs),'retained_observations':len(retained),'evaluation_metric_records':len(evals),'issues':issues}
@@ -222,15 +247,10 @@ def build(root: Path) -> dict:
         rr=[r for r in retained if r['variant']==v];last=rr[-100:]
         summary['variants'][v]={'latest_step':rr[-1]['step'] if rr else None,'observations':len(rr),'recent_loss_mean':statistics.mean(r['loss'] for r in last) if last else None,'recent_global_tok_per_s_median':statistics.median(r['tok_per_s'] for r in last if finite(r.get('tok_per_s'))) if any(finite(r.get('tok_per_s')) for r in last) else None}
     figs=create_plots(root,cfg,runs,retained,evals);summary['figures']=figs;dump(reports/'summary.json',summary);dump(reports/'data_audit.json',issues)
-    lines=['# '+cfg['name'],'',cfg['description'],'','**Evidence snapshot (UTC): '+snap['snapshot_utc']+'.** This is an archived measurement, not a live status feed.','',
+    lines=['# '+cfg['name'],'',cfg['description'],'','**Training-curve snapshot (UTC): '+snap['snapshot_utc']+'.** This is an archived measurement, not a live status feed.','',
            '## Experiment coverage','', '| Variant | Latest retained step | Retained observations | Mean loss, last ≤100 | Median global tok/s, last ≤100 |','|---|---:|---:|---:|---:|']
     for v,s in summary['variants'].items():
         lines.append('| '+v+' | '+('—' if s['latest_step'] is None else str(s['latest_step']))+' | '+str(s['observations'])+' | '+('—' if s['recent_loss_mean'] is None else f"{s['recent_loss_mean']:.4f}")+' | '+('—' if s['recent_global_tok_per_s_median'] is None else f"{s['recent_global_tok_per_s_median']:,.0f}")+' |')
-    if cfg.get('parameter_counts'):
-        lines += ['', '### Archived architecture presets', '', '| Variant | Total parameters | Active parameters |', '|---|---:|---:|']
-        for variant, counts in cfg['parameter_counts'].items():
-            lines.append(f"| {variant} | {counts['total']:,} | {counts['active']:,} |")
-        lines += ['', 'Counts are computed by the archived `model/config.py` accounting function, including embeddings. They are configuration counts, not measurements of task quality.']
     if cfg.get('parameter_counts'):
         lines += ['', '### Archived architecture presets', '', '| Variant | Total parameters | Active parameters |', '|---|---:|---:|']
         for variant, counts in cfg['parameter_counts'].items():
@@ -242,11 +262,12 @@ def build(root: Path) -> dict:
         if fig in figs:lines+=['!['+fig+'](reports/figures/'+fig+'.png)','']
     lines+=['[All figures](reports/figures/) · [All production runs including rollbacks](reports/figures/loss_all_runs.png) · [Raw training CSV](reports/training_all.csv) · [Run index](reports/run_index.json)','',
             '## Latest observed evaluation metrics','',
-            'Selection is by checkpoint step, then archived archived source timestamp—not by the highest score. Different protocols, sample counts, tokenizers and custom MMLU variants are not treated as directly comparable. Benchmark figures use points rather than connecting different evaluations.','',
-            '| Variant | Task / metric | Step | Score | n | Verified tokens (B) | Evidence |','|---|---|---:|---:|---:|---:|---|']
+            'Selection is by checkpoint step, then current-snapshot membership and archived source timestamp—not by the highest score. Different protocols, sample counts, tokenizers and custom MMLU variants are not treated as directly comparable. Benchmark figures use points rather than connecting different evaluations.','',
+            '| Variant | Task / metric | Step | Value / unit | n | Verified tokens (B) | Evidence |','|---|---|---:|---:|---:|---:|---|']
     for r in sorted(latest_rows,key=lambda r:(r['variant'],r['task'],r['metric'])):
         tokens='—' if r['tokens_verified_B'] is None else f"{r['tokens_verified_B']:.3f}"
-        lines.append(f"| {r['variant']} | {r['task']} / {r['metric']} | {r['step']} | {100*r['value']:.2f}% | {r['n'] if r['n'] is not None else '—'} | {tokens} | [JSON]({r['source']}) |")
+        shown=f"{100*r['value']:.2f}%" if r.get('unit','fraction')=='fraction' else f"{r['value']:.6f} CE"
+        lines.append(f"| {r['variant']} | {r['task']} / {r['metric']} | {r['step']} | {shown} | {r['n'] if r['n'] is not None else '—'} | {tokens} | [JSON]({r['source']}) |")
     if not latest_rows:lines+=['| — | No completed supported evaluation found | — | — | — | — | — |']
     mismatches=[i for i in issues if i['kind']=='token_count_mismatch']
     lines+=['','### Evidence cautions','',
@@ -254,11 +275,18 @@ def build(root: Path) -> dict:
             '[Complete chronological metrics](reports/evaluation_history.csv) · [Checkpoint registry](reports/checkpoint_registry.json) · [Audit findings](reports/data_audit.json)','',
             '## Code and reproduction','',
             '`model/` contains architecture and kernels; `train/` contains optimizers, data loading, checkpointing and distributed training; `bench/` and `tests/` retain evaluation, profiling and correctness code. `operations/` retains the deployed cluster helpers. Data preparation and tokenizer files, when available, are under `data_pipeline/`, `code3b/` and `tokenizer/`. Original cluster paths remain in deployed scripts so the archived implementation is not silently rewritten. Adapt those paths explicitly for another machine.','',
-            '```bash','python3 -m venv .venv-report','source .venv-report/bin/activate','python -m pip install -r requirements-report.txt','python scripts/verify_publication.py','python -m unittest discover -s tests/publication -v','python scripts/build_dashboard.py --root .','```','',
+            '```bash','python3 -m venv .venv-report','source .venv-report/bin/activate','python -m pip install -r requirements-report.txt','python scripts/verify_publication.py','python -m unittest discover -s tests/publication -v','python scripts/audit_checkpoints.py --root .','python scripts/build_dashboard.py --root .','```','',
             'Report generation uses archived local files only and does not submit jobs or access GPUs. Publication checks do not constitute a rerun of CUDA training or model benchmarks.','',
             '## Provenance and scope','',
             '[Snapshot and file hashes](provenance/snapshot.json) · [Imported result routing](provenance/imported-results.json) · [Extraction methodology](reports/METHODOLOGY.md)','',
             'Source, configurations, original metrics, evaluator manifests, sample-level outputs and checkpoint metadata are versioned. Model weights, optimizer tensors, token shards, datasets, credentials, caches and installed binary dependencies are intentionally not Git payloads. Historical code versions remain in Git commits. Training losses across different data recipes/tokenizers are not a ranking of model quality.','']
+    if (root/'reports/checkpoint_audit/summary.json').exists():
+        checkpoint_summary=json.loads((root/'reports/checkpoint_audit/summary.json').read_text())
+        pos=lines.index('## Experiment coverage')
+        lines[pos:pos]=['## Complete checkpoint audit', '',
+            '**[Every checkpoint and every result](reports/checkpoint_audit/CHECKPOINTS.md)** — '+checkpoint_summary['snapshot_utc']+'.', '',
+            '[All numeric results](reports/checkpoint_audit/all_metrics.csv) · [Missing evaluations](reports/checkpoint_audit/GAPS.md) · [Evidence issues](reports/checkpoint_audit/ISSUES.md)', '',
+            'This audit includes historical Git versions, retained model-file inventory, native-unit loss values, sample-count checks and explicit missing results. The table below is a latest-observation summary, not a replacement for the per-checkpoint pages.', '']
     (root/'README.md').write_text('\n'.join(lines))
     (reports/'METHODOLOGY.md').write_text('''# Report extraction policy
 
@@ -266,10 +294,10 @@ def build(root: Path) -> dict:
 All JSONL observations retain their source path and 1-based line number. The raw table includes diagnostic runs. The main figure excludes explicitly named smoke/profiling/sweep runs, orders production jobs by numeric job ID, and replaces the earlier suffix at the first logged step of a later run. This is a transparent display reconstruction, not independent verification of optimizer-state ancestry. The all-runs figure and raw CSV retain superseded tails. No interpolated training observations are created. Smoothing is a trailing arithmetic mean of at most 50 retained observations. Sequence length, world size and tokens per step are retained from start events in the run index; those fields are reported runtime values, not a physical topology audit.
 
 ## Evaluations
-Model identity comes from the recorded checkpoint path, not the directory holding the result. Foreign and unidentified summaries are excluded and logged. Exact duplicate summary files are counted once. Task/metric names, sample counts, declared protocols and evaluator hashes are retained; unversioned evaluations remain labeled unversioned. Accuracy and normalized accuracy remain separate. Latest tables choose largest step then newest archived source timestamp, never the highest score. Checkout filesystem timestamps are never used. Points do not establish a controlled trend across protocol changes. No missing benchmark is entered as zero. Original summary scores are rounded source values; sample-level outputs are preserved separately and were not rescored for this publication.
+Model identity comes from the recorded checkpoint path, not the directory holding the result. Foreign and unidentified summaries are excluded and logged. Exact duplicate summary files are counted once. Task/metric names, sample counts, declared protocols and evaluator hashes are retained; unversioned evaluations remain labeled unversioned. Accuracy and normalized accuracy remain separate. Latest tables choose largest step then newest archived source timestamp, never the highest score. Checkout filesystem timestamps are never used. Points do not establish a controlled trend across protocol changes. No missing benchmark is entered as zero. Original summary scores are rounded source values; sample-level outputs are preserved separately. The complete checkpoint audit re-aggregates saved Boolean judgments without rerunning benchmark execution.
 
 ## Token accounting
-Only checkpoint metadata with recorded samples_consumed and args.seq_len establishes a verified token count. Formula: samples_consumed * args.seq_len. A checkpoint's declared configuration and sample counter are evidence, not a new audit of the original data loader. The source tokens_B field is also retained. Differences exceeding 0.02 billion tokens are flagged (allowing source rounding). Missing metadata is not reconstructed from a guessed batch size or context length.
+Only checkpoint metadata with recorded samples_consumed and args.seq_len establishes a verified token count. Formula: samples_consumed * args.seq_len. A checkpoint's declared configuration and sample counter are evidence, not a new audit of the original data loader. The source tokens_B field is also retained. Differences exceeding 0.00501 billion tokens are flagged (allowing source rounding). Missing metadata is not reconstructed from a guessed batch size or context length.
 
 ## Operational measurements
 Throughput/MFU/memory values are copied from logged training metrics. They do not include every checkpoint stall, evaluation, queue delay or downtime. MFU is the source implementation's estimate; no cross-hardware equivalence is asserted. Missing resource samples are not filled. CUDA correctness, benchmark execution, dataset availability and remote checkpoint completeness were not retested during publication.
