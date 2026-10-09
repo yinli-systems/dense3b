@@ -1,0 +1,7 @@
+{
+  "name": "dense3b",
+  "presets": [
+    "dense3b"
+  ],
+  "description": "Dense 3B-class code pretraining: deployed implementation, data pipeline, checkpoint results and auditable training curves."
+}
