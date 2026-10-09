@@ -1,3 +1,6 @@
+<!-- current-report-navigation -->
+> **Archived snapshot:** this page retains its original audit date. [Open the latest consolidated checkpoint results](../RESULTS.md) for newer results and training telemetry.
+
 # dense3b: every located checkpoint and result
 
 Snapshot: **2026-10-09T18:52:28.188993+00:00**.

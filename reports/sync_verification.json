@@ -1,0 +1,20 @@
+{
+  "manifest_records_verified": 388,
+  "new_per_example_records_recounted": 98083,
+  "new_score_checks": 44,
+  "arithmetic_mismatches": 0,
+  "input_capture_issues": [],
+  "tensor_payloads_read": 0,
+  "new_gpu_tests_run_by_publication": 0,
+  "unit_tests": 58,
+  "local_report_links": "all targets exist",
+  "historical_integrity": {
+    "snapshot_utc": "2026-10-09T18:34:41Z",
+    "inventory_records": 380,
+    "verified_records": 380,
+    "python_sources_parsed": 231,
+    "failures": [],
+    "cuda_or_training_executed": false
+  },
+  "figure_files_checked": 56
+}

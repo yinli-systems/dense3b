@@ -1,0 +1,618 @@
+[
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "arc_easy",
+    "n": 2376,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/arc_easy.details.json",
+    "details_sha256": "cc2a500ddc197f550045a188f51dea0977cff8b47c02062ba2ecbb7815192b9e",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 1327,
+        "n_recounted": 2376,
+        "value_recounted": 0.5585016835016835,
+        "ci95_low": 0.5384566635253978,
+        "ci95_high": 0.5783578406381527
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 1200,
+        "n_recounted": 2376,
+        "value_recounted": 0.5050505050505051,
+        "ci95_low": 0.4849550343984729,
+        "ci95_high": 0.5251296709969416
+      }
+    }
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "arc_challenge",
+    "n": 1172,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/arc_challenge.details.json",
+    "details_sha256": "1062f41a1feb80c1a849efe85a5dcf97185d56f439c30b3bd3fa6dceebb65ecc",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 281,
+        "n_recounted": 1172,
+        "value_recounted": 0.23976109215017063,
+        "ci95_low": 0.2161937705339983,
+        "ci95_high": 0.2650288080508755
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 326,
+        "n_recounted": 1172,
+        "value_recounted": 0.2781569965870307,
+        "ci95_low": 0.2532597038118141,
+        "ci95_high": 0.30450380580152075
+      }
+    }
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "hellaswag",
+    "n": 10042,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/hellaswag.details.json",
+    "details_sha256": "93324fcff989721d2a5cde58010e0389e6d7e8c652804e9934e893f46a5bd1e0",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 2894,
+        "n_recounted": 10042,
+        "value_recounted": 0.28818960366460866,
+        "ci95_low": 0.2794134401259525,
+        "ci95_high": 0.2971277568023747
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3114,
+        "n_recounted": 10042,
+        "value_recounted": 0.31009759012148974,
+        "ci95_low": 0.30112513700169236,
+        "ci95_high": 0.3192152779218243
+      }
+    }
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "winogrande",
+    "n": 1267,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/winogrande.details.json",
+    "details_sha256": "38ed474225a7ef495e53e5d98ae0243de5998b4b8bd97b3f4ff768ae4cad0380",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 643,
+        "n_recounted": 1267,
+        "value_recounted": 0.5074980268350434,
+        "ci95_low": 0.47998859144251455,
+        "ci95_high": 0.5349621326372864
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 643,
+        "n_recounted": 1267,
+        "value_recounted": 0.5074980268350434,
+        "ci95_low": 0.47998859144251455,
+        "ci95_high": 0.5349621326372864
+      }
+    }
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "boolq",
+    "n": 3270,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/boolq.details.json",
+    "details_sha256": "81b82846a735ff7a1867d0067f6f46a3628163c0d8d6d9156462f01957b44370",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 1877,
+        "n_recounted": 3270,
+        "value_recounted": 0.5740061162079511,
+        "ci95_low": 0.5569803901107814,
+        "ci95_high": 0.5908581677692776
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 2032,
+        "n_recounted": 3270,
+        "value_recounted": 0.6214067278287462,
+        "ci95_low": 0.6046489155538315,
+        "ci95_high": 0.6378796277452736
+      }
+    }
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "openbookqa",
+    "n": 500,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/openbookqa.details.json",
+    "details_sha256": "bd5e9129752044e101b58ee4caddcea5b7ac7ee214ea500486402ecfd63f085e",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 91,
+        "n_recounted": 500,
+        "value_recounted": 0.182,
+        "ci95_low": 0.1506464452041556,
+        "ci95_high": 0.2182026353293916
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 145,
+        "n_recounted": 500,
+        "value_recounted": 0.29,
+        "ci95_low": 0.2519474198773656,
+        "ci95_high": 0.33125480311648636
+      }
+    }
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "sciq",
+    "n": 1000,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/sciq.details.json",
+    "details_sha256": "fccb82d10eadf3cd0cb9df882f4989f0ccf261d7146bd5bd9cd301566c039d68",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 823,
+        "n_recounted": 1000,
+        "value_recounted": 0.823,
+        "ci95_low": 0.7981212935038732,
+        "ci95_high": 0.8454066205144583
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 763,
+        "n_recounted": 1000,
+        "value_recounted": 0.763,
+        "ci95_low": 0.7356684892970144,
+        "ci95_high": 0.7883186357395835
+      }
+    }
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "mmlu_cf",
+    "n": 14042,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mmlu_cf.details.json.gz",
+    "details_sha256": "282ca40649206f26a49794758d5494ff8147abec259bcf25af4a32a7ed683d9c",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3727,
+        "n_recounted": 14042,
+        "value_recounted": 0.26541803161942745,
+        "ci95_low": 0.2581796086122397,
+        "ci95_high": 0.2727847683306041
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3970,
+        "n_recounted": 14042,
+        "value_recounted": 0.28272325879504345,
+        "ci95_low": 0.27533515418811877,
+        "ci95_high": 0.2902302113409087
+      }
+    }
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "task": "mmlu_mc5",
+    "n": 14042,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mmlu_mc5.details.json.gz",
+    "details_sha256": "0c60938be813ea7aca4b456f61316a017426bdb26c7d1c221adfbdbb2d1d1696",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3633,
+        "n_recounted": 14042,
+        "value_recounted": 0.25872382851445663,
+        "ci95_low": 0.2515471166312205,
+        "ci95_high": 0.26603251575565107
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3633,
+        "n_recounted": 14042,
+        "value_recounted": 0.25872382851445663,
+        "ci95_low": 0.2515471166312205,
+        "ci95_high": 0.26603251575565107
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "arc_easy",
+    "n": 2376,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/arc_easy.details.json",
+    "details_sha256": "3f9823215f80e86cc4b1434625b1e4772cfad185eaeb31cc3ef766bc2533139d",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 1502,
+        "n_recounted": 2376,
+        "value_recounted": 0.6321548821548821,
+        "ci95_low": 0.6125664312154995,
+        "ci95_high": 0.6513166932978447
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 1387,
+        "n_recounted": 2376,
+        "value_recounted": 0.5837542087542088,
+        "ci95_low": 0.5638140479474255,
+        "ci95_high": 0.6034239831931972
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "arc_challenge",
+    "n": 1172,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/arc_challenge.details.json",
+    "details_sha256": "6746766e96e3b86160b5ed68a91c968efeb2676bdeff3937319e1bb5b6467976",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 327,
+        "n_recounted": 1172,
+        "value_recounted": 0.2790102389078498,
+        "ci95_low": 0.25408615971073306,
+        "ci95_high": 0.3053782594810121
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 366,
+        "n_recounted": 1172,
+        "value_recounted": 0.3122866894197952,
+        "ci95_low": 0.28640454387335434,
+        "ci95_high": 0.33939534887639056
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "hellaswag",
+    "n": 10042,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/hellaswag.details.json",
+    "details_sha256": "64c1c322c97c9e26d3f2303a39d6b9cc5eeac3fc71ce4b5c9064c37964db9b1b",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3104,
+        "n_recounted": 10042,
+        "value_recounted": 0.3091017725552679,
+        "ci95_low": 0.30013771648824417,
+        "ci95_high": 0.31821182489003663
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3560,
+        "n_recounted": 10042,
+        "value_recounted": 0.3545110535749851,
+        "ci95_low": 0.3452121589230863,
+        "ci95_high": 0.3639212161179508
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "winogrande",
+    "n": 1267,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/winogrande.details.json",
+    "details_sha256": "5e6c26ea8c01faec62bcaafa9b83ae92dc6cd02fc07c7b160337d72933a2e97d",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 634,
+        "n_recounted": 1267,
+        "value_recounted": 0.500394632991318,
+        "ci95_low": 0.47290359623559514,
+        "ci95_high": 0.5278832839791312
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 634,
+        "n_recounted": 1267,
+        "value_recounted": 0.500394632991318,
+        "ci95_low": 0.47290359623559514,
+        "ci95_high": 0.5278832839791312
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "boolq",
+    "n": 3270,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/boolq.details.json",
+    "details_sha256": "a6109445800eea0e0f631786bf3b15babf9f54f615bf2d02f3c55bb32a6436f3",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 1773,
+        "n_recounted": 3270,
+        "value_recounted": 0.5422018348623853,
+        "ci95_low": 0.5250860460800741,
+        "ci95_high": 0.5592185860994636
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 2019,
+        "n_recounted": 3270,
+        "value_recounted": 0.6174311926605505,
+        "ci95_low": 0.6006445909795469,
+        "ci95_high": 0.6339422116069929
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "openbookqa",
+    "n": 500,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/openbookqa.details.json",
+    "details_sha256": "e1e271bcd8aac015f99b37f81f2234269cb0b6f555481f7dd998ac3c3df217b9",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 106,
+        "n_recounted": 500,
+        "value_recounted": 0.212,
+        "ci95_low": 0.17843950428829852,
+        "ci95_high": 0.24995211581755555
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 158,
+        "n_recounted": 500,
+        "value_recounted": 0.316,
+        "ci95_low": 0.27678362811990814,
+        "ci95_high": 0.3580221291699432
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "sciq",
+    "n": 1000,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/sciq.details.json",
+    "details_sha256": "14ebb9cba1d92a407702e202d9fe20f83d2b0df8af9c50b07ffbf45bbe0b10c3",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 856,
+        "n_recounted": 1000,
+        "value_recounted": 0.856,
+        "ci95_low": 0.8328762978702983,
+        "ci95_high": 0.8763990500879865
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 821,
+        "n_recounted": 1000,
+        "value_recounted": 0.821,
+        "ci95_low": 0.7960253362714628,
+        "ci95_high": 0.8435178847808108
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "mmlu_cf",
+    "n": 14042,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mmlu_cf.details.json.gz",
+    "details_sha256": "2146d1e557901717610f492d6cadc1692cd817a8db593551f50a5301b9d97d15",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 4006,
+        "n_recounted": 14042,
+        "value_recounted": 0.28528699615439396,
+        "ci95_low": 0.27787788819028364,
+        "ci95_high": 0.29281354972188217
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 4244,
+        "n_recounted": 14042,
+        "value_recounted": 0.30223614869676685,
+        "ci95_low": 0.294695500382953,
+        "ci95_high": 0.3098849716177383
+      }
+    }
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "mmlu_mc5",
+    "n": 14042,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mmlu_mc5.details.json.gz",
+    "details_sha256": "fae5102510061a21fbb5a2d013427c20499d8b938c677f1ebb501f9af2ba47f9",
+    "checks": {
+      "acc": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3483,
+        "n_recounted": 14042,
+        "value_recounted": 0.2480415895171628,
+        "ci95_low": 0.24096794384735293,
+        "ci95_high": 0.25525305360977557
+      },
+      "acc_norm": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 3483,
+        "n_recounted": 14042,
+        "value_recounted": 0.2480415895171628,
+        "ci95_low": 0.24096794384735293,
+        "ci95_high": 0.25525305360977557
+      }
+    }
+  },
+  {
+    "evaluation_id": "ed25a9290f16f92f",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "humaneval",
+    "n": 164,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/suite.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/humaneval.details.json.gz",
+    "details_sha256": "9637b0f1e0d1957ea0d6493d3f918458776c6fce7052558d1ccbb12fb860c43e",
+    "checks": {
+      "humaneval": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 37,
+        "n_recounted": 164,
+        "value_recounted": 0.22560975609756098,
+        "ci95_low": 0.16834378503490682,
+        "ci95_high": 0.2954358994818522
+      },
+      "humaneval_plus": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 35,
+        "n_recounted": 164,
+        "value_recounted": 0.21341463414634146,
+        "ci95_low": 0.15764319790435208,
+        "ci95_high": 0.2823044725909296
+      }
+    }
+  },
+  {
+    "evaluation_id": "ed25a9290f16f92f",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "mbpp",
+    "n": 378,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/suite.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mbpp.details.json",
+    "details_sha256": "bf7b593494dcc49971dd66963b3850a48e1071619c5b26719ef9c560ab83b152",
+    "checks": {
+      "mbpp": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 131,
+        "n_recounted": 378,
+        "value_recounted": 0.34656084656084657,
+        "ci95_low": 0.3003487254782024,
+        "ci95_high": 0.3958602708988214
+      },
+      "mbpp_plus": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 102,
+        "n_recounted": 378,
+        "value_recounted": 0.2698412698412698,
+        "ci95_low": 0.2275751181750198,
+        "ci95_high": 0.3167383763905159
+      }
+    }
+  },
+  {
+    "evaluation_id": "ed25a9290f16f92f",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "cruxeval",
+    "n": 800,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/suite.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/cruxeval.details.json",
+    "details_sha256": "5b59320352ddc875ab10fee917c622b499609e0e86c6b4f1aec5b1c4e50a3891",
+    "checks": {
+      "cruxeval_o": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 142,
+        "n_recounted": 800,
+        "value_recounted": 0.1775,
+        "ci95_low": 0.15258251570494116,
+        "ci95_high": 0.2054998594477199
+      },
+      "cruxeval_i": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 139,
+        "n_recounted": 800,
+        "value_recounted": 0.17375,
+        "ci95_low": 0.1490700007711781,
+        "ci95_high": 0.20154821595302552
+      }
+    }
+  },
+  {
+    "evaluation_id": "ed25a9290f16f92f",
+    "variant": "dense3b",
+    "step": 5999,
+    "task": "gsm8k",
+    "n": 1319,
+    "summary_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/suite.json",
+    "details_source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/gsm8k.details.json",
+    "details_sha256": "79e5448db588c0346dde2c251be6c39a412bb59c055e1d8eb444cc95e5852bb9",
+    "checks": {
+      "gsm8k": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 142,
+        "n_recounted": 1319,
+        "value_recounted": 0.10765731614859743,
+        "ci95_low": 0.09205533111518491,
+        "ci95_high": 0.12553798432059166
+      },
+      "strict_accuracy": {
+        "verification": "sample_flags_recounted",
+        "passed_recounted": 138,
+        "n_recounted": 1319,
+        "value_recounted": 0.10462471569370735,
+        "ci95_low": 0.08923940922644438,
+        "ci95_high": 0.12230631830931885
+      }
+    }
+  }
+]

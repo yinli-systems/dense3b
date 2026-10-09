@@ -1,0 +1,119 @@
+[
+  {
+    "field": "grad_norm",
+    "observations": 8299,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 0.054933056235313416,
+    "max": 12.308879852294922
+  },
+  {
+    "field": "loss",
+    "observations": 8300,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 0.8829166889190674,
+    "max": 11.443380355834961
+  },
+  {
+    "field": "lr",
+    "observations": 8325,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 3.5e-07,
+    "max": 0.0007
+  },
+  {
+    "field": "max_mem_gb",
+    "observations": 8325,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 16.58541056,
+    "max": 22.411775488
+  },
+  {
+    "field": "mem_fwd_bwd_gb",
+    "observations": 8325,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 12.64044544,
+    "max": 22.411775488
+  },
+  {
+    "field": "mfu",
+    "observations": 8325,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 0.21189443468497055,
+    "max": 1.0320648255625702
+  },
+  {
+    "field": "step_s",
+    "observations": 8325,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 10.479797124862671,
+    "max": 80.64658308029175
+  },
+  {
+    "field": "tok_per_s",
+    "observations": 8325,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 5482.296959188767,
+    "max": 42553.550107068746
+  },
+  {
+    "field": "tok_per_s_gpu",
+    "observations": 8325,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 1625.2641462751708,
+    "max": 25014.22469124708
+  },
+  {
+    "field": "val_antigen-fineweb-15b",
+    "observations": 2,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 2.5745800882577896,
+    "max": 2.579988367855549
+  },
+  {
+    "field": "val_loss",
+    "observations": 28,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 0.7668316561612301,
+    "max": 5.441799927502871
+  },
+  {
+    "field": "val_stackv2-edu",
+    "observations": 2,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 0.9254252072423697,
+    "max": 0.9342900877818465
+  },
+  {
+    "field": "val_swallow-code",
+    "observations": 2,
+    "variants": [
+      "dense3b"
+    ],
+    "min": 0.49829124263487756,
+    "max": 0.5046723112463951
+  }
+]

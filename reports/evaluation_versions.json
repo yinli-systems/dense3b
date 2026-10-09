@@ -1,0 +1,1626 @@
+[
+  {
+    "evaluation_id": "6d48e5da15b3b278",
+    "variant": "dense3b",
+    "step": 1499,
+    "kind": "legacy",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00001499",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-legacy",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "heldout",
+      "humaneval",
+      "gsm8k"
+    ],
+    "source": "evidence/raw/results/eval-step_00001499.json",
+    "source_sha256": "6d48e5da15b3b27894d5d6e913766a0621a57a4de297b88953b0e868caca4b37",
+    "origin_count": 3,
+    "reported_tokens_B": 1.57,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/code3b-train/results/eval-step_00001499.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/code3b-train/results/eval-step_00001499.json",
+        "mtime_ns": 1791303970675433258,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "code3b-pretraining@38ad7542f50f05168a79bb140fd1afeda4ac5503:results/train/results/eval-step_00001499.json",
+        "origin": "git_history",
+        "logical_path": "results/train/results/eval-step_00001499.json",
+        "mtime_ns": null,
+        "git_commit": "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+        "git_occurrences": [
+          "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+          "a938957832a626ff321bd30b913b91f621cfc6f2"
+        ]
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/raw/results/eval-step_00001499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/eval-step_00001499.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "a8831eeac3919fff",
+    "variant": "dense3b",
+    "step": 5749,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-mc",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "source": "evidence/checkpoint_audit/a8831eeac3919fff/mc-step_00005749.json",
+    "source_sha256": "a8831eeac3919fff3a7a0b5592163a13e951f5a08f17fad9f3fd77798fbef0cf",
+    "origin_count": 1,
+    "reported_tokens_B": null,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/code3b-train/results/mc-step_00005749.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/code3b-train/results/mc-step_00005749.json",
+        "mtime_ns": 1791571065300188986,
+        "git_commit": null,
+        "git_occurrences": null
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "1ff767d0fe38c5fb",
+    "variant": "dense3b",
+    "step": 1499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00001499",
+    "declared_checkpoint_sha256": "333fdee25243a8dfe75e5f73a893e12026eb0eb6b944d409c8896550f3e4baf8",
+    "protocol_id": "0a91bce8b95553c6",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": null,
+      "protocol_sha256": null,
+      "eval_suite_sha256": "6c2b394d01ed55b3f5424533c940e153c1902c0d35d2b2b755c6bf4c2ba93c86",
+      "generate_sha256": "c326301d8f359e1cd6329544646891bfe1a7403342e74b87b2d534db7c59865a",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "heldout",
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "lcb"
+    ],
+    "source": "evidence/raw/results/suite-step_00001499-1670852.json",
+    "source_sha256": "1ff767d0fe38c5fb29a6d30ecb1ed146d1a44d4184c24871aaf4821aa1bda7b0",
+    "origin_count": 3,
+    "reported_tokens_B": 1.57,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [
+      "evidence/raw/results/suite-step_00001499-1670852.details.json"
+    ],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/code3b-train/results/suite-step_00001499-1670852.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/code3b-train/results/suite-step_00001499-1670852.json",
+        "mtime_ns": 1791314344723114320,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "code3b-pretraining@38ad7542f50f05168a79bb140fd1afeda4ac5503:results/train/results/suite-step_00001499-1670852.json",
+        "origin": "git_history",
+        "logical_path": "results/train/results/suite-step_00001499-1670852.json",
+        "mtime_ns": null,
+        "git_commit": "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+        "git_occurrences": [
+          "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+          "a938957832a626ff321bd30b913b91f621cfc6f2"
+        ]
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/raw/results/suite-step_00001499-1670852.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00001499-1670852.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "eval_suite_sha256": "evidence/checkpoint_audit/6c2b394d01ed55b3/eval_suite.py",
+      "generate_sha256": "model/generate.py",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "2064e48b7be1d2a0",
+    "variant": "dense3b",
+    "step": 1499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00001499",
+    "declared_checkpoint_sha256": "333fdee25243a8dfe75e5f73a893e12026eb0eb6b944d409c8896550f3e4baf8",
+    "protocol_id": "b5f55b7a1481a80f",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": "dense3b-base-suite-v1",
+      "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+      "eval_suite_sha256": "e7902340bcc9d42ed28068428bb5318db6351e975ebc5cca01e651e824b180f4",
+      "generate_sha256": "c326301d8f359e1cd6329544646891bfe1a7403342e74b87b2d534db7c59865a",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "cruxeval",
+      "lcb"
+    ],
+    "source": "evidence/raw/results/suite-step_00001499-lcb-crux.json",
+    "source_sha256": "2064e48b7be1d2a0dc53ef0d05374cd0ae30425328d8f16f010a4892a8c35d07",
+    "origin_count": 3,
+    "reported_tokens_B": 1.57,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [
+      "evidence/raw/results/suite-step_00001499-lcb-crux.details.json"
+    ],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/code3b-train/results/suite-step_00001499-lcb-crux.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/code3b-train/results/suite-step_00001499-lcb-crux.json",
+        "mtime_ns": 1791324941400417840,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "code3b-pretraining@38ad7542f50f05168a79bb140fd1afeda4ac5503:results/train/results/suite-step_00001499-lcb-crux.json",
+        "origin": "git_history",
+        "logical_path": "results/train/results/suite-step_00001499-lcb-crux.json",
+        "mtime_ns": null,
+        "git_commit": "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+        "git_occurrences": [
+          "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+          "a938957832a626ff321bd30b913b91f621cfc6f2"
+        ]
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/raw/results/suite-step_00001499-lcb-crux.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00001499-lcb-crux.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "protocol_sha256": "evidence/protocol/eval-protocol-v1.json",
+      "eval_suite_sha256": "bench/eval_suite.py",
+      "generate_sha256": "model/generate.py",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "037d479dd478d738",
+    "variant": "dense3b",
+    "step": 1499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00001499",
+    "declared_checkpoint_sha256": "333fdee25243a8dfe75e5f73a893e12026eb0eb6b944d409c8896550f3e4baf8",
+    "protocol_id": "f741e9571054892a",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": "dense3b-base-suite-v1",
+      "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+      "eval_suite_sha256": "6c2b394d01ed55b3f5424533c940e153c1902c0d35d2b2b755c6bf4c2ba93c86",
+      "generate_sha256": "c326301d8f359e1cd6329544646891bfe1a7403342e74b87b2d534db7c59865a",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "heldout",
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "fim",
+      "gsm8k"
+    ],
+    "source": "evidence/raw/results/suite-step_00001499.json",
+    "source_sha256": "037d479dd478d73866909152957ddb362fcff24a78c8b7ae2b140b76fa144413",
+    "origin_count": 3,
+    "reported_tokens_B": 1.57,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/code3b-train/results/suite-step_00001499.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/code3b-train/results/suite-step_00001499.json",
+        "mtime_ns": 1791316470030193321,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "code3b-pretraining@38ad7542f50f05168a79bb140fd1afeda4ac5503:results/train/results/suite-step_00001499.json",
+        "origin": "git_history",
+        "logical_path": "results/train/results/suite-step_00001499.json",
+        "mtime_ns": null,
+        "git_commit": "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+        "git_occurrences": [
+          "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+          "a938957832a626ff321bd30b913b91f621cfc6f2"
+        ]
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/raw/results/suite-step_00001499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00001499.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "protocol_sha256": "evidence/protocol/eval-protocol-v1.json",
+      "eval_suite_sha256": "evidence/checkpoint_audit/6c2b394d01ed55b3/eval_suite.py",
+      "generate_sha256": "model/generate.py",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "2b5f512e6227ca9f",
+    "variant": "dense3b",
+    "step": 2499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00002499",
+    "declared_checkpoint_sha256": "c54d7a89368dec2bd04b603409cc9941a4a21815052163f2965ab1fdaebdd66c",
+    "protocol_id": "b5f55b7a1481a80f",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": "dense3b-base-suite-v1",
+      "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+      "eval_suite_sha256": "e7902340bcc9d42ed28068428bb5318db6351e975ebc5cca01e651e824b180f4",
+      "generate_sha256": "c326301d8f359e1cd6329544646891bfe1a7403342e74b87b2d534db7c59865a",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "heldout",
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "lcb"
+    ],
+    "source": "evidence/raw/results/suite-step_00002499.json",
+    "source_sha256": "2b5f512e6227ca9f139b36c9cff2f2b45201131f66621accfda191a5774e61da",
+    "origin_count": 3,
+    "reported_tokens_B": 2.62,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [
+      "evidence/raw/results/suite-step_00002499.details.json"
+    ],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/code3b-train/results/suite-step_00002499.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/code3b-train/results/suite-step_00002499.json",
+        "mtime_ns": 1791341467241595798,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "code3b-pretraining@38ad7542f50f05168a79bb140fd1afeda4ac5503:results/train/results/suite-step_00002499.json",
+        "origin": "git_history",
+        "logical_path": "results/train/results/suite-step_00002499.json",
+        "mtime_ns": null,
+        "git_commit": "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+        "git_occurrences": [
+          "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+          "a938957832a626ff321bd30b913b91f621cfc6f2"
+        ]
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/raw/results/suite-step_00002499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00002499.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "protocol_sha256": "evidence/protocol/eval-protocol-v1.json",
+      "eval_suite_sha256": "bench/eval_suite.py",
+      "generate_sha256": "model/generate.py",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "64cfa7191be500c8",
+    "variant": "dense3b",
+    "step": 4999,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00004999",
+    "declared_checkpoint_sha256": "35552cb96f8e6a993d5a41cf062716efa6b218bddb5db849f137534dbc5d1859",
+    "protocol_id": "b5f55b7a1481a80f",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": "dense3b-base-suite-v1",
+      "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+      "eval_suite_sha256": "e7902340bcc9d42ed28068428bb5318db6351e975ebc5cca01e651e824b180f4",
+      "generate_sha256": "c326301d8f359e1cd6329544646891bfe1a7403342e74b87b2d534db7c59865a",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "heldout",
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "lcb"
+    ],
+    "source": "evidence/raw/results/suite-step_00004999.json",
+    "source_sha256": "64cfa7191be500c889540cd6aada25eebf7e093fab3923f3f82664f50c9d9744",
+    "origin_count": 2,
+    "reported_tokens_B": 5.24,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [
+      "evidence/imported/moe1b/suite-step_00004999-1673758.details.json"
+    ],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/code3b-train/results/suite-step_00004999.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/code3b-train/results/suite-step_00004999.json",
+        "mtime_ns": 1791415773775718342,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/raw/results/suite-step_00004999.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00004999.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "protocol_sha256": "evidence/protocol/eval-protocol-v1.json",
+      "eval_suite_sha256": "bench/eval_suite.py",
+      "generate_sha256": "model/generate.py",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "420057a931269855",
+    "variant": "dense3b",
+    "step": 5749,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749",
+    "declared_checkpoint_sha256": "517f8e13fa018c25e4ddea45870bde2d9d2b07338505c94afd3d82804d07f428",
+    "protocol_id": "9b6abc5a7c13d91b",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": "dense3b-base-suite-v1",
+      "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+      "eval_suite_sha256": "079eb417c5e7fd03b4e8efd8773826d0079dfa763b317968f52791d562bbd656",
+      "generate_sha256": "9e1208a703fec2a2abc14cdb21c1b375840b7d7cb58599530f8bcfbf5cca2f08",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k"
+    ],
+    "source": "evidence/raw/results/suite-step_00005749.json",
+    "source_sha256": "420057a9312698550c12fade90823c0dd5fb1d94a682d02d0aa3aa3d2633889b",
+    "origin_count": 2,
+    "reported_tokens_B": 6.03,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [
+      "evidence/raw/results/suite-step_00005749.details.json"
+    ],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/code3b-train/results/suite-step_00005749.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/code3b-train/results/suite-step_00005749.json",
+        "mtime_ns": 1791568999294746686,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/raw/results/suite-step_00005749.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00005749.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "protocol_sha256": "evidence/protocol/eval-protocol-v1.json",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {
+      "eval_suite_sha256": "079eb417c5e7fd03b4e8efd8773826d0079dfa763b317968f52791d562bbd656",
+      "generate_sha256": "9e1208a703fec2a2abc14cdb21c1b375840b7d7cb58599530f8bcfbf5cca2f08"
+    }
+  },
+  {
+    "evaluation_id": "eefbd27cfb6d2b2c",
+    "variant": "dense3b",
+    "step": 1499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00001499",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-mc",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "source": "evidence/imported/moe1b/mc-dense3b-step1499.json",
+    "source_sha256": "eefbd27cfb6d2b2c8351ba42cbc0f49f5ae09f5c618be3b48a60320fa7e58d62",
+    "origin_count": 3,
+    "reported_tokens_B": null,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/moe1b/results/mc-dense3b-step1499.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/moe1b/results/mc-dense3b-step1499.json",
+        "mtime_ns": 1791401392014818272,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/imported/moe1b/mc-dense3b-step1499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/imported/moe1b/mc-dense3b-step1499.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      },
+      {
+        "source": "moe1b@695d6074fb44be04b17fd582e5f04867e606226a:evidence/raw/results/mc-dense3b-step1499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/mc-dense3b-step1499.json",
+        "mtime_ns": null,
+        "git_commit": "695d6074fb44be04b17fd582e5f04867e606226a",
+        "git_occurrences": [
+          "695d6074fb44be04b17fd582e5f04867e606226a",
+          "dbb596f61c603abf0cf0cf7af0cec2cda777399d",
+          "4f4e6b90aff3644f87f5047a4060097d4394f4fe",
+          "aa069a9a04b9bc9f1625924e9bf9503c837417cd",
+          "e3055bfd4fbc0f5310d40d5e884c7ae6c6fa53cc"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "7b1c28bffad71131",
+    "variant": "dense3b",
+    "step": 4499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00004499",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-mc",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "source": "evidence/imported/moe1b/mc-dense3b-step4499.json",
+    "source_sha256": "7b1c28bffad71131c265ddc8863aa156cd889ee0661a2b99b0f501fb1514d68d",
+    "origin_count": 3,
+    "reported_tokens_B": null,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/moe1b/results/mc-dense3b-step4499.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/moe1b/results/mc-dense3b-step4499.json",
+        "mtime_ns": 1791401527239960251,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/imported/moe1b/mc-dense3b-step4499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/imported/moe1b/mc-dense3b-step4499.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      },
+      {
+        "source": "moe1b@695d6074fb44be04b17fd582e5f04867e606226a:evidence/raw/results/mc-dense3b-step4499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/mc-dense3b-step4499.json",
+        "mtime_ns": null,
+        "git_commit": "695d6074fb44be04b17fd582e5f04867e606226a",
+        "git_occurrences": [
+          "695d6074fb44be04b17fd582e5f04867e606226a",
+          "dbb596f61c603abf0cf0cf7af0cec2cda777399d",
+          "4f4e6b90aff3644f87f5047a4060097d4394f4fe",
+          "aa069a9a04b9bc9f1625924e9bf9503c837417cd",
+          "e3055bfd4fbc0f5310d40d5e884c7ae6c6fa53cc"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "94194351206854bb",
+    "variant": "dense3b",
+    "step": 4999,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00004999",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-mc",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "source": "evidence/imported/moe1b/mc-dense3b-step4999.json",
+    "source_sha256": "94194351206854bbd0c2b3b3ae72e12c366df12ebfc98453942ad43e8b114d97",
+    "origin_count": 3,
+    "reported_tokens_B": null,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/moe1b/results/mc-dense3b-step4999.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/moe1b/results/mc-dense3b-step4999.json",
+        "mtime_ns": 1791413251477471893,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/imported/moe1b/mc-dense3b-step4999.json",
+        "origin": "git_history",
+        "logical_path": "evidence/imported/moe1b/mc-dense3b-step4999.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      },
+      {
+        "source": "moe1b@695d6074fb44be04b17fd582e5f04867e606226a:evidence/raw/results/mc-dense3b-step4999.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/mc-dense3b-step4999.json",
+        "mtime_ns": null,
+        "git_commit": "695d6074fb44be04b17fd582e5f04867e606226a",
+        "git_occurrences": [
+          "695d6074fb44be04b17fd582e5f04867e606226a",
+          "dbb596f61c603abf0cf0cf7af0cec2cda777399d",
+          "4f4e6b90aff3644f87f5047a4060097d4394f4fe",
+          "aa069a9a04b9bc9f1625924e9bf9503c837417cd",
+          "e3055bfd4fbc0f5310d40d5e884c7ae6c6fa53cc"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "40f8ea54be656dc6",
+    "variant": "dense3b",
+    "step": 5499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005499",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-mc",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "source": "evidence/imported/moe1b/mc-dense3b-step5499.json",
+    "source_sha256": "40f8ea54be656dc631bc3fc76bfa6b064c2896f17527d19925750b7fd4f9efb3",
+    "origin_count": 3,
+    "reported_tokens_B": null,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/moe1b/results/mc-dense3b-step5499.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/moe1b/results/mc-dense3b-step5499.json",
+        "mtime_ns": 1791439394361468395,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/imported/moe1b/mc-dense3b-step5499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/imported/moe1b/mc-dense3b-step5499.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      },
+      {
+        "source": "moe1b@695d6074fb44be04b17fd582e5f04867e606226a:evidence/raw/results/mc-dense3b-step5499.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/mc-dense3b-step5499.json",
+        "mtime_ns": null,
+        "git_commit": "695d6074fb44be04b17fd582e5f04867e606226a",
+        "git_occurrences": [
+          "695d6074fb44be04b17fd582e5f04867e606226a",
+          "dbb596f61c603abf0cf0cf7af0cec2cda777399d",
+          "4f4e6b90aff3644f87f5047a4060097d4394f4fe",
+          "aa069a9a04b9bc9f1625924e9bf9503c837417cd",
+          "e3055bfd4fbc0f5310d40d5e884c7ae6c6fa53cc"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "f72a3017e876a62d",
+    "variant": "dense3b",
+    "step": 4499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00004499",
+    "declared_checkpoint_sha256": "d823c750632ab45d5d5a0bde4327fee812c5ac6be21531a5d06921cf678cce74",
+    "protocol_id": "0d17fac1d5f2efd5",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": "dense3b-base-suite-v1",
+      "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+      "eval_suite_sha256": "e7902340bcc9d42ed28068428bb5318db6351e975ebc5cca01e651e824b180f4",
+      "generate_sha256": "6ec5b0f95b026c2e58c0d3a9304949444f21beda9aaeaa444a660c437ab53c12",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "heldout",
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "lcb"
+    ],
+    "source": "evidence/imported/moe1b/suite-step_00004499-1673608.json",
+    "source_sha256": "f72a3017e876a62d6658613c96c46951eb159c9e24cde55c7e1171e10136b58c",
+    "origin_count": 3,
+    "reported_tokens_B": 4.72,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [
+      "evidence/imported/moe1b/suite-step_00004499-1673608.details.json"
+    ],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/moe1b/results/suite-step_00004499-1673608.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/moe1b/results/suite-step_00004499-1673608.json",
+        "mtime_ns": 1791406792177908994,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/imported/moe1b/suite-step_00004499-1673608.json",
+        "origin": "git_history",
+        "logical_path": "evidence/imported/moe1b/suite-step_00004499-1673608.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      },
+      {
+        "source": "moe1b@695d6074fb44be04b17fd582e5f04867e606226a:evidence/raw/results/suite-step_00004499-1673608.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00004499-1673608.json",
+        "mtime_ns": null,
+        "git_commit": "695d6074fb44be04b17fd582e5f04867e606226a",
+        "git_occurrences": [
+          "695d6074fb44be04b17fd582e5f04867e606226a",
+          "dbb596f61c603abf0cf0cf7af0cec2cda777399d",
+          "4f4e6b90aff3644f87f5047a4060097d4394f4fe",
+          "aa069a9a04b9bc9f1625924e9bf9503c837417cd",
+          "e3055bfd4fbc0f5310d40d5e884c7ae6c6fa53cc"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "protocol_sha256": "evidence/protocol/eval-protocol-v1.json",
+      "eval_suite_sha256": "bench/eval_suite.py",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {
+      "generate_sha256": "6ec5b0f95b026c2e58c0d3a9304949444f21beda9aaeaa444a660c437ab53c12"
+    }
+  },
+  {
+    "evaluation_id": "36a83f7a9d6a9597",
+    "variant": "dense3b",
+    "step": 4999,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00004999",
+    "declared_checkpoint_sha256": "35552cb96f8e6a993d5a41cf062716efa6b218bddb5db849f137534dbc5d1859",
+    "protocol_id": "0d17fac1d5f2efd5",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": "dense3b-base-suite-v1",
+      "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+      "eval_suite_sha256": "e7902340bcc9d42ed28068428bb5318db6351e975ebc5cca01e651e824b180f4",
+      "generate_sha256": "6ec5b0f95b026c2e58c0d3a9304949444f21beda9aaeaa444a660c437ab53c12",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "heldout",
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "fim",
+      "gsm8k",
+      "lcb"
+    ],
+    "source": "evidence/imported/moe1b/suite-step_00004999-1673758.json",
+    "source_sha256": "36a83f7a9d6a9597b58d9a3267a2c18153c9620a5333393fab5f93a059fa9eef",
+    "origin_count": 3,
+    "reported_tokens_B": 5.24,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [
+      "evidence/imported/moe1b/suite-step_00004999-1673758.details.json"
+    ],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/moe1b/results/suite-step_00004999-1673758.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/moe1b/results/suite-step_00004999-1673758.json",
+        "mtime_ns": 1791415807612371833,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/imported/moe1b/suite-step_00004999-1673758.json",
+        "origin": "git_history",
+        "logical_path": "evidence/imported/moe1b/suite-step_00004999-1673758.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      },
+      {
+        "source": "moe1b@695d6074fb44be04b17fd582e5f04867e606226a:evidence/raw/results/suite-step_00004999-1673758.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00004999-1673758.json",
+        "mtime_ns": null,
+        "git_commit": "695d6074fb44be04b17fd582e5f04867e606226a",
+        "git_occurrences": [
+          "695d6074fb44be04b17fd582e5f04867e606226a",
+          "dbb596f61c603abf0cf0cf7af0cec2cda777399d",
+          "4f4e6b90aff3644f87f5047a4060097d4394f4fe",
+          "aa069a9a04b9bc9f1625924e9bf9503c837417cd",
+          "e3055bfd4fbc0f5310d40d5e884c7ae6c6fa53cc"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "protocol_sha256": "evidence/protocol/eval-protocol-v1.json",
+      "eval_suite_sha256": "bench/eval_suite.py",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {
+      "generate_sha256": "6ec5b0f95b026c2e58c0d3a9304949444f21beda9aaeaa444a660c437ab53c12"
+    }
+  },
+  {
+    "evaluation_id": "8c0da3676eaebe91",
+    "variant": "dense3b",
+    "step": 5499,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005499",
+    "declared_checkpoint_sha256": "58c1ed209abbe6a23c149ac4b86b7d1f8a5de4229fb8a6979f65d88708536497",
+    "protocol_id": "0d17fac1d5f2efd5",
+    "protocol_status": "manifest_recorded",
+    "protocol_fields": {
+      "protocol": "dense3b-base-suite-v1",
+      "protocol_sha256": "2816bec4e2b850d32eef7fec484b00285842ea3fbc993a676c3f1f7f4c7521dc",
+      "eval_suite_sha256": "e7902340bcc9d42ed28068428bb5318db6351e975ebc5cca01e651e824b180f4",
+      "generate_sha256": "6ec5b0f95b026c2e58c0d3a9304949444f21beda9aaeaa444a660c437ab53c12",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "lcb": 768,
+        "fim": 192,
+        "gsm8k": 320
+      },
+      "stops": {
+        "humaneval": [
+          "\ndef ",
+          "\nclass ",
+          "\nif __name__",
+          "\nprint(",
+          "\n#",
+          "\nassert"
+        ],
+        "lcb": [
+          "```"
+        ],
+        "cruxeval": [
+          "\n"
+        ]
+      },
+      "exec_timeout_s": {
+        "base": 15,
+        "plus": 60,
+        "lcb_case": 8
+      }
+    },
+    "task_names": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k"
+    ],
+    "source": "evidence/imported/moe1b/suite-step_00005499-1675015.json",
+    "source_sha256": "8c0da3676eaebe91dd8ab8bb9f353fde0b9f53b8f492124af770d2500762beb6",
+    "origin_count": 3,
+    "reported_tokens_B": 5.77,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [
+      "evidence/imported/moe1b/suite-step_00005499-1675015.details.json"
+    ],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/moe1b/results/suite-step_00005499-1675015.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/moe1b/results/suite-step_00005499-1675015.json",
+        "mtime_ns": 1791438218372570574,
+        "git_commit": null,
+        "git_occurrences": null
+      },
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/imported/moe1b/suite-step_00005499-1675015.json",
+        "origin": "git_history",
+        "logical_path": "evidence/imported/moe1b/suite-step_00005499-1675015.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307",
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      },
+      {
+        "source": "moe1b@695d6074fb44be04b17fd582e5f04867e606226a:evidence/raw/results/suite-step_00005499-1675015.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/suite-step_00005499-1675015.json",
+        "mtime_ns": null,
+        "git_commit": "695d6074fb44be04b17fd582e5f04867e606226a",
+        "git_occurrences": [
+          "695d6074fb44be04b17fd582e5f04867e606226a",
+          "dbb596f61c603abf0cf0cf7af0cec2cda777399d",
+          "4f4e6b90aff3644f87f5047a4060097d4394f4fe",
+          "aa069a9a04b9bc9f1625924e9bf9503c837417cd",
+          "e3055bfd4fbc0f5310d40d5e884c7ae6c6fa53cc"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {
+      "protocol_sha256": "evidence/protocol/eval-protocol-v1.json",
+      "eval_suite_sha256": "bench/eval_suite.py",
+      "tokenizer_sha256": "tokenizer/tokenizer.json"
+    },
+    "unresolved_manifest_hashes": {
+      "generate_sha256": "6ec5b0f95b026c2e58c0d3a9304949444f21beda9aaeaa444a660c437ab53c12"
+    }
+  },
+  {
+    "evaluation_id": "c6984406fc92ac78",
+    "variant": "dense3b",
+    "step": 5499,
+    "kind": "domain_probe",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005499",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-domain_probe",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "domain_ce",
+      "routing_layers"
+    ],
+    "source": "evidence/checkpoint_audit/c6984406fc92ac78/dense3b-5499.json",
+    "source_sha256": "c6984406fc92ac78ead4d430e91906b2eceff2435f520466013e2ba86930c37b",
+    "origin_count": 1,
+    "reported_tokens_B": null,
+    "probe_reported_tokens": 5767168000,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": true,
+    "source_origins": [
+      {
+        "source": "/data/run01/scxi253/routing/probe-test/dense3b-5499.json",
+        "origin": "remote_snapshot",
+        "logical_path": "/data/run01/scxi253/routing/probe-test/dense3b-5499.json",
+        "mtime_ns": 1791444654873339435,
+        "git_commit": null,
+        "git_occurrences": null
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "a9b5830cfdb3f46d",
+    "variant": "dense3b",
+    "step": 5749,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-mc",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf"
+    ],
+    "source": "evidence/raw/results/mc-step_00005749.json",
+    "source_sha256": "a9b5830cfdb3f46dd986797b41ea2124473d0a1e5521cff91866ae5217114a05",
+    "origin_count": 1,
+    "reported_tokens_B": null,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": false,
+    "source_origins": [
+      {
+        "source": "dense3b@bca2344073b65d8390e79de026c826cfe40b840f:evidence/raw/results/mc-step_00005749.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/mc-step_00005749.json",
+        "mtime_ns": null,
+        "git_commit": "bca2344073b65d8390e79de026c826cfe40b840f",
+        "git_occurrences": [
+          "bca2344073b65d8390e79de026c826cfe40b840f",
+          "5de4dbdc0c173574b8cd9e2df7707b829b39c84d",
+          "779ce852cfc77baf8a25381e69a51090354db397",
+          "70bdac516eef7ed8c53aad7770e2df3bb84e9307"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "2a644bec76eceeb8",
+    "variant": "dense3b",
+    "step": 5749,
+    "kind": "suite",
+    "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749",
+    "declared_checkpoint_sha256": null,
+    "protocol_id": "unversioned-mc",
+    "protocol_status": "unversioned",
+    "protocol_fields": {},
+    "task_names": [
+      "arc_easy",
+      "arc_challenge"
+    ],
+    "source": "evidence/checkpoint_audit/2a644bec76eceeb8/mc-step_00005749.json",
+    "source_sha256": "2a644bec76eceeb89822ed84f2c27f6cb06a24ea30373be256964b69bd05a94b",
+    "origin_count": 1,
+    "reported_tokens_B": null,
+    "probe_reported_tokens": null,
+    "sample_detail_candidates": [],
+    "seen_in_live_snapshot": false,
+    "source_origins": [
+      {
+        "source": "dense3b@dad5f847c2ae975d0520eee17269f93409602597:evidence/raw/results/mc-step_00005749.json",
+        "origin": "git_history",
+        "logical_path": "evidence/raw/results/mc-step_00005749.json",
+        "mtime_ns": null,
+        "git_commit": "dad5f847c2ae975d0520eee17269f93409602597",
+        "git_occurrences": [
+          "dad5f847c2ae975d0520eee17269f93409602597"
+        ]
+      }
+    ],
+    "resolved_manifest_files": {},
+    "unresolved_manifest_hashes": {}
+  },
+  {
+    "evaluation_id": "f18bb08b9bdfd77d",
+    "variant": "dense3b",
+    "step": 2499,
+    "protocol_id": "d94bc379006a1f93",
+    "protocol_name": "checkpoint-backfill-mc-v2",
+    "manifest": {
+      "protocol": "checkpoint-backfill-mc-v2",
+      "model_sha256": "c54d7a89368dec2bd04b603409cc9941a4a21815052163f2965ab1fdaebdd66c",
+      "metadata_sha256": "7d661d26c70b21868ac7bcbf4fd2e5cf2895b4e18d3bfcb4a6a036d573cfa982",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "runner_sha256": "e885da22ec2f06b9b911f007fcdf9d3716be43f9a37dfe9a855584b69c1eab37",
+      "mc_source_sha256": "53642b866a432c021ba6e04e90f9fa7248e498dbb9f3f72ca4a11b056d3425e9",
+      "architecture_sha256": "ddaba0ba116f12c69c4151d1633e8317fd33dc429d60f96368180f1808f95939",
+      "source_config": "saved checkpoint config; doc_mask=False for inference",
+      "dtype": "bfloat16",
+      "normalization": "UTF-8 byte length, not token count",
+      "max_sequence": 2048,
+      "tokenizer_add_special_tokens": false,
+      "torch": "2.13.0+cu130",
+      "python": "3.10.20",
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "hostname": "wqd10nah04g5",
+      "job_id": "1681674",
+      "dataset_files": {
+        "/data/run01/scxi253/moe1b-data/mc/raw/Rowan__hellaswag/data/validation-00000-of-00001.jsonl": "5beba6d84769892c7ee13859caee702a34c5b1178c11add46f08c84bb1fa9d01",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Challenge/test-00000-of-00001.jsonl": "062fe98a0d64b0bb86b43ee49faf8de6b4c02417f0b4a6b7f9607208c6f1a9d6",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Easy/test-00000-of-00001.jsonl": "c38ac007c93b8de43edbf5732f3dd14d842e11007749a27f5a0ba11ac2d19851",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__openbookqa/main/test-00000-of-00001.jsonl": "bbaca15e985ba386b2f73e9659fce608cf7722a35343864dbe7115cbbda341ab",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__sciq/data/test-00000-of-00001.jsonl": "b38e83aec6f7fdda18885d793e1518f1fc690ed746775c179cfea96d9bac874a",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__winogrande/winogrande_xl/validation-00000-of-00001.jsonl": "34f0a22749f3986249b0629ff05ae298ebb2b14f93ac8499aa673626548626c7",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/dev-00000-of-00001.jsonl": "147bce5b06a81d81f7351ca1d227a596e21a92948c3390b2de49f4b149d87868",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/test-00000-of-00001.jsonl": "30225733916644b79828ee2e3961d8905e001761b0b2cce06fc3da1c2af336d7",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/validation-00000-of-00001.jsonl": "28769227a0c7dfb0c4e486f738e2e43ac1dc3fecf0a83bd2e465e1841b166724",
+        "/data/run01/scxi253/moe1b-data/mc/raw/google__boolq/data/validation-00000-of-00001.jsonl": "0ad1d6a17b5524d7f8eeea3bcb9a823556785a890f26e3d88bef40245bedc5f2"
+      }
+    },
+    "kind": "suite",
+    "source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00002499/mc.json",
+    "source_sha256": "f18bb08b9bdfd77d52013f2fc92a54d595a541fd9d4ff716ed939e6c736eeb42",
+    "original_path": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00002499/mc.json",
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "origin": "campaign_snapshot"
+  },
+  {
+    "evaluation_id": "ba80e8ef46a023d7",
+    "variant": "dense3b",
+    "step": 5999,
+    "protocol_id": "d94bc379006a1f93",
+    "protocol_name": "checkpoint-backfill-mc-v2",
+    "manifest": {
+      "protocol": "checkpoint-backfill-mc-v2",
+      "model_sha256": "8aaa578286fe030730e269ffeda8da7e679660c0c85b2a7534b2c2aad01de188",
+      "metadata_sha256": "81427380b316f53c642f856a41e81a4435e458b7980e15e93cc7302fc766345d",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "runner_sha256": "e885da22ec2f06b9b911f007fcdf9d3716be43f9a37dfe9a855584b69c1eab37",
+      "mc_source_sha256": "53642b866a432c021ba6e04e90f9fa7248e498dbb9f3f72ca4a11b056d3425e9",
+      "architecture_sha256": "ddaba0ba116f12c69c4151d1633e8317fd33dc429d60f96368180f1808f95939",
+      "source_config": "saved checkpoint config; doc_mask=False for inference",
+      "dtype": "bfloat16",
+      "normalization": "UTF-8 byte length, not token count",
+      "max_sequence": 2048,
+      "tokenizer_add_special_tokens": false,
+      "torch": "2.13.0+cu130",
+      "python": "3.10.20",
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "hostname": "wqd10nbj03g1",
+      "job_id": "1681615",
+      "dataset_files": {
+        "/data/run01/scxi253/moe1b-data/mc/raw/Rowan__hellaswag/data/validation-00000-of-00001.jsonl": "5beba6d84769892c7ee13859caee702a34c5b1178c11add46f08c84bb1fa9d01",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Challenge/test-00000-of-00001.jsonl": "062fe98a0d64b0bb86b43ee49faf8de6b4c02417f0b4a6b7f9607208c6f1a9d6",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Easy/test-00000-of-00001.jsonl": "c38ac007c93b8de43edbf5732f3dd14d842e11007749a27f5a0ba11ac2d19851",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__openbookqa/main/test-00000-of-00001.jsonl": "bbaca15e985ba386b2f73e9659fce608cf7722a35343864dbe7115cbbda341ab",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__sciq/data/test-00000-of-00001.jsonl": "b38e83aec6f7fdda18885d793e1518f1fc690ed746775c179cfea96d9bac874a",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__winogrande/winogrande_xl/validation-00000-of-00001.jsonl": "34f0a22749f3986249b0629ff05ae298ebb2b14f93ac8499aa673626548626c7",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/dev-00000-of-00001.jsonl": "147bce5b06a81d81f7351ca1d227a596e21a92948c3390b2de49f4b149d87868",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/test-00000-of-00001.jsonl": "30225733916644b79828ee2e3961d8905e001761b0b2cce06fc3da1c2af336d7",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/validation-00000-of-00001.jsonl": "28769227a0c7dfb0c4e486f738e2e43ac1dc3fecf0a83bd2e465e1841b166724",
+        "/data/run01/scxi253/moe1b-data/mc/raw/google__boolq/data/validation-00000-of-00001.jsonl": "0ad1d6a17b5524d7f8eeea3bcb9a823556785a890f26e3d88bef40245bedc5f2"
+      }
+    },
+    "kind": "suite",
+    "source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/mc.json",
+    "source_sha256": "ba80e8ef46a023d7c17cec11ad8967449d00f37f4a68648cf4c70d27ccbf47b0",
+    "original_path": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/mc.json",
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "origin": "campaign_snapshot"
+  },
+  {
+    "evaluation_id": "ed25a9290f16f92f",
+    "variant": "dense3b",
+    "step": 5999,
+    "protocol_id": "25371b05730c316d",
+    "protocol_name": "checkpoint-backfill-code-v2-official-evalplus",
+    "manifest": {
+      "protocol": "checkpoint-backfill-code-v2-official-evalplus",
+      "checkpoint_model_sha256": "8aaa578286fe030730e269ffeda8da7e679660c0c85b2a7534b2c2aad01de188",
+      "checkpoint_step": 5999,
+      "metadata_sha256": "81427380b316f53c642f856a41e81a4435e458b7980e15e93cc7302fc766345d",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "runner_sha256": "73d26352656e2fdf94e5c20c693b1eec47fc277d7fdfdc8194fc94fe428b86e5",
+      "generate_sha256": "9e1208a703fec2a2abc14cdb21c1b375840b7d7cb58599530f8bcfbf5cca2f08",
+      "archived_suite_sha256": "079eb417c5e7fd03b4e8efd8773826d0079dfa763b317968f52791d562bbd656",
+      "official_evaluate_sha256": "6fcd78d262eae6eff8af4ef6eb00b22909d37beebd90dc37b84b756053e981dd",
+      "official_backend_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+      "official_oracle_sha256": "92b126b907ee493121b55de06f6a34058b6e18adc8cf1c48737eedcd83f24cdd",
+      "official_humaneval_data_sha256": "42526ec0e7d5f3ee0b06d6ced98f8c8bae3d76519151bfb3d36f79010645bd7f",
+      "official_mbpp_data_sha256": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad",
+      "evalplus_patch_provenance": {
+        "source": "/data/run01/scxi253/code3b-train/evalplus-venv/lib/python3.10/site-packages/evalplus/eval/__init__.py",
+        "original_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+        "patched_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+        "change": "Record True and increment progress for successful find_zero special-oracle tests; assertions, tolerance, inputs and model outputs unchanged",
+        "installed_environment_modified": false
+      },
+      "isolation_sha256": "84fb316136130f3f0a677c403236676c7905b3adb38cdbe6b04ec07611bc4857",
+      "isolation_probe": {
+        "landlock_abi": 1,
+        "filesystem": "allowlisted runtime plus own temporary area",
+        "syscalls": "allowlist",
+        "new_sockets": false
+      },
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "gsm8k": 320
+      },
+      "code_scoring": "official EvalPlus tests/oracles with documented successful find_zero progress-counter fix; no HumanEval/32 bypass",
+      "execution_limits": {
+        "cruxeval_case_wall_s": 5,
+        "namespace_startup_allowance_s": 3,
+        "child_cpu_s": 10,
+        "child_address_space_bytes": 8589934592,
+        "evalplus_memory_bytes": 4294967296
+      },
+      "cruxeval_protocol": "archived 2-shot assertion execution inside restricted child",
+      "gsm8k_protocol": "archived custom 4-shot exemplars; strict phrase extraction and relaxed last-number separately",
+      "job_id": "1681671"
+    },
+    "kind": "suite",
+    "source": "evidence/sync-20261009T2320Z/campaign/dense3b-step_00005999/suite.json",
+    "source_sha256": "ed25a9290f16f92ffea01b060b4771cf636555919b1d2b2d52a2f59f1a95de20",
+    "original_path": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/dense3b/dense3b-step_00005999/suite.json",
+    "task_names": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k"
+    ],
+    "origin": "campaign_snapshot"
+  }
+]

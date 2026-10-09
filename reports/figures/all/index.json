@@ -1,0 +1,338 @@
+[
+  {
+    "name": "training_grad_norm",
+    "kind": "training",
+    "png": "reports/figures/all/training_grad_norm.png",
+    "svg": "reports/figures/all/training_grad_norm.svg"
+  },
+  {
+    "name": "training_loss",
+    "kind": "training",
+    "png": "reports/figures/all/training_loss.png",
+    "svg": "reports/figures/all/training_loss.svg"
+  },
+  {
+    "name": "training_lr",
+    "kind": "training",
+    "png": "reports/figures/all/training_lr.png",
+    "svg": "reports/figures/all/training_lr.svg"
+  },
+  {
+    "name": "training_max_mem_gb",
+    "kind": "training",
+    "png": "reports/figures/all/training_max_mem_gb.png",
+    "svg": "reports/figures/all/training_max_mem_gb.svg"
+  },
+  {
+    "name": "training_mem_fwd_bwd_gb",
+    "kind": "training",
+    "png": "reports/figures/all/training_mem_fwd_bwd_gb.png",
+    "svg": "reports/figures/all/training_mem_fwd_bwd_gb.svg"
+  },
+  {
+    "name": "training_mfu",
+    "kind": "training",
+    "png": "reports/figures/all/training_mfu.png",
+    "svg": "reports/figures/all/training_mfu.svg"
+  },
+  {
+    "name": "training_step_s",
+    "kind": "training",
+    "png": "reports/figures/all/training_step_s.png",
+    "svg": "reports/figures/all/training_step_s.svg"
+  },
+  {
+    "name": "training_tok_per_s",
+    "kind": "training",
+    "png": "reports/figures/all/training_tok_per_s.png",
+    "svg": "reports/figures/all/training_tok_per_s.svg"
+  },
+  {
+    "name": "training_tok_per_s_gpu",
+    "kind": "training",
+    "png": "reports/figures/all/training_tok_per_s_gpu.png",
+    "svg": "reports/figures/all/training_tok_per_s_gpu.svg"
+  },
+  {
+    "name": "training_val_antigen-fineweb-15b",
+    "kind": "training",
+    "png": "reports/figures/all/training_val_antigen-fineweb-15b.png",
+    "svg": "reports/figures/all/training_val_antigen-fineweb-15b.svg"
+  },
+  {
+    "name": "training_val_loss",
+    "kind": "training",
+    "png": "reports/figures/all/training_val_loss.png",
+    "svg": "reports/figures/all/training_val_loss.svg"
+  },
+  {
+    "name": "training_val_stackv2-edu",
+    "kind": "training",
+    "png": "reports/figures/all/training_val_stackv2-edu.png",
+    "svg": "reports/figures/all/training_val_stackv2-edu.svg"
+  },
+  {
+    "name": "training_val_swallow-code",
+    "kind": "training",
+    "png": "reports/figures/all/training_val_swallow-code.png",
+    "svg": "reports/figures/all/training_val_swallow-code.svg"
+  },
+  {
+    "name": "training_all_runs",
+    "kind": "training",
+    "png": "reports/figures/all/training_all_runs.png",
+    "svg": "reports/figures/all/training_all_runs.svg"
+  },
+  {
+    "name": "eval_arc_challenge_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_arc_challenge_acc.png",
+    "svg": "reports/figures/all/eval_arc_challenge_acc.svg"
+  },
+  {
+    "name": "eval_arc_challenge_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_arc_challenge_acc_norm.png",
+    "svg": "reports/figures/all/eval_arc_challenge_acc_norm.svg"
+  },
+  {
+    "name": "eval_arc_easy_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_arc_easy_acc.png",
+    "svg": "reports/figures/all/eval_arc_easy_acc.svg"
+  },
+  {
+    "name": "eval_arc_easy_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_arc_easy_acc_norm.png",
+    "svg": "reports/figures/all/eval_arc_easy_acc_norm.svg"
+  },
+  {
+    "name": "eval_boolq_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_boolq_acc.png",
+    "svg": "reports/figures/all/eval_boolq_acc.svg"
+  },
+  {
+    "name": "eval_boolq_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_boolq_acc_norm.png",
+    "svg": "reports/figures/all/eval_boolq_acc_norm.svg"
+  },
+  {
+    "name": "eval_cruxeval_cruxeval_i",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_cruxeval_cruxeval_i.png",
+    "svg": "reports/figures/all/eval_cruxeval_cruxeval_i.svg"
+  },
+  {
+    "name": "eval_cruxeval_cruxeval_o",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_cruxeval_cruxeval_o.png",
+    "svg": "reports/figures/all/eval_cruxeval_cruxeval_o.svg"
+  },
+  {
+    "name": "eval_fim_multi_exact",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_fim_multi_exact.png",
+    "svg": "reports/figures/all/eval_fim_multi_exact.svg"
+  },
+  {
+    "name": "eval_fim_multi_pass_rate",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_fim_multi_pass_rate.png",
+    "svg": "reports/figures/all/eval_fim_multi_pass_rate.svg"
+  },
+  {
+    "name": "eval_fim_multi_suffix_dup",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_fim_multi_suffix_dup.png",
+    "svg": "reports/figures/all/eval_fim_multi_suffix_dup.svg"
+  },
+  {
+    "name": "eval_fim_multi_terminated",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_fim_multi_terminated.png",
+    "svg": "reports/figures/all/eval_fim_multi_terminated.svg"
+  },
+  {
+    "name": "eval_fim_single_exact",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_fim_single_exact.png",
+    "svg": "reports/figures/all/eval_fim_single_exact.svg"
+  },
+  {
+    "name": "eval_fim_single_pass_rate",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_fim_single_pass_rate.png",
+    "svg": "reports/figures/all/eval_fim_single_pass_rate.svg"
+  },
+  {
+    "name": "eval_fim_single_suffix_dup",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_fim_single_suffix_dup.png",
+    "svg": "reports/figures/all/eval_fim_single_suffix_dup.svg"
+  },
+  {
+    "name": "eval_fim_single_terminated",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_fim_single_terminated.png",
+    "svg": "reports/figures/all/eval_fim_single_terminated.svg"
+  },
+  {
+    "name": "eval_gsm8k_gsm8k",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_gsm8k_gsm8k.png",
+    "svg": "reports/figures/all/eval_gsm8k_gsm8k.svg"
+  },
+  {
+    "name": "eval_gsm8k_strict_accuracy",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_gsm8k_strict_accuracy.png",
+    "svg": "reports/figures/all/eval_gsm8k_strict_accuracy.svg"
+  },
+  {
+    "name": "eval_hellaswag_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_hellaswag_acc.png",
+    "svg": "reports/figures/all/eval_hellaswag_acc.svg"
+  },
+  {
+    "name": "eval_hellaswag_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_hellaswag_acc_norm.png",
+    "svg": "reports/figures/all/eval_hellaswag_acc_norm.svg"
+  },
+  {
+    "name": "eval_humaneval_humaneval",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_humaneval_humaneval.png",
+    "svg": "reports/figures/all/eval_humaneval_humaneval.svg"
+  },
+  {
+    "name": "eval_humaneval_humaneval_plus",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_humaneval_humaneval_plus.png",
+    "svg": "reports/figures/all/eval_humaneval_humaneval_plus.svg"
+  },
+  {
+    "name": "eval_lcb_lcb_added_in_v1",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_lcb_lcb_added_in_v1.png",
+    "svg": "reports/figures/all/eval_lcb_lcb_added_in_v1.svg"
+  },
+  {
+    "name": "eval_lcb_lcb_added_in_v2",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_lcb_lcb_added_in_v2.png",
+    "svg": "reports/figures/all/eval_lcb_lcb_added_in_v2.svg"
+  },
+  {
+    "name": "eval_lcb_lcb_added_in_v3",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_lcb_lcb_added_in_v3.png",
+    "svg": "reports/figures/all/eval_lcb_lcb_added_in_v3.svg"
+  },
+  {
+    "name": "eval_lcb_lcb_added_in_v4",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_lcb_lcb_added_in_v4.png",
+    "svg": "reports/figures/all/eval_lcb_lcb_added_in_v4.svg"
+  },
+  {
+    "name": "eval_lcb_lcb_added_in_v5",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_lcb_lcb_added_in_v5.png",
+    "svg": "reports/figures/all/eval_lcb_lcb_added_in_v5.svg"
+  },
+  {
+    "name": "eval_lcb_lcb_added_in_v6",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_lcb_lcb_added_in_v6.png",
+    "svg": "reports/figures/all/eval_lcb_lcb_added_in_v6.svg"
+  },
+  {
+    "name": "eval_lcb_lcb_release_v6_cumulative",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_lcb_lcb_release_v6_cumulative.png",
+    "svg": "reports/figures/all/eval_lcb_lcb_release_v6_cumulative.svg"
+  },
+  {
+    "name": "eval_lcb_lcb_v6_slice_175_post_cutoff",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_lcb_lcb_v6_slice_175_post_cutoff.png",
+    "svg": "reports/figures/all/eval_lcb_lcb_v6_slice_175_post_cutoff.svg"
+  },
+  {
+    "name": "eval_mbpp_mbpp",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_mbpp_mbpp.png",
+    "svg": "reports/figures/all/eval_mbpp_mbpp.svg"
+  },
+  {
+    "name": "eval_mbpp_mbpp_plus",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_mbpp_mbpp_plus.png",
+    "svg": "reports/figures/all/eval_mbpp_mbpp_plus.svg"
+  },
+  {
+    "name": "eval_mmlu_cf_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_mmlu_cf_acc.png",
+    "svg": "reports/figures/all/eval_mmlu_cf_acc.svg"
+  },
+  {
+    "name": "eval_mmlu_cf_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_mmlu_cf_acc_norm.png",
+    "svg": "reports/figures/all/eval_mmlu_cf_acc_norm.svg"
+  },
+  {
+    "name": "eval_mmlu_mc5_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_mmlu_mc5_acc.png",
+    "svg": "reports/figures/all/eval_mmlu_mc5_acc.svg"
+  },
+  {
+    "name": "eval_mmlu_mc5_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_mmlu_mc5_acc_norm.png",
+    "svg": "reports/figures/all/eval_mmlu_mc5_acc_norm.svg"
+  },
+  {
+    "name": "eval_openbookqa_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_openbookqa_acc.png",
+    "svg": "reports/figures/all/eval_openbookqa_acc.svg"
+  },
+  {
+    "name": "eval_openbookqa_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_openbookqa_acc_norm.png",
+    "svg": "reports/figures/all/eval_openbookqa_acc_norm.svg"
+  },
+  {
+    "name": "eval_sciq_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_sciq_acc.png",
+    "svg": "reports/figures/all/eval_sciq_acc.svg"
+  },
+  {
+    "name": "eval_sciq_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_sciq_acc_norm.png",
+    "svg": "reports/figures/all/eval_sciq_acc_norm.svg"
+  },
+  {
+    "name": "eval_winogrande_acc",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_winogrande_acc.png",
+    "svg": "reports/figures/all/eval_winogrande_acc.svg"
+  },
+  {
+    "name": "eval_winogrande_acc_norm",
+    "kind": "evaluation",
+    "png": "reports/figures/all/eval_winogrande_acc_norm.png",
+    "svg": "reports/figures/all/eval_winogrande_acc_norm.svg"
+  }
+]

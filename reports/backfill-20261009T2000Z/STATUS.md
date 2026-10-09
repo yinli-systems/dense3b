@@ -1,3 +1,6 @@
+<!-- current-report-navigation -->
+> **Archived snapshot:** this page retains its original audit date. [Open the latest consolidated checkpoint results](../RESULTS.md) for newer results and training telemetry.
+
 # dense3b — checkpoint backfill status
 
 **Evidence captured: 2026-10-09T20:39:11.654910+00:00.** This is a snapshot, not a live feed.
