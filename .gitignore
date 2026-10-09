@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.DS_Store
+._*
+.venv/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pt
+*.pth
+*.safetensors
+*.u16
+*.parquet
+.cache/
+.pytest_cache/
