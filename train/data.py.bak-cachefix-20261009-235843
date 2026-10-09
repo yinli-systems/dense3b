@@ -1,0 +1,74 @@
+"""Deterministic loader over packed uint16 token shards.
+
+A shard is a raw little-endian uint16 file of concatenated documents, each followed by EOS (50279).
+Training windows are seq_len+1 tokens at stride seq_len inside a shard (documents pack across window
+boundaries; EOS separates them). The sample for (step, dp_rank, micro) is a pure function of the seed,
+so resume needs only the step and the order is identical for any number of restarts. A shard listed
+as `path:R` is repeated R times (quality upsampling, see design doc), with each copy in a different
+position of the epoch permutation.
+"""
+import glob
+import numpy as np
+import torch
+
+EOS, PAD = 50279, 1
+
+
+def write_shard(path, docs, eos=EOS):
+    arr = np.concatenate([np.append(np.asarray(d, dtype=np.uint16), np.uint16(eos)) for d in docs])
+    arr.astype('<u2').tofile(path)
+    return arr.size
+
+
+class PackedTokens:
+    def __init__(self, shards, seq_len, seed=0):
+        self.seq_len, self.seed = seq_len, seed
+        self.maps, counts = [], []
+        for spec in shards:
+            spec = str(spec)
+            path, rep = (spec.rsplit(':', 1) if spec.rsplit(':', 1)[-1].isdigit() else (spec, ''))
+            mm = np.memmap(path, dtype='<u2', mode='r')
+            n = (mm.size - 1) // seq_len
+            for _ in range(int(rep or 1)):
+                self.maps.append(mm)
+                counts.append(n)
+        self.cum = np.cumsum([0] + counts)
+        self.n = int(self.cum[-1])
+        if self.n == 0:
+            raise ValueError('shards hold no full window')
+        self._perm_epoch, self._perm = None, None
+
+    def __len__(self):
+        return self.n
+
+    def _perm_for(self, epoch):
+        if self._perm_epoch != epoch:
+            rng = np.random.Generator(np.random.PCG64([self.seed, epoch]))
+            self._perm = rng.permutation(self.n).astype(np.int64)
+            self._perm_epoch = epoch
+        return self._perm
+
+    def window(self, global_pos):
+        epoch, i = divmod(int(global_pos), self.n)
+        j = int(self._perm_for(epoch)[i])
+        s = int(np.searchsorted(self.cum, j, side='right') - 1)
+        off = (j - int(self.cum[s])) * self.seq_len
+        return np.asarray(self.maps[s][off:off + self.seq_len + 1], dtype=np.int64)
+
+    def batch(self, step, dp_rank, dp_size, micro, micro_bs, global_bs):
+        """Micro-batch `micro` of data-parallel rank `dp_rank` at optimizer step `step`."""
+        per_rank = global_bs // dp_size
+        base = step * global_bs + dp_rank * per_rank + micro * micro_bs
+        w = torch.from_numpy(np.stack([self.window(base + i) for i in range(micro_bs)]))
+        x, y = w[:, :-1], w[:, 1:].clone()
+        y[y == PAD] = -100
+        return x, y
+
+
+def shard_paths(specs):
+    """Comma-separated globs, each optionally suffixed `:R` (repeat factor) -> sorted shard specs."""
+    out = []
+    for spec in specs.split(','):
+        pat, _, rep = spec.rpartition(':') if spec.rsplit(':', 1)[-1].isdigit() else (spec, '', '')
+        out += [f'{p}:{rep}' if rep else p for p in sorted(glob.glob(pat))]
+    return out
