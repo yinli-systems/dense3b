@@ -1,0 +1,12 @@
+--- official-installed/evalplus/eval/__init__.py
++++ score-runtime/evalplus/eval/__init__.py
+@@ -186,6 +186,9 @@
+                     if dataset == "humaneval":
+                         if "find_zero" == entry_point:
+                             assert abs(_poly(*inp, out)) <= atol
++                            # Record the successful test before this special-oracle early continue.
++                            details[i] = True
++                            progress.value += 1
+                             continue
+                     # ============== special oracles ================= #
+                     # ================================================ #

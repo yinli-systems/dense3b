@@ -1,0 +1,7 @@
+{
+  "source": "/data/run01/scxi253/code3b-train/evalplus-venv/lib/python3.10/site-packages/evalplus/eval/__init__.py",
+  "original_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+  "patched_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+  "change": "Record True and increment progress for successful find_zero special-oracle tests; assertions, tolerance, inputs and model outputs unchanged",
+  "installed_environment_modified": false
+}

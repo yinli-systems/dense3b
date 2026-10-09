@@ -1,0 +1,74 @@
+{
+  "repository": "dense3b",
+  "snapshot_utc": "2026-10-09T20:31:52.992532+00:00",
+  "checkpoints": [
+    {
+      "repo": "dense3b",
+      "preset": "dense3b",
+      "step": 5999,
+      "original_checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005999",
+      "found_tasks": [],
+      "missing_tasks": [
+        "arc_challenge",
+        "arc_easy",
+        "boolq",
+        "cruxeval",
+        "gsm8k",
+        "hellaswag",
+        "humaneval",
+        "mbpp",
+        "mmlu_cf",
+        "mmlu_mc5",
+        "openbookqa",
+        "sciq",
+        "winogrande"
+      ],
+      "pinned_checkpoint": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/dense3b/dense3b-step_00005999",
+      "metadata_sha256": "81427380b316f53c642f856a41e81a4435e458b7980e15e93cc7302fc766345d",
+      "model_bytes": 6492811343,
+      "model_inode": 1503498228,
+      "model_device": 46,
+      "hardlink": true,
+      "index": 0
+    },
+    {
+      "repo": "dense3b",
+      "preset": "dense3b",
+      "step": 2499,
+      "original_checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00002499",
+      "found_tasks": [
+        "cruxeval",
+        "gsm8k",
+        "humaneval",
+        "mbpp"
+      ],
+      "missing_tasks": [
+        "arc_challenge",
+        "arc_easy",
+        "boolq",
+        "hellaswag",
+        "mmlu_cf",
+        "mmlu_mc5",
+        "openbookqa",
+        "sciq",
+        "winogrande"
+      ],
+      "pinned_checkpoint": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/dense3b/dense3b-step_00002499",
+      "metadata_sha256": "7d661d26c70b21868ac7bcbf4fd2e5cf2895b4e18d3bfcb4a6a036d573cfa982",
+      "model_bytes": 6492811343,
+      "model_inode": 1492194206,
+      "model_device": 46,
+      "hardlink": true,
+      "index": 4
+    }
+  ],
+  "global_evaluation_max_concurrency": 2,
+  "partition": "gpu_5090",
+  "nice": 10000,
+  "job_arrays": {
+    "pilot": "1681614",
+    "mc_remainder": "1681638",
+    "mc_final_rescan": "1681668",
+    "generation": "1681670"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-09T20:31:49.522606+00:00",
+  "positive_reference_tasks": {
+    "humaneval": 3,
+    "mbpp": 3
+  },
+  "HumanEval32_correct_reference": "base and Plus pass",
+  "HumanEval32_incorrect_reference": "base and Plus fail with failed-input evidence",
+  "isolation_positive_probe": "passed",
+  "host_read_and_new_socket_denied": true,
+  "installed_evalplus_modified": false,
+  "status": "passed"
+}
