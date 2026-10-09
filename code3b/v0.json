@@ -1,0 +1,19 @@
+{
+  "raw_root": "/data/run01/scxi253/code3b-data-20261003/raw",
+  "bench_root": "/data/run01/scxi253/code3b-data-20261003/bench",
+  "work": "/data/run01/scxi253/code3b-data-20261003/v0/work",
+  "shards": "/data/run01/scxi253/code3b-data-20261003/v0/shards",
+  "tokenizer": "/data/run01/scxi253/moe7b-quality-stage2-20261002T2327Z/tokenizer.json",
+  "background": {"sources": ["starcoderdata", "swallow-code", "opc-annealing", "stackv2-edu", "nemotron-cc-math-4plus"], "docs": 400000, "min_docs": 40},
+  "bench_context_words": 8, "bench_max_contexts": 4, "bench_min_hits": 2,
+  "sources": [
+    {"name": "swallow-code", "glob": "tokyotech-llm__swallow-code/train/*.jsonl", "format": "jsonl", "rank": 1, "fim_rate": 0.5},
+    {"name": "swallow-math", "glob": "tokyotech-llm__swallow-math/**/*.jsonl", "format": "jsonl", "rank": 1},
+    {"name": "opc-annealing", "glob": "OpenCoder-LLM__opc-annealing-corpus/**/*.jsonl", "format": "jsonl", "rank": 2},
+    {"name": "stackv2-edu", "glob": "common-pile__stackv2_edu_filtered/*.json.gz", "format": "jsonl", "rank": 3,
+     "score_floor": 3.0, "score_floor_by_lang": {"java": 2.0}, "fim_rate": 0.5},
+    {"name": "nemotron-cc-math-4plus", "glob": "nvidia__Nemotron-CC-Math-v1/4plus/*.parquet", "format": "parquet", "rank": 3},
+    {"name": "starcoderdata", "glob": "bigcode__starcoderdata/*/train-00000-of-*.parquet", "format": "parquet", "rank": 9,
+     "text_field": "content", "map": false}
+  ]
+}

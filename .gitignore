@@ -15,3 +15,5 @@ __pycache__/
 *.parquet
 .cache/
 .pytest_cache/
+
+.venv-report/

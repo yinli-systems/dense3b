@@ -1,0 +1,144 @@
+{
+  "description": "Additional dataset-preparation source, tokenizers, and cache operations. Benchmark input datasets and training token shards are not copied.",
+  "origin_code_repository_commit": "38ad7542f50f05168a79bb140fd1afeda4ac5503",
+  "records": [
+    {
+      "repo_path": "data_pipeline/code3b-data-20261003/config/download.py",
+      "source": "/data/run01/scxi253/code3b-data-20261003/config/download.py",
+      "bytes": 1514,
+      "sha256": "001d5a5dd666264b040b91bf9445df43caf7a80c292af0e2f127ff46b58b4713"
+    },
+    {
+      "repo_path": "data_pipeline/code3b-data-20261003/config/download_gated.py",
+      "source": "/data/run01/scxi253/code3b-data-20261003/config/download_gated.py",
+      "bytes": 1648,
+      "sha256": "848413f0bedf6a96f1f847497e8ca4c4c398a9d1ecb1b163f2b33d38171cb8e3"
+    },
+    {
+      "repo_path": "data_pipeline/code3b-data-20261003/config/fastdl.py",
+      "source": "/data/run01/scxi253/code3b-data-20261003/config/fastdl.py",
+      "bytes": 5046,
+      "sha256": "540490f181cbfe18c3e74c3ff4fbbafa087df726b483a3cd1014ed67e9e27450"
+    },
+    {
+      "repo_path": "data_pipeline/code3b-data-20261003/config/inspect_sources.py",
+      "source": "/data/run01/scxi253/code3b-data-20261003/config/inspect_sources.py",
+      "bytes": 1755,
+      "sha256": "0da7db6d434fd40bb36b9cca9b3793897db9f6335b6f2289858ef9e01589ffc1"
+    },
+    {
+      "repo_path": "data_pipeline/code3b-data-20261003/config/jobs.json",
+      "source": "/data/run01/scxi253/code3b-data-20261003/config/jobs.json",
+      "bytes": 1153,
+      "sha256": "09cfa0a80a6cd0f2b2661ebd435f5f8f325640766187c2c5aeb56076cbe5b229"
+    },
+    {
+      "repo_path": "data_pipeline/code3b-data-20261003/bench/bench_jobs.json",
+      "source": "/data/run01/scxi253/code3b-data-20261003/bench/bench_jobs.json",
+      "bytes": 1332,
+      "sha256": "13bf6546e45d4a8d6c437304970601dd7a66a80a3ad728b0e85ee9b2e84a7577"
+    },
+    {
+      "repo_path": "data_pipeline/code3b-data-20261003/bench/fastdl.py",
+      "source": "/data/run01/scxi253/code3b-data-20261003/bench/fastdl.py",
+      "bytes": 6035,
+      "sha256": "60c7113a09ff766f8615f014172bac3a9cc2fd1991d45740480078d7c5d2627a"
+    },
+    {
+      "repo_path": "operations/cluster/patch_local_cache.py",
+      "source": "/data/run01/scxi253/patch_local_cache.py",
+      "bytes": 3761,
+      "sha256": "398d4f92b6343029ba09063b482523ed03683282bee2b9e8bd749622e69f0804"
+    },
+    {
+      "repo_path": "operations/cluster/patch_sbatch_cache.py",
+      "source": "/data/run01/scxi253/patch_sbatch_cache.py",
+      "bytes": 3063,
+      "sha256": "f58a0014f4c09b37afc508aeec9c30f3c449a5523a85ec42078c92337df77a74"
+    },
+    {
+      "repo_path": "operations/cluster/hardlink_cache_mirror.sh",
+      "source": "/data/run01/scxi253/hardlink_cache_mirror.sh",
+      "bytes": 731,
+      "sha256": "62ae7ff807638b57ca82d2dd9b827e4a655770251462b36088acee3c6f47edf3"
+    },
+    {
+      "repo_path": "tokenizer/tokenizer.json",
+      "source": "/data/run01/scxi253/moe7b-quality-stage2-20261002T2327Z/tokenizer.json",
+      "bytes": 2115113,
+      "sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714"
+    },
+    {
+      "repo_path": "tokenizer/tokenizer_info.json",
+      "source": "/data/run01/scxi253/moe7b-quality-stage2-20261002T2327Z/tokenizer_info.json",
+      "bytes": 657,
+      "sha256": "cedca5d322e98274dcbd856fd363cfb49aca3df81b86dadeba549647c7fff497"
+    },
+    {
+      "repo_path": "code3b/bench_jobs.json",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/bench_jobs.json",
+      "bytes": 1332,
+      "sha256": "13bf6546e45d4a8d6c437304970601dd7a66a80a3ad728b0e85ee9b2e84a7577"
+    },
+    {
+      "repo_path": "code3b/build_v0.py",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/build_v0.py",
+      "bytes": 24038,
+      "sha256": "419eb9104a00cbe2f001d1a162313498c8c134c1668117c9bd47ad8a53e2d5cc"
+    },
+    {
+      "repo_path": "code3b/build_web_v1.py",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/build_web_v1.py",
+      "bytes": 5962,
+      "sha256": "395c74cd93398974b1bd8609d1bc6aa8a35c30fbfae79d910b17883c77443a43"
+    },
+    {
+      "repo_path": "code3b/fastdl.py",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/fastdl.py",
+      "bytes": 6035,
+      "sha256": "60c7113a09ff766f8615f014172bac3a9cc2fd1991d45740480078d7c5d2627a"
+    },
+    {
+      "repo_path": "code3b/inspect_sources.py",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/inspect_sources.py",
+      "bytes": 1755,
+      "sha256": "0da7db6d434fd40bb36b9cca9b3793897db9f6335b6f2289858ef9e01589ffc1"
+    },
+    {
+      "repo_path": "code3b/show_hits.py",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/show_hits.py",
+      "bytes": 856,
+      "sha256": "187335ad1b96504c0eae4c88f45e12de5e5ced4d7d385ca26b58a4528731b8df"
+    },
+    {
+      "repo_path": "code3b/test_build_v0.py",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/test_build_v0.py",
+      "bytes": 7809,
+      "sha256": "a67f7dc5d5fc8b9f8788b0b43f4b3a07d8412e6cc0868380c4863c8630d809a5"
+    },
+    {
+      "repo_path": "code3b/v0.json",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/v0.json",
+      "bytes": 1443,
+      "sha256": "3e8b53879e132bbac89d12a32c5324c2fa9a34799d80bbbeb8464d06ff644f35"
+    },
+    {
+      "repo_path": "code3b/v0_reduce.sbatch",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/v0_reduce.sbatch",
+      "bytes": 820,
+      "sha256": "522ff0b5c6bc5e65e40473aff2a7120d048b8e681f56e5c79d5fbba060d6c859"
+    },
+    {
+      "repo_path": "code3b/v0_stage.sbatch",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/v0_stage.sbatch",
+      "bytes": 1036,
+      "sha256": "ee090ed8c485be68e966206ad26b823e2b8361da364307ed4db9a66250d7745a"
+    },
+    {
+      "repo_path": "code3b/web_v1_pack.sbatch",
+      "source": "https://github.com/yinli-systems/code3b-pretraining/tree/38ad7542f50f05168a79bb140fd1afeda4ac5503/code3b/web_v1_pack.sbatch",
+      "bytes": 739,
+      "sha256": "677d7deb0c6eb1440a6fd1d48645244253ea62bb9010a869fbc1174a219d9f32"
+    }
+  ]
+}

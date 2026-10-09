@@ -1,0 +1,10 @@
+[
+ {"repo": "tokyotech-llm/swallow-code", "patterns": ["train/*", "README.md"], "modelscope": "tokyotech-llm/swallow-code"},
+ {"repo": "common-pile/stackv2_edu_filtered", "patterns": ["*.json.gz", "README.md"], "modelscope": "common-pile/stackv2_edu_filtered"},
+ {"repo": "nvidia/Nemotron-CC-Math-v1", "patterns": ["4plus/*", "4plus_MIND/*", "README.md"], "modelscope": "nv-community/Nemotron-CC-Math-v1"},
+ {"repo": "bigcode/starcoderdata", "patterns": ["python/*","java/*","javascript/*","typescript/*","c/*","cpp/*","c-sharp/*","go/*","rust/*","php/*","ruby/*","kotlin/*","scala/*","shell/*","sql/*","swift/*","lua/*","haskell/*","julia/*","dart/*","jupyter-scripts-dedup-filtered/*","jupyter-structured-clean-dedup/*","github-issues-filtered-structured/*","git-commits-cleaned/*","README.md"], "modelscope": "bigcode/starcoderdata"},
+ {"repo": "tokyotech-llm/swallow-math", "patterns": ["*"], "modelscope": "tokyotech-llm/swallow-math"},
+ {"repo": "OpenCoder-LLM/opc-annealing-corpus", "patterns": ["*"]},
+ {"repo": "OpenCoder-LLM/opc-fineweb-math-corpus", "patterns": ["*"]},
+ {"repo": "OpenCoder-LLM/opc-fineweb-code-corpus", "patterns": ["*"]}
+]

@@ -1,0 +1,21 @@
+[
+  {"repo": "openai/openai_humaneval", "patterns": ["*.parquet"]},
+  {"repo": "evalplus/humanevalplus", "patterns": ["*.parquet"]},
+  {"repo": "google-research-datasets/mbpp", "patterns": ["*.parquet"]},
+  {"repo": "evalplus/mbppplus", "patterns": ["*.parquet"]},
+  {"repo": "bigcode/humanevalpack", "patterns": ["*.jsonl", "*.parquet"]},
+  {"repo": "THUDM/humaneval-x", "patterns": ["*.jsonl*", "*.parquet"]},
+  {"repo": "nuprl/MultiPL-E", "patterns": ["*.parquet"]},
+  {"repo": "livecodebench/code_generation_lite", "patterns": ["*.jsonl"]},
+  {"repo": "bigcode/bigcodebench", "patterns": ["*.parquet"]},
+  {"repo": "cruxeval-org/cruxeval", "patterns": ["*.jsonl", "*.parquet"]},
+  {"repo": "xlangai/DS-1000", "patterns": ["*.jsonl*", "*.parquet"]},
+  {"repo": "codeparrot/apps", "patterns": ["test.jsonl"]},
+  {"repo": "deepmind/code_contests", "patterns": ["data/test-*", "data/valid-*"]},
+  {"repo": "openai/gsm8k", "patterns": ["*test-*.parquet"]},
+  {"repo": "EleutherAI/hendrycks_math", "patterns": ["*test-*.parquet"]},
+  {"repo": "HuggingFaceH4/MATH-500", "patterns": ["*.jsonl", "*.parquet"]},
+  {"repo": "Maxwell-Jia/AIME_2024", "patterns": ["*.jsonl", "*.parquet", "*.csv"]},
+  {"repo": "opencompass/AIME2025", "patterns": ["*.jsonl", "*.parquet"]},
+  {"repo": "math-ai/amc23", "patterns": ["*.jsonl", "*.parquet"]}
+]
