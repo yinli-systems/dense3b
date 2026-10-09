@@ -11,7 +11,7 @@
   },
   "training_observations": 7780,
   "retained_observations": 6032,
-  "evaluation_metric_records": 200,
+  "evaluation_metric_records": 293,
   "issues": [],
   "figures": [
     "loss",
