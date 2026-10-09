@@ -1,0 +1,17 @@
+EVAL_START name=IgM ckpt=/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749 gpu=NVIDIA GeForce RTX 5090 tasks=humaneval,mbpp,cruxeval,gsm8k
+{"humaneval": {"humaneval": 0.2378, "humaneval_plus": 0.2134, "n": 164, "seconds": 136}}
+{"mbpp": {"mbpp": 0.3095, "mbpp_plus": 0.2619, "n": 378, "seconds": 337}}
+{"cruxeval": {"cruxeval_o": 0.195, "cruxeval_i": 0.1725, "n": 800, "seconds": 189}}
+{"gsm8k": {"gsm8k": 0.0963, "n": 1319, "seconds": 487}}
+DONE /data/run01/scxi253/code3b-train/results/suite-step_00005749.json
+{"arc_easy": {"acc": 0.6305, "acc_norm": 0.5694, "n": 2376, "seconds": 17}}
+{"arc_challenge": {"acc": 0.2671, "acc_norm": 0.3063, "n": 1172, "seconds": 10}}
+{"hellaswag": {"acc": 0.3052, "acc_norm": 0.3477, "n": 10042, "seconds": 142}}
+{"winogrande": {"acc": 0.5122, "acc_norm": 0.5122, "n": 1267, "seconds": 4}}
+{"boolq": {"acc": 0.578, "acc_norm": 0.6196, "n": 3270, "seconds": 41}}
+{"openbookqa": {"acc": 0.214, "acc_norm": 0.344, "n": 500, "seconds": 4}}
+{"sciq": {"acc": 0.858, "acc_norm": 0.806, "n": 1000, "seconds": 21}}
+{"mmlu_cf": {"acc": 0.2829, "acc_norm": 0.2945, "n": 14042, "seconds": 180}}
+{"mmlu_mc5": {"acc": 0.2394, "acc_norm": 0.2394, "n": 14042, "seconds": 1612}}
+DONE /data/run01/scxi253/code3b-train/results/mc-step_00005749.json
+EVAL_DONE name=IgM ckpt=/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749

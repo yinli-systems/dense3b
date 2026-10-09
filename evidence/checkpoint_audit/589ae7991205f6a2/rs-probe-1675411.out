@@ -1,0 +1,1 @@
+{"ckpt": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005499", "step": 5499, "preset": "dense3b", "tokens": 5767168000, "ce": {"web": 2.8183696269989014, "wiki": 3.5635244846343994, "arxiv": 2.236046552658081, "stackexchange": 2.529831886291504, "code": 0.7571069598197937, "math": 1.679627776145935}, "seconds": 148}

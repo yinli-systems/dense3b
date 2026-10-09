@@ -1,0 +1,101 @@
+{
+ "ckpt": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005499",
+ "step": 5499,
+ "preset": "dense3b",
+ "tokens": 5767168000,
+ "ce": {
+  "web": 2.8183696269989014,
+  "wiki": 3.5635244846343994,
+  "arxiv": 2.236046552658081,
+  "stackexchange": 2.529831886291504,
+  "code": 0.7571069598197937,
+  "math": 1.679627776145935
+ },
+ "layers": {
+  "0": {
+   "cluster_domain_nmi": 0.11206196891147154
+  },
+  "1": {
+   "cluster_domain_nmi": 0.08077415747065837
+  },
+  "2": {
+   "cluster_domain_nmi": 0.09324837933916813
+  },
+  "3": {
+   "cluster_domain_nmi": 0.11155817202314042
+  },
+  "4": {
+   "cluster_domain_nmi": 0.10151722690531864
+  },
+  "5": {
+   "cluster_domain_nmi": 0.09961680455205399
+  },
+  "6": {
+   "cluster_domain_nmi": 0.09951816763528616
+  },
+  "7": {
+   "cluster_domain_nmi": 0.10495936645838475
+  },
+  "8": {
+   "cluster_domain_nmi": 0.10821772514948047
+  },
+  "9": {
+   "cluster_domain_nmi": 0.11137147167025392
+  },
+  "10": {
+   "cluster_domain_nmi": 0.10559637095169955
+  },
+  "11": {
+   "cluster_domain_nmi": 0.10879792648517818
+  },
+  "12": {
+   "cluster_domain_nmi": 0.11254613677174173
+  },
+  "13": {
+   "cluster_domain_nmi": 0.11511607414618376
+  },
+  "14": {
+   "cluster_domain_nmi": 0.12696412319418465
+  },
+  "15": {
+   "cluster_domain_nmi": 0.1341638418841365
+  },
+  "16": {
+   "cluster_domain_nmi": 0.1452192169897389
+  },
+  "17": {
+   "cluster_domain_nmi": 0.16136507110401108
+  },
+  "18": {
+   "cluster_domain_nmi": 0.17999890618085906
+  },
+  "19": {
+   "cluster_domain_nmi": 0.19871172402707946
+  },
+  "20": {
+   "cluster_domain_nmi": 0.21262450685239986
+  },
+  "21": {
+   "cluster_domain_nmi": 0.21969610604536285
+  },
+  "22": {
+   "cluster_domain_nmi": 0.22498036238500052
+  },
+  "23": {
+   "cluster_domain_nmi": 0.23267439706564688
+  },
+  "24": {
+   "cluster_domain_nmi": 0.23900841387962926
+  },
+  "25": {
+   "cluster_domain_nmi": 0.24841452904056743
+  },
+  "26": {
+   "cluster_domain_nmi": 0.24865736276202505
+  },
+  "27": {
+   "cluster_domain_nmi": 0.24029326111326293
+  }
+ },
+ "seconds": 148
+}

@@ -1,0 +1,11 @@
+EVAL_START name=IgM ckpt=/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749 gpu=NVIDIA GeForce RTX 5090 tasks=humaneval,mbpp,cruxeval,gsm8k
+Traceback (most recent call last):
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/data/run01/scxi253/routing-src/bench/eval_suite.py", line 458, in <module>
+    main()
+  File "/data/run01/scxi253/routing-src/bench/eval_suite.py", line 427, in main
+    tk = Tokenizer.from_file(TOK)
+Exception: No such file or directory (os error 2)

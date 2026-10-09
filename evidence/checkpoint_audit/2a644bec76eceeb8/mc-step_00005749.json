@@ -1,0 +1,19 @@
+{
+ "checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00005749",
+ "step": 5749,
+ "preset": "dense3b",
+ "tasks": {
+  "arc_easy": {
+   "acc": 0.6305,
+   "acc_norm": 0.5694,
+   "n": 2376,
+   "seconds": 17
+  },
+  "arc_challenge": {
+   "acc": 0.2671,
+   "acc_norm": 0.3063,
+   "n": 1172,
+   "seconds": 10
+  }
+ }
+}

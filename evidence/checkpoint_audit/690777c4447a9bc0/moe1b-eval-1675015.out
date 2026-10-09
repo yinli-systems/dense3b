@@ -1,0 +1,6 @@
+evaluating /data/run01/scxi253/code3b-train/ckpt-v0/step_00005499 -> /data/run01/scxi253/moe1b/results/suite-step_00005499-1675015.json (--tasks humaneval,mbpp,cruxeval,gsm8k)
+{"humaneval": {"humaneval": 0.2195, "humaneval_plus": 0.2012, "n": 164, "seconds": 205}}
+{"mbpp": {"mbpp": 0.2646, "mbpp_plus": 0.2196, "n": 378, "seconds": 515}}
+{"cruxeval": {"cruxeval_o": 0.2075, "cruxeval_i": 0.1975, "n": 800, "seconds": 261}}
+{"gsm8k": {"gsm8k": 0.0758, "n": 1319, "seconds": 774}}
+DONE /data/run01/scxi253/moe1b/results/suite-step_00005499-1675015.json
