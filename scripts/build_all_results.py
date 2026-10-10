@@ -279,7 +279,7 @@ def reports(root:Path,cfg:dict,man:dict,ptr:dict,alltrain:list,current:list,runs
         run=next((x for x in runs if x['variant']==v and x['job_id']==last.get('job_id')),None)
         entry['recorded_start_event']=run['start_event'] if run else None;stats.append(entry)
     plan=json.loads((root/ptr['campaign_plan']).read_text());state_lookup={(s['checkpoint'],s['phase']):s for s in states};campaign_status=[]
-    for p in plan['rows']:
+    for p in plan['rows'] + plan.get('new_campaign',{}).get('rows',[]):
         name=f"{p['preset']}-step_{p['step']:08d}";needed=['mc-status.json']+(['generation-status.json'] if any(t in p['missing_tasks'] for t in ['humaneval','mbpp','cruxeval','gsm8k']) else [])
         phases={n:state_lookup.get((name,n),{}).get('state','not_started_in_capture') for n in needed}
         st='completed' if all(v=='completed' for v in phases.values()) else 'failed' if 'failed' in phases.values() else 'in_progress' if any(v!='not_started_in_capture' for v in phases.values()) else 'not_started_in_capture'
