@@ -1,6 +1,6 @@
 # dense3b — all checkpoints and available results
 
-Evaluation capture started **2026-10-09T23:20:38.827803+00:00**; pinned-weight file stats have their own timestamp in provenance.
+Evaluation capture started **2026-10-09T23:55:40.429869+00:00**; pinned-weight file stats have their own timestamp in provenance.
 
 **Every located checkpoint appears below, including checkpoints with no benchmark result.** Historical/custom and corrected EvalPlus protocols remain distinct. Finished task results from still-running jobs are included; unfinished tasks have no invented score.
 
@@ -19,8 +19,8 @@ Evaluation capture started **2026-10-09T23:20:38.827803+00:00**; pinned-weight f
 | dense3b | [5499](checkpoints/dense3b-step_00005499.md) | False | — | 72 | none at recorded sample counts |
 | dense3b | [5749](checkpoints/dense3b-step_00005749.md) | False | — | 68 | none at recorded sample counts |
 | dense3b | [5999](checkpoints/dense3b-step_00005999.md) | True | — | 39 | none at recorded sample counts |
-| dense3b | [6249](checkpoints/dense3b-step_00006249.md) | True | — | 0 | arc_challenge, arc_easy, boolq, cruxeval, gsm8k, hellaswag, humaneval, mbpp, mmlu_cf, mmlu_mc5, openbookqa, sciq, winogrande |
-| dense3b | [6499](checkpoints/dense3b-step_00006499.md) | True | — | 0 | arc_challenge, arc_easy, boolq, cruxeval, gsm8k, hellaswag, humaneval, mbpp, mmlu_cf, mmlu_mc5, openbookqa, sciq, winogrande |
+| dense3b | [6249](checkpoints/dense3b-step_00006249.md) | True | — | 39 | none at recorded sample counts |
+| dense3b | [6499](checkpoints/dense3b-step_00006499.md) | True | — | 39 | none at recorded sample counts |
 
 ## Evaluation figures
 

@@ -15,7 +15,7 @@
       "evidence/raw/results/suite-step_00001499-lcb-crux.json",
       "evidence/raw/results/suite-step_00001499.json",
       "provenance/checkpoint_inventory.json",
-      "provenance/sync-20261009T2320Z/checkpoint_inventory.json"
+      "provenance/sync-20261009T2354Z/checkpoint_inventory.json"
     ],
     "live_locations": [
       {
@@ -25,7 +25,7 @@
         "model_bytes": 6492811343,
         "optimizer_shards": 0,
         "complete_marker": false,
-        "stat_capture_utc": "2026-10-09T23:20:38.782167+00:00"
+        "stat_capture_utc": "2026-10-09T23:55:40.432744+00:00"
       }
     ],
     "tokens_verified": null,
@@ -95,8 +95,8 @@
       "evidence/checkpoints/milestones/step_00002499/meta.json",
       "evidence/raw/results/suite-step_00002499.json",
       "provenance/checkpoint_inventory.json",
-      "provenance/sync-20261009T2320Z/checkpoint_inventory.json",
-      "provenance/sync-20261009T2320Z/pinned_inventory.json"
+      "provenance/sync-20261009T2320Z/pinned_inventory.json",
+      "provenance/sync-20261009T2354Z/checkpoint_inventory.json"
     ],
     "live_locations": [
       {
@@ -106,7 +106,7 @@
         "model_bytes": 6492811343,
         "optimizer_shards": 0,
         "complete_marker": false,
-        "stat_capture_utc": "2026-10-09T23:20:38.782167+00:00"
+        "stat_capture_utc": "2026-10-09T23:55:40.432744+00:00"
       },
       {
         "path": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/dense3b/dense3b-step_00002499",
@@ -410,7 +410,7 @@
       "evidence/imported/moe1b/suite-step_00004999-1673758.json",
       "evidence/raw/results/suite-step_00004999.json",
       "provenance/checkpoint_inventory.json",
-      "provenance/sync-20261009T2320Z/checkpoint_inventory.json"
+      "provenance/sync-20261009T2354Z/checkpoint_inventory.json"
     ],
     "live_locations": [
       {
@@ -420,7 +420,7 @@
         "model_bytes": 6492811343,
         "optimizer_shards": 0,
         "complete_marker": false,
-        "stat_capture_utc": "2026-10-09T23:20:38.782167+00:00"
+        "stat_capture_utc": "2026-10-09T23:55:40.432744+00:00"
       },
       {
         "path": "/data/run01/scxi253/code3b-train/milestones/step_00004999",
@@ -429,7 +429,7 @@
         "model_bytes": 6492811343,
         "optimizer_shards": 0,
         "complete_marker": false,
-        "stat_capture_utc": "2026-10-09T23:20:38.782167+00:00"
+        "stat_capture_utc": "2026-10-09T23:55:40.432744+00:00"
       }
     ],
     "tokens_verified": null,
@@ -688,8 +688,8 @@
     "metadata_sources": [
       "evidence/checkpoints/ckpt-v0/step_00005999/meta.json",
       "provenance/checkpoint_inventory.json",
-      "provenance/sync-20261009T2320Z/checkpoint_inventory.json",
-      "provenance/sync-20261009T2320Z/pinned_inventory.json"
+      "provenance/sync-20261009T2320Z/pinned_inventory.json",
+      "provenance/sync-20261009T2354Z/checkpoint_inventory.json"
     ],
     "live_locations": [
       {
@@ -699,7 +699,7 @@
         "model_bytes": 6492811343,
         "optimizer_shards": 8,
         "complete_marker": true,
-        "stat_capture_utc": "2026-10-09T23:20:38.782167+00:00"
+        "stat_capture_utc": "2026-10-09T23:55:40.432744+00:00"
       },
       {
         "path": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/dense3b/dense3b-step_00005999",
@@ -756,11 +756,11 @@
       "val_swallow-code": 0.5046723112463951,
       "val_stackv2-edu": 0.9342900877818465,
       "val_antigen-fineweb-15b": 2.579988367855549,
-      "source": "evidence/sync-20261009T2320Z/training/dense3b/results/train-1680260/metrics.jsonl",
-      "source_sha256": "241b362016d7eb6712c8fff1e4bc556d2bfeee2383620021ad416b486b8961c8",
+      "source": "evidence/sync-20261009T2354Z/training/dense3b/results/train-1680260/metrics.jsonl",
+      "source_sha256": "b4d56305b5d472e71f3e52cec6df2f181b138a3ea2e6f360c2f68a274c3c16d5",
       "source_line": 250,
       "capture_priority": 1,
-      "source_mtime_ns": 1791588039661847715
+      "source_mtime_ns": 1791590119750588823
     }
   },
   {
@@ -768,7 +768,7 @@
     "step": 6249,
     "historical_evidence": [],
     "metadata_sources": [
-      "provenance/sync-20261009T2320Z/checkpoint_inventory.json"
+      "provenance/sync-20261009T2354Z/checkpoint_inventory.json"
     ],
     "live_locations": [
       {
@@ -778,16 +778,18 @@
         "model_bytes": 6492811343,
         "optimizer_shards": 8,
         "complete_marker": true,
-        "stat_capture_utc": "2026-10-09T23:20:38.782167+00:00"
+        "stat_capture_utc": "2026-10-09T23:55:40.432744+00:00"
       }
     ],
     "tokens_verified": null,
     "token_conflict": false,
     "weights_present_in_captures": true,
-    "metric_rows": 0,
-    "evaluation_versions": [],
-    "full_count_tasks": [],
-    "missing_primary_tasks": [
+    "metric_rows": 39,
+    "evaluation_versions": [
+      "084aa5fa1a33b9fd",
+      "beee55108813645f"
+    ],
+    "full_count_tasks": [
       "arc_challenge",
       "arc_easy",
       "boolq",
@@ -802,7 +804,10 @@
       "sciq",
       "winogrande"
     ],
-    "checkpoint_weight_hashes": [],
+    "missing_primary_tasks": [],
+    "checkpoint_weight_hashes": [
+      "a4dc6c1ae18e701d52a1a9b4f2485940ac61c9943c92e17c1177b54cab05ae0d"
+    ],
     "nearby_training_observation": {
       "variant": "dense3b",
       "run_id": "train-1680260",
@@ -818,11 +823,11 @@
       "step_s": 29.770487546920776,
       "max_mem_gb": 22.386558464,
       "mem_fwd_bwd_gb": 22.386558464,
-      "source": "evidence/sync-20261009T2320Z/training/dense3b/results/train-1680260/metrics.jsonl",
-      "source_sha256": "241b362016d7eb6712c8fff1e4bc556d2bfeee2383620021ad416b486b8961c8",
+      "source": "evidence/sync-20261009T2354Z/training/dense3b/results/train-1680260/metrics.jsonl",
+      "source_sha256": "b4d56305b5d472e71f3e52cec6df2f181b138a3ea2e6f360c2f68a274c3c16d5",
       "source_line": 500,
       "capture_priority": 1,
-      "source_mtime_ns": 1791588039661847715
+      "source_mtime_ns": 1791590119750588823
     }
   },
   {
@@ -830,7 +835,7 @@
     "step": 6499,
     "historical_evidence": [],
     "metadata_sources": [
-      "provenance/sync-20261009T2320Z/checkpoint_inventory.json"
+      "provenance/sync-20261009T2354Z/checkpoint_inventory.json"
     ],
     "live_locations": [
       {
@@ -840,16 +845,18 @@
         "model_bytes": 6492811343,
         "optimizer_shards": 8,
         "complete_marker": true,
-        "stat_capture_utc": "2026-10-09T23:20:38.782167+00:00"
+        "stat_capture_utc": "2026-10-09T23:55:40.432744+00:00"
       }
     ],
     "tokens_verified": null,
     "token_conflict": false,
     "weights_present_in_captures": true,
-    "metric_rows": 0,
-    "evaluation_versions": [],
-    "full_count_tasks": [],
-    "missing_primary_tasks": [
+    "metric_rows": 39,
+    "evaluation_versions": [
+      "1ee1d4910fa1442d",
+      "3a472a3e063d8a5e"
+    ],
+    "full_count_tasks": [
       "arc_challenge",
       "arc_easy",
       "boolq",
@@ -864,7 +871,10 @@
       "sciq",
       "winogrande"
     ],
-    "checkpoint_weight_hashes": [],
+    "missing_primary_tasks": [],
+    "checkpoint_weight_hashes": [
+      "e28690ba603117024cedaba1db5559de8955fbe151c96ae1a7ea7f75742b82a6"
+    ],
     "nearby_training_observation": {
       "variant": "dense3b",
       "run_id": "train-1680260",
@@ -884,11 +894,11 @@
       "val_swallow-code": 0.49829124263487756,
       "val_stackv2-edu": 0.9254252072423697,
       "val_antigen-fineweb-15b": 2.5745800882577896,
-      "source": "evidence/sync-20261009T2320Z/training/dense3b/results/train-1680260/metrics.jsonl",
-      "source_sha256": "241b362016d7eb6712c8fff1e4bc556d2bfeee2383620021ad416b486b8961c8",
+      "source": "evidence/sync-20261009T2354Z/training/dense3b/results/train-1680260/metrics.jsonl",
+      "source_sha256": "b4d56305b5d472e71f3e52cec6df2f181b138a3ea2e6f360c2f68a274c3c16d5",
       "source_line": 750,
       "capture_priority": 1,
-      "source_mtime_ns": 1791588039661847715
+      "source_mtime_ns": 1791590119750588823
     }
   }
 ]

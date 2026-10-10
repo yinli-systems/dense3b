@@ -1,7 +1,7 @@
 [
   {
     "field": "grad_norm",
-    "observations": 8299,
+    "observations": 8363,
     "variants": [
       "dense3b"
     ],
@@ -10,7 +10,7 @@
   },
   {
     "field": "loss",
-    "observations": 8300,
+    "observations": 8364,
     "variants": [
       "dense3b"
     ],
@@ -19,7 +19,7 @@
   },
   {
     "field": "lr",
-    "observations": 8325,
+    "observations": 8389,
     "variants": [
       "dense3b"
     ],
@@ -28,7 +28,7 @@
   },
   {
     "field": "max_mem_gb",
-    "observations": 8325,
+    "observations": 8389,
     "variants": [
       "dense3b"
     ],
@@ -37,7 +37,7 @@
   },
   {
     "field": "mem_fwd_bwd_gb",
-    "observations": 8325,
+    "observations": 8389,
     "variants": [
       "dense3b"
     ],
@@ -46,7 +46,7 @@
   },
   {
     "field": "mfu",
-    "observations": 8325,
+    "observations": 8389,
     "variants": [
       "dense3b"
     ],
@@ -55,7 +55,7 @@
   },
   {
     "field": "step_s",
-    "observations": 8325,
+    "observations": 8389,
     "variants": [
       "dense3b"
     ],
@@ -64,7 +64,7 @@
   },
   {
     "field": "tok_per_s",
-    "observations": 8325,
+    "observations": 8389,
     "variants": [
       "dense3b"
     ],
@@ -73,7 +73,7 @@
   },
   {
     "field": "tok_per_s_gpu",
-    "observations": 8325,
+    "observations": 8389,
     "variants": [
       "dense3b"
     ],

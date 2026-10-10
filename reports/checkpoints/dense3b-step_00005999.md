@@ -10,13 +10,13 @@
 
 File size and markers are filesystem evidence, not a new weight-loading or full-tensor checksum test. Hardlinks retain model bytes outside the trainer’s rolling checkpoint directory.
 
-`/data/run01/scxi253/code3b-train/ckpt-v0/step_00005999` — training_directory; 6492811343 bytes; captured 2026-10-09T23:20:38.782167+00:00.
+`/data/run01/scxi253/code3b-train/ckpt-v0/step_00005999` — training_directory; 6492811343 bytes; captured 2026-10-09T23:55:40.432744+00:00.
 
 `/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/dense3b/dense3b-step_00005999` — evaluation_hardlink; 6492811343 bytes; captured 2026-10-09T23:24:35.310505+00:00.
 
 ## Nearest recorded training observation
 
-Job 1680260, **actual logged step 5999** (not relabeled as checkpoint step): loss 0.928168, MFU 67.97%, global throughput 41,710 tok/s, peak allocated memory 22.387 GB. [Raw log/metrics](../../evidence/sync-20261009T2320Z/training/dense3b/results/train-1680260/metrics.jsonl).
+Job 1680260, **actual logged step 5999** (not relabeled as checkpoint step): loss 0.928168, MFU 67.97%, global throughput 41,710 tok/s, peak allocated memory 22.387 GB. [Raw log/metrics](../../evidence/sync-20261009T2354Z/training/dense3b/results/train-1680260/metrics.jsonl).
 
 ## All recorded evaluation values
 

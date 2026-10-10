@@ -4,13 +4,13 @@ Dense 3B-class code pretraining: deployed implementation, data pipeline, checkpo
 
 **[All checkpoints and results](reports/RESULTS.md) · [MFU, loss, throughput and every system metric](reports/SYSTEMS.md) · [Backfill progress](reports/CAMPAIGN.md)**
 
-Training/evaluation capture started **2026-10-09T23:20:38.782167+00:00 / 2026-10-09T23:20:38.827803+00:00**. Jobs continued while files were copied; these are timestamped snapshots, not a live dashboard.
+Training/evaluation capture started **2026-10-09T23:55:40.432744+00:00 / 2026-10-09T23:55:40.429869+00:00**. Jobs continued while files were copied; these are timestamped snapshots, not a live dashboard.
 
 ## Training and efficiency
 
 | Variant | Latest logged step | Latest loss | MFU median, last ≤100 | Global tok/s median, last ≤100 | Peak allocated GB, latest |
 |---|---:|---:|---:|---:|---:|
-| dense3b | 6551 | 1.0693 | 68.02% | 41,737 | 22.387 |
+| dense3b | 6615 | 1.0351 | 68.09% | 41,780 | 22.387 |
 
 MFU is the logged model-FLOP estimate, not device utilization. Per-step throughput excludes unrecorded downtime. The systems page includes every numeric logged field, full unsmoothed data, per-run provenance and the explicit resume-display policy.
 
@@ -26,32 +26,32 @@ Latest checkpoint per variant/task/metric, not the highest score. The table may 
 
 | Variant | Step | Task / metric | Score | n | Verified count |
 |---|---:|---|---:|---:|---|
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | arc_challenge / acc | 27.9010% | 1172 | 327/1172 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | arc_challenge / acc_norm | 31.2287% | 1172 | 366/1172 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | arc_easy / acc | 63.2155% | 2376 | 1502/2376 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | arc_easy / acc_norm | 58.3754% | 2376 | 1387/2376 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | boolq / acc | 54.2202% | 3270 | 1773/3270 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | boolq / acc_norm | 61.7431% | 3270 | 2019/3270 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | cruxeval / cruxeval_i | 17.3700% | 800 | 139/800 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | cruxeval / cruxeval_o | 17.7500% | 800 | 142/800 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | gsm8k / gsm8k | 10.7657% | 1319 | 142/1319 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | gsm8k / strict_accuracy | 10.4625% | 1319 | 138/1319 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | hellaswag / acc | 30.9102% | 10042 | 3104/10042 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | hellaswag / acc_norm | 35.4511% | 10042 | 3560/10042 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | humaneval / humaneval | 22.5610% | 164 | 37/164 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | humaneval / humaneval_plus | 21.3415% | 164 | 35/164 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | mbpp / mbpp | 34.6561% | 378 | 131/378 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | mbpp / mbpp_plus | 26.9841% | 378 | 102/378 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | mmlu_cf / acc | 28.5287% | 14042 | 4006/14042 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | mmlu_cf / acc_norm | 30.2236% | 14042 | 4244/14042 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | mmlu_mc5 / acc | 24.8042% | 14042 | 3483/14042 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | mmlu_mc5 / acc_norm | 24.8042% | 14042 | 3483/14042 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | openbookqa / acc | 21.2000% | 500 | 106/500 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | openbookqa / acc_norm | 31.6000% | 500 | 158/500 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | sciq / acc | 85.6000% | 1000 | 856/1000 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | sciq / acc_norm | 82.1000% | 1000 | 821/1000 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | winogrande / acc | 50.0395% | 1267 | 634/1267 |
-| dense3b | [5999](reports/checkpoints/dense3b-step_00005999.md) | winogrande / acc_norm | 50.0395% | 1267 | 634/1267 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | arc_challenge / acc | 28.6689% | 1172 | 336/1172 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | arc_challenge / acc_norm | 31.0580% | 1172 | 364/1172 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | arc_easy / acc | 61.9949% | 2376 | 1473/2376 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | arc_easy / acc_norm | 53.4933% | 2376 | 1271/2376 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | boolq / acc | 58.6544% | 3270 | 1918/3270 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | boolq / acc_norm | 62.2324% | 3270 | 2035/3270 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | cruxeval / cruxeval_i | 13.3800% | 800 | 107/800 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | cruxeval / cruxeval_o | 20.2500% | 800 | 162/800 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | gsm8k / gsm8k | 11.5239% | 1319 | 152/1319 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | gsm8k / strict_accuracy | 11.3723% | 1319 | 150/1319 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | hellaswag / acc | 31.1691% | 10042 | 3130/10042 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | hellaswag / acc_norm | 35.7499% | 10042 | 3590/10042 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | humaneval / humaneval | 25.6098% | 164 | 42/164 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | humaneval / humaneval_plus | 25.0000% | 164 | 41/164 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mbpp / mbpp | 33.3333% | 378 | 126/378 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mbpp / mbpp_plus | 26.9841% | 378 | 102/378 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mmlu_cf / acc | 28.5714% | 14042 | 4012/14042 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mmlu_cf / acc_norm | 29.8462% | 14042 | 4191/14042 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mmlu_mc5 / acc | 25.2314% | 14042 | 3543/14042 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mmlu_mc5 / acc_norm | 25.2314% | 14042 | 3543/14042 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | openbookqa / acc | 22.0000% | 500 | 110/500 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | openbookqa / acc_norm | 32.6000% | 500 | 163/500 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | sciq / acc | 84.3000% | 1000 | 843/1000 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | sciq / acc_norm | 79.6000% | 1000 | 796/1000 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | winogrande / acc | 51.9337% | 1267 | 658/1267 |
+| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | winogrande / acc_norm | 51.9337% | 1267 | 658/1267 |
 
 ## Archived architecture and accounting
 
@@ -70,7 +70,7 @@ python scripts/build_all_results.py --root .
 python -m unittest discover -s tests/publication -v
 ```
 
-[Current immutable capture manifest](provenance/sync-20261009T2320Z/manifest.json) · [Latest capture pointer](provenance/sync_latest.json) · [Original snapshot inventory](provenance/snapshot.json) · [Earlier checkpoint audit](reports/checkpoint_audit/CHECKPOINTS.md)
+[Current immutable capture manifest](provenance/sync-20261009T2354Z/manifest.json) · [Latest capture pointer](provenance/sync_latest.json) · [Original snapshot inventory](provenance/snapshot.json) · [Earlier checkpoint audit](reports/checkpoint_audit/CHECKPOINTS.md)
 
 Original logs/results and deployed source snapshots are preserved by hash. No original training source was overwritten by this synchronization. Tensor weights, optimizer states, data shards, credentials and installed binary caches are not Git payloads. Live file/pin inventories include exact paths, sizes and capture times. Loss values keep cross-entropy units; unmeasured values stay absent.
 

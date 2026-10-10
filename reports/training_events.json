@@ -1876,7 +1876,7 @@
     "variant": "dense3b",
     "job_id": 1680260,
     "production": true,
-    "source": "evidence/sync-20261009T2320Z/training/dense3b/logs/IgM-dense3b-1680260.out",
+    "source": "evidence/sync-20261009T2354Z/training/dense3b/logs/IgM-dense3b-1680260.out",
     "source_line": 51,
     "record": {
       "event": "start",

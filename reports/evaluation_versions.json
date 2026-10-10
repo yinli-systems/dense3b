@@ -1622,5 +1622,247 @@
       "gsm8k"
     ],
     "origin": "campaign_snapshot"
+  },
+  {
+    "evaluation_id": "084aa5fa1a33b9fd",
+    "variant": "dense3b",
+    "step": 6249,
+    "protocol_id": "d94bc379006a1f93",
+    "protocol_name": "checkpoint-backfill-mc-v2",
+    "manifest": {
+      "protocol": "checkpoint-backfill-mc-v2",
+      "model_sha256": "a4dc6c1ae18e701d52a1a9b4f2485940ac61c9943c92e17c1177b54cab05ae0d",
+      "metadata_sha256": "170f6a921d124db1f8d2608918784f15bce77618f83b76fa49e5fd5a65f95f53",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "runner_sha256": "e885da22ec2f06b9b911f007fcdf9d3716be43f9a37dfe9a855584b69c1eab37",
+      "mc_source_sha256": "53642b866a432c021ba6e04e90f9fa7248e498dbb9f3f72ca4a11b056d3425e9",
+      "architecture_sha256": "ddaba0ba116f12c69c4151d1633e8317fd33dc429d60f96368180f1808f95939",
+      "source_config": "saved checkpoint config; doc_mask=False for inference",
+      "dtype": "bfloat16",
+      "normalization": "UTF-8 byte length, not token count",
+      "max_sequence": 2048,
+      "tokenizer_add_special_tokens": false,
+      "torch": "2.13.0+cu130",
+      "python": "3.10.20",
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "hostname": "wqd10nah09g5",
+      "job_id": "1681837",
+      "dataset_files": {
+        "/data/run01/scxi253/moe1b-data/mc/raw/Rowan__hellaswag/data/validation-00000-of-00001.jsonl": "5beba6d84769892c7ee13859caee702a34c5b1178c11add46f08c84bb1fa9d01",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Challenge/test-00000-of-00001.jsonl": "062fe98a0d64b0bb86b43ee49faf8de6b4c02417f0b4a6b7f9607208c6f1a9d6",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Easy/test-00000-of-00001.jsonl": "c38ac007c93b8de43edbf5732f3dd14d842e11007749a27f5a0ba11ac2d19851",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__openbookqa/main/test-00000-of-00001.jsonl": "bbaca15e985ba386b2f73e9659fce608cf7722a35343864dbe7115cbbda341ab",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__sciq/data/test-00000-of-00001.jsonl": "b38e83aec6f7fdda18885d793e1518f1fc690ed746775c179cfea96d9bac874a",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__winogrande/winogrande_xl/validation-00000-of-00001.jsonl": "34f0a22749f3986249b0629ff05ae298ebb2b14f93ac8499aa673626548626c7",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/dev-00000-of-00001.jsonl": "147bce5b06a81d81f7351ca1d227a596e21a92948c3390b2de49f4b149d87868",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/test-00000-of-00001.jsonl": "30225733916644b79828ee2e3961d8905e001761b0b2cce06fc3da1c2af336d7",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/validation-00000-of-00001.jsonl": "28769227a0c7dfb0c4e486f738e2e43ac1dc3fecf0a83bd2e465e1841b166724",
+        "/data/run01/scxi253/moe1b-data/mc/raw/google__boolq/data/validation-00000-of-00001.jsonl": "0ad1d6a17b5524d7f8eeea3bcb9a823556785a890f26e3d88bef40245bedc5f2"
+      }
+    },
+    "kind": "suite",
+    "source": "evidence/sync-20261009T2354Z/new_campaign/dense3b-step_00006249/mc.json",
+    "source_sha256": "084aa5fa1a33b9fd4c2adef944fddfd8ed7d81fa0593c59959a2e2926fa85621",
+    "original_path": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense3b/dense3b-step_00006249/mc.json",
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "origin": "campaign_snapshot"
+  },
+  {
+    "evaluation_id": "beee55108813645f",
+    "variant": "dense3b",
+    "step": 6249,
+    "protocol_id": "25371b05730c316d",
+    "protocol_name": "checkpoint-backfill-code-v2-official-evalplus",
+    "manifest": {
+      "protocol": "checkpoint-backfill-code-v2-official-evalplus",
+      "checkpoint_model_sha256": "a4dc6c1ae18e701d52a1a9b4f2485940ac61c9943c92e17c1177b54cab05ae0d",
+      "checkpoint_step": 6249,
+      "metadata_sha256": "170f6a921d124db1f8d2608918784f15bce77618f83b76fa49e5fd5a65f95f53",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "runner_sha256": "73d26352656e2fdf94e5c20c693b1eec47fc277d7fdfdc8194fc94fe428b86e5",
+      "generate_sha256": "9e1208a703fec2a2abc14cdb21c1b375840b7d7cb58599530f8bcfbf5cca2f08",
+      "archived_suite_sha256": "079eb417c5e7fd03b4e8efd8773826d0079dfa763b317968f52791d562bbd656",
+      "official_evaluate_sha256": "6fcd78d262eae6eff8af4ef6eb00b22909d37beebd90dc37b84b756053e981dd",
+      "official_backend_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+      "official_oracle_sha256": "92b126b907ee493121b55de06f6a34058b6e18adc8cf1c48737eedcd83f24cdd",
+      "official_humaneval_data_sha256": "42526ec0e7d5f3ee0b06d6ced98f8c8bae3d76519151bfb3d36f79010645bd7f",
+      "official_mbpp_data_sha256": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad",
+      "evalplus_patch_provenance": {
+        "source": "/data/run01/scxi253/code3b-train/evalplus-venv/lib/python3.10/site-packages/evalplus/eval/__init__.py",
+        "original_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+        "patched_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+        "change": "Record True and increment progress for successful find_zero special-oracle tests; assertions, tolerance, inputs and model outputs unchanged",
+        "installed_environment_modified": false
+      },
+      "isolation_sha256": "84fb316136130f3f0a677c403236676c7905b3adb38cdbe6b04ec07611bc4857",
+      "isolation_probe": {
+        "landlock_abi": 1,
+        "filesystem": "allowlisted runtime plus own temporary area",
+        "syscalls": "allowlist",
+        "new_sockets": false
+      },
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "gsm8k": 320
+      },
+      "code_scoring": "official EvalPlus tests/oracles with documented successful find_zero progress-counter fix; no HumanEval/32 bypass",
+      "execution_limits": {
+        "cruxeval_case_wall_s": 5,
+        "namespace_startup_allowance_s": 3,
+        "child_cpu_s": 10,
+        "child_address_space_bytes": 8589934592,
+        "evalplus_memory_bytes": 4294967296
+      },
+      "cruxeval_protocol": "archived 2-shot assertion execution inside restricted child",
+      "gsm8k_protocol": "archived custom 4-shot exemplars; strict phrase extraction and relaxed last-number separately",
+      "job_id": "1681838"
+    },
+    "kind": "suite",
+    "source": "evidence/sync-20261009T2354Z/new_campaign/dense3b-step_00006249/suite.json",
+    "source_sha256": "beee55108813645f59c86e1afa28864b719b3e2666ad97826f2911da8d8151fb",
+    "original_path": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense3b/dense3b-step_00006249/suite.json",
+    "task_names": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k"
+    ],
+    "origin": "campaign_snapshot"
+  },
+  {
+    "evaluation_id": "1ee1d4910fa1442d",
+    "variant": "dense3b",
+    "step": 6499,
+    "protocol_id": "d94bc379006a1f93",
+    "protocol_name": "checkpoint-backfill-mc-v2",
+    "manifest": {
+      "protocol": "checkpoint-backfill-mc-v2",
+      "model_sha256": "e28690ba603117024cedaba1db5559de8955fbe151c96ae1a7ea7f75742b82a6",
+      "metadata_sha256": "81e4643b40e9fdbd59ef52b45b2ccf0a58a1c439ff8d01dd0a80f6614f41175b",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "runner_sha256": "e885da22ec2f06b9b911f007fcdf9d3716be43f9a37dfe9a855584b69c1eab37",
+      "mc_source_sha256": "53642b866a432c021ba6e04e90f9fa7248e498dbb9f3f72ca4a11b056d3425e9",
+      "architecture_sha256": "ddaba0ba116f12c69c4151d1633e8317fd33dc429d60f96368180f1808f95939",
+      "source_config": "saved checkpoint config; doc_mask=False for inference",
+      "dtype": "bfloat16",
+      "normalization": "UTF-8 byte length, not token count",
+      "max_sequence": 2048,
+      "tokenizer_add_special_tokens": false,
+      "torch": "2.13.0+cu130",
+      "python": "3.10.20",
+      "gpu": "NVIDIA GeForce RTX 5090",
+      "hostname": "wqd10nbj04g1",
+      "job_id": "1682034",
+      "dataset_files": {
+        "/data/run01/scxi253/moe1b-data/mc/raw/Rowan__hellaswag/data/validation-00000-of-00001.jsonl": "5beba6d84769892c7ee13859caee702a34c5b1178c11add46f08c84bb1fa9d01",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Challenge/test-00000-of-00001.jsonl": "062fe98a0d64b0bb86b43ee49faf8de6b4c02417f0b4a6b7f9607208c6f1a9d6",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Easy/test-00000-of-00001.jsonl": "c38ac007c93b8de43edbf5732f3dd14d842e11007749a27f5a0ba11ac2d19851",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__openbookqa/main/test-00000-of-00001.jsonl": "bbaca15e985ba386b2f73e9659fce608cf7722a35343864dbe7115cbbda341ab",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__sciq/data/test-00000-of-00001.jsonl": "b38e83aec6f7fdda18885d793e1518f1fc690ed746775c179cfea96d9bac874a",
+        "/data/run01/scxi253/moe1b-data/mc/raw/allenai__winogrande/winogrande_xl/validation-00000-of-00001.jsonl": "34f0a22749f3986249b0629ff05ae298ebb2b14f93ac8499aa673626548626c7",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/dev-00000-of-00001.jsonl": "147bce5b06a81d81f7351ca1d227a596e21a92948c3390b2de49f4b149d87868",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/test-00000-of-00001.jsonl": "30225733916644b79828ee2e3961d8905e001761b0b2cce06fc3da1c2af336d7",
+        "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/validation-00000-of-00001.jsonl": "28769227a0c7dfb0c4e486f738e2e43ac1dc3fecf0a83bd2e465e1841b166724",
+        "/data/run01/scxi253/moe1b-data/mc/raw/google__boolq/data/validation-00000-of-00001.jsonl": "0ad1d6a17b5524d7f8eeea3bcb9a823556785a890f26e3d88bef40245bedc5f2"
+      }
+    },
+    "kind": "suite",
+    "source": "evidence/sync-20261009T2354Z/new_campaign/dense3b-step_00006499/mc.json",
+    "source_sha256": "1ee1d4910fa1442daee4882629e662821dd485f6776ad91912ce39b8d5d77f2f",
+    "original_path": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense3b/dense3b-step_00006499/mc.json",
+    "task_names": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5"
+    ],
+    "origin": "campaign_snapshot"
+  },
+  {
+    "evaluation_id": "3a472a3e063d8a5e",
+    "variant": "dense3b",
+    "step": 6499,
+    "protocol_id": "25371b05730c316d",
+    "protocol_name": "checkpoint-backfill-code-v2-official-evalplus",
+    "manifest": {
+      "protocol": "checkpoint-backfill-code-v2-official-evalplus",
+      "checkpoint_model_sha256": "e28690ba603117024cedaba1db5559de8955fbe151c96ae1a7ea7f75742b82a6",
+      "checkpoint_step": 6499,
+      "metadata_sha256": "81e4643b40e9fdbd59ef52b45b2ccf0a58a1c439ff8d01dd0a80f6614f41175b",
+      "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+      "runner_sha256": "73d26352656e2fdf94e5c20c693b1eec47fc277d7fdfdc8194fc94fe428b86e5",
+      "generate_sha256": "9e1208a703fec2a2abc14cdb21c1b375840b7d7cb58599530f8bcfbf5cca2f08",
+      "archived_suite_sha256": "079eb417c5e7fd03b4e8efd8773826d0079dfa763b317968f52791d562bbd656",
+      "official_evaluate_sha256": "6fcd78d262eae6eff8af4ef6eb00b22909d37beebd90dc37b84b756053e981dd",
+      "official_backend_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+      "official_oracle_sha256": "92b126b907ee493121b55de06f6a34058b6e18adc8cf1c48737eedcd83f24cdd",
+      "official_humaneval_data_sha256": "42526ec0e7d5f3ee0b06d6ced98f8c8bae3d76519151bfb3d36f79010645bd7f",
+      "official_mbpp_data_sha256": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad",
+      "evalplus_patch_provenance": {
+        "source": "/data/run01/scxi253/code3b-train/evalplus-venv/lib/python3.10/site-packages/evalplus/eval/__init__.py",
+        "original_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+        "patched_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+        "change": "Record True and increment progress for successful find_zero special-oracle tests; assertions, tolerance, inputs and model outputs unchanged",
+        "installed_environment_modified": false
+      },
+      "isolation_sha256": "84fb316136130f3f0a677c403236676c7905b3adb38cdbe6b04ec07611bc4857",
+      "isolation_probe": {
+        "landlock_abi": 1,
+        "filesystem": "allowlisted runtime plus own temporary area",
+        "syscalls": "allowlist",
+        "new_sockets": false
+      },
+      "dtype": "bfloat16",
+      "temperature": 0,
+      "batch": 16,
+      "max_new": {
+        "humaneval": 512,
+        "mbpp": 512,
+        "cruxeval": 96,
+        "gsm8k": 320
+      },
+      "code_scoring": "official EvalPlus tests/oracles with documented successful find_zero progress-counter fix; no HumanEval/32 bypass",
+      "execution_limits": {
+        "cruxeval_case_wall_s": 5,
+        "namespace_startup_allowance_s": 3,
+        "child_cpu_s": 10,
+        "child_address_space_bytes": 8589934592,
+        "evalplus_memory_bytes": 4294967296
+      },
+      "cruxeval_protocol": "archived 2-shot assertion execution inside restricted child",
+      "gsm8k_protocol": "archived custom 4-shot exemplars; strict phrase extraction and relaxed last-number separately",
+      "job_id": "1682035"
+    },
+    "kind": "suite",
+    "source": "evidence/sync-20261009T2354Z/new_campaign/dense3b-step_00006499/suite.json",
+    "source_sha256": "3a472a3e063d8a5ecc682b3d6e9688f66a1ab2ce84b07e6a0eb9d8c57876da85",
+    "original_path": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense3b/dense3b-step_00006499/suite.json",
+    "task_names": [
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k"
+    ],
+    "origin": "campaign_snapshot"
   }
 ]

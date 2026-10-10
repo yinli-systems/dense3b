@@ -1,7 +1,7 @@
 {
-  "manifest_records_verified": 388,
-  "new_per_example_records_recounted": 98083,
-  "new_score_checks": 44,
+  "manifest_records_verified": 481,
+  "new_per_example_records_recounted": 198827,
+  "new_score_checks": 96,
   "arithmetic_mismatches": 0,
   "input_capture_issues": [],
   "tensor_payloads_read": 0,

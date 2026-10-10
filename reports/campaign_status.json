@@ -43,5 +43,55 @@
       "winogrande"
     ],
     "original_checkpoint": "/data/run01/scxi253/code3b-train/milestones/step_00002499"
+  },
+  {
+    "variant": "dense3b",
+    "step": 6249,
+    "state": "completed",
+    "phases": {
+      "mc-status.json": "completed",
+      "generation-status.json": "completed"
+    },
+    "missing_tasks_scheduled": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5",
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k"
+    ],
+    "original_checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00006249"
+  },
+  {
+    "variant": "dense3b",
+    "step": 6499,
+    "state": "completed",
+    "phases": {
+      "mc-status.json": "completed",
+      "generation-status.json": "completed"
+    },
+    "missing_tasks_scheduled": [
+      "arc_easy",
+      "arc_challenge",
+      "hellaswag",
+      "winogrande",
+      "boolq",
+      "openbookqa",
+      "sciq",
+      "mmlu_cf",
+      "mmlu_mc5",
+      "humaneval",
+      "mbpp",
+      "cruxeval",
+      "gsm8k"
+    ],
+    "original_checkpoint": "/data/run01/scxi253/code3b-train/ckpt-v0/step_00006499"
   }
 ]

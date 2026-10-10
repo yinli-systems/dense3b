@@ -10,7 +10,7 @@
 
 File size and markers are filesystem evidence, not a new weight-loading or full-tensor checksum test. Hardlinks retain model bytes outside the trainer’s rolling checkpoint directory.
 
-`/data/run01/scxi253/code3b-train/milestones/step_00001499` — training_directory; 6492811343 bytes; captured 2026-10-09T23:20:38.782167+00:00.
+`/data/run01/scxi253/code3b-train/milestones/step_00001499` — training_directory; 6492811343 bytes; captured 2026-10-09T23:55:40.432744+00:00.
 
 ## Nearest recorded training observation
 
