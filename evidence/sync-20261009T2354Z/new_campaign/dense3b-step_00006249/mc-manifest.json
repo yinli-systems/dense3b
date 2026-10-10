@@ -1,0 +1,31 @@
+{
+  "protocol": "checkpoint-backfill-mc-v2",
+  "model_sha256": "a4dc6c1ae18e701d52a1a9b4f2485940ac61c9943c92e17c1177b54cab05ae0d",
+  "metadata_sha256": "170f6a921d124db1f8d2608918784f15bce77618f83b76fa49e5fd5a65f95f53",
+  "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+  "runner_sha256": "e885da22ec2f06b9b911f007fcdf9d3716be43f9a37dfe9a855584b69c1eab37",
+  "mc_source_sha256": "53642b866a432c021ba6e04e90f9fa7248e498dbb9f3f72ca4a11b056d3425e9",
+  "architecture_sha256": "ddaba0ba116f12c69c4151d1633e8317fd33dc429d60f96368180f1808f95939",
+  "source_config": "saved checkpoint config; doc_mask=False for inference",
+  "dtype": "bfloat16",
+  "normalization": "UTF-8 byte length, not token count",
+  "max_sequence": 2048,
+  "tokenizer_add_special_tokens": false,
+  "torch": "2.13.0+cu130",
+  "python": "3.10.20",
+  "gpu": "NVIDIA GeForce RTX 5090",
+  "hostname": "wqd10nah09g5",
+  "job_id": "1681837",
+  "dataset_files": {
+    "/data/run01/scxi253/moe1b-data/mc/raw/Rowan__hellaswag/data/validation-00000-of-00001.jsonl": "5beba6d84769892c7ee13859caee702a34c5b1178c11add46f08c84bb1fa9d01",
+    "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Challenge/test-00000-of-00001.jsonl": "062fe98a0d64b0bb86b43ee49faf8de6b4c02417f0b4a6b7f9607208c6f1a9d6",
+    "/data/run01/scxi253/moe1b-data/mc/raw/allenai__ai2_arc/ARC-Easy/test-00000-of-00001.jsonl": "c38ac007c93b8de43edbf5732f3dd14d842e11007749a27f5a0ba11ac2d19851",
+    "/data/run01/scxi253/moe1b-data/mc/raw/allenai__openbookqa/main/test-00000-of-00001.jsonl": "bbaca15e985ba386b2f73e9659fce608cf7722a35343864dbe7115cbbda341ab",
+    "/data/run01/scxi253/moe1b-data/mc/raw/allenai__sciq/data/test-00000-of-00001.jsonl": "b38e83aec6f7fdda18885d793e1518f1fc690ed746775c179cfea96d9bac874a",
+    "/data/run01/scxi253/moe1b-data/mc/raw/allenai__winogrande/winogrande_xl/validation-00000-of-00001.jsonl": "34f0a22749f3986249b0629ff05ae298ebb2b14f93ac8499aa673626548626c7",
+    "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/dev-00000-of-00001.jsonl": "147bce5b06a81d81f7351ca1d227a596e21a92948c3390b2de49f4b149d87868",
+    "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/test-00000-of-00001.jsonl": "30225733916644b79828ee2e3961d8905e001761b0b2cce06fc3da1c2af336d7",
+    "/data/run01/scxi253/moe1b-data/mc/raw/cais__mmlu/all/validation-00000-of-00001.jsonl": "28769227a0c7dfb0c4e486f738e2e43ac1dc3fecf0a83bd2e465e1841b166724",
+    "/data/run01/scxi253/moe1b-data/mc/raw/google__boolq/data/validation-00000-of-00001.jsonl": "0ad1d6a17b5524d7f8eeea3bcb9a823556785a890f26e3d88bef40245bedc5f2"
+  }
+}

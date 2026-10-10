@@ -1,0 +1,16 @@
+MC_START {"index": 9, "repo": "reason3b", "preset": "r3b_s", "step": 5249, "original_checkpoint": "/data/run01/scxi253/reason3b/ckpt-s/step_00005249", "found_tasks": [], "missing_tasks": ["arc_easy", "arc_challenge", "hellaswag", "winogrande", "boolq", "openbookqa", "sciq", "mmlu_cf", "mmlu_mc5", "humaneval", "mbpp", "cruxeval", "gsm8k"], "pinned_checkpoint": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/pinned/reason3b/r3b_s-step_00005249", "metadata_sha256": "19f201ee783e06fc7cf1c10552e72e85527a65c215c2d6963055a1f4c93e2af7", "model_bytes": 6232539251, "model_inode": 1504141853, "model_device": 46, "hardlink": true, "planned_utc": "2026-10-09T23:02:14.915068+00:00"}
+{"arc_easy": {"acc": 0.7104377104377104, "acc_norm": 0.6658249158249159, "n": 2376, "seconds": 30.585055828094482}}
+W1010 07:22:17.374000 447908 torch/_dynamo/convert_frame.py:1994] [0/8] torch._dynamo hit config.recompile_limit (8)
+W1010 07:22:17.374000 447908 torch/_dynamo/convert_frame.py:1994] [0/8]    function: '_swiglu_fwd' (/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/source/model/moe_local.py:265)
+W1010 07:22:17.374000 447908 torch/_dynamo/convert_frame.py:1994] [0/8]    last reason: 0/0: tensor 'h' size mismatch at index 0. expected 261792, actual 261888
+W1010 07:22:17.374000 447908 torch/_dynamo/convert_frame.py:1994] [0/8] To log all recompilation reasons, use TORCH_LOGS="recompiles".
+W1010 07:22:17.374000 447908 torch/_dynamo/convert_frame.py:1994] [0/8] To diagnose recompilation issues, see https://docs.pytorch.org/docs/main/user_guide/torch_compiler/compile/programming_model.recompilation.html
+{"arc_challenge": {"acc": 0.3412969283276451, "acc_norm": 0.36177474402730375, "n": 1172, "seconds": 6.69970965385437}}
+{"hellaswag": {"acc": 0.3430591515634336, "acc_norm": 0.40948018323043217, "n": 10042, "seconds": 52.38861846923828}}
+{"winogrande": {"acc": 0.5327545382794001, "acc_norm": 0.5327545382794001, "n": 1267, "seconds": 1.4303619861602783}}
+{"boolq": {"acc": 0.5669724770642202, "acc_norm": 0.6162079510703364, "n": 3270, "seconds": 14.992748975753784}}
+{"openbookqa": {"acc": 0.266, "acc_norm": 0.37, "n": 500, "seconds": 1.2267072200775146}}
+{"sciq": {"acc": 0.9, "acc_norm": 0.866, "n": 1000, "seconds": 7.179756164550781}}
+{"mmlu_cf": {"acc": 0.31420025637373594, "acc_norm": 0.3277310924369748, "n": 14042, "seconds": 67.52407360076904}}
+{"mmlu_mc5": {"acc": 0.2571571001281869, "acc_norm": 0.2571571001281869, "n": 14042, "seconds": 560.0668685436249}}
+MC_DONE /data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/reason3b/r3b_s-step_00005249/mc.json

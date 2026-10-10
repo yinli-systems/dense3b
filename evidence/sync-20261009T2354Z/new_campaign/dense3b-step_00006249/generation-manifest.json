@@ -1,0 +1,49 @@
+{
+  "protocol": "checkpoint-backfill-code-v2-official-evalplus",
+  "checkpoint_model_sha256": "a4dc6c1ae18e701d52a1a9b4f2485940ac61c9943c92e17c1177b54cab05ae0d",
+  "checkpoint_step": 6249,
+  "metadata_sha256": "170f6a921d124db1f8d2608918784f15bce77618f83b76fa49e5fd5a65f95f53",
+  "tokenizer_sha256": "9ad33b4b39a9f83973c3f8c42a01948dd5b877a28ac9a5356956c4ff4ed0b714",
+  "runner_sha256": "73d26352656e2fdf94e5c20c693b1eec47fc277d7fdfdc8194fc94fe428b86e5",
+  "generate_sha256": "9e1208a703fec2a2abc14cdb21c1b375840b7d7cb58599530f8bcfbf5cca2f08",
+  "archived_suite_sha256": "079eb417c5e7fd03b4e8efd8773826d0079dfa763b317968f52791d562bbd656",
+  "official_evaluate_sha256": "6fcd78d262eae6eff8af4ef6eb00b22909d37beebd90dc37b84b756053e981dd",
+  "official_backend_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+  "official_oracle_sha256": "92b126b907ee493121b55de06f6a34058b6e18adc8cf1c48737eedcd83f24cdd",
+  "official_humaneval_data_sha256": "42526ec0e7d5f3ee0b06d6ced98f8c8bae3d76519151bfb3d36f79010645bd7f",
+  "official_mbpp_data_sha256": "b54e762755248ca411b523c917fa9f93c07b5ff2966bf60b3917b853926a3dad",
+  "evalplus_patch_provenance": {
+    "source": "/data/run01/scxi253/code3b-train/evalplus-venv/lib/python3.10/site-packages/evalplus/eval/__init__.py",
+    "original_sha256": "76857b678cddca08dcaf54d7927b9a77826715cf657654ca5baf6c2b267f4c34",
+    "patched_sha256": "56f71b867d677f0a96fb58bbcf342a698020f42b7e6e2c705d29b55db9396e15",
+    "change": "Record True and increment progress for successful find_zero special-oracle tests; assertions, tolerance, inputs and model outputs unchanged",
+    "installed_environment_modified": false
+  },
+  "isolation_sha256": "84fb316136130f3f0a677c403236676c7905b3adb38cdbe6b04ec07611bc4857",
+  "isolation_probe": {
+    "landlock_abi": 1,
+    "filesystem": "allowlisted runtime plus own temporary area",
+    "syscalls": "allowlist",
+    "new_sockets": false
+  },
+  "dtype": "bfloat16",
+  "temperature": 0,
+  "batch": 16,
+  "max_new": {
+    "humaneval": 512,
+    "mbpp": 512,
+    "cruxeval": 96,
+    "gsm8k": 320
+  },
+  "code_scoring": "official EvalPlus tests/oracles with documented successful find_zero progress-counter fix; no HumanEval/32 bypass",
+  "execution_limits": {
+    "cruxeval_case_wall_s": 5,
+    "namespace_startup_allowance_s": 3,
+    "child_cpu_s": 10,
+    "child_address_space_bytes": 8589934592,
+    "evalplus_memory_bytes": 4294967296
+  },
+  "cruxeval_protocol": "archived 2-shot assertion execution inside restricted child",
+  "gsm8k_protocol": "archived custom 4-shot exemplars; strict phrase extraction and relaxed last-number separately",
+  "job_id": "1681838"
+}

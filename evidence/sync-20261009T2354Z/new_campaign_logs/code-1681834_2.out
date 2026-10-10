@@ -1,0 +1,55 @@
+TASK_START humaneval
+{"humaneval": {"humaneval": 0.04878048780487805, "humaneval_plus": 0.04878048780487805, "n": 164, "official_result_file": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense-moe-1b/dense1b_l-step_00001439/humaneval.samples_eval_results.json", "seconds": 323.34820199012756}}
+TASK_START mbpp
+Traceback (most recent call last):
+  File "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/run_generation.py", line 89, in <module>
+    try:main()
+  File "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/run_generation.py", line 85, in main
+    atomic(out/(t+'.details.json'),{'task':t,'checkpoint_sha256':modelhash,'n':r['n'],'items':details});res['tasks'][t]=r;atomic(final,res)
+  File "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/run_mc.py", line 21, in atomic
+    p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix(p.suffix+'.tmp');tmp.write_text(json.dumps(obj,indent=2,allow_nan=False)+'\n');tmp.replace(p)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 316, in _iterencode_list
+    yield buf + _floatstr(value)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 239, in floatstr
+    raise ValueError(
+ValueError: Out of range float values are not JSON compliant: -inf
+Traceback (most recent call last):
+  File "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/run_generation.py", line 89, in <module>
+    try:main()
+  File "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/run_generation.py", line 85, in main
+    atomic(out/(t+'.details.json'),{'task':t,'checkpoint_sha256':modelhash,'n':r['n'],'items':details});res['tasks'][t]=r;atomic(final,res)
+  File "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/run_mc.py", line 21, in atomic
+    p.parent.mkdir(parents=True,exist_ok=True);tmp=p.with_suffix(p.suffix+'.tmp');tmp.write_text(json.dumps(obj,indent=2,allow_nan=False)+'\n');tmp.replace(p)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 201, in encode
+    chunks = list(chunks)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 431, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 405, in _iterencode_dict
+    yield from chunks
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 325, in _iterencode_list
+    yield from chunks
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 316, in _iterencode_list
+    yield buf + _floatstr(value)
+  File "/ssd/scxi253/model_deployment/envs/mipe/lib/python3.10/json/encoder.py", line 239, in floatstr
+    raise ValueError(
+ValueError: Out of range float values are not JSON compliant: -inf

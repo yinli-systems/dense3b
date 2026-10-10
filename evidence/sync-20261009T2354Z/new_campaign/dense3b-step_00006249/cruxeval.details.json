@@ -1,0 +1,5607 @@
+{
+  "task": "cruxeval",
+  "checkpoint_sha256": "a4dc6c1ae18e701d52a1a9b4f2485940ac61c9943c92e17c1177b54cab05ae0d",
+  "n": 800,
+  "items": [
+    {
+      "id": "sample_0",
+      "pred_output": " [1, 1, 3, 1, 3, 1]",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_1",
+      "pred_output": " {1: 1, 2: 2}",
+      "ok_o": false,
+      "pred_input": "1, 2, 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_2",
+      "pred_output": " 'hxbtofdeiequ'",
+      "ok_o": false,
+      "pred_input": "text='hbtofdeiequ')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_3",
+      "pred_output": " 'bcksr'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_4",
+      "pred_output": " '   '",
+      "ok_o": false,
+      "pred_input": "list([1, 2, 3, 4]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_5",
+      "pred_output": " (2, 'DSUWEQEXTQdCMGpqur')",
+      "ok_o": false,
+      "pred_input": "('p', 'C'), 'pC', 'C')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_6",
+      "pred_output": " [('11', 52), ('4', 52), ('74', 31)]",
+      "ok_o": false,
+      "pred_input": "dict([('74', 31)]))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_7",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "list([1, 2, 3]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_8",
+      "pred_output": " 'UppEr'",
+      "ok_o": true,
+      "pred_input": "string='UppEr', encryption=0)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_9",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_10",
+      "pred_output": " ''",
+      "ok_o": true,
+      "pred_input": "text='')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_11",
+      "pred_output": " {'foo': ['bar']}",
+      "ok_o": true,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_12",
+      "pred_output": " 'Daniel if you want to live a happy life! Daniel'",
+      "ok_o": false,
+      "pred_input": "s='If you want to live a happy life! Daniel', x='Daniel')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_13",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "list(\"abcdefghijklmnopqrstuvwxyz\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_14",
+      "pred_output": " '   OOP   '",
+      "ok_o": false,
+      "pred_input": "list('POO'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_15",
+      "pred_output": " \"ZN kgd jw lnt\"",
+      "ok_o": false,
+      "pred_input": "text='ZN KGD JW LNT', wrong='ZN', right='KGD')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_16",
+      "pred_output": " 'zjrohaj'",
+      "ok_o": false,
+      "pred_input": "('zejrohaj',), 'j')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_17",
+      "pred_output": " -1",
+      "ok_o": false,
+      "pred_input": "text = \"abc,def\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_18",
+      "pred_output": " [5, 4, 3, 2, 1, 0]",
+      "ok_o": false,
+      "pred_input": "array=[3, 5, 4, 3, 2, 1, 0], elem=3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_19",
+      "pred_output": " \"sdasdnakjsda80\"",
+      "ok_o": false,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_20",
+      "pred_output": " 'was,'",
+      "ok_o": false,
+      "pred_input": "text = \"hello, world\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_21",
+      "pred_output": " [1, 2, 2, 1]",
+      "ok_o": false,
+      "pred_input": "array)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_22",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "0)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_23",
+      "pred_output": " 'XQuery 2.2'",
+      "ok_o": false,
+      "pred_input": "text='new-medium-performing-application - XQuery 2.', chars='X')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_24",
+      "pred_output": " [35, 47, 39, 27]",
+      "ok_o": false,
+      "pred_input": "nums, 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_25",
+      "pred_output": " {\"l\": 1, \"t\": 2, \"x:\": 3}",
+      "ok_o": false,
+      "pred_input": "('l', 't'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_26",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "('a', 'b', 'c'), '.')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_27",
+      "pred_output": " 'flakflak'",
+      "ok_o": false,
+      "pred_input": "('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_28",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_29",
+      "pred_output": " '-123 314'",
+      "ok_o": false,
+      "pred_input": "text='123314')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_30",
+      "pred_output": " [\"abc\", \"bac\", \"cab\"]",
+      "ok_o": false,
+      "pred_input": "list('abc'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_31",
+      "pred_output": " 8",
+      "ok_o": true,
+      "pred_input": "string=\"hello world\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_32",
+      "pred_output": " 'l'",
+      "ok_o": false,
+      "pred_input": "('ume', 'vo'), ';')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_33",
+      "pred_output": " \"5 2 7 2 3 5\"",
+      "ok_o": false,
+      "pred_input": "lists=[[5,5], [2,2], [7,7]])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_34",
+      "pred_output": " [1, 2, 3, 7, 7, 6, 8, 4, 1, 2, 3, 5, 1, 3, 21, 1, 3]",
+      "ok_o": false,
+      "pred_input": "nums = [2, 7, 7, 6, 8, 4, 2, 5, 21], odd1 = 2, odd2 = 7)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_35",
+      "pred_output": " [1, 2, 3, 4, 5, 6]",
+      "ok_o": false,
+      "pred_input": "(\"ab\", \"cd\"), [\"ab\", \"cd\", \"abcd\"])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_36",
+      "pred_output": " 'hah'",
+      "ok_o": false,
+      "pred_input": "text = 'hello', chars = 'h')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_37",
+      "pred_output": " '123'",
+      "ok_o": false,
+      "pred_input": "('123', '23', '3'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_38",
+      "pred_output": " 'OER-ERR-BBZ-MM'",
+      "ok_o": false,
+      "pred_input": "('1Oe-ErrBzz-Bmm')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_39",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "range(10), 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_40",
+      "pred_output": " \"thecowmoo\"",
+      "ok_o": false,
+      "pred_input": "text='the cow goes moo')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_41",
+      "pred_output": " [21, 92, 58]",
+      "ok_o": false,
+      "pred_input": "array=[58, 92, 21], values=[58, 92, 21])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_42",
+      "pred_output": " 8",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_43",
+      "pred_output": " 36",
+      "ok_o": false,
+      "pred_input": "1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_44",
+      "pred_output": " 'zoh+oh'",
+      "ok_o": false,
+      "pred_input": "text='+n+z+o+h')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_45",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\"), \"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_46",
+      "pred_output": " 'many asvsz hello man'",
+      "ok_o": false,
+      "pred_input": "('manylettersasvszhelloman',), 'manylettersasvszhelloman')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_47",
+      "pred_output": " 'bbrbbr'",
+      "ok_o": false,
+      "pred_input": "b\"Hello\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_48",
+      "pred_output": " \"\"",
+      "ok_o": true,
+      "pred_input": "names)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_49",
+      "pred_output": " '8'",
+      "ok_o": false,
+      "pred_input": "('816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816', '816',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_50",
+      "pred_output": " ['a', 'c', 'v']",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_51",
+      "pred_output": " 20",
+      "ok_o": true,
+      "pred_input": "4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_52",
+      "pred_output": " \"seiq7229 d27\"",
+      "ok_o": false,
+      "pred_input": "text='seiq d')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_53",
+      "pred_output": " [\"URW\", \"rNB\"]",
+      "ok_o": false,
+      "pred_input": "text=\"abcde\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_54",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "(\"abcde\", \"abcde\", \"abcde\"), \"abcde\", \"abcde\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_55",
+      "pred_output": " [14, 43, 89, 34, 17, 4]",
+      "ok_o": false,
+      "pred_input": "range(1,10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_56",
+      "pred_output": " False",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_57",
+      "pred_output": " 'aax'",
+      "ok_o": false,
+      "pred_input": "(\"a\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_58",
+      "pred_output": " [0, 1, 1, 0, 0]",
+      "ok_o": false,
+      "pred_input": "range(5))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_59",
+      "pred_output": " 'hii hi'",
+      "ok_o": false,
+      "pred_input": "('hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi', 'hi',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_60",
+      "pred_output": " 'Raruwa'",
+      "ok_o": false,
+      "pred_input": "doc('R'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_61",
+      "pred_output": " 'nada'",
+      "ok_o": true,
+      "pred_input": "('nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada', 'nada',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_62",
+      "pred_output": " (\"eating\", \"books\", \"piano\", \"excitement\")",
+      "ok_o": false,
+      "pred_input": "('ja', 'nee', 'coke', 'zoo'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_63",
+      "pred_output": " 'ndbtdabdahesyehu'",
+      "ok_o": false,
+      "pred_input": "text='dbtdabdahesyehu', prefix='dbtd')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_64",
+      "pred_output": " \"7\"",
+      "ok_o": false,
+      "pred_input": "text = '7', size = 7)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_65",
+      "pred_output": " 14",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_66",
+      "pred_output": " 'hah'",
+      "ok_o": false,
+      "pred_input": "text=\"abc\", prefix=\"ab\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_67",
+      "pred_output": " \"6,6,6\"",
+      "ok_o": false,
+      "pred_input": "6,8,8)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_68",
+      "pred_output": " 'omeunhwpvr.dq'",
+      "ok_o": false,
+      "pred_input": "text='q', pref='d')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_69",
+      "pred_output": " '882afmfp'",
+      "ok_o": false,
+      "pred_input": "student_marks, 'Alice')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_70",
+      "pred_output": " 999993767522480",
+      "ok_o": false,
+      "pred_input": "f([\"a\", \"b\", \"c\"])))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_71",
+      "pred_output": " {1: 2, 3: 4, 5: 6, 7: 8, 9: 10}",
+      "ok_o": false,
+      "pred_input": "d, 10)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_72",
+      "pred_output": " False",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\", \"d\", \"e\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_73",
+      "pred_output": " (1, 2)",
+      "ok_o": false,
+      "pred_input": "list('0110111'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_74",
+      "pred_output": " [44, 34, 23, 82, 24, 11, 63, 99]",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_75",
+      "pred_output": " 9",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_76",
+      "pred_output": " 8",
+      "ok_o": false,
+      "pred_input": "range(1, len(nums)+1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_77",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "('abc', 'd'), 'a')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_78",
+      "pred_output": " 'mTYWLMwbLRVOqNEf.oLsYkZORKE[Ko[{n') == 'mTYWLMwbLRVOqNEf.oLsYkZORKE[Ko[{n') == 'mTYWLMwbLRVOqNEf.oLsYkZORKE[Ko[{n') == 'mTYWLMwbLRVOqNEf.oLsYkZORKE[Ko",
+      "ok_o": false,
+      "pred_input": "('mty',))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_79",
+      "pred_output": " '1234'",
+      "ok_o": false,
+      "pred_input": "list(range(1, 5))))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_80",
+      "pred_output": " 'baa'",
+      "ok_o": false,
+      "pred_input": "r'ba')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_81",
+      "pred_output": " [(\"Bulls\", 23), (\"White Sox\", 45)]",
+      "ok_o": false,
+      "pred_input": "dic, 'Bulls')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_82",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "1, 2, 3, 4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_83",
+      "pred_output": " '0:0'",
+      "ok_o": false,
+      "pred_input": "text='2:0')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_84",
+      "pred_output": " \"nwbryl\"",
+      "ok_o": false,
+      "pred_input": "text='nwvday mefday ofmeday bdrylday')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_85",
+      "pred_output": " [3, 4, 5, 6, 7, 8, 9, 10, 11, 12]",
+      "ok_o": false,
+      "pred_input": "6)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_86",
+      "pred_output": " 'sdfs'",
+      "ok_o": false,
+      "pred_input": "photos, imgur, 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_87",
+      "pred_output": " \"93213\"",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_88",
+      "pred_output": " \"llohe\"",
+      "ok_o": false,
+      "pred_input": "('hello', 'hello'), 'hello')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_89",
+      "pred_output": " 'O'",
+      "ok_o": true,
+      "pred_input": "char='O')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_90",
+      "pred_output": " [[1, 2, 3], [], [1, 2, 3]]",
+      "ok_o": true,
+      "pred_input": "[[1, 2, 3], [], [1, 2, 3]])",
+      "ok_i": true
+    },
+    {
+      "id": "sample_91",
+      "pred_output": " [12, 23]",
+      "ok_o": false,
+      "pred_input": "('1', '2', 'a', 'b', '3', 'x', 'y'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_92",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "(\"abcdefghijklmnopqrstuvwxyz\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_93",
+      "pred_output": " 'iQ'",
+      "ok_o": false,
+      "pred_input": "4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_94",
+      "pred_output": " {'w': 3, 'wi': 10}",
+      "ok_o": true,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_95",
+      "pred_output": " {'AAA': 'fr'}",
+      "ok_o": false,
+      "pred_input": "dict({'fr': 'AAA'}))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_96",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"a b c d e f g h i j k l m n o p q r s t u v w x y z\"))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_97",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "list([1, 2, 3, 4]))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_98",
+      "pred_output": " 'SOME OF THIS IS uknowN!'",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_99",
+      "pred_output": " 'aa+bb'",
+      "ok_o": false,
+      "pred_input": "('aa', 'bb'), '++', 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_100",
+      "pred_output": " {'1': 'a', 1: 'b'}",
+      "ok_o": false,
+      "pred_input": "set(['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30', '31', '32",
+      "ok_i": false
+    },
+    {
+      "id": "sample_101",
+      "pred_output": " [ -4,  1,  0, 4]",
+      "ok_o": false,
+      "pred_input": "array, 0, -4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_102",
+      "pred_output": " [0, 2]",
+      "ok_o": false,
+      "pred_input": "names = [\"Alice\", \"Bob\", \"Charlie\"], winners = [\"Alice\", \"Bob\"])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_103",
+      "pred_output": " 'aEbFhIj'",
+      "ok_o": false,
+      "pred_input": "('abcdefghij',))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_104",
+      "pred_output": " 1",
+      "ok_o": false,
+      "pred_input": "('a', 'a', 'a', 'a', 'a', 'a', 'a')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_105",
+      "pred_output": " \"PermissioN is GRANTED\"",
+      "ok_o": false,
+      "pred_input": "text='Permission Is Granted')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_106",
+      "pred_output": " -6",
+      "ok_o": false,
+      "pred_input": "range(0, len(nums)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_107",
+      "pred_output": " \"UAH6JQ\"",
+      "ok_o": false,
+      "pred_input": "text='Hello, World!')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_108",
+      "pred_output": " 1",
+      "ok_o": false,
+      "pred_input": "0)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_109",
+      "pred_output": " [1, 0, 1, 1, 9]",
+      "ok_o": false,
+      "pred_input": "nums, 1, 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_110",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "(\"abcdefghijklmnopqrstuvwxyz\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_111",
+      "pred_output": " (89, 83)",
+      "ok_o": false,
+      "pred_input": "marks={1: 89, 2: 89, 3: 89, 4: 89})",
+      "ok_i": false
+    },
+    {
+      "id": "sample_112",
+      "pred_output": " 'XZ LittleRedRidingHood LiTTleBIGGeXEiT fault'",
+      "ok_o": false,
+      "pred_input": "('XYZLtRRdnHodLTTBIGGeXET', 'fult'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_113",
+      "pred_output": " \"93275yrgSgbgSshfbsfB\"",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_114",
+      "pred_output": " \"a-b\"",
+      "ok_o": false,
+      "pred_input": "('a', 'b'), ' ')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_115",
+      "pred_output": " b'os; agx5'",
+      "ok_o": false,
+      "pred_input": "b'111; 115; 124; 124; 97; 103; 120; 53;')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_116",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "d = {}, count = 1)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_117",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_118",
+      "pred_output": " 'zbqmknfkx'",
+      "ok_o": false,
+      "pred_input": "text='zbzquiuqnmfkx', chars='qnmfkx')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_119",
+      "pred_output": " \"vvsnlygltaw\"",
+      "ok_o": false,
+      "pred_input": "text = \"VsNlYgLtAw\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_120",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "dict([\"a\", \"b\", \"c\"]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_121",
+      "pred_output": " '1,001'",
+      "ok_o": false,
+      "pred_input": "('1001', '1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,1001,",
+      "ok_i": false
+    },
+    {
+      "id": "sample_122",
+      "pred_output": " 'no'",
+      "ok_o": false,
+      "pred_input": "string='Nuva?dlfuyjys')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_123",
+      "pred_output": " [1, 2, 3, 5, 8]",
+      "ok_o": false,
+      "pred_input": "array = [1, 2, 3, 5, 6, 8], elem = 5)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_124",
+      "pred_output": " 'i like you'",
+      "ok_o": true,
+      "pred_input": "txt='i like you', sep='', sep_count=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_125",
+      "pred_output": " 'Leap and the net will appear!'",
+      "ok_o": false,
+      "pred_input": "text='3Leap and the net will appear', res='!3Leap!')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_126",
+      "pred_output": " 'kkxkxxfckkkx'",
+      "ok_o": false,
+      "pred_input": "text='kkxkxxfck')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_127",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "text = \"abc\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_128",
+      "pred_output": " 'mmammoth'",
+      "ok_o": false,
+      "pred_input": "('Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm', 'Mm',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_129",
+      "pred_output": " [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94, 96",
+      "ok_o": false,
+      "pred_input": "text=\"abcdefghi\", search_string=\"abc\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_130",
+      "pred_output": " 'lohoho'",
+      "ok_o": false,
+      "pred_input": "list(range(1, 10))))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_131",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "(\"a\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_132",
+      "pred_output": " 'abcd'",
+      "ok_o": false,
+      "pred_input": "('abc', 'ab'), 'abc')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_133",
+      "pred_output": " [7, 1, 2, 6, 0, 2]",
+      "ok_o": false,
+      "pred_input": "nums = [7, 1, 2], elements = [1, 2, 3, 4])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_134",
+      "pred_output": " \"1122334\"",
+      "ok_o": false,
+      "pred_input": "372359)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_135",
+      "pred_output": " ['Russia', 'Kazakhstan']",
+      "ok_o": true,
+      "pred_input": "d)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_136",
+      "pred_output": " \"a\\nbc\\nd\\nef\"",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_137",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_138",
+      "pred_output": " 'tflb omn rtt'",
+      "ok_o": true,
+      "pred_input": "text = 'tflb omn rtt', chars = 'tflb')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_139",
+      "pred_output": " 'no'",
+      "ok_o": true,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_140",
+      "pred_output": " 'Hi there'",
+      "ok_o": false,
+      "pred_input": "st.lower().rindex('h', st.lower().rindex('i')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_141",
+      "pred_output": " [3, 2, 3, 2, 2, 2, 2, 2, 2, 2]",
+      "ok_o": false,
+      "pred_input": "li)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_142",
+      "pred_output": " 'yekdfhp'",
+      "ok_o": false,
+      "pred_input": "('y', 'k', 'd', 'h', 'p', 'f', 'p', 'k', 'd', 'h', 'p', 'f')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_143",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"a\", 1), 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_144",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "([1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_145",
+      "pred_output": " 8.50",
+      "ok_o": true,
+      "pred_input": "5, 'orange')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_146",
+      "pred_output": " [5, 4, 3, 2, 1]",
+      "ok_o": false,
+      "pred_input": "6)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_147",
+      "pred_output": " [1, 1, 1]",
+      "ok_o": true,
+      "pred_input": "range(1, len(nums)+1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_148",
+      "pred_output": " '2i12tfiqr'",
+      "ok_o": false,
+      "pred_input": "forest = ['2io', '12', 'tfiqr.-'], animal = '12')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_149",
+      "pred_output": " '2332235233, 1323233333'",
+      "ok_o": false,
+      "pred_input": "('2,4,2,0'), '2,4,2,0')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_150",
+      "pred_output": " [0, -2, 4, -4]",
+      "ok_o": false,
+      "pred_input": "range(4), 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_151",
+      "pred_output": " '697.this.is.ultimate.7.address.to.attack'",
+      "ok_o": false,
+      "pred_input": "text='697 this is the ultimate 7 address to attack')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_152",
+      "pred_output": " 20",
+      "ok_o": true,
+      "pred_input": "text=\"Hello World\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_153",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "(\"abc\", \"d\", \"e\"), \"a\", 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_154",
+      "pred_output": " 'Hello*There'",
+      "ok_o": false,
+      "pred_input": "s, c=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_155",
+      "pred_output": " \"dskjs hjcdjnxhjicnn\"",
+      "ok_o": false,
+      "pred_input": "('dskj', 'ns', 'hj', 'cdjn', 'nxhji', 'ncnn'), 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_156",
+      "pred_output": " 'tcqym'",
+      "ok_o": false,
+      "pred_input": "('tqzym',), 3, 'q')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_157",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "(\"0\" * 10).join([\"01\", \"10\", \"11\", \"01\"]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_158",
+      "pred_output": " [3, 6, -2, 5]",
+      "ok_o": false,
+      "pred_input": "range(1, len(arr)+1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_159",
+      "pred_output": " 'RtGMRi'",
+      "ok_o": false,
+      "pred_input": "('m', 'i', 't', 'r', 'i', 'n', 'g'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_160",
+      "pred_output": " {1: 47698, 3: 83607}",
+      "ok_o": false,
+      "pred_input": "dict({1: 38381, 3: 83607}))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_161",
+      "pred_output": " 'difkj rinpx'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_162",
+      "pred_output": " 'BbSwift'",
+      "ok_o": false,
+      "pred_input": "text='\u0421BISHOPSWIFT')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_163",
+      "pred_output": " 'w()'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_164",
+      "pred_output": " [5, 8, 1, 3, 0]",
+      "ok_o": false,
+      "pred_input": "range(4))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_165",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_166",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "{{1, 2}, {2, 3}, {3, 4}})",
+      "ok_i": false
+    },
+    {
+      "id": "sample_167",
+      "pred_output": " 'aaWQbbWQccWde'",
+      "ok_o": false,
+      "pred_input": "('aaQwQwQwbbQwQwQwccQwQwQwde', 'aaQwQwQwbbQwQwQwccQwQwQwde')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_168",
+      "pred_output": " 'spainb'",
+      "ok_o": false,
+      "pred_input": "('spaib', 'spaib', 'spaib'), 'spaib', 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_169",
+      "pred_output": " 'tolea'",
+      "ok_o": false,
+      "pred_input": "('++++taole++++',))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_170",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_171",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "range(1, len(nums) + 1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_172",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_173",
+      "pred_output": " [5, 8, 6, 8, 4]",
+      "ok_o": false,
+      "pred_input": "list_x=f([4, 8, 6, 8, 5]))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_174",
+      "pred_output": " [1, 2, 3, 1, 2, 3]",
+      "ok_o": false,
+      "pred_input": "range(1, 4))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_175",
+      "pred_output": " ' \\n'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_176",
+      "pred_output": " 'some text'",
+      "ok_o": true,
+      "pred_input": "('some text', 'some text'), 'some text')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_177",
+      "pred_output": " 'HeyDUETHisTHisTHIS@#'",
+      "ok_o": false,
+      "pred_input": "text = \"HEy Dude tHIs $Nd^ &*&tHiS@#\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_178",
+      "pred_output": " [0, 1, 2, 2, 2, 2, 2]",
+      "ok_o": false,
+      "pred_input": "range(4), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_179",
+      "pred_output": " [7, 2, 6, 0, 0, 1, 2]",
+      "ok_o": false,
+      "pred_input": "nums)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_180",
+      "pred_output": " [5, 3, -2, -6, 8, 8]",
+      "ok_o": false,
+      "pred_input": "range(1, len(nums) - 1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_181",
+      "pred_output": " [2, 4]",
+      "ok_o": false,
+      "pred_input": "('3291223', 7))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_182",
+      "pred_output": " [{'b': 1, 'a': 2}]",
+      "ok_o": false,
+      "pred_input": "dict([('a', 2), ('b', 1)]))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_183",
+      "pred_output": " \"hello!!! nice! echo hello!!! nice!\"",
+      "ok_o": false,
+      "pred_input": "('echo', 'echo', 'echo'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_184",
+      "pred_output": " [1,2]",
+      "ok_o": true,
+      "pred_input": "digits=1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_185",
+      "pred_output": " 7",
+      "ok_o": false,
+      "pred_input": "range(1, 7))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_186",
+      "pred_output": " 'pvtso'",
+      "ok_o": true,
+      "pred_input": "text='pvtso')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_187",
+      "pred_output": " 39",
+      "ok_o": true,
+      "pred_input": "d, 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_188",
+      "pred_output": " [\"ab\", \"cd\", \"ad\", \"bc\"]",
+      "ok_o": false,
+      "pred_input": "['a'])",
+      "ok_i": true
+    },
+    {
+      "id": "sample_189",
+      "pred_output": " \"{{{{}}}}\"",
+      "ok_o": true,
+      "pred_input": "out = '{{{{}}}}', mapping = {})",
+      "ok_i": true
+    },
+    {
+      "id": "sample_190",
+      "pred_output": " '980jio80jic kld094398IIl'",
+      "ok_o": false,
+      "pred_input": "text='jiojickldl')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_191",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "string=\"hello\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_192",
+      "pred_output": " 'klcdmari'",
+      "ok_o": false,
+      "pred_input": "text='!klcd!ma:ri', suffix='!')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_193",
+      "pred_output": " '1:1'",
+      "ok_o": true,
+      "pred_input": "\":1:1\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_194",
+      "pred_output": " [[5, 6, 2, 3], [1, 9, 5, 6]]",
+      "ok_o": false,
+      "pred_input": "matr, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_195",
+      "pred_output": " 'iirwirmtoibsac'",
+      "ok_o": false,
+      "pred_input": "text='ilfdoirwirmtoibsac  ')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_196",
+      "pred_output": " \"I398. Is A Poor Year To Sow\"",
+      "ok_o": false,
+      "pred_input": "text='x x x x x')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_197",
+      "pred_output": " [f'{e} oC', f'{s} oC'][s > 1]",
+      "ok_o": false,
+      "pred_input": "1, 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_198",
+      "pred_output": " 'tcmfsmj'",
+      "ok_o": false,
+      "pred_input": "('tcmfsm',), 'tcmfsm')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_199",
+      "pred_output": " 'mnmnj krupa...##!@#!@#$$@##'",
+      "ok_o": true,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_200",
+      "pred_output": " 'joe mt'",
+      "ok_o": false,
+      "pred_input": "('t', 'o', 'a', 'h', 'e', 'r', 'o', 'n'), 'o')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_201",
+      "pred_output": " '4yrw 251-//4 6p'",
+      "ok_o": false,
+      "pred_input": "text='641524')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_202",
+      "pred_output": " [15, 15, 1]",
+      "ok_o": false,
+      "pred_input": "range(10), [15, 15])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_203",
+      "pred_output": " {'a': 3, 'b': -1, 'c': 'Dum'}",
+      "ok_o": false,
+      "pred_input": "d)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_204",
+      "pred_output": " [\"master\", \"m.a.\"]",
+      "ok_o": false,
+      "pred_input": "('m', 'a')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_205",
+      "pred_output": " \"fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu",
+      "ok_o": false,
+      "pred_input": "list(range(10)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_206",
+      "pred_output": " 'h e l l o w o r l d!'",
+      "ok_o": true,
+      "pred_input": "('h e l l o w o r l d!'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_207",
+      "pred_output": " {\"brown\": 10, \"blue\": 20, \"bright\": 8}",
+      "ok_o": false,
+      "pred_input": "['brown', 'blue', 'bright'])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_208",
+      "pred_output": " ['123', 'cat', 'd dee']",
+      "ok_o": false,
+      "pred_input": "('c', 'a', 't', 'd', ' ', 'd', 'e', 'e'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_209",
+      "pred_output": " 'hymi'",
+      "ok_o": true,
+      "pred_input": "f('hi', 'hymi'), 'hi')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_210",
+      "pred_output": " 21",
+      "ok_o": false,
+      "pred_input": "4, 3, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_211",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "range(1,11))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_212",
+      "pred_output": " [1, -9, 7, 2, 6, -3, 3]",
+      "ok_o": true,
+      "pred_input": "nums)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_213",
+      "pred_output": " \"ac\"",
+      "ok_o": false,
+      "pred_input": "r'[a(bc)d]')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_214",
+      "pred_output": " 'here/car/we'",
+      "ok_o": false,
+      "pred_input": "sample)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_215",
+      "pred_output": " '()'",
+      "ok_o": false,
+      "pred_input": "('()'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_216",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "list(\"abcde\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_217",
+      "pred_output": " \"ascii encoded is allowed for this language\"",
+      "ok_o": false,
+      "pred_input": "string='more than ASCII')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_218",
+      "pred_output": " 'cabfccaabfc'",
+      "ok_o": false,
+      "pred_input": "string='bacfbacfcbaacbacfbacfcbaac', sep='')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_219",
+      "pred_output": " \"Hello\"",
+      "ok_o": false,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_220",
+      "pred_output": " \"abcdefgabc\"",
+      "ok_o": false,
+      "pred_input": "text = \"bagfedcacbagfedc\", m = 2, n = 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_221",
+      "pred_output": " 'bpxa24fc5'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_222",
+      "pred_output": " '0baaabbb'",
+      "ok_o": false,
+      "pred_input": "('0aabbaa0b',), 'a')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_223",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_224",
+      "pred_output": " {'23': 123}",
+      "ok_o": false,
+      "pred_input": "list([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]), 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_225",
+      "pred_output": " \"54882\"",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_226",
+      "pred_output": " [1, 3, 2]",
+      "ok_o": false,
+      "pred_input": "range(1, len(nums) + 1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_227",
+      "pred_output": " 'Manolo'",
+      "ok_o": true,
+      "pred_input": "('Manolo', 'Manolo'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_228",
+      "pred_output": " 'lh saf lap kpht swp'",
+      "ok_o": false,
+      "pred_input": "text='llthh#saflapkphtswp', splitter='#')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_229",
+      "pred_output": " [9, 10, 100, 1000]",
+      "ok_o": false,
+      "pred_input": "dic, '9')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_230",
+      "pred_output": " '102x0zooq'",
+      "ok_o": false,
+      "pred_input": "('qozx', 'z', 'x')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_231",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "range(1900, 2020))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_232",
+      "pred_output": " 'fssnvd'",
+      "ok_o": false,
+      "pred_input": "text = 'yesyes', changes = [1, 2, 3, 4])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_233",
+      "pred_output": " [1, 2, 3]",
+      "ok_o": true,
+      "pred_input": "range(3))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_234",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "(\"abcde\", \"a\"), \"e\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_235",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "list([1, 2, 3, 4]), [1, 2, 3, 4])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_236",
+      "pred_output": " 'ac8q9wg'",
+      "ok_o": false,
+      "pred_input": "list(range(1, 10))))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_237",
+      "pred_output": " 'uzlwaqiaj'",
+      "ok_o": false,
+      "pred_input": "('uuzlwaqiaj', 'qiaj'), 'uuzlwaqiaj')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_238",
+      "pred_output": " [1, 9, 4, 83, 5, 6, 100]",
+      "ok_o": false,
+      "pred_input": "ls = [[1, 9, 4], [2, 5, 9], [6, 8, 9]], n = 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_239",
+      "pred_output": " '0\\t1\\n  '",
+      "ok_o": false,
+      "pred_input": "text = '1co', froms = '1co')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_240",
+      "pred_output": " \"3.12\"",
+      "ok_o": false,
+      "pred_input": "3.121)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_241",
+      "pred_output": " 'ED20 CW'",
+      "ok_o": false,
+      "pred_input": "postcode='CWC')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_242",
+      "pred_output": " \"udhv zcvi nhtnfyd erwuyawa pun\"",
+      "ok_o": false,
+      "pred_input": "book)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_243",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"a\", \"b\"), \"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_244",
+      "pred_output": " 'BC1ty'",
+      "ok_o": false,
+      "pred_input": "text = '    ', symbols = [' '])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_245",
+      "pred_output": " \"abcdefghijklmnopqrstuvwxyz\"",
+      "ok_o": false,
+      "pred_input": "alphabet, 'a')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_246",
+      "pred_output": " -1",
+      "ok_o": true,
+      "pred_input": "haystack=\"hello\", needle=\"ll\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_247",
+      "pred_output": " \"yes\"",
+      "ok_o": true,
+      "pred_input": "s = \"abc\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_248",
+      "pred_output": " 666",
+      "ok_o": false,
+      "pred_input": "666, 666)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_249",
+      "pred_output": " {",
+      "ok_o": false,
+      "pred_input": "('f', 's', 'a'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_250",
+      "pred_output": " 'wlaace A'",
+      "ok_o": false,
+      "pred_input": "text='wlace Alc l  ')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_251",
+      "pred_output": " \"Nelson Oscar Marie\"",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_252",
+      "pred_output": " 'foo'",
+      "ok_o": false,
+      "pred_input": "text = 'foo', char = 'f')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_253",
+      "pred_output": " 'kumw'",
+      "ok_o": false,
+      "pred_input": "('um', 'w', 'v'), 'w')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_254",
+      "pred_output": " 'UPPER CASE'",
+      "ok_o": false,
+      "pred_input": "text='lwwer case', repl='lw')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_255",
+      "pred_output": " 'no asw'",
+      "ok_o": false,
+      "pred_input": "('w',), 'w', 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_256",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "text = \"abcdef\", sub = \"d\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_257",
+      "pred_output": " ['Hello', 'World', 'I', 'am', 'String']",
+      "ok_o": false,
+      "pred_input": "ls)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_258",
+      "pred_output": " [1, 2, 7, 8, 9]",
+      "ok_o": false,
+      "pred_input": "thigh_o_one, 1, 1, 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_259",
+      "pred_output": " 'String matching is a big part of RexEx library.'",
+      "ok_o": false,
+      "pred_input": "('RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES', 'RES',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_260",
+      "pred_output": " [1, 2, 3, 4, 5, 6]",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3, 4, 6, 5], start=0, k=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_261",
+      "pred_output": " [12, 5, 2, 3, 214]",
+      "ok_o": false,
+      "pred_input": "range(12), 516)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_262",
+      "pred_output": " \"CD\"",
+      "ok_o": false,
+      "pred_input": "range(1, 7))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_263",
+      "pred_output": " \"lawn\"",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_264",
+      "pred_output": " \"paA\"",
+      "ok_o": false,
+      "pred_input": "test_str='pApArA')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_265",
+      "pred_output": " {1: 2, 2: 4, 3: 3}",
+      "ok_o": false,
+      "pred_input": "d = {1: 2, 2: 4}, k = 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_266",
+      "pred_output": " [2, 3, 4, 6, -2]",
+      "ok_o": false,
+      "pred_input": "range(6))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_267",
+      "pred_output": " 'sowpf'",
+      "ok_o": true,
+      "pred_input": "text = 'sowpf', space = 2)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_268",
+      "pred_output": " 'h/k grateful'",
+      "ok_o": false,
+      "pred_input": "s='h/g/r/a/t/e/f/u/l/k', separator='/')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_269",
+      "pred_output": " [9, 2, 0]",
+      "ok_o": false,
+      "pred_input": "range(3))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_270",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "dic = {1: 1, 2: 2, 3: 3, 4: 4})",
+      "ok_i": false
+    },
+    {
+      "id": "sample_271",
+      "pred_output": " 'uufhl'",
+      "ok_o": false,
+      "pred_input": "('uufh', 'uufh'), 'uufh')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_272",
+      "pred_output": " [9, 7, 5, 3, 1, 2, 4, 6, 8, 0]",
+      "ok_o": false,
+      "pred_input": "base_list=[9, 7, 5, 3, 1, 2, 4, 6, 8, 0, 2, 6, 0, 6, 6], nums=[9, 7, 5, 3, 1, 2, 4, 6, 8, 0, 2, 6, 0, 6, 6])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_273",
+      "pred_output": " 'NET'",
+      "ok_o": true,
+      "pred_input": "name='NET')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_274",
+      "pred_output": " 1",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3, 4], target=5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_275",
+      "pred_output": " {\"a\": \"b\", \"b\": \"c\", \"c\": \"a\"}",
+      "ok_o": false,
+      "pred_input": "dic2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_276",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_277",
+      "pred_output": " [1, 2, 3, 4]",
+      "ok_o": false,
+      "pred_input": "range(1, 10), mode=True)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_278",
+      "pred_output": " [0, 132, 5, 991, 32, 997]",
+      "ok_o": false,
+      "pred_input": "list(range(1, 11)), list(range(1, 11)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_279",
+      "pred_output": " \"\"",
+      "ok_o": true,
+      "pred_input": "text = \"a(bc)de\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_280",
+      "pred_output": " '011101100 001101110 001101100'",
+      "ok_o": false,
+      "pred_input": "field)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_281",
+      "pred_output": " {1: 2, 3: 4, 5: 6, 'message': 'qrTHo'}",
+      "ok_o": false,
+      "pred_input": "c, 0, 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_282",
+      "pred_output": " 2",
+      "ok_o": true,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_283",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "dictionary, 'Iron Man')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_284",
+      "pred_output": " 'est'",
+      "ok_o": false,
+      "pred_input": "text=\"abc\", prefix=\"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_285",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"e\", \"i\", \"o\", \"u\"), \"e\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_286",
+      "pred_output": " 'no'",
+      "ok_o": false,
+      "pred_input": "array, 11, 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_287",
+      "pred_output": " 'PINNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAPNEAP",
+      "ok_o": false,
+      "pred_input": "name)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_288",
+      "pred_output": " [",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_289",
+      "pred_output": " '1: 148'",
+      "ok_o": false,
+      "pred_input": "code=[\"148\", \"b'148\"])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_290",
+      "pred_output": " 'abixaaay'",
+      "ok_o": false,
+      "pred_input": "text='ABIXAAAILY', prefix='ABIX')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_291",
+      "pred_output": " {",
+      "ok_o": false,
+      "pred_input": "dict({'a': [2]})), {'a': [2, 3]}",
+      "ok_i": false
+    },
+    {
+      "id": "sample_292",
+      "pred_output": " '5f83u23saa'",
+      "ok_o": false,
+      "pred_input": "text='5*83*23***')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_293",
+      "pred_output": " 'EXE'",
+      "ok_o": false,
+      "pred_input": "text='no')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_294",
+      "pred_output": " \"x$2xz&5H3*1a@#a*1hris\"",
+      "ok_o": false,
+      "pred_input": "6, 2, '2$z&5H3*1a@#a*1hris')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_295",
+      "pred_output": " 'orange'",
+      "ok_o": false,
+      "pred_input": "fruits)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_296",
+      "pred_output": " \"https://www.ekapusta.com/image/url\"",
+      "ok_o": false,
+      "pred_input": "url='https://www.www.ekapusta.com/image/url')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_297",
+      "pred_output": " 'Half Life'",
+      "ok_o": false,
+      "pred_input": "6174)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_298",
+      "pred_output": " 'dvd vavf n dmv dfvm gamcu dgcvb.'",
+      "ok_o": false,
+      "pred_input": "text='DST VAVF N DMV DFVM GAMCU DGCVB.')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_299",
+      "pred_output": " 'stovk'",
+      "ok_o": false,
+      "pred_input": "text='staovk', char='a')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_300",
+      "pred_output": " [1, 2, 3]",
+      "ok_o": true,
+      "pred_input": "range(4, 10, 2))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_301",
+      "pred_output": " [0, 2, 2, 4, 4, 6]",
+      "ok_o": false,
+      "pred_input": "range(1, len(nums)+1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_302",
+      "pred_output": " 'wddddeeejjjzsjsjjsxdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjdddddddeeejjddddddde",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_303",
+      "pred_output": " 'mJkLbN'",
+      "ok_o": false,
+      "pred_input": "('m', 'j', 'k', 'b', 'n'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_304",
+      "pred_output": " {2: 3, 17: 3, 16: 6, 18: 6, 87: 7}",
+      "ok_o": false,
+      "pred_input": "dict({87: 7, 18: 6}))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_305",
+      "pred_output": " 'or'",
+      "ok_o": false,
+      "pred_input": "('o', 'h'), 'o')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_306",
+      "pred_output": " [6, '1', 2, 0]",
+      "ok_o": false,
+      "pred_input": "digits)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_307",
+      "pred_output": " 'p|x|cz|y|f'",
+      "ok_o": false,
+      "pred_input": "rtext)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_308",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "('La', 'Q', '9'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_309",
+      "pred_output": " 'faqo osax f'",
+      "ok_o": false,
+      "pred_input": "text = 'faqo osax', suffix = 'osax')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_310",
+      "pred_output": " '6__1__0__r0__a_j__6__'",
+      "ok_o": false,
+      "pred_input": "('__1.00r__j_a6__6', '__1.00r__j_a6__6'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_311",
+      "pred_output": " 'yes'",
+      "ok_o": false,
+      "pred_input": "text='no')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_312",
+      "pred_output": " \"True\"",
+      "ok_o": true,
+      "pred_input": "True)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_313",
+      "pred_output": " 'urecord'",
+      "ok_o": true,
+      "pred_input": "('urecord',), 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_314",
+      "pred_output": " '244, 105, -90'",
+      "ok_o": false,
+      "pred_input": "text='105, -90 244')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_315",
+      "pred_output": " 'czywZ'",
+      "ok_o": false,
+      "pred_input": "challenge)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_316",
+      "pred_output": " 'i am your father |'",
+      "ok_o": false,
+      "pred_input": "name='i am your father')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_317",
+      "pred_output": " 'vup a zwwo oihee amuwuuw! '",
+      "ok_o": false,
+      "pred_input": "text = 'vap a zwwo oihee amawaaw!', a = 'v', b = 'o')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_318",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "1, 'a')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_319",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "4, 'hello')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_320",
+      "pred_output": " 'UsaR'",
+      "ok_o": false,
+      "pred_input": "('us', 'Ar'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_321",
+      "pred_output": " {",
+      "ok_o": false,
+      "pred_input": "update={'desciduous': 2}, starting={'desciduous': 1})",
+      "ok_i": false
+    },
+    {
+      "id": "sample_322",
+      "pred_output": " 'tli'",
+      "ok_o": false,
+      "pred_input": "fish, 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_323",
+      "pred_output": " 8",
+      "ok_o": false,
+      "pred_input": "text = \"hello world\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_324",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_325",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"a\", \"b\", \"c\", \"d\", \"e\", \"f\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_326",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_327",
+      "pred_output": " -7",
+      "ok_o": false,
+      "pred_input": "list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(list(range(1, len(",
+      "ok_i": false
+    },
+    {
+      "id": "sample_328",
+      "pred_output": " [1, 2, 3, 4]",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_329",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"a\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_330",
+      "pred_output": " 'mno2n'",
+      "ok_o": false,
+      "pred_input": "text = \"4 2\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_331",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "1, 'a')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_332",
+      "pred_output": " 5",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_333",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "places=[1, 2, 3, 4], lazy=[1, 2, 3, 4])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_334",
+      "pred_output": " '00nU9rCSAzwlpA5BOsizLi7RLVr'",
+      "ok_o": false,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_335",
+      "pred_output": " 'sjbrlfqmw'",
+      "ok_o": false,
+      "pred_input": "('sjbrfqmw', 'sjbrfqmw'), 'sjbrfqmw')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_336",
+      "pred_output": " '234dsfssdfs333324314'",
+      "ok_o": true,
+      "pred_input": "s='234dsfssdfs333324314', sep='ds')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_337",
+      "pred_output": " \"5LL6\"",
+      "ok_o": false,
+      "pred_input": "txt = \"LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+      "ok_i": false
+    },
+    {
+      "id": "sample_338",
+      "pred_output": " {'a': 1, 'b': 2, 'c': 3, 'd': 2}",
+      "ok_o": false,
+      "pred_input": "my_dict)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_339",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_340",
+      "pred_output": " 'EjIkx HtDpV G'",
+      "ok_o": false,
+      "pred_input": "text='DEGHIVJKPTX')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_341",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "cart)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_342",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "('a', 'b', 'c', 'd', 'e'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_343",
+      "pred_output": " [[1, 2, 3], [1, 2], [1, 2, 3], [2, 1], [2, 2], [2, 3], [1, 2, 3], [1, 2], [1, 2, 3], [2, 1], [2, 2], [2, 3], [1, 2, 3], [1, 2], [1, 2, 3], [2, 1], [2, 2",
+      "ok_o": false,
+      "pred_input": "array=[1, 2, 3], elem=1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_344",
+      "pred_output": " [15, 8, 6, 4, 2]",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_345",
+      "pred_output": " ('mv', 'ml')",
+      "ok_o": true,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_346",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "f(\"test.txt\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_347",
+      "pred_output": " 'hzcw'",
+      "ok_o": false,
+      "pred_input": "('h', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c', 'c',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_348",
+      "pred_output": " {563: 555, 133: None}",
+      "ok_o": true,
+      "pred_input": "dict([563, 555, 133]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_349",
+      "pred_output": " 623",
+      "ok_o": false,
+      "pred_input": "dict({'noeohqhk': 623, 1049: 55}))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_350",
+      "pred_output": " [1, 2, 3]",
+      "ok_o": true,
+      "pred_input": "set([1, 2, 3]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_351",
+      "pred_output": " 'a_A_b_B3'",
+      "ok_o": false,
+      "pred_input": "text = 'a_A_b_B3')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_352",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "[-1, -2, -3, -4])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_353",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "f([1, 2, 3, 4]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_354",
+      "pred_output": " 'R!!!, {0}!!!'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_355",
+      "pred_output": " '123 John'",
+      "ok_o": false,
+      "pred_input": "('23', 'John', 'z'), '23x')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_356",
+      "pred_output": " [1, 2]",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_357",
+      "pred_output": " 'criw'",
+      "ok_o": false,
+      "pred_input": "('werc',))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_358",
+      "pred_output": " 'btrb'",
+      "ok_o": false,
+      "pred_input": "text = 'tr', value = 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_359",
+      "pred_output": " ['dZwbSR', 'wijHeq', 'qluVok', 'dxjxbF']",
+      "ok_o": true,
+      "pred_input": "lines)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_360",
+      "pred_output": " 'gfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfgfg",
+      "ok_o": false,
+      "pred_input": "('g', 'g'), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_361",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "text = \"a#b\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_362",
+      "pred_output": " 'wrazugoernmgzu'",
+      "ok_o": false,
+      "pred_input": "text='razugizoernmgzu')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_363",
+      "pred_output": " [1]",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_364",
+      "pred_output": " 'error - no numbers or all zeros!'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_365",
+      "pred_output": " 'xqcRcwVqXsRDRb'",
+      "ok_o": false,
+      "pred_input": "6, 'mRcwVqXsRDRb')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_366",
+      "pred_output": " 'Hello, World!!_ Hi'",
+      "ok_o": false,
+      "pred_input": "string='')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_367",
+      "pred_output": " [6, 2, 1, 1, 4, 1]",
+      "ok_o": true,
+      "pred_input": "nums=[1, 2, 3, 4], rmvalue=1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_368",
+      "pred_output": " '432728'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_369",
+      "pred_output": " \"int\"",
+      "ok_o": false,
+      "pred_input": "1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_370",
+      "pred_output": " False",
+      "ok_o": true,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_371",
+      "pred_output": " 42",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_372",
+      "pred_output": " 'v'",
+      "ok_o": false,
+      "pred_input": "list([1, 2, 3, 4]), 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_373",
+      "pred_output": " [1, 2, 3]",
+      "ok_o": true,
+      "pred_input": "orig)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_374",
+      "pred_output": " [ 'oH', 'ee', 'mb', 'deft', 'n', 'zz', 'f', 'abA' ]",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 'zzzz')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_375",
+      "pred_output": " 'sierizam'",
+      "ok_o": false,
+      "pred_input": "1, 'sieriizzizam')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_376",
+      "pred_output": " \"2printers\"",
+      "ok_o": false,
+      "pred_input": "text='two two two two')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_377",
+      "pred_output": " \"BYE, NO, WAY\"",
+      "ok_o": true,
+      "pred_input": "text='BYE, NO, WAY')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_378",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "dic, 'a')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_379",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "list(range(1, 10)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_380",
+      "pred_output": " 'xxjarczx'",
+      "ok_o": false,
+      "pred_input": "('xxjarcz',), 'j')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_381",
+      "pred_output": " '1919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919",
+      "ok_o": false,
+      "pred_input": "('1', '9'), 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_382",
+      "pred_output": " \"Qltuf Rwrepny\"",
+      "ok_o": false,
+      "pred_input": "list(s.items()))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_383",
+      "pred_output": " 'ellod!p.nkyp.exa.bi.y.hain'",
+      "ok_o": true,
+      "pred_input": "text='ellod!p.nkyp.exa.bi.y.hain', chars='e,l,l,p,n,y,h,a,i,n,p,n,y,a,i,n,p,n,y,a,i,n,p,n,y,a,i,n,p,n,y,a,i,n,p,n,y,",
+      "ok_i": false
+    },
+    {
+      "id": "sample_384",
+      "pred_output": " 'asfdellos'",
+      "ok_o": false,
+      "pred_input": "text = \"sfdellos\", chars = \"sd\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_385",
+      "pred_output": " [0, 2, 1, 2, 6, 2, 6, 3, 0]",
+      "ok_o": false,
+      "pred_input": "range(3))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_386",
+      "pred_output": " 'mid'",
+      "ok_o": false,
+      "pred_input": "concat = 'Done!', di = ['Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', 'Done', '",
+      "ok_i": false
+    },
+    {
+      "id": "sample_387",
+      "pred_output": " [3, 2, 0]",
+      "ok_o": false,
+      "pred_input": "nums = [1, 2, 3, 4], pos = 1, value = 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_388",
+      "pred_output": " \"28in\"",
+      "ok_o": false,
+      "pred_input": "text='2nm_28in', characters='_')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_389",
+      "pred_output": " [1, 2, 3, 'nammo']",
+      "ok_o": false,
+      "pred_input": "total=1, arg=[1, 2, 3])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_390",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "text = \"abcdef\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_391",
+      "pred_output": " ['9', '9']",
+      "ok_o": false,
+      "pred_input": "range(1, len(seatlist) - 1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_392",
+      "pred_output": " 'Hello_Is_It_MyClass'",
+      "ok_o": false,
+      "pred_input": "text='Hello Is It MyClass')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_393",
+      "pred_output": " 'sakl'",
+      "ok_o": false,
+      "pred_input": "text2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_394",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "text = \"abc\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_395",
+      "pred_output": " -1",
+      "ok_o": false,
+      "pred_input": "('0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_396",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "et)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_397",
+      "pred_output": " {'x': 1, 'u': 1, 'w': 1, 'j': 1}",
+      "ok_o": false,
+      "pred_input": "ls)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_398",
+      "pred_output": " {2: [0, 1], 0: [1, 2], 1: [2]}",
+      "ok_o": false,
+      "pred_input": "counts)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_399",
+      "pred_output": " 'avacado'",
+      "ok_o": false,
+      "pred_input": "('a', 'cado'), 'a', 'cado')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_400",
+      "pred_output": " 'eat food I am hungry!'",
+      "ok_o": false,
+      "pred_input": "('I', 'am', 'hungry!'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_401",
+      "pred_output": " 'mathematicsexample'",
+      "ok_o": false,
+      "pred_input": "text='mathematics', suffix='mat')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_402",
+      "pred_output": " {1: 1, 2: 2, 3: 3, 4: 4}",
+      "ok_o": false,
+      "pred_input": "5, [1, 2, 3, 4])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_403",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "full = \"abcdef\", part = \"d\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_404",
+      "pred_output": " 6",
+      "ok_o": true,
+      "pred_input": "6)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_405",
+      "pred_output": " [6, 5, 4, 3, 2, 1, 3]",
+      "ok_o": false,
+      "pred_input": "range(1, len(xs) + 1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_406",
+      "pred_output": " 'JHOOJ'",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_407",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "(\"a\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_408",
+      "pred_output": " -7",
+      "ok_o": false,
+      "pred_input": "m)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_409",
+      "pred_output": " 'Querist'",
+      "ok_o": false,
+      "pred_input": "text = 'QuerisT', char = 'T')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_410",
+      "pred_output": " [1, 3, -1, 1, -2, 6]",
+      "ok_o": false,
+      "pred_input": "range(len(nums)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_411",
+      "pred_output": " 'Hello'",
+      "ok_o": false,
+      "pred_input": "text=\"abc\", pref=[\"a\", \"b\"])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_412",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "1, 3, 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_413",
+      "pred_output": " 'jbcucwc'",
+      "ok_o": false,
+      "pred_input": "('cwcuc', 'cwcuc', 'cwcuc'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_414",
+      "pred_output": " {'X': ['X', 'Y']}",
+      "ok_o": true,
+      "pred_input": "dCopy)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_415",
+      "pred_output": " ((8, 5), (8, 2), (5, 3))",
+      "ok_o": false,
+      "pred_input": "list(range(10)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_416",
+      "pred_output": " 'jysrhfm ojwesf xgwwdyr dlrul ymba bpq'",
+      "ok_o": true,
+      "pred_input": "text='jysrhfm ojwesf xgwwdyr dlrul ymba bpq', old='jysrhfm', new='jysrhfm')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_417",
+      "pred_output": " 8",
+      "ok_o": false,
+      "pred_input": "range(10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_418",
+      "pred_output": " \"qqqqq\"",
+      "ok_o": true,
+      "pred_input": "('qqqqq', 'qqqqq'), 'qqqqq')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_419",
+      "pred_output": " 'mmfbifen'",
+      "ok_o": false,
+      "pred_input": "text = 'mmfb', value = 'fb')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_420",
+      "pred_output": " False",
+      "ok_o": false,
+      "pred_input": "(\"abcdefghi\"))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_421",
+      "pred_output": " \"try\"",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_422",
+      "pred_output": " [1, 2, 1]",
+      "ok_o": false,
+      "pred_input": "range(1, 5))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_423",
+      "pred_output": " [4, 2, 5, 1, 3, 2, 6]",
+      "ok_o": false,
+      "pred_input": "selfie)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_424",
+      "pred_output": " 'Makers of a Statement'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_425",
+      "pred_output": " ['CL44', 'CL44', 'CL44']",
+      "ok_o": false,
+      "pred_input": "('CL44', 'CL44', 'CL44'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_426",
+      "pred_output": " [1, 2, 3, 8, 4, 5]",
+      "ok_o": false,
+      "pred_input": "numbers, 8, 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_427",
+      "pred_output": " 's aa a bb s d s a a s a a'",
+      "ok_o": false,
+      "pred_input": "('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_428",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_429",
+      "pred_output": " [{'abc': 2, 'defghi': 2, '87.29': 3}]",
+      "ok_o": false,
+      "pred_input": "d)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_430",
+      "pred_output": " [5, 1, 3, 7, 8]",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_431",
+      "pred_output": " [1, 2, 3]",
+      "ok_o": false,
+      "pred_input": "1, 1)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_432",
+      "pred_output": " 'G5ogb6f,c7e.EMm'",
+      "ok_o": false,
+      "pred_input": "4, \"abc\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_433",
+      "pred_output": " \"Dmreh,Sspp,T,G ,.tB,Vxk,Cct\"",
+      "ok_o": false,
+      "pred_input": "text = \"T,T,Sspp,G ,.tB,Vxk,Cct\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_434",
+      "pred_output": " 'e'",
+      "ok_o": false,
+      "pred_input": "string=\"hello world\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_435",
+      "pred_output": " '1'",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 3, 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_436",
+      "pred_output": " [1, 2, 3, 6, 1, 2]",
+      "ok_o": false,
+      "pred_input": "s = \"7\", characters = [\"7\", \"6\", \"1\"])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_437",
+      "pred_output": " {'john': 'doe', 'doe': 'john', 'the': 'john', 'john': 'doe', 'doe': 'john', 'the': 'john', 'john': 'doe', 'doe': 'john', 'the': 'john', 'john': 'doe', 'doe': 'john', 'the': 'john', 'john': 'doe', 'doe': 'john', 'the",
+      "ok_o": false,
+      "pred_input": "tap_hierarchy)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_438",
+      "pred_output": " '1\\t\\t\\t3'",
+      "ok_o": false,
+      "pred_input": "('1', '3'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_439",
+      "pred_output": " 'coscifysu'",
+      "ok_o": true,
+      "pred_input": "value='coscifysu')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_440",
+      "pred_output": " 'no'",
+      "ok_o": true,
+      "pred_input": "text='no')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_441",
+      "pred_output": " 'forty-five'",
+      "ok_o": false,
+      "pred_input": "37, 23, 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_442",
+      "pred_output": " [1, 2, 3, 4]",
+      "ok_o": true,
+      "pred_input": "list(range(5)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_443",
+      "pred_output": " \"lorem ipsum\"",
+      "ok_o": true,
+      "pred_input": "text='lorem ipsum')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_444",
+      "pred_output": " -5",
+      "ok_o": false,
+      "pred_input": "range(5, -1, -2))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_445",
+      "pred_output": " \"carrot and banana and strawberry\"",
+      "ok_o": false,
+      "pred_input": "names = ['Carrot', 'Banana', 'and Strawberry'])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_446",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_447",
+      "pred_output": " \"|a\"",
+      "ok_o": false,
+      "pred_input": "text = 'a|b', tab_size = 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_448",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "('abc', 'd', 'e'), 'a')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_449",
+      "pred_output": " 1",
+      "ok_o": true,
+      "pred_input": "1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_450",
+      "pred_output": " 'K zBK'",
+      "ok_o": false,
+      "pred_input": "('K KBz',))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_451",
+      "pred_output": " 'pn'",
+      "ok_o": false,
+      "pred_input": "text = \"n\", char = 'n')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_452",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_453",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "(\"abc\", \"d\"), \"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_454",
+      "pred_output": " {'a': 2, 'b': [], 'c': {}}",
+      "ok_o": false,
+      "pred_input": "d=1, count=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_455",
+      "pred_output": " 'Xyz'",
+      "ok_o": false,
+      "pred_input": "u'XyZ')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_456",
+      "pred_output": " \"Join us in Hungary\"",
+      "ok_o": true,
+      "pred_input": "('Join us in Hungary',), 'join us in Hungary')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_457",
+      "pred_output": " [3, 7, 5, 6, 1]",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_458",
+      "pred_output": " 'm34m3po'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_459",
+      "pred_output": " {'b': 'vzjmc', 'vzjmc': 'f', 'f': 'ae', 'ae': '0'}",
+      "ok_o": false,
+      "pred_input": "arr = [1, 2, 3, 4], d = {'vzjmc': 'b', 'ae': 'f'})",
+      "ok_i": false
+    },
+    {
+      "id": "sample_460",
+      "pred_output": " 'GNOOR'",
+      "ok_o": false,
+      "pred_input": "text='GENERAL NAGOOR', amount=5)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_461",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"abcdef\", \"xyz\"), \"xyz\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_462",
+      "pred_output": " 'ldebgp'",
+      "ok_o": false,
+      "pred_input": "('oooooooo', 'oooooooo'), 'oooooooo')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_463",
+      "pred_output": " {5: 5, 3: 6, -4: -4}",
+      "ok_o": false,
+      "pred_input": "dict({3: 6}))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_464",
+      "pred_output": " '0'",
+      "ok_o": false,
+      "pred_input": "list(range(1, 101))))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_465",
+      "pred_output": " 'wise king, young king'",
+      "ok_o": false,
+      "pred_input": "('wise king', 'young king'), 'north')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_466",
+      "pred_output": " 'th\\n-----'",
+      "ok_o": false,
+      "pred_input": "text='-----')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_467",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_468",
+      "pred_output": " 'unrndqafi'",
+      "ok_o": true,
+      "pred_input": "1, 2, 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_469",
+      "pred_output": " 'sduyai'",
+      "ok_o": false,
+      "pred_input": "text = 'syduyi', position = 0, value = 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_470",
+      "pred_output": " [2, 1, 2]",
+      "ok_o": false,
+      "pred_input": "6)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_471",
+      "pred_output": " 'o'",
+      "ok_o": false,
+      "pred_input": "1, \"abc\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_472",
+      "pred_output": " [\"x\", \"y\", \"z\", \"5\", \"C\"]",
+      "ok_o": false,
+      "pred_input": "text=\"aab\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_473",
+      "pred_output": " 'scedvtvotkwqfoqn'",
+      "ok_o": false,
+      "pred_input": "text = 'scedvtvtkwqfqn', value = 'scedvtvtkwqfqn')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_474",
+      "pred_output": " '#[)[]>[^e>\\n 8'",
+      "ok_o": true,
+      "pred_input": "txt = \"abcdefghi\", marker = '>')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_475",
+      "pred_output": " 1",
+      "ok_o": true,
+      "pred_input": "range(1, 10), 0)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_476",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_477",
+      "pred_output": " 'xduaisf|'",
+      "ok_o": false,
+      "pred_input": "('xduaisf',))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_478",
+      "pred_output": " {'m': 2, 'e': 1, 'o': 1}",
+      "ok_o": false,
+      "pred_input": "('mew', 'eow', 'oow', 'wow', 'w'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_479",
+      "pred_output": " [1, 5, 3, 6]",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3], pop1=1, pop2=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_480",
+      "pred_output": " 'misiast'",
+      "ok_o": false,
+      "pred_input": "s='abc', c1='a', c2='b')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_481",
+      "pred_output": " [1, 2, 3]",
+      "ok_o": false,
+      "pred_input": "values=[1, 1], item1=1, item2=1)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_482",
+      "pred_output": " 'Because it intrigues them\"",
+      "ok_o": false,
+      "pred_input": "text = 'Because it intrigues them')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_483",
+      "pred_output": " 'aa'",
+      "ok_o": false,
+      "pred_input": "text = \"hello world\", char = \"o\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_484",
+      "pred_output": " [91, 16, 6r, 5r, egr, '', f, q1f, -2]",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_485",
+      "pred_output": " 'gsd avdropj'",
+      "ok_o": false,
+      "pred_input": "tokens = ['avdropj', 'gsd', 'j', 'd', 'g', 's'])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_486",
+      "pred_output": " {1:1, 2:4, 3:9}",
+      "ok_o": true,
+      "pred_input": "dic)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_487",
+      "pred_output": " ['a', 'b', 'c', 'd']",
+      "ok_o": false,
+      "pred_input": "dict({1: 4, 2: 4, 3: 4, 4: 4}))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_488",
+      "pred_output": " 'tezmgvn 651h'",
+      "ok_o": false,
+      "pred_input": "text='5ezmgvn 651h', char='z')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_489",
+      "pred_output": " 'cos'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_490",
+      "pred_output": " 'giyixjkvu\\r\\r\\frgjuo'",
+      "ok_o": false,
+      "pred_input": "r'\\n\\n\\r\\r \\x0c')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_491",
+      "pred_output": " 8",
+      "ok_o": false,
+      "pred_input": "xs)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_492",
+      "pred_output": " 'babbkebaniuwurzvr'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_493",
+      "pred_output": " ['-4', '1', '-3']",
+      "ok_o": false,
+      "pred_input": "d)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_494",
+      "pred_output": " \"01\"",
+      "ok_o": false,
+      "pred_input": "1, 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_495",
+      "pred_output": " 'a1234a'",
+      "ok_o": false,
+      "pred_input": "('a1234', '\u00e5r'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_496",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"), \"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_497",
+      "pred_output": " \"4+4\"",
+      "ok_o": false,
+      "pred_input": "4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_498",
+      "pred_output": " [2, 2, 2, 3, 3]",
+      "ok_o": false,
+      "pred_input": "nums, 0, [])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_499",
+      "pred_output": " 'm.mag'",
+      "ok_o": false,
+      "pred_input": "('magazine', '.........'), 4, '.........')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_500",
+      "pred_output": " 'dsj osq w'",
+      "ok_o": false,
+      "pred_input": "('d', 'd'), 'd')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_501",
+      "pred_output": " 'qpfj qm'",
+      "ok_o": false,
+      "pred_input": "text = 'jqjfj zm', char = 'j')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_502",
+      "pred_output": " 'Fred*Smith'",
+      "ok_o": true,
+      "pred_input": "name='Fred Smith')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_503",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_504",
+      "pred_output": " 1",
+      "ok_o": false,
+      "pred_input": "values)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_505",
+      "pred_output": " '209-4'",
+      "ok_o": false,
+      "pred_input": "string = \"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_506",
+      "pred_output": " '1'",
+      "ok_o": false,
+      "pred_input": "4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_507",
+      "pred_output": " 0",
+      "ok_o": true,
+      "pred_input": "(\"hello\", \"world\"), \"world\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_508",
+      "pred_output": " 'ertubwi'",
+      "ok_o": true,
+      "pred_input": "('ertub', 'wi'), 'i', 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_509",
+      "pred_output": " '5'",
+      "ok_o": true,
+      "pred_input": "5, 4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_510",
+      "pred_output": " 'Wy'",
+      "ok_o": true,
+      "pred_input": "1, 2, 3, 4, 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_511",
+      "pred_output": " {'ct': 'cx'}",
+      "ok_o": false,
+      "pred_input": "fields = ['ct', 'c', 'ca'], update_dict = {'ct': '', 'c': '', 'ca': 'cx'})",
+      "ok_i": true
+    },
+    {
+      "id": "sample_512",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "('0', '1', '0', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1', '1',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_513",
+      "pred_output": " [0, 2]",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_514",
+      "pred_output": " 'stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew-stew",
+      "ok_o": false,
+      "pred_input": "text='stew---corn-and-beans-in soup-.')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_515",
+      "pred_output": " [2, 4, 6, 8, 10]",
+      "ok_o": false,
+      "pred_input": "range(10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_516",
+      "pred_output": " ['isa', 'eyes', 'condor', 'gay']",
+      "ok_o": false,
+      "pred_input": "[\"abc\", \"def\", \"ghi\"], \"ef\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_517",
+      "pred_output": " 'SzHjifzog'",
+      "ok_o": false,
+      "pred_input": "text='SzHjifnzo')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_518",
+      "pred_output": " False",
+      "ok_o": false,
+      "pred_input": "(\"abc\", \"123\", \"abc\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_519",
+      "pred_output": " {}",
+      "ok_o": false,
+      "pred_input": "d)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_520",
+      "pred_output": " 6",
+      "ok_o": true,
+      "pred_input": "album_sales)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_521",
+      "pred_output": " 8",
+      "ok_o": false,
+      "pred_input": "77)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_522",
+      "pred_output": " [101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120]",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_523",
+      "pred_output": " '&nbsp;'",
+      "ok_o": false,
+      "pred_input": "text)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_524",
+      "pred_output": " {2: 5, 4: 1, 3: 5, 1: 3, 5: 1}",
+      "ok_o": false,
+      "pred_input": "dict0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_525",
+      "pred_output": " (7, 3)",
+      "ok_o": false,
+      "pred_input": "('TEXT', 'CODE'), 'TEXT', 'CODE')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_526",
+      "pred_output": " 'eewies'",
+      "ok_o": false,
+      "pred_input": "label1='rpg', char='g', label2='rpg', index=0)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_527",
+      "pred_output": " \"!?\"",
+      "ok_o": true,
+      "pred_input": "('!', '!'), '!')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_528",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_529",
+      "pred_output": " [1, 2, 3]",
+      "ok_o": true,
+      "pred_input": "range(1, 4))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_530",
+      "pred_output": " 'ff'",
+      "ok_o": true,
+      "pred_input": "s='ff', ch='f')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_531",
+      "pred_output": " \"Ibaskdjgblw asdl\"",
+      "ok_o": false,
+      "pred_input": "text = 'djgblw asdl', x = 'asdl')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_532",
+      "pred_output": " [1, 2, 3]",
+      "ok_o": false,
+      "pred_input": "3, [[1, 2, 3], [1, 2, 3, 1, 2, 3]])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_533",
+      "pred_output": " 0",
+      "ok_o": true,
+      "pred_input": "(\"a\", \"b\"), {\"a\": 1, \"b\": 2})",
+      "ok_i": true
+    },
+    {
+      "id": "sample_534",
+      "pred_output": " 'hosu'",
+      "ok_o": true,
+      "pred_input": "('hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu', 'hosu',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_535",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "6)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_536",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "cat = \"cat\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_537",
+      "pred_output": " 'abv'",
+      "ok_o": false,
+      "pred_input": "text = \"abc\", value = 4)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_538",
+      "pred_output": " '0574'",
+      "ok_o": false,
+      "pred_input": "('zzz', '0574'), 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_539",
+      "pred_output": " []",
+      "ok_o": false,
+      "pred_input": "[''])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_540",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "range(0, len(a) - 1, 2))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_541",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"hello world\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_542",
+      "pred_output": " ['ab', 'cd']",
+      "ok_o": false,
+      "pred_input": "('ab', 'cd'), ' ', 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_543",
+      "pred_output": " 'P.E.R.A.D.U.S.'",
+      "ok_o": false,
+      "pred_input": "('\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645\u0629', '\u0627\u0644\u0639\u0644\u0645",
+      "ok_i": false
+    },
+    {
+      "id": "sample_544",
+      "pred_output": " \"tab tabulates tab tabulates\"",
+      "ok_o": false,
+      "pred_input": "text='tab tab tabulates')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_545",
+      "pred_output": " [8, 8, 8, 8, 8, 8, 8, 8, 8]",
+      "ok_o": false,
+      "pred_input": "range(0, len(array)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_546",
+      "pred_output": " 'Do you know who the other was?'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_547",
+      "pred_output": " \"hellelloloooooo\"",
+      "ok_o": false,
+      "pred_input": "letters_only)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_548",
+      "pred_output": " 'spidered'",
+      "ok_o": false,
+      "pred_input": "text='spider', suffix='spider')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_549",
+      "pred_output": " [1, 1, 1, 1]",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_550",
+      "pred_output": " [1, 4, 16]",
+      "ok_o": false,
+      "pred_input": "range(5))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_551",
+      "pred_output": " ['a', 'b', 'c', 'inf']",
+      "ok_o": true,
+      "pred_input": "list(range(1, 10))))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_552",
+      "pred_output": " {2: 0.76, 5: [3, 6, 9, 12]}",
+      "ok_o": true,
+      "pred_input": "2.5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_553",
+      "pred_output": " '439m2670hlsw'",
+      "ok_o": false,
+      "pred_input": "text='wslh0762m934', count=3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_554",
+      "pred_output": " [9999, 3, -5, 2, 0]",
+      "ok_o": false,
+      "pred_input": "list(reversed(arr)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_555",
+      "pred_output": " \"odes\\tcode\\twell\"",
+      "ok_o": false,
+      "pred_input": "text = 'odes code  well', tabstop = 4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_556",
+      "pred_output": " 'n\\n\\n\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t\\t",
+      "ok_o": false,
+      "pred_input": "text)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_557",
+      "pred_output": " 'armmarxx'",
+      "ok_o": false,
+      "pred_input": "('xxarmm', 'armm', 'xx'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_558",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10], mos=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_559",
+      "pred_output": " \"123_456\"",
+      "ok_o": false,
+      "pred_input": "1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_560",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "text=\"hello world\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_561",
+      "pred_output": " 7",
+      "ok_o": true,
+      "pred_input": "text = \"abc\", digit = \"d\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_562",
+      "pred_output": " 'VTBAEPJSLGAHINS'",
+      "ok_o": false,
+      "pred_input": "(\"hello world\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_563",
+      "pred_output": " 2",
+      "ok_o": true,
+      "pred_input": "text1 = \"abc\", text2 = \"def\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_564",
+      "pred_output": " [395, 666, 7, 4, 4223, 111]",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_565",
+      "pred_output": " 7",
+      "ok_o": false,
+      "pred_input": "text = \"eleetminicoworoep\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_566",
+      "pred_output": " \"towaru\"",
+      "ok_o": true,
+      "pred_input": "string='towaru', code='\\x01\\x02\\x03\\x04\\x05\\x06\\x07\\x08\\x09\\x10\\x11\\x12\\x13\\x14\\x15\\x16\\x17\\x18\\x19\\x20\\x21\\x22\\x23\\x24\\x25\\x26\\x27\\x28\\x29\\x",
+      "ok_i": false
+    },
+    {
+      "id": "sample_567",
+      "pred_output": " 'one_two_three_four_five'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_568",
+      "pred_output": " 'bwm7h'",
+      "ok_o": false,
+      "pred_input": "6)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_569",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "txt = \"aaabbaa\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_570",
+      "pred_output": " [2, 2]",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_571",
+      "pred_output": " 'a\\tb'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_572",
+      "pred_output": " [1, 9]",
+      "ok_o": false,
+      "pred_input": "data, num=3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_573",
+      "pred_output": " \"Vipra\"",
+      "ok_o": true,
+      "pred_input": "('Vipra', 'Vipra'), 'Vipra')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_574",
+      "pred_output": " 'Costanza George'",
+      "ok_o": false,
+      "pred_input": "simpons = ['Costanza'])",
+      "ok_i": true
+    },
+    {
+      "id": "sample_575",
+      "pred_output": " 10",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3, 4], val=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_576",
+      "pred_output": " [1, -2, 3]",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_577",
+      "pred_output": " [(1, 'pos')]",
+      "ok_o": false,
+      "pred_input": "list(range(1, 10))))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_578",
+      "pred_output": " {'R': 0, 'T': 3, 'F': 6, 'K': 0}",
+      "ok_o": false,
+      "pred_input": "dict(R=0, T=-3, F=0, K=0))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_579",
+      "pred_output": " ''",
+      "ok_o": true,
+      "pred_input": "('a', 'b', 'c'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_580",
+      "pred_output": " [1, 2, 3, 4]",
+      "ok_o": false,
+      "pred_input": "text=\"abcdef\", char=\"d\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_581",
+      "pred_output": " 'akoon'",
+      "ok_o": false,
+      "pred_input": "text = 'akoXoosn', sign = 'X')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_582",
+      "pred_output": " [1, 2, 3, 4, 5, 6, 7]",
+      "ok_o": false,
+      "pred_input": "5, 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_583",
+      "pred_output": " \"tza\\na\"",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_584",
+      "pred_output": " \"5123807309875480094949830\"",
+      "ok_o": true,
+      "pred_input": "('5123807309875480094949830'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_585",
+      "pred_output": " ';,,,?'",
+      "ok_o": false,
+      "pred_input": "('a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
+      "ok_i": false
+    },
+    {
+      "id": "sample_586",
+      "pred_output": " 2",
+      "ok_o": true,
+      "pred_input": "text = \"hello\", char = \"l\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_587",
+      "pred_output": " 'aabcc'",
+      "ok_o": false,
+      "pred_input": "nums=[0, 1, 2], fill=0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_588",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_589",
+      "pred_output": " -71",
+      "ok_o": false,
+      "pred_input": "f([1, 2, 3, 4]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_590",
+      "pred_output": " \"25000$\"",
+      "ok_o": false,
+      "pred_input": "text='5000')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_591",
+      "pred_output": " [5, 4, 3, 2, 0, 0]",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_592",
+      "pred_output": " [11, 3, 2]",
+      "ok_o": false,
+      "pred_input": "range(1, 4))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_593",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(1, 10), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_594",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "file = \"example.txt\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_595",
+      "pred_output": " 'QDHSTUDENTAMXUPUIHBUTN'",
+      "ok_o": false,
+      "pred_input": "text='Qdhstudentamxupuihbuztn', prefix='Qdhstudentamxupuihbuztn')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_596",
+      "pred_output": " '8'",
+      "ok_o": false,
+      "pred_input": "txt = '2 3 4 7 8 9', alpha = '7')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_597",
+      "pred_output": " \"JAFasIdfSa1\"",
+      "ok_o": false,
+      "pred_input": "s='JAAFODSFA SODOFJ AOAFJIS JAFASIDFSA1')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_598",
+      "pred_output": " 'bac'",
+      "ok_o": false,
+      "pred_input": "text = \"abcdefg\", n = 3)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_599",
+      "pred_output": " \"abc\"",
+      "ok_o": false,
+      "pred_input": "1, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_600",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_601",
+      "pred_output": " 'csda'",
+      "ok_o": false,
+      "pred_input": "text='ccccc sssss hhhhh AAAAA rrrrr ppppp')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_602",
+      "pred_output": " 1",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3, 4], target=4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_603",
+      "pred_output": " 'oscillating'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_604",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"abcdef\", \"abc\"), 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_605",
+      "pred_output": " \"quack\"",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_606",
+      "pred_output": " 'ruam'",
+      "ok_o": false,
+      "pred_input": "6)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_607",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "(\"a?b\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_608",
+      "pred_output": " {1:1, 2:2, 3:3}",
+      "ok_o": true,
+      "pred_input": "dict([1, 2, 3]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_609",
+      "pred_output": " []",
+      "ok_o": false,
+      "pred_input": "list([1, 2, 3, 4]), 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_610",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "keys = [1, 2, 3], value = 1)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_611",
+      "pred_output": " 5",
+      "ok_o": false,
+      "pred_input": "range(1, len(nums) + 1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_612",
+      "pred_output": " {'a': 42, 'b': 1337, 'c': -1, 'd': 5}",
+      "ok_o": true,
+      "pred_input": "dict({'a': 42, 'b': 1337, 'c': -1, 'd': 5}))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_613",
+      "pred_output": " 'eat!eat'",
+      "ok_o": false,
+      "pred_input": "('e', 't!'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_614",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "text=\"abcdefg\", substr=\"d\", occ=2)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_615",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "in_list=[1, 2, 3, 4], num=5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_616",
+      "pred_output": " 'y\\ny\\n'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_617",
+      "pred_output": " \"<<<<\"",
+      "ok_o": false,
+      "pred_input": "text='abcdef')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_618",
+      "pred_output": " '98'",
+      "ok_o": false,
+      "pred_input": "('1', '2', '3', '4'), '5', 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_619",
+      "pred_output": " 'rock paper scissors'",
+      "ok_o": false,
+      "pred_input": "title)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_620",
+      "pred_output": " \"ldna ndqmxohi3\"",
+      "ok_o": false,
+      "pred_input": "3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_621",
+      "pred_output": " '13:45:56'",
+      "ok_o": false,
+      "pred_input": "b'13:45:56', 'utf-8')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_622",
+      "pred_output": " 'ggu\"",
+      "ok_o": false,
+      "pred_input": "('g, a, l, g, u, ').join([\"g\", \"a\", \"l\", \"g\", \"u\", '.']))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_623",
+      "pred_output": " 'hi!&'",
+      "ok_o": false,
+      "pred_input": "text = 'HI', rules = ['~'])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_624",
+      "pred_output": " 'lomnrpcx'",
+      "ok_o": false,
+      "pred_input": "text = 'xllomnrpc', char = 'r')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_625",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\", \"d\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_626",
+      "pred_output": " 'babab'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_627",
+      "pred_output": " [1, 7, -5]",
+      "ok_o": false,
+      "pred_input": "list(range(1, 10)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_628",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "nums = [4, 3, 6, 1], delete = 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_629",
+      "pred_output": " 'catNG'",
+      "ok_o": false,
+      "pred_input": "('cat', 'dog'), 'cat')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_630",
+      "pred_output": " {1: -9, 0: -7}",
+      "ok_o": false,
+      "pred_input": "original={\"a\", \"b\", \"c\"}, string=\"abc\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_631",
+      "pred_output": " 'aa'",
+      "ok_o": false,
+      "pred_input": "text=\"abc\", num=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_632",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "list(range(10)))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_633",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "array=[1, 2, 3, 4], elem=3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_634",
+      "pred_output": " 'bicyc'",
+      "ok_o": false,
+      "pred_input": "input_string='biec')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_635",
+      "pred_output": " \"9.twCpTf.H7 HPeaQ^ C7I6U,C:YtW\"",
+      "ok_o": false,
+      "pred_input": "(\"a-b-c-d-e-f-g-h-i-j-k-l-m-n-o-p-q-r-s-t-u-v-w-x-y-z\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_636",
+      "pred_output": " { 'A1': 'A3', 'A2': 'A2' }",
+      "ok_o": false,
+      "pred_input": "d={\"A1\": \"A2\", \"A2\": \"A1\", \"A3\": \"A3\"})",
+      "ok_i": false
+    },
+    {
+      "id": "sample_637",
+      "pred_output": " 'no'",
+      "ok_o": true,
+      "pred_input": "('no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no', 'no',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_638",
+      "pred_output": " 'baabab'",
+      "ok_o": false,
+      "pred_input": "('ab', 'abab'), 'abab')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_639",
+      "pred_output": " \"yes\"",
+      "ok_o": false,
+      "pred_input": "('yes', 'yes'), 'yes')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_640",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "text = \"abcde\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_641",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "1.2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_642",
+      "pred_output": " 'no'",
+      "ok_o": false,
+      "pred_input": "text='hello world')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_643",
+      "pred_output": " 'damdrodm'",
+      "ok_o": false,
+      "pred_input": "('damdrodM',), 'dM')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_644",
+      "pred_output": " [6, 1, 1]",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_645",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3, 4], target=4)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_646",
+      "pred_output": " 'aBCSzY'",
+      "ok_o": false,
+      "pred_input": "text='aBc, ,SzY', count=3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_647",
+      "pred_output": " 'alcm@ an /e!/d\\nujv'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_648",
+      "pred_output": " 'missing'",
+      "ok_o": false,
+      "pred_input": "list([1, 2, 3, 4]), list([1, 2, 3, 5]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_649",
+      "pred_output": " \"ldf9\\n\\tadf9!\\n\\tf9\"",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_650",
+      "pred_output": " 'A'",
+      "ok_o": false,
+      "pred_input": "string='abc', substring='d')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_651",
+      "pred_output": " 'E wrestled evil until UPPERFEAT'",
+      "ok_o": false,
+      "pred_input": "text='E wrestled evil until upperfeat', letter='E')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_652",
+      "pred_output": " '33'",
+      "ok_o": false,
+      "pred_input": "string='3')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_653",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "(\"abcde\", \"a\"), \"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_654",
+      "pred_output": " 'aphidi'",
+      "ok_o": false,
+      "pred_input": "('a', 'h', 'p'), 'd', 'h')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_655",
+      "pred_output": " 'arpaar'",
+      "ok_o": false,
+      "pred_input": "('p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p',",
+      "ok_i": false
+    },
+    {
+      "id": "sample_656",
+      "pred_output": " 'no'",
+      "ok_o": false,
+      "pred_input": "('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_657",
+      "pred_output": " \"djasghasgdha\"",
+      "ok_o": false,
+      "pred_input": "text='Djhasghasgdha')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_658",
+      "pred_output": " [3, 2, 'c', True, 5]",
+      "ok_o": false,
+      "pred_input": "d, get_ary)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_659",
+      "pred_output": " 4",
+      "ok_o": true,
+      "pred_input": "bots)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_660",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "4)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_661",
+      "pred_output": " 'elrtsSSee'",
+      "ok_o": false,
+      "pred_input": "('el', 'rt', 'ss'), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_662",
+      "pred_output": " ['Dusty', 'Joe', 'Dan']",
+      "ok_o": false,
+      "pred_input": "names)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_663",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "container = [1, 2, 3, 4], cron = \"1\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_664",
+      "pred_output": " \"3 4 5\"",
+      "ok_o": false,
+      "pred_input": "('3', '4'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_665",
+      "pred_output": " \"acbced\"",
+      "ok_o": false,
+      "pred_input": "list('aCbCed'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_666",
+      "pred_output": " 3",
+      "ok_o": false,
+      "pred_input": "d1 = {1: [1, 2, 3], 2: [1, 3, 4], 3: [1, 2, 4], 4: [1, 3, 4]}, d2 = {1: [1, 2, 3], 2: [1, 3, 4], 3: [1, 2, 4], 4: [1, 3, 4})",
+      "ok_i": false
+    },
+    {
+      "id": "sample_667",
+      "pred_output": " 'C7 level=1 >'",
+      "ok_o": false,
+      "pred_input": "('C7',))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_668",
+      "pred_output": " 'hElloFriends'",
+      "ok_o": false,
+      "pred_input": "('rhellomyfriendea', 'aa'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_669",
+      "pred_output": " \"fubarbaz\"",
+      "ok_o": true,
+      "pred_input": "('fubarbaz', 'fubarbaz', 'fubarbaz'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_670",
+      "pred_output": " [12,ab]",
+      "ok_o": false,
+      "pred_input": "2, 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_671",
+      "pred_output": " \"ewriyat emf rwto segya\"",
+      "ok_o": false,
+      "pred_input": "text = 'gwrioad gmf rwdo sggoa', char1 = 'g', char2 = 'r')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_672",
+      "pred_output": " \"1zd\"",
+      "ok_o": true,
+      "pred_input": "text = '1zd', position = 0, value = 1)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_673",
+      "pred_output": " \"cA\"",
+      "ok_o": true,
+      "pred_input": "string='A')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_674",
+      "pred_output": " 'qqq'",
+      "ok_o": false,
+      "pred_input": "list('qweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqweqwe",
+      "ok_i": false
+    },
+    {
+      "id": "sample_675",
+      "pred_output": " [1, 2, 2, 3, 4, 5]",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_676",
+      "pred_output": " 'a'",
+      "ok_o": true,
+      "pred_input": "text='a', tab_size='1')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_677",
+      "pred_output": " 'I got 1 and 0.'",
+      "ok_o": false,
+      "pred_input": "('I', 'I'), 1)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_678",
+      "pred_output": " {",
+      "ok_o": false,
+      "pred_input": "('hi', 'hello'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_679",
+      "pred_output": " True",
+      "ok_o": true,
+      "pred_input": "('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_680",
+      "pred_output": " \"we@32r71g72ug94\"",
+      "ok_o": false,
+      "pred_input": "text='we32r71g72ug94823658324')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_681",
+      "pred_output": " [1, 5, 8, 2, 0, 3, 7]",
+      "ok_o": false,
+      "pred_input": "array, 0, 5)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_682",
+      "pred_output": " 'hyp_hypernimovichyp'",
+      "ok_o": false,
+      "pred_input": "('hy', 'hy'), 2, 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_683",
+      "pred_output": " {'disface': 9, 'mforce': 5}",
+      "ok_o": false,
+      "pred_input": "dict({'disface': 9, 'cam': 7, 'mforce': 5}), {'disface': 9, 'cam': 7, 'mforce': 5})",
+      "ok_i": true
+    },
+    {
+      "id": "sample_684",
+      "pred_output": " \"Transform \\\"not into numbers.\\\" not into numbers.\"",
+      "ok_o": false,
+      "pred_input": "text='Transform quotations9\\nnot into numbers.')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_685",
+      "pred_output": " 0",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_686",
+      "pred_output": " {\"lorem ipsum\" : 12, \"dolor\" : 23}",
+      "ok_o": true,
+      "pred_input": "d, l)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_687",
+      "pred_output": " 'Rjug nzufE'",
+      "ok_o": false,
+      "pred_input": "text='R:j:u:g: :z:u:f:E:rjug nzufe')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_688",
+      "pred_output": " 9",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_689",
+      "pred_output": " -12",
+      "ok_o": false,
+      "pred_input": "f([-15, -6, 10, 7]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_690",
+      "pred_output": " \"8.00\"",
+      "ok_o": false,
+      "pred_input": "800)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_691",
+      "pred_output": " 'rtyttc'",
+      "ok_o": false,
+      "pred_input": "text='rpytt', suffix='tt')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_692",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_693",
+      "pred_output": " \"x0x8g26a81xdf\"",
+      "ok_o": false,
+      "pred_input": "text='x0x0')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_694",
+      "pred_output": " (1, {})",
+      "ok_o": false,
+      "pred_input": "('c', 'd')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_695",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "dict(1: [1, 2, 3], 2: [1, 2, 3], 3: [1, 2, 3]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_696",
+      "pred_output": " 'wwdj'",
+      "ok_o": false,
+      "pred_input": "text = \"abcdef\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_697",
+      "pred_output": " \"not it\"",
+      "ok_o": false,
+      "pred_input": "('', '', 'not it'), ' ')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_698",
+      "pred_output": " '))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+      "ok_o": false,
+      "pred_input": "('((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((",
+      "ok_i": false
+    },
+    {
+      "id": "sample_699",
+      "pred_output": " [\"some\", \"1\"]",
+      "ok_o": false,
+      "pred_input": "('1', 'some'), 'some')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_700",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_701",
+      "pred_output": " '31849 let it!31849 pass!'",
+      "ok_o": true,
+      "pred_input": "stg, ['let', 'it', 'pass'])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_702",
+      "pred_output": " -5",
+      "ok_o": false,
+      "pred_input": "range(5))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_703",
+      "pred_output": " 'vzv2sg'",
+      "ok_o": false,
+      "pred_input": "text='zzv2sg', char='z')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_704",
+      "pred_output": " '99'",
+      "ok_o": false,
+      "pred_input": "s=\"abc\", n=2, c=\"ab\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_705",
+      "pred_output": " ['Sydney', 'Hong Kong', 'Melbourne', 'Sao Paolo', 'Istanbul', 'Boston']",
+      "ok_o": false,
+      "pred_input": "cities, 'cities')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_706",
+      "pred_output": " [\"ab\", \"xy\"]",
+      "ok_o": false,
+      "pred_input": "r = [1, 2, 3, 4], w = [1, 2, 3, 4])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_707",
+      "pred_output": " 'undbs'",
+      "ok_o": false,
+      "pred_input": "text='udbs l', position=0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_708",
+      "pred_output": " 'jcmfxv'",
+      "ok_o": false,
+      "pred_input": "string='    jcmfxv')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_709",
+      "pred_output": " 'a loved a'",
+      "ok_o": false,
+      "pred_input": "text='loved a')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_710",
+      "pred_output": " {",
+      "ok_o": false,
+      "pred_input": "playlist, 'aki', 0)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_711",
+      "pred_output": " 'apples\\t\\npears\\t\\nbananas'",
+      "ok_o": false,
+      "pred_input": "text = 'apples\\t\\t\\tpears\\t\\t\\tbananas')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_712",
+      "pred_output": " 'A(hiccup)A'",
+      "ok_o": false,
+      "pred_input": "('A',))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_713",
+      "pred_output": " 'only one line'",
+      "ok_o": false,
+      "pred_input": "(\"abc\", \"d\"), \"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_714",
+      "pred_output": " [3, 2, -2]",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_715",
+      "pred_output": " 1",
+      "ok_o": false,
+      "pred_input": "(\"abcde\", \"a\"), \"a\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_716",
+      "pred_output": " [2, 3, 1, 6, 8, 3]",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_717",
+      "pred_output": " \"t2m\"",
+      "ok_o": false,
+      "pred_input": "('t', 't'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_718",
+      "pred_output": " 'ThisIsSoAtrocious'",
+      "ok_o": false,
+      "pred_input": "text='0ThisIsSoAtrocious')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_719",
+      "pred_output": " \"if (x) {y = 1;} else {z = 1;} else {y = 1;} else {z = 1;}\"",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_720",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "range(1, 10), 1)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_721",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "range(2, 8))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_722",
+      "pred_output": " 'wPzPppdl'",
+      "ok_o": false,
+      "pred_input": "text = \"Hello, World!\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_723",
+      "pred_output": " 'dga nqdk\\rull qcha kl'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_724",
+      "pred_output": " [1, 2, 3, 4]",
+      "ok_o": false,
+      "pred_input": "text=\"abcdef\", function=\"abc\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_725",
+      "pred_output": " 7",
+      "ok_o": false,
+      "pred_input": "text = \"abcde\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_726",
+      "pred_output": " (4, 6)",
+      "ok_o": false,
+      "pred_input": "(\"hello world\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_727",
+      "pred_output": " ['ix', 'dxh', 'snegi', 'wiubvu']",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_728",
+      "pred_output": " 'ru'",
+      "ok_o": false,
+      "pred_input": "text=\"hello world\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_729",
+      "pred_output": " [3, 4]",
+      "ok_o": false,
+      "pred_input": "f(\"abcde\", \"ace\"), f(\"abc\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_730",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "(\"a\", \"b\", \"c\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_731",
+      "pred_output": " 'Chris requires a ride to the airport on Friday.'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_732",
+      "pred_output": " {'u': 10, 'v': 5, 'b': 7, 'w': 3, 'x': 3}",
+      "ok_o": false,
+      "pred_input": "('u', 'v', 'b', 'w', 'x'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_733",
+      "pred_output": " 'n'",
+      "ok_o": true,
+      "pred_input": "('n', 'n'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_734",
+      "pred_output": " [5, 7, 3, 3]",
+      "ok_o": false,
+      "pred_input": "range(10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_735",
+      "pred_output": " 'A(b B)'",
+      "ok_o": false,
+      "pred_input": "sentence)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_736",
+      "pred_output": " 'pi wa chi'",
+      "ok_o": false,
+      "pred_input": "text='poniwa', insert='poniwa')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_737",
+      "pred_output": " 5",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_738",
+      "pred_output": " \"x.r.r.r.r.r.r.r.r.r.r\"",
+      "ok_o": false,
+      "pred_input": "text = 'r;r;r;r;r;r;r;r;', characters = [1, 2, 3, 4])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_739",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "st=\"abc\", pattern=\"ab\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_740",
+      "pred_output": " [1, 2, 3, 4]",
+      "ok_o": false,
+      "pred_input": "plot=[\"a\", \"b\", \"c\"], delin=\"d\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_741",
+      "pred_output": " 8",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3, 4], p=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_742",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "(\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_743",
+      "pred_output": " 2",
+      "ok_o": false,
+      "pred_input": "text = \"1,2,3,4\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_744",
+      "pred_output": " 'jrowdlp'",
+      "ok_o": true,
+      "pred_input": "('jrowdlp', 'jrowdlp'), 'jrowdlp')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_745",
+      "pred_output": " 'minimc@minimc.io'",
+      "ok_o": true,
+      "pred_input": "address='minimc@minimc.io')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_746",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "dct)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_747",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "text='42.42')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_748",
+      "pred_output": " ('a', 123)",
+      "ok_o": false,
+      "pred_input": "('a', 123), ('b', 456))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_749",
+      "pred_output": " 'l\\nl'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_750",
+      "pred_output": " 'hbd'",
+      "ok_o": true,
+      "pred_input": "f([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 'hbd'), 'hbd')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_751",
+      "pred_output": " \"wwwhhhtttpp\"",
+      "ok_o": false,
+      "pred_input": "text = 'wwwwhhhtttpp', char = 'w', min_count = 2)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_752",
+      "pred_output": " 'zabc'",
+      "ok_o": false,
+      "pred_input": "('zzzzzabc', 6), 6)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_753",
+      "pred_output": " {0: 0, 1: 0, 2: 0, 3: 0, 4: 0}",
+      "ok_o": false,
+      "pred_input": "bag=[1, 2, 3, 4, 5, 6, 7, 8, 9])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_754",
+      "pred_output": " ['1', '2', '2', '44', '0', '7', '20257']",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_755",
+      "pred_output": " \"ph>t#A#BiEcDefW#ON#iiNCU\"",
+      "ok_o": true,
+      "pred_input": "replace='#', text='ph>t#A#BiEcDefW#ON#iiNCU', hide='#')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_756",
+      "pred_output": " ''",
+      "ok_o": false,
+      "pred_input": "text='string')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_757",
+      "pred_output": " 'a1n2a8'",
+      "ok_o": false,
+      "pred_input": "text='an2a8', char='a', replace='e')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_758",
+      "pred_output": " True",
+      "ok_o": false,
+      "pred_input": "range(1, 10))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_759",
+      "pred_output": " [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78, 80, 82, 84, 86, 88, 90, 92, 94",
+      "ok_o": false,
+      "pred_input": "text=\"abcdef\", sub=\"d\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_760",
+      "pred_output": " [1, 2, 3, 4]",
+      "ok_o": false,
+      "pred_input": "('k', 'j', 'h', 'f'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_761",
+      "pred_output": " []",
+      "ok_o": true,
+      "pred_input": "range(1, 10))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_762",
+      "pred_output": " 'this And cPanel'",
+      "ok_o": false,
+      "pred_input": "('this', 'and', 'panel'))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_763",
+      "pred_output": " 'yC2Pn'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_764",
+      "pred_output": " \"some test string\"",
+      "ok_o": false,
+      "pred_input": "text = 'any test string', old = 'test', new = 'test')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_765",
+      "pred_output": " 6",
+      "ok_o": false,
+      "pred_input": "(\"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", \"9\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_766",
+      "pred_output": " {'0': 117, '3': 339}",
+      "ok_o": false,
+      "pred_input": "list(values), 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_767",
+      "pred_output": " \"dkhqw whi fwi bbn 41\"",
+      "ok_o": false,
+      "pred_input": "text='1 2 3 4')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_768",
+      "pred_output": " 'babab'",
+      "ok_o": false,
+      "pred_input": "('bababba', 'bababba'), 'bababba')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_769",
+      "pred_output": " 'AkkAriu'",
+      "ok_o": false,
+      "pred_input": "text_list)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_770",
+      "pred_output": " '78$'",
+      "ok_o": false,
+      "pred_input": "line='$$78$$', char='$$')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_771",
+      "pred_output": " [(1, 2, 3, 4, 5, 6, 7, 8)]",
+      "ok_o": false,
+      "pred_input": "range(1, len(odd_positioned) + 1))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_772",
+      "pred_output": " 'serjgpoDFdbcA'",
+      "ok_o": false,
+      "pred_input": "phrase='DFA.')",
+      "ok_i": true
+    },
+    {
+      "id": "sample_773",
+      "pred_output": " [0, 3, 1, -1, 4]",
+      "ok_o": false,
+      "pred_input": "nums=[1, 2, 3, 4], n=2)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_774",
+      "pred_output": " 'quiz leader = Cornareti, count = 23'",
+      "ok_o": true,
+      "pred_input": "1, 'Cornareti')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_775",
+      "pred_output": " [1, 3, 1, 2, 6]",
+      "ok_o": false,
+      "pred_input": "range(6))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_776",
+      "pred_output": " {}",
+      "ok_o": true,
+      "pred_input": "dict([1, 2, 3, 4]))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_777",
+      "pred_output": " [\"avc  a .d e\"]",
+      "ok_o": true,
+      "pred_input": "names = ['avc  a .d e', 'avc  a .d e', 'avc  a .d e'], excluded = 'avc  a .d e')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_778",
+      "pred_output": " 'mjqwjsqjwisojqwiso'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_779",
+      "pred_output": " 'y, x, r, p'",
+      "ok_o": false,
+      "pred_input": "",
+      "ok_i": false
+    },
+    {
+      "id": "sample_780",
+      "pred_output": " \"2 4 5 2 89\"",
+      "ok_o": false,
+      "pred_input": "range(1, 301))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_781",
+      "pred_output": " 'shivajimonto6'",
+      "ok_o": false,
+      "pred_input": "s=\"abc\", ch=\"a\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_782",
+      "pred_output": " \"a j c n x k\"",
+      "ok_o": false,
+      "pred_input": "input = \"hello\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_783",
+      "pred_output": " 0",
+      "ok_o": true,
+      "pred_input": "(\"abc\", \"def\"), (\"abc\", \"def\"))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_784",
+      "pred_output": " ('read', 'Is')",
+      "ok_o": true,
+      "pred_input": "('read', 'Is'), 'read')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_785",
+      "pred_output": " '1'",
+      "ok_o": false,
+      "pred_input": "1)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_786",
+      "pred_output": " '19kefp7'",
+      "ok_o": false,
+      "pred_input": "text='kefp719', letter='f')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_787",
+      "pred_output": " 'XZD'",
+      "ok_o": false,
+      "pred_input": "('X', 'Z')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_788",
+      "pred_output": " 'hello.txt'",
+      "ok_o": true,
+      "pred_input": "('hello', 'txt'), 'txt')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_789",
+      "pred_output": " 'bR'",
+      "ok_o": true,
+      "pred_input": "text = 'bR', n = 2)",
+      "ok_i": true
+    },
+    {
+      "id": "sample_790",
+      "pred_output": " (1, True)",
+      "ok_o": false,
+      "pred_input": "('c', 'd')))",
+      "ok_i": false
+    },
+    {
+      "id": "sample_791",
+      "pred_output": " \"8999\"",
+      "ok_o": false,
+      "pred_input": "8, 3)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_792",
+      "pred_output": " {'a': 'car', 'b': 'dog'}",
+      "ok_o": false,
+      "pred_input": "['a', 'b'], ['a', 'b'])",
+      "ok_i": false
+    },
+    {
+      "id": "sample_793",
+      "pred_output": " 4",
+      "ok_o": false,
+      "pred_input": "list=[1, 2, 3, 4, 5, 6, 7, 8, 9], start=0, end=8)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_794",
+      "pred_output": " \"\\\"\\\\%$ normal chars $%~ qwet42'",
+      "ok_o": false,
+      "pred_input": "line = \"normalcharsqwet42\")",
+      "ok_i": true
+    },
+    {
+      "id": "sample_795",
+      "pred_output": " 'Fu,ux zfujijabji pfu.'",
+      "ok_o": false,
+      "pred_input": "('Fu,Ux Zfujijabji Pfu.'))",
+      "ok_i": true
+    },
+    {
+      "id": "sample_796",
+      "pred_output": " 'fnuiyh'",
+      "ok_o": true,
+      "pred_input": "('fnuiyh', 'fnuiyh'), 'fnuiyh')",
+      "ok_i": false
+    },
+    {
+      "id": "sample_797",
+      "pred_output": " [('a', 1), ('b', 2), ('c', 3)]",
+      "ok_o": true,
+      "pred_input": "dct)",
+      "ok_i": false
+    },
+    {
+      "id": "sample_798",
+      "pred_output": " 'hihu'",
+      "ok_o": false,
+      "pred_input": "text = \"hello world\", pre = \"@\")",
+      "ok_i": false
+    },
+    {
+      "id": "sample_799",
+      "pred_output": " 'eqe-ew22'",
+      "ok_o": false,
+      "pred_input": "('~', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e', 'n', 'e',",
+      "ok_i": false
+    }
+  ]
+}

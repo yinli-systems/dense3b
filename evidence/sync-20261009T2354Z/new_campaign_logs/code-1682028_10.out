@@ -1,0 +1,5 @@
+TASK_START humaneval
+{"humaneval": {"humaneval": 0.054878048780487805, "humaneval_plus": 0.042682926829268296, "n": 164, "official_result_file": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense-moe-1b/dense1b_l-step_00001799/humaneval.samples_eval_results.json", "seconds": 184.45797157287598}}
+TASK_START mbpp
+{"mbpp": {"mbpp": 0.06084656084656084, "mbpp_plus": 0.047619047619047616, "n": 378, "official_result_file": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense-moe-1b/dense1b_l-step_00001799/mbpp.samples_eval_results.json", "seconds": 415.85491275787354}}
+TASK_START cruxeval

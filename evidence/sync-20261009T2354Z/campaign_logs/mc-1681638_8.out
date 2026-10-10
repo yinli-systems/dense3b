@@ -1,0 +1,16 @@
+MC_START {"repo": "moe1b", "preset": "moe1b", "step": 3999, "original_checkpoint": "/data/run01/scxi253/moe1b/ckpt/step_00003999", "found_tasks": [], "missing_tasks": ["arc_challenge", "arc_easy", "boolq", "cruxeval", "gsm8k", "hellaswag", "humaneval", "mbpp", "mmlu_cf", "mmlu_mc5", "openbookqa", "sciq", "winogrande"], "pinned_checkpoint": "/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/pinned/moe1b/moe1b-step_00003999", "metadata_sha256": "4494a8931a4ea8dfe23c49da051e9a31301ec4187680a7d659b32caab8bafe5c", "model_bytes": 5134636419, "model_inode": 1503354498, "model_device": 46, "hardlink": true, "index": 8}
+W1010 07:28:01.564000 34020 torch/_dynamo/convert_frame.py:1994] [0/8] torch._dynamo hit config.recompile_limit (8)
+W1010 07:28:01.564000 34020 torch/_dynamo/convert_frame.py:1994] [0/8]    function: '_swiglu_fwd' (/data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/source/model/moe_local.py:265)
+W1010 07:28:01.564000 34020 torch/_dynamo/convert_frame.py:1994] [0/8]    last reason: 0/4: tensor 'h' size mismatch at index 0. expected 262080, actual 120496
+W1010 07:28:01.564000 34020 torch/_dynamo/convert_frame.py:1994] [0/8] To log all recompilation reasons, use TORCH_LOGS="recompiles".
+W1010 07:28:01.564000 34020 torch/_dynamo/convert_frame.py:1994] [0/8] To diagnose recompilation issues, see https://docs.pytorch.org/docs/main/user_guide/torch_compiler/compile/programming_model.recompilation.html
+{"arc_easy": {"acc": 0.6599326599326599, "acc_norm": 0.6039562289562289, "n": 2376, "seconds": 29.474056243896484}}
+{"arc_challenge": {"acc": 0.2986348122866894, "acc_norm": 0.3216723549488055, "n": 1172, "seconds": 3.301018238067627}}
+{"hellaswag": {"acc": 0.32573192591117306, "acc_norm": 0.38189603664608646, "n": 10042, "seconds": 44.919687271118164}}
+{"winogrande": {"acc": 0.5138121546961326, "acc_norm": 0.5138121546961326, "n": 1267, "seconds": 3.681699514389038}}
+{"boolq": {"acc": 0.6137614678899083, "acc_norm": 0.6238532110091743, "n": 3270, "seconds": 12.568173885345459}}
+{"openbookqa": {"acc": 0.262, "acc_norm": 0.348, "n": 500, "seconds": 1.071112871170044}}
+{"sciq": {"acc": 0.883, "acc_norm": 0.841, "n": 1000, "seconds": 8.773213624954224}}
+{"mmlu_cf": {"acc": 0.2998860561173622, "acc_norm": 0.3076484831220624, "n": 14042, "seconds": 57.504671812057495}}
+{"mmlu_mc5": {"acc": 0.26883634809856144, "acc_norm": 0.26883634809856144, "n": 14042, "seconds": 481.2408230304718}}
+MC_DONE /data/run01/scxi253/checkpoint-eval-backfill-20261009T2000Z/results/moe1b/moe1b-step_00003999/mc.json

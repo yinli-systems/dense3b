@@ -1,0 +1,20 @@
+{
+  "job_id": "1681838",
+  "index": 0,
+  "tasks": [
+    "humaneval",
+    "mbpp",
+    "cruxeval",
+    "gsm8k"
+  ],
+  "state": "completed",
+  "started_utc": "2026-10-09T21:24:27.217119+00:00",
+  "current_task": "gsm8k",
+  "completed_tasks": [
+    "humaneval",
+    "mbpp",
+    "cruxeval",
+    "gsm8k"
+  ],
+  "ended_utc": "2026-10-09T22:04:17.933031+00:00"
+}

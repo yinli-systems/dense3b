@@ -1,0 +1,30 @@
+{
+  "index": 0,
+  "job_id": "1681837",
+  "started_utc": "2026-10-09T21:24:27.218054+00:00",
+  "state": "completed",
+  "tasks": [
+    "arc_easy",
+    "arc_challenge",
+    "hellaswag",
+    "winogrande",
+    "boolq",
+    "openbookqa",
+    "sciq",
+    "mmlu_cf",
+    "mmlu_mc5"
+  ],
+  "current_task": "mmlu_mc5",
+  "completed_tasks": [
+    "arc_easy",
+    "arc_challenge",
+    "hellaswag",
+    "winogrande",
+    "boolq",
+    "openbookqa",
+    "sciq",
+    "mmlu_cf",
+    "mmlu_mc5"
+  ],
+  "ended_utc": "2026-10-09T21:59:49.460339+00:00"
+}

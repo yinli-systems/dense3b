@@ -1,0 +1,14 @@
+TASK_START humaneval
+W1010 07:08:17.495000 439734 torch/_dynamo/convert_frame.py:1994] [0/8] torch._dynamo hit config.recompile_limit (8)
+W1010 07:08:17.495000 439734 torch/_dynamo/convert_frame.py:1994] [0/8]    function: '_swiglu_fwd' (/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/source/model/moe_local.py:265)
+W1010 07:08:17.495000 439734 torch/_dynamo/convert_frame.py:1994] [0/8]    last reason: 0/1: tensor 'h' size mismatch at index 0. expected 128, actual 22400
+W1010 07:08:17.495000 439734 torch/_dynamo/convert_frame.py:1994] [0/8] To log all recompilation reasons, use TORCH_LOGS="recompiles".
+W1010 07:08:17.495000 439734 torch/_dynamo/convert_frame.py:1994] [0/8] To diagnose recompilation issues, see https://docs.pytorch.org/docs/main/user_guide/torch_compiler/compile/programming_model.recompilation.html
+{"humaneval": {"humaneval": 0.1402439024390244, "humaneval_plus": 0.12804878048780488, "n": 164, "official_result_file": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/moe1b/moe1b-step_00004749/humaneval.samples_eval_results.json", "seconds": 527.4665341377258}}
+TASK_START mbpp
+{"mbpp": {"mbpp": 0.21164021164021163, "mbpp_plus": 0.17195767195767195, "n": 378, "official_result_file": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/moe1b/moe1b-step_00004749/mbpp.samples_eval_results.json", "seconds": 587.0616025924683}}
+TASK_START cruxeval
+{"cruxeval": {"cruxeval_o": 0.1388, "cruxeval_i": 0.115, "n": 800, "seconds": 566.0001020431519}}
+TASK_START gsm8k
+{"gsm8k": {"gsm8k": 0.06368460955269144, "strict_accuracy": 0.05913570887035633, "n": 1319, "seconds": 632.4602088928223}}
+GENERATION_DONE /data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/moe1b/moe1b-step_00004749/suite.json

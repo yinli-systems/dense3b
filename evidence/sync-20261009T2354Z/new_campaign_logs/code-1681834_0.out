@@ -1,0 +1,9 @@
+TASK_START humaneval
+{"humaneval": {"humaneval": 0.25609756097560976, "humaneval_plus": 0.23170731707317074, "n": 164, "official_result_file": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense3b/dense3b-step_00006249/humaneval.samples_eval_results.json", "seconds": 448.2743413448334}}
+TASK_START mbpp
+{"mbpp": {"mbpp": 0.3253968253968254, "mbpp_plus": 0.2619047619047619, "n": 378, "official_result_file": "/data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense3b/dense3b-step_00006249/mbpp.samples_eval_results.json", "seconds": 567.8672256469727}}
+TASK_START cruxeval
+{"cruxeval": {"cruxeval_o": 0.1787, "cruxeval_i": 0.1812, "n": 800, "seconds": 696.230663061142}}
+TASK_START gsm8k
+{"gsm8k": {"gsm8k": 0.1023502653525398, "strict_accuracy": 0.10159211523881728, "n": 1319, "seconds": 507.14486742019653}}
+GENERATION_DONE /data/run01/scxi253/checkpoint-eval-new-20261009T2120Z/results/dense3b/dense3b-step_00006249/suite.json
