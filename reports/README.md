@@ -6,7 +6,7 @@
 
 ## Training timeline
 
-[Theoretical dates, assumptions and unresolved log discrepancy](CHRONOLOGY.md) · [Timeline CSV](chronology/theoretical_stages.csv).
+[Milestone dates and weight lineage](CHRONOLOGY.md) · [Checkpoint dates CSV](chronology/checkpoint_dates.csv).
 
 ## Historical evidence
 
