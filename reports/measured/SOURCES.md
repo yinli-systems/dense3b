@@ -41,4 +41,6 @@ Source SHA-256: `f197636478b7ab580ff21a9dfa10a7bed2bcdaf3ec1bc74c81d80f052954b16
 
 The page builder checks schema, ranges, stage coverage, exact corrections, Plus/base ordering and archived-count compatibility. These checks do not independently verify the author's later measurements. No model weights, synthetic per-example records, optimizer states, credentials or datasets are added by this release.
 
-The historical evaluation and training archive remains at its original paths. Its capture timestamps and source hash inventories are unchanged.
+The historical evaluation and training archive remains at its original paths. Original capture receipts and artifact bytes are unchanged. Archive rebuilds validate sanctioned public redactions against the [existing audit](../../provenance/PUBLIC_NETWORK_REDACTION_AUDIT.json) and [two explicitly verified byte-identical aliases](../../provenance/PUBLIC_NETWORK_REDACTION_ALIASES.json). Unlisted changes still fail hash validation.
+
+[Publication validation record](validation.json) includes unit tests, artifact integrity, responsive browser checks and an isolated archive rebuild.

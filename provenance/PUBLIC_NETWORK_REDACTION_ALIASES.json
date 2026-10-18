@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "purpose": "Explicit byte-identical archived aliases of previously audited network redactions",
+  "source_audit": "provenance/PUBLIC_NETWORK_REDACTION_AUDIT.json",
+  "original_receipts_modified": false,
+  "public_artifact_bytes_modified": false,
+  "mapping": [
+    {
+      "path": "operations/sync-20261009T2320Z/deployed/bench/slurm/dense3b_train_scatter.sbatch",
+      "audited_path": "bench/slurm/dense3b_train_scatter.sbatch",
+      "original_sha256": "a5e6473dd4a9535265613cab8f730b15984602b303abebcd83cccc749758ac2d",
+      "public_sha256": "90ce3acfa4d7621251bda8b571290ce282cc7356b3e08790b1ef3530dea57a75",
+      "public_bytes": 4452
+    },
+    {
+      "path": "operations/backfill-20261009T2000Z/source/bench/slurm/env.sh",
+      "audited_path": "bench/slurm/env.sh",
+      "original_sha256": "07fc46a1ce2794d1e5e9d68da61621b3f7ed5ca304fde8fbbee7aa564bbf9da5",
+      "public_sha256": "a0f6f14638632bba6dde16317a134166c48f83053cfe2cc15a73f6af3d205386",
+      "public_bytes": 1790
+    }
+  ]
+}

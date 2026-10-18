@@ -27,12 +27,42 @@ def csvout(p:Path,rows:list[dict])->None:
         w=csv.DictWriter(f,fieldnames=keys);w.writeheader()
         for r in rows:w.writerow({k:json.dumps(v,sort_keys=True) if isinstance(v,(list,dict)) else v for k,v in r.items()})
 
+def approved_public_redaction(root:Path,r:dict,b:bytes)->bool:
+    """Accept only an exact, pre-recorded original->public identity-file mapping.
+
+    Historical capture receipts remain unchanged. Unknown bytes, paths, hashes,
+    duplicate mappings and compressed payload substitutions fail closed.
+    """
+    if r.get('encoding') not in (None,'identity'):return False
+    audit=root/'provenance/PUBLIC_NETWORK_REDACTION_AUDIT.json'
+    if not audit.is_file():return False
+    entries=json.loads(audit.read_text()).get('mapping',[])
+    aliases=root/'provenance/PUBLIC_NETWORK_REDACTION_ALIASES.json'
+    approved_aliases=[]
+    if aliases.is_file():
+        for alias in json.loads(aliases.read_text()).get('mapping',[]):
+            anchors=[x for x in entries if x.get('path')==alias.get('audited_path')]
+            if len(anchors)==1 and all(alias.get(k)==anchors[0].get(k) for k in ('original_sha256','public_sha256','public_bytes')):
+                approved_aliases.append(alias)
+    matches=[x for x in entries+approved_aliases if x.get('path')==r['repo_path']]
+    if len(matches)!=1:return False
+    m=matches[0];allowed={m.get('original_sha256'),m.get('public_sha256')}
+    return (r.get('sha256') in allowed and r.get('sha256') is not None
+            and (not r.get('stored_sha256') or r['stored_sha256'] in allowed)
+            and sha(b)==m.get('public_sha256') and len(b)==m.get('public_bytes'))
+
 def raw(root:Path,r:dict)->bytes:
-    p=root/r['repo_path'];b=p.read_bytes()
-    if r.get('stored_sha256') and sha(b)!=r['stored_sha256']:raise ValueError('Stored hash mismatch: '+str(p))
-    data=gzip.decompress(b) if r.get('encoding')=='gzip' else b
-    if sha(data)!=r['sha256']:raise ValueError('Source hash mismatch: '+str(p))
-    return data
+    rel=Path(r['repo_path'])
+    if rel.is_absolute() or '..' in rel.parts:raise ValueError('Unsafe capture path')
+    p=root/rel
+    if root.resolve() not in p.resolve().parents:raise ValueError('Capture path escapes root')
+    b=p.read_bytes();stored_ok=not r.get('stored_sha256') or sha(b)==r['stored_sha256']
+    if stored_ok:
+        data=gzip.decompress(b) if r.get('encoding')=='gzip' else b
+        if sha(data)==r['sha256']:return data
+    if approved_public_redaction(root,r,b):return b
+    if not stored_ok:raise ValueError('Stored hash mismatch: '+str(p))
+    raise ValueError('Source hash mismatch: '+str(p))
 
 def numeric_fields(d:dict,prefix:str='')->dict:
     out={}

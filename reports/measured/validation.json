@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-10-18T13:11:25.104318+00:00",
+  "checked_at_utc": "2026-10-18T13:21:14.062257+00:00",
   "scope": "Publication consistency and archived-file integrity; no model evaluation rerun",
   "canonical_source_sha256": "f197636478b7ab580ff21a9dfa10a7bed2bcdaf3ec1bc74c81d80f052954b160",
   "checks": [
@@ -18,8 +18,8 @@
     {
       "command": "python3 -m unittest discover -s tests/publication -v",
       "exit_code": 0,
-      "tests_passed": 76,
-      "output_tail": "----------------------------------------------------------------------\nRan 76 tests in 0.034s\n\nOK"
+      "tests_passed": 88,
+      "output_tail": "----------------------------------------------------------------------\nRan 88 tests in 0.056s\n\nOK"
     },
     {
       "command": "python3 scripts/verify_publication.py",
@@ -28,10 +28,60 @@
         "snapshot_utc": "2026-10-09T18:34:41Z",
         "inventory_records": 380,
         "verified_records": 380,
-        "python_sources_parsed": 233,
+        "python_sources_parsed": 234,
         "failures": [],
         "cuda_or_training_executed": false
       }
     }
-  ]
+  ],
+  "browser_qa": {
+    "checks": [
+      {
+        "viewport": "mobile-390",
+        "width": 390,
+        "documentWidth": 390,
+        "images": 3,
+        "GSM8K": 1,
+        "not-a-benchmark": 0,
+        "reset": 9
+      },
+      {
+        "viewport": "desktop-1440",
+        "width": 1440,
+        "documentWidth": 1440,
+        "images": 3,
+        "GSM8K": 1,
+        "not-a-benchmark": 0,
+        "reset": 9
+      }
+    ],
+    "passed": true
+  },
+  "isolated_archive_rebuild": {
+    "archive_rebuild_exit_code": 0,
+    "current_readme_preserved": true,
+    "canonical_measurements_unchanged": true,
+    "archive_rebuild_summary": {
+      "repository": "dense3b",
+      "training_capture_started_utc": "2026-10-09T23:55:40.432744+00:00",
+      "evaluation_capture_started_utc": "2026-10-09T23:55:40.429869+00:00",
+      "source_records": 481,
+      "training_observations": 8389,
+      "retained_training_observations": 6616,
+      "numeric_training_metrics": 13,
+      "evaluation_metric_rows_all_versions": 607,
+      "new_sample_records_recounted": 198827,
+      "checkpoint_entries": 13,
+      "checkpoints_with_results": 9,
+      "training_figures": 0,
+      "evaluation_figures": 0,
+      "campaign_checkpoints": 4,
+      "campaign_states": {
+        "completed": 4
+      },
+      "issues": [],
+      "not_a_live_feed": true,
+      "training_or_gpu_evaluation_changed": false
+    }
+  }
 }
