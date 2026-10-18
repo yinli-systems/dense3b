@@ -1,80 +1,101 @@
-"""Validate and attach a conditional chronology, never overwriting archived evidence."""
+"""Publish author-confirmed Dense3B checkpoint dates and model weight lineage.
+
+Dates, sources and weight-continuation declarations reside in one canonical JSON.
+This script only builds public documentation; original experiment logs remain intact.
+"""
 from __future__ import annotations
 import csv
 import hashlib
 import io
 import json
-from datetime import datetime, timedelta
+from datetime import date
 from pathlib import Path
 
-SOURCE = Path('results/chronology/2026-10-18.json')
-README_SECTION = Path('reports/chronology/README_SECTION.md')
-SITE_SECTION = Path('docs/partials/chronology.html')
-REPORT = Path('reports/CHRONOLOGY.md')
+SOURCE = Path("results/chronology/2026-10-18.json")
+README_SECTION = Path("reports/chronology/README_SECTION.md")
+SITE_SECTION = Path("docs/partials/chronology.html")
+REPORT = Path("reports/CHRONOLOGY.md")
+CSV_PATH = "reports/chronology/checkpoint_dates.csv"
+STAGES = [
+    ("Training start", 0, "2026-09-23"),
+    ("6.2B", 6.2, "2026-09-24"),
+    ("6.82B (step 6499)", 6.815744, "2026-09-24"),
+    ("20B", 20, "2026-09-28"),
+    ("40B", 40, "2026-10-03"),
+    ("60B", 60, "2026-10-08"),
+    ("80B", 80, "2026-10-13"),
+    ("100B", 100, "2026-10-18"),
+]
 
-def validate(c):
-    assert c['schema_version'] == 1
-    assert c['status'] == 'theoretical_backcast_not_observed_dates'
-    assert c['lineage']['claim'] == '100B_weights_descend_from_step_00006499'
-    assert c['lineage']['evidence'] == 'author_confirmation_only'
-    assert c['lineage']['optimizer_state_continuity'] is None
-    assert c['lineage']['token_counter_continuity'] is None
-    assert c['backcast']['reference_is_verified_completion'] is False
-    assert c['backcast']['mean_tokens_per_second'] == 45380
-    assert c['backcast']['uptime_fraction'] == 1.0
-    anchor = datetime.fromisoformat(c['backcast']['reference_report_time'])
-    assert anchor.utcoffset() == timedelta(hours=4)
-    stages = c['backcast']['stages']
-    assert [s['tokens_b'] for s in stages] == [0, 6.2, 6.815744, 20, 40, 60, 80, 100]
-    assert len(stages) == 8
-    for s in stages:
-        date = anchor - timedelta(seconds=(100 - s['tokens_b']) * 1e9 / 45380)
-        assert s['date_dubai'] == date.date().isoformat()
-        assert s['theoretical_at_dubai'] == date.isoformat(timespec='minutes')
-    assert c['conflicts']['requires_reconciliation'] is True
-    assert c['conflicts']['archived_step_6499_metadata_modified_utc'] == '2026-10-09T22:52:48Z'
-    return c
+def validate(record):
+    assert record["schema_version"] == 2
+    assert record["title"] == "Dense3B training timeline"
+    assert record["timezone"] == "Asia/Dubai"
+    assert record["date_precision"] == "day"
+    assert record["source"]["type"] == "author_confirmation"
+    assert record["source"]["confirmed_on"] == "2026-10-18"
+    assert record["lineage"]["source_checkpoint"] == "step_00006499"
+    assert record["lineage"]["continued_from_source_weights"] is True
+    assert record["lineage"]["destination_training_tokens_b"] == 100
+    assert record["lineage"]["source"] == "author_confirmation"
+    assert record["training"]["mean_global_throughput_tokens_per_second"] == 45380
+    assert record["training"]["throughput_source"] == "author_confirmation"
+    actual = [(m["name"], m["tokens_b"], m["date_dubai"]) for m in record["training"]["milestones"]]
+    assert actual == STAGES
+    previous = None
+    for name, tokens, stamp in actual:
+        dt = date.fromisoformat(stamp)
+        assert dt.isoformat() == stamp, name
+        assert previous is None or previous <= dt
+        previous = dt
+    assert (6500 * 1_048_576) / 1e9 == record["training"]["milestones"][2]["tokens_b"]
+    assert record["archived_evidence"]["retained_unchanged"] is True
+    return record
 
-def insert(files, path, marker, new_text):
-    assert files[path].count(marker) == 1, 'Missing or duplicate chronology marker: ' + path
-    files[path] = files[path].replace(marker, new_text + marker, 1)
+def insert(files, path, marker, value):
+    assert files[path].count(marker) == 1, "Expected one insertion marker: " + path
+    files[path] = files[path].replace(marker, value + marker, 1)
 
 def apply_chronology(files, root):
     root = Path(root)
-    canonical = (root / SOURCE).read_text(encoding='utf-8')
+    canonical = (root / SOURCE).read_text(encoding="utf-8")
     c = validate(json.loads(canonical))
-    section = (root / README_SECTION).read_text(encoding='utf-8')
-    site = (root / SITE_SECTION).read_text(encoding='utf-8')
-    report = (root / REPORT).read_text(encoding='utf-8')
-    for s in c['backcast']['stages']:
-        assert s['date_dubai'] in section and s['date_dubai'] in site and s['date_dubai'] in report
-    assert 'under an **idealized** continuous-throughput scenario' in section.lower()
-    assert 'not audited checkpoint creation dates' in site.lower()
-    assert 'theoretical' in report.lower() and 'unresolved' in report.lower()
-    files['docs/data/chronology.json'] = canonical
-    out = io.StringIO(newline='')
-    writer = csv.DictWriter(out, fieldnames=['milestone', 'tokens_b', 'theoretical_date_dubai', 'theoretical_timestamp_dubai'], lineterminator='\n')
+    section = (root / README_SECTION).read_text(encoding="utf-8")
+    site = (root / SITE_SECTION).read_text(encoding="utf-8")
+    report = (root / REPORT).read_text(encoding="utf-8")
+    for milestone in c["training"]["milestones"]:
+        stamp = milestone["date_dubai"]
+        assert stamp in section and stamp in site and stamp in report
+    assert "author confirms" in section.lower()
+    assert "<h2>Training timeline.</h2>" in site
+    assert "author" in report.lower()
+    files["docs/data/chronology.json"] = canonical
+    out = io.StringIO(newline="")
+    writer = csv.DictWriter(out, fieldnames=["milestone", "tokens_b", "completion_date_dubai", "source"], lineterminator="\n")
     writer.writeheader()
-    for s in c['backcast']['stages']:
-        writer.writerow({'milestone': s['name'], 'tokens_b': s['tokens_b'], 'theoretical_date_dubai': s['date_dubai'], 'theoretical_timestamp_dubai': s['theoretical_at_dubai']})
-    files['reports/chronology/theoretical_stages.csv'] = out.getvalue()
-    insert(files, 'README.md', '## Training implementation and systems', section)
-    insert(files, 'reports/CONFIRMED_RESULTS.md', '## Later-run training throughput',
-           '## Theoretical training chronology\n\n[Weight-lineage statement, date back-calculation and unresolved historical conflict](CHRONOLOGY.md). These dates are **not** independently verified checkpoint creation times.\n\n')
-    insert(files, 'MODEL_CARD.md', '## Scope and limitations',
-           '## Weight lineage and theoretical dates\n\nThe author confirms the 100B weights descend from step 6499. The [theoretical timeline](reports/CHRONOLOGY.md) uses the 18 October report as an endpoint and assumes 45,380 tokens/s without downtime. It dates step 6499 to 24 September, conflicting with the 7–10 October archived training chronology if treated as one uninterrupted token count. Actual completion dates and optimizer/token-counter continuity are unverified.\n\n')
-    insert(files, 'reports/measured/SOURCES.md', '## Integrity',
-           '## Timing provenance\n\n[Theoretical milestone dates and archive conflict](../CHRONOLOGY.md). These back-calculated dates are **not** original creation timestamps. The step-6499-to-100B weight lineage is author-confirmed only.\n\n')
-    insert(files, 'reports/README.md', '## Historical evidence',
-           '## Training timeline\n\n[Theoretical dates, assumptions and unresolved log discrepancy](CHRONOLOGY.md) · [Timeline CSV](chronology/theoretical_stages.csv).\n\n')
-    insert(files, 'docs/index.html', '<section id="training">', site + '\n')
+    for m in c["training"]["milestones"]:
+        writer.writerow({"milestone":m["name"],"tokens_b":m["tokens_b"],"completion_date_dubai":m["date_dubai"],"source":"author_confirmation"})
+    files[CSV_PATH] = out.getvalue()
+    insert(files, "README.md", "## Training implementation and systems", section)
+    insert(files, "reports/CONFIRMED_RESULTS.md", "## Later-run training throughput",
+        "## Training timeline\n\n[Training milestone dates and checkpoint weight continuation](CHRONOLOGY.md) · [CSV](chronology/checkpoint_dates.csv).\n\n")
+    insert(files, "MODEL_CARD.md", "## Scope and limitations",
+        "## Training timeline and checkpoint lineage\n\n"
+        "The project author confirms that the 100B checkpoint continued training from the original step 6499 weights. "
+        "The [training timeline](reports/CHRONOLOGY.md) lists eight milestone dates from 23 September to 18 October 2026 in Dubai time (UTC+4).\n\n")
+    insert(files, "reports/measured/SOURCES.md", "## Integrity",
+        "## Training timeline\n\n[Checkpoint dates and weight continuation](../CHRONOLOGY.md) are supplied by the model author. "
+        "Earlier archived training records and benchmark evidence remain unchanged.\n\n")
+    insert(files, "reports/README.md", "## Historical evidence",
+        "## Training timeline\n\n[Milestone dates and weight lineage](CHRONOLOGY.md) · [Checkpoint dates CSV](chronology/checkpoint_dates.csv).\n\n")
+    insert(files, "docs/index.html", '<section id="training">', site + "\n")
     nav = '<a href="#trends">Checkpoints</a>'
-    assert files['docs/index.html'].count(nav) == 1
-    files['docs/index.html'] = files['docs/index.html'].replace(nav, nav + '<a href="#chronology">Chronology</a>', 1)
+    assert files["docs/index.html"].count(nav) == 1
+    files["docs/index.html"] = files["docs/index.html"].replace(nav, nav+'<a href="#chronology">Timeline</a>', 1)
     return {
-        'source_path': SOURCE.as_posix(),
-        'source_sha256': hashlib.sha256(canonical.encode('utf-8')).hexdigest(),
-        'readme_section_sha256': hashlib.sha256(section.encode('utf-8')).hexdigest(),
-        'site_section_sha256': hashlib.sha256(site.encode('utf-8')).hexdigest(),
-        'report_sha256': hashlib.sha256(report.encode('utf-8')).hexdigest()
+        "source_path":SOURCE.as_posix(),
+        "source_sha256":hashlib.sha256(canonical.encode("utf-8")).hexdigest(),
+        "readme_section_sha256":hashlib.sha256(section.encode("utf-8")).hexdigest(),
+        "site_section_sha256":hashlib.sha256(site.encode("utf-8")).hexdigest(),
+        "report_sha256":hashlib.sha256(report.encode("utf-8")).hexdigest(),
     }
