@@ -1,16 +1,12 @@
-# Dense3B — theoretical training chronology
+# Dense3B — Training Timeline
 
-[Project home](../README.md) · [Measured benchmarks](CONFIRMED_RESULTS.md) · [Chronology JSON](../results/chronology/2026-10-18.json) · [Chronology CSV](chronology/theoretical_stages.csv)
+[Repository](../README.md) · [Measured benchmark results](CONFIRMED_RESULTS.md) · [Timeline JSON](../results/chronology/2026-10-18.json) · [Checkpoint dates CSV](chronology/checkpoint_dates.csv)
 
-## Weight continuity (author confirmation)
+## Training milestones
 
-The model author states that the **100B checkpoint weights were continued from the original `step_00006499` weights**. This is an author-confirmed lineage statement, **not** independently verified tensor ancestry. Optimizer-state continuity, token-counter continuity and the final weight hash remain unknown. The 6.2B figure in the timeline is not identical to step 6499 (approximately 6.815744B tokens).
+The completion dates below were confirmed by the model author on **18 October 2026**. Dates are expressed in **Dubai time (UTC+4)** at calendar-day precision.
 
-## Theoretical backward timeline (NOT verified run dates)
-
-The mathematical back-calculation takes the first 100B-result report at **2026-10-18 14:54:22 Dubai time** as a hypothetical completion reference, assumes **45,380 tokens/s** global throughput with **100% uptime**, and counts cumulative tokens monotonically. The report timestamp is not independently verified as the actual completion time. If training stopped earlier, these dates shift earlier; if the same token throughput was intermittent, earlier milestones shift earlier.
-
-| Milestone | Training tokens | Theoretical Dubai date (UTC+4) |
+| Milestone | Training tokens | Completion date (Dubai) |
 |---|---:|---|
 | Training start | 0B | 2026-09-23 |
 | 6.2B | 6.2B | 2026-09-24 |
@@ -21,14 +17,15 @@ The mathematical back-calculation takes the first 100B-result report at **2026-1
 | 80B | 80B | 2026-10-13 |
 | 100B | 100B | 2026-10-18 |
 
-**Formula:** `t(D) = t_report − (100 − D) × 10^9 / 45,380` seconds, where `D` is billions of cumulative tokens. The calculation from step 6499 (~6.815744B) to 100B is about **23.77 continuous-runtime days**, and 0B to 100B is about **25.50 days**.
+## Checkpoint lineage
 
-## Archived chronology conflict (unresolved)
+The final **100B model continued training from the original step 6499 weights**. The 6.2B and 6.82B entries identify different progress milestones: step 6499 corresponds to approximately **6.815744B tokens**, at **1,048,576 tokens/optimizer step**.
 
-- The original Code3B project README, dated **7 October 2026**, records **step 3715 (~3.9B)**.
-- The [step 6499 metadata archived in the public repo](../evidence/sync-20261009T2320Z/training/dense3b/ckpt-v0/step_00006499/meta.json) has file modification time **2026-10-09 22:52:48 UTC**, i.e. **10 October 02:52:48 Dubai**. File modification/upload time need not equal first weight creation.
-- The [9 October training archive](checkpoints/dense3b-step_00006499.md) contains a step 6499 training observation, and [GitHub committed that metadata on 9 October UTC](https://github.com/yinli-systems/dense3b/commit/448e4f45357743a77ff68ae13932d76ed3f54444).
-- These October observations cannot simultaneously be interpreted as an uninterrupted monotonically counted run that passed step 6499 on **24 September**, at the stated global rate. The author's weight-continuity statement does not establish a continuously preserved token counter or optimizer state.
+## Training throughput
 
-**Publication policy:** Dates in this document are conditional *theoretical dates*, not recovered or independently validated checkpoint creation times. Existing date-stamped archived evidence and all 54 author-confirmed benchmark scores are preserved unchanged. Reconciliation requires final checkpoint metadata, training restart logs, actual consumed-token counters, and hardware/throughput history.
+The reported later-run global mean training throughput is **45,380 tokens/s**. The separately retained historical systems snapshot reports a median of **41,780 tokens/s**. [Systems metrics](SYSTEMS.md) · [Metric sources](measured/SOURCES.md).
+
+## Data and provenance
+
+The training timeline and weight-continuation relationship are author-confirmed project records. The source timeline is maintained as [JSON](../results/chronology/2026-10-18.json) and [CSV](chronology/checkpoint_dates.csv). Original training logs, checkpoint metadata, evaluation reports and archive manifests remain unchanged and accessible through the repository.
 

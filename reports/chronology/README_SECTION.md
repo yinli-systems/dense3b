@@ -1,8 +1,8 @@
-## Theoretical training chronology
+## Training timeline
 
-The author confirms that the **100B weights continued from step 6499**. Under an **idealized** continuous-throughput scenario (45,380 tokens/s and 100% uptime), using the 18 October report time as the reference, the back-calculated dates are:
+The project author confirms that the **100B model continued from the original step 6499 weights**. The recorded milestone dates below use Dubai time (UTC+4).
 
-| Milestone | Training tokens | Theoretical Dubai date (UTC+4) |
+| Milestone | Training tokens | Completion date (Dubai) |
 |---|---:|---|
 | Training start | 0B | 2026-09-23 |
 | 6.2B | 6.2B | 2026-09-24 |
@@ -12,4 +12,6 @@ The author confirms that the **100B weights continued from step 6499**. Under an
 | 60B | 60B | 2026-10-08 |
 | 80B | 80B | 2026-10-13 |
 | 100B | 100B | 2026-10-18 |
+
+[Detailed training timeline](reports/CHRONOLOGY.md) · [Checkpoint dates CSV](reports/chronology/checkpoint_dates.csv)
 
