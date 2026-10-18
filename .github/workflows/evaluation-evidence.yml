@@ -1,0 +1,36 @@
+name: Evaluation evidence integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run publication and evidence tests
+        run: python3 -m unittest discover -s tests/publication -v
+      - name: Recount original archived outcomes
+        run: |
+          mkdir -p "$RUNNER_TEMP/dense3b-evidence"
+          python3 scripts/evaluation_evidence.py audit --root . --out "$RUNNER_TEMP/dense3b-evidence/archive-audit.json" | tee "$RUNNER_TEMP/dense3b-evidence/audit-console.log"
+      - name: Inventory repository evidence files
+        run: |
+          python3 scripts/evaluation_evidence.py inventory --roots evidence --out "$RUNNER_TEMP/dense3b-evidence/repository-inventory.json"
+      - name: Publish artifact consistency audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: dense3b-evaluation-evidence-audit
+          path: ${{ runner.temp }}/dense3b-evidence/
+          if-no-files-found: error
+          retention-days: 30
