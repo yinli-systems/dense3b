@@ -38,9 +38,9 @@ MMLU-CF at 6.82B: **28.57%**. It is distinct from MMLU-MC5. No later MMLU-CF sco
 
 Points are observations, not fitted curves. Their presence on one plot does not independently establish matching evaluator protocols.
 
-## Theoretical training chronology
+## Training timeline
 
-[Weight-lineage statement, date back-calculation and unresolved historical conflict](CHRONOLOGY.md). These dates are **not** independently verified checkpoint creation times.
+[Training milestone dates and checkpoint weight continuation](CHRONOLOGY.md) · [CSV](chronology/checkpoint_dates.csv).
 
 ## Later-run training throughput
 

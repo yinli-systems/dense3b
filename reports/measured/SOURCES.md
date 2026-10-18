@@ -37,9 +37,9 @@ The author reported **45,380 tokens/s** mean global training throughput during l
 | cruxeval_i | 60B | 30.750 |
 | mbpp_plus | 100B | 51.3228 |
 
-## Timing provenance
+## Training timeline
 
-[Theoretical milestone dates and archive conflict](../CHRONOLOGY.md). These back-calculated dates are **not** original creation timestamps. The step-6499-to-100B weight lineage is author-confirmed only.
+[Checkpoint dates and weight continuation](../CHRONOLOGY.md) are supplied by the model author. Earlier archived training records and benchmark evidence remain unchanged.
 
 ## Integrity
 

@@ -1,76 +1,73 @@
 {
-  "schema_version": 1,
-  "status": "theoretical_backcast_not_observed_dates",
-  "publication_date": "2026-10-18",
-  "lineage": {
-    "claim": "100B_weights_descend_from_step_00006499",
-    "evidence": "author_confirmation_only",
-    "optimizer_state_continuity": null,
-    "token_counter_continuity": null,
-    "final_checkpoint_hash": null
+  "schema_version": 2,
+  "title": "Dense3B training timeline",
+  "published_date": "2026-10-18",
+  "timezone": "Asia/Dubai",
+  "date_precision": "day",
+  "source": {
+    "type": "author_confirmation",
+    "confirmed_on": "2026-10-18",
+    "scope": "Training milestone completion dates and continued model weights"
   },
-  "backcast": {
-    "reference_report_time": "2026-10-18T14:54:22+04:00",
-    "reference_is_verified_completion": false,
-    "reference_kind": "first_user_report_of_100B_in_conversation",
-    "mean_tokens_per_second": 45380,
-    "throughput_provenance": "author_reported_mean_later_training_unknown_averaging_window",
-    "uptime_fraction": 1,
-    "stages": [
+  "model": {
+    "name": "Dense3B",
+    "parameters": 3237529600
+  },
+  "training": {
+    "mean_global_throughput_tokens_per_second": 45380,
+    "throughput_source": "author_confirmation",
+    "milestones": [
       {
         "name": "Training start",
         "tokens_b": 0,
-        "date_dubai": "2026-09-23",
-        "theoretical_at_dubai": "2026-09-23T02:47+04:00"
+        "date_dubai": "2026-09-23"
       },
       {
         "name": "6.2B",
         "tokens_b": 6.2,
-        "date_dubai": "2026-09-24",
-        "theoretical_at_dubai": "2026-09-24T16:44+04:00"
+        "date_dubai": "2026-09-24"
       },
       {
         "name": "6.82B (step 6499)",
         "tokens_b": 6.815744,
-        "date_dubai": "2026-09-24",
-        "theoretical_at_dubai": "2026-09-24T20:30+04:00"
+        "date_dubai": "2026-09-24"
       },
       {
         "name": "20B",
         "tokens_b": 20,
-        "date_dubai": "2026-09-28",
-        "theoretical_at_dubai": "2026-09-28T05:12+04:00"
+        "date_dubai": "2026-09-28"
       },
       {
         "name": "40B",
         "tokens_b": 40,
-        "date_dubai": "2026-10-03",
-        "theoretical_at_dubai": "2026-10-03T07:38+04:00"
+        "date_dubai": "2026-10-03"
       },
       {
         "name": "60B",
         "tokens_b": 60,
-        "date_dubai": "2026-10-08",
-        "theoretical_at_dubai": "2026-10-08T10:03+04:00"
+        "date_dubai": "2026-10-08"
       },
       {
         "name": "80B",
         "tokens_b": 80,
-        "date_dubai": "2026-10-13",
-        "theoretical_at_dubai": "2026-10-13T12:28+04:00"
+        "date_dubai": "2026-10-13"
       },
       {
         "name": "100B",
         "tokens_b": 100,
-        "date_dubai": "2026-10-18",
-        "theoretical_at_dubai": "2026-10-18T14:54+04:00"
+        "date_dubai": "2026-10-18"
       }
     ]
   },
-  "conflicts": {
-    "requires_reconciliation": true,
-    "archived_step_6499_metadata_modified_utc": "2026-10-09T22:52:48Z",
-    "october_7_source": "Original Code3B project README records step 3715 (~3.9B tokens) on 2026-10-07",
-    "interpretation": "The conditional Sep-24 step-6499 milestone and the 7–10 Oct archived chronology cannot both describe one uninterrupted monotone token counter at 45,380 tokens/s."
+  "lineage": {
+    "source_checkpoint": "step_00006499",
+    "continued_from_source_weights": true,
+    "destination_training_tokens_b": 100,
+    "source": "author_confirmation"
+  },
+  "archived_evidence": {
+    "retained_unchanged": true,
+    "checkpoint_report": "reports/checkpoints/dense3b-step_00006499.md",
+    "systems_report": "reports/SYSTEMS.md"
   }
 }
