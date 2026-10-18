@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "record_kind": "author_confirmed_full_evaluation_sample_counts",
+  "confirmed_on": "2026-10-18",
+  "source": "author_confirmation",
+  "count_unit": "unique_benchmark_problems",
+  "stages": [
+    "20B",
+    "40B",
+    "60B",
+    "80B",
+    "100B"
+  ],
+  "scope": "All five later checkpoints used the complete evaluation sets in the original project pipeline.",
+  "interpretation": "The author confirmed full-dataset evaluation. Counts are mapped to the corresponding complete evaluation split recorded at step 6499; this does not mean combining training, validation and test partitions.",
+  "original_later_run_files_attached": false,
+  "generation_sample_count": null,
+  "tasks": {
+    "humaneval": {
+      "n": 164,
+      "benchmarks": [
+        "humaneval",
+        "humaneval_plus"
+      ],
+      "reference_group": "suite",
+      "reference_task": "humaneval",
+      "population": "Complete HumanEval / EvalPlus problem set; Base and Plus score the same 164 problems."
+    },
+    "mbpp": {
+      "n": 378,
+      "benchmarks": [
+        "mbpp",
+        "mbpp_plus"
+      ],
+      "reference_group": "suite",
+      "reference_task": "mbpp",
+      "population": "Complete 378-problem MBPP / EvalPlus evaluation split used by this project, not all partitions of the source MBPP dataset."
+    },
+    "cruxeval": {
+      "n": 800,
+      "benchmarks": [
+        "cruxeval_i",
+        "cruxeval_o"
+      ],
+      "reference_group": "suite",
+      "reference_task": "cruxeval",
+      "population": "Complete 800-problem evaluation set for each of CRUXEval-I and CRUXEval-O."
+    },
+    "gsm8k": {
+      "n": 1319,
+      "benchmarks": [
+        "gsm8k"
+      ],
+      "reference_group": "suite",
+      "reference_task": "gsm8k",
+      "population": "Complete GSM8K test split."
+    },
+    "arc_challenge": {
+      "n": 1172,
+      "benchmarks": [
+        "arc_challenge"
+      ],
+      "reference_group": "mc",
+      "reference_task": "arc_challenge",
+      "population": "Complete ARC-Challenge test split."
+    },
+    "mmlu": {
+      "n": 14042,
+      "benchmarks": [
+        "mmlu"
+      ],
+      "reference_group": "mc",
+      "reference_task": "mmlu_mc5",
+      "population": "Complete 14,042-question MMLU evaluation population in the archived pipeline. This count does not assign later results to the MC5 or CF prompt protocol."
+    }
+  },
+  "notes": [
+    "These are author-confirmed problem counts, not counts recovered from later per-example logs.",
+    "The sample-count update does not establish a dataset revision/hash, prompt, shot count, decoding rule or number of generated responses.",
+    "Correct counts, per-example outcomes, runtime timestamps and checkpoint fingerprints are not inferred from published accuracy.",
+    "Early n_archived and passed_archived fields remain separate and are not changed."
+  ]
+}
