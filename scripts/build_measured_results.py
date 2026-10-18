@@ -245,7 +245,7 @@ MMLU-CF at 6.82B: **28.57%**. It is distinct from MMLU-MC5. No later MMLU-CF sco
 
 ## Capability plots
 
-'''+ '\n\n'.join(f'![{title}](../docs/assets/{g}.svg)' for g,title in GROUPS.items()) + '''
+'''+ '\n\n'.join(f'![{title}](../docs/assets/{g}.svg)' for g,title in GROUPS.items()) + f'''
 
 Points are observations, not fitted curves. Their presence on one plot does not independently establish matching evaluator protocols.
 
