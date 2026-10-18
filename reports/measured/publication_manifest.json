@@ -1,7 +1,7 @@
 {
   "auxiliary_measurement_count": 1,
   "chronology": {
-    "readme_section_sha256": "e9afb9d649cf821297b9e35ff28ecbc89ced5e16fdc2b563303046a9a9924d24",
+    "readme_section_sha256": "fc07228465940f0e31ee08bcf253fc21c99a22b3fdddf579d545c64b7bb079a0",
     "report_sha256": "1f33e7952c987e5bf5efd71ce26d6fd2128910c39d53dc09162b7596f8da35bb",
     "site_section_sha256": "6885104c643b7a14d17940034ccfd2a292c24ddb182028b678d4c5aef0ca3316",
     "source_path": "results/chronology/2026-10-18.json",
@@ -9,7 +9,7 @@
   },
   "generated_files": {
     "MODEL_CARD.md": "6f13b457137d6b7ea3135405632f3f0c4aa4ca83ef9004cdd8437912237fad78",
-    "README.md": "79e21348b1fe3786683f679904af5b58b41ce354c41df8a5c5fda0a0a8335edf",
+    "README.md": "0afa99f5e4eeb3ad8a4193ab5828c2ff88ea3ead9fd64b84b23bd0e89aeb0518",
     "docs/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     "docs/assets/app.js": "96bfeda0327a1f186dbc499deaec1ccb1cc1aa313d1f6fe19814630a67df2d6f",
     "docs/assets/code_generation.svg": "3a156adf3045bf844f17a9a3d23c0d3d7e40f51d352d8d794b108b7c40def527",

@@ -48,7 +48,7 @@ def apply_chronology(files, root):
     report = (root / REPORT).read_text(encoding='utf-8')
     for s in c['backcast']['stages']:
         assert s['date_dubai'] in section and s['date_dubai'] in site and s['date_dubai'] in report
-    assert 'not audited checkpoint creation dates' in section.lower()
+    assert 'under an **idealized** continuous-throughput scenario' in section.lower()
     assert 'not audited checkpoint creation dates' in site.lower()
     assert 'theoretical' in report.lower() and 'unresolved' in report.lower()
     files['docs/data/chronology.json'] = canonical
