@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "kind": "evaluation_recovery_plan_not_execution_log",
+  "reference_commit": "907e6ece8e4a7997e34263e73180a742b56c86cd",
+  "source_benchmarks": "results/measured/2026-10-18.json",
+  "reference_archive": "reports/sample_verification.json",
+  "policy": {
+    "generate_outcomes_from_aggregate_scores": false,
+    "backdate_rerun_timestamps": false,
+    "infer_later_checkpoint_steps_from_token_labels": false,
+    "reuse_final_weights_as_missing_intermediate_weights": false,
+    "overwrite_original_logs": false,
+    "automatic_training_or_gpu_submission": false,
+    "new_runs_retain_actual_scores_even_if_different": true
+  },
+  "reference_protocol": {
+    "description": "A new evaluation may reproduce the archived step-6499 protocol. This does not establish the original 20B-100B protocol.",
+    "generation_runner": "operations/backfill-20261009T2000Z/run_generation.py",
+    "mc_runner": "operations/backfill-20261009T2000Z/run_mc.py",
+    "code_scoring": "archived corrected official EvalPlus with isolation probes",
+    "dtype": "bfloat16",
+    "temperature": 0,
+    "generation_batch": 16,
+    "tasks": {
+      "humaneval": {"expected_n": 164, "max_new_tokens": 512, "metrics": ["humaneval", "humaneval_plus"]},
+      "mbpp": {"expected_n": 378, "max_new_tokens": 512, "metrics": ["mbpp", "mbpp_plus"]},
+      "cruxeval": {"expected_n": 800, "max_new_tokens": 96, "metrics": ["cruxeval_i", "cruxeval_o"]},
+      "gsm8k": {"expected_n": 1319, "max_new_tokens": 320, "fewshot": "archived custom 4-shot", "metrics": ["gsm8k", "strict_accuracy"]},
+      "arc_challenge": {"expected_n": 1172, "metrics": ["acc", "acc_norm"], "normalization": "UTF-8 byte length"},
+      "mmlu_mc5": {"expected_n": 14042, "fewshot": 5, "metrics": ["acc"]}
+    },
+    "optional_separate_task": "mmlu_cf",
+    "dataset_hashes": "Read from the actual archived evaluator manifests; do not invent or omit during replay.",
+    "score_comparison": "Only compare under matching data, prompt, scoring and decoding manifests. Approximate reported values retain their original precision."
+  },
+  "checkpoints": [
+    {"stage": "6p82B", "archived_step": 6499, "archive_report": "reports/checkpoints/dense3b-step_00006499.md", "checkpoint_dir": null, "checkpoint_sha256": null, "original_evaluation_dir": null, "status": "archived_results_available_weights_not_in_git"},
+    {"stage": "20B", "archived_step": null, "archive_report": null, "checkpoint_dir": null, "checkpoint_sha256": null, "original_evaluation_dir": null, "status": "awaiting_actual_files"},
+    {"stage": "40B", "archived_step": null, "archive_report": null, "checkpoint_dir": null, "checkpoint_sha256": null, "original_evaluation_dir": null, "status": "awaiting_actual_files"},
+    {"stage": "60B", "archived_step": null, "archive_report": null, "checkpoint_dir": null, "checkpoint_sha256": null, "original_evaluation_dir": null, "status": "awaiting_actual_files"},
+    {"stage": "80B", "archived_step": null, "archive_report": null, "checkpoint_dir": null, "checkpoint_sha256": null, "original_evaluation_dir": null, "status": "awaiting_actual_files"},
+    {"stage": "100B", "archived_step": null, "archive_report": null, "checkpoint_dir": null, "checkpoint_sha256": null, "original_evaluation_dir": null, "status": "awaiting_actual_files"}
+  ],
+  "required_publication_material": [
+    "model weight SHA-256 computed from the actual checkpoint",
+    "checkpoint metadata and actual consumed-token counter, with lineage information where available",
+    "evaluator commit and source hashes",
+    "tokenizer and dataset revision hashes",
+    "prompt/shot count, precision, decoding, stops and extraction rules",
+    "all problem IDs, generated outputs or choice scores, and outcome flags",
+    "summary metrics recomputed from recorded outcomes",
+    "actual runtime start/end, command, exit status, package versions and GPU configuration",
+    "code-execution isolation receipt and scoring limits",
+    "original raw stdout/stderr and any failed task records",
+    "byte-preserving artifact manifest; redaction mappings only when necessary"
+  ],
+  "remarks": [
+    "The 6.2B label is not interchangeable with step 6499 (~6.82B). No independent 6.2B log is manufactured.",
+    "Lost weights prevent a new evaluation of that exact historical model; retain unresolved entries rather than substitute a neighboring checkpoint.",
+    "This plan contains no per-example evaluation results."
+  ]
+}
