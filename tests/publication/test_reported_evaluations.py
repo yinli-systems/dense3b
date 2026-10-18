@@ -18,6 +18,9 @@ class ReportedEvaluationTests(unittest.TestCase):
     def setUp(self):
         self.raw = (ROOT / exported.SOURCE).read_bytes()
         self.source = exported.load_json(self.raw)
+        self.count_raw = (ROOT / exported.COUNT_SOURCE).read_bytes()
+        self.counts = exported.load_json(self.count_raw)
+        self.references = {g: exported.load_json((ROOT / p).read_bytes()) for g, p in exported.REFERENCES.items()}
 
     def test_complete_45_scores_and_18_files(self):
         self.assertEqual(len(exported.validate(self.source)), 45)
@@ -35,8 +38,7 @@ class ReportedEvaluationTests(unittest.TestCase):
                         original = lookup[benchmark, stage]['value_pct']
                         self.assertEqual(doc['reported_percent'][benchmark], original)
                         self.assertEqual(Decimal(str(doc['tasks'][task][metric])), Decimal(original) / 100)
-                        self.assertEqual(doc['provenance']['metric_source_ids'][benchmark],
-                                         lookup[benchmark, stage]['source'])
+                        self.assertEqual(doc['provenance']['metric_source_ids'][benchmark], lookup[benchmark, stage]['source'])
                         seen.add((benchmark, stage))
         self.assertEqual(len(seen), 45)
 
@@ -54,8 +56,7 @@ class ReportedEvaluationTests(unittest.TestCase):
 
     def test_unreported_runtime_and_identifiers_are_null(self):
         for path, text in exported.generate(ROOT).items():
-            if not path.endswith(('/suite.json', '/mc.json')):
-                continue
+            if not path.endswith(('/suite.json', '/mc.json')): continue
             doc = json.loads(text)
             self.assertEqual(doc['record_kind'], 'author_reported_aggregate_summary')
             self.assertFalse(doc['is_original_evaluation_output'])
@@ -69,8 +70,9 @@ class ReportedEvaluationTests(unittest.TestCase):
             self.assertEqual(doc['evidence']['per_example_files'], [])
             self.assertIsNone(doc['evidence']['evaluation_started_at'])
             self.assertIsNone(doc['evidence']['evaluation_finished_at'])
-            for task in doc['tasks'].values():
-                self.assertIsNone(task['n'])
+            for name, task in doc['tasks'].items():
+                self.assertEqual(task['n'], self.counts['tasks'][name]['n'])
+                self.assertEqual(task['n_source'], 'author_confirmed_full_evaluation_split')
                 self.assertIsNone(task['seconds'])
 
     def test_mmlu_protocol_not_invented(self):
@@ -81,6 +83,75 @@ class ReportedEvaluationTests(unittest.TestCase):
             self.assertNotIn('mmlu_cf', mc['tasks'])
             self.assertIsNone(mc['tasks']['mmlu']['acc_norm'])
 
+    def test_all_full_dataset_counts_have_source_and_no_correct_counts(self):
+        expected = {'humaneval':164, 'mbpp':378, 'cruxeval':800, 'gsm8k':1319, 'arc_challenge':1172, 'mmlu':14042}
+        total = 0
+        for path, text in exported.generate(ROOT).items():
+            if not path.endswith(('/suite.json', '/mc.json')): continue
+            doc = json.loads(text)
+            self.assertEqual(doc['provenance']['sample_count_source'], exported.COUNT_SOURCE.as_posix())
+            self.assertEqual(doc['provenance']['sample_count_source_sha256'], exported.digest(self.count_raw))
+            self.assertFalse(doc['provenance']['sample_counts_recounted_from_later_logs'])
+            for task, record in doc['tasks'].items():
+                self.assertEqual(record['n'], expected[task])
+                self.assertEqual(record['count_unit'], 'unique_benchmark_problems')
+                self.assertNotIn('correct', record)
+                self.assertNotIn('passed', record)
+                total += 1
+        self.assertEqual(total, 30)
+
+    def test_count_source_matches_actual_archived_task_populations(self):
+        counts = exported.validate_counts(self.counts, self.references)
+        for benchmark, n in [('mbpp',378), ('mbpp_plus',378), ('humaneval_plus',164), ('cruxeval_i',800), ('cruxeval_o',800)]:
+            self.assertEqual(exported.count_for_benchmark(counts, benchmark), n)
+
+    def test_reject_wrong_or_noninteger_sample_counts(self):
+        for value in (True, 0, -1, 378.0, '378', 974, 500):
+            counts = copy.deepcopy(self.counts)
+            counts['tasks']['mbpp']['n'] = value
+            with self.subTest(value=value), self.assertRaises(ValueError): exported.validate_counts(counts, self.references)
+
+    def test_reject_missing_sample_count_or_stage(self):
+        for missing in ('task', 'stage', 'population', 'benchmark'):
+            counts = copy.deepcopy(self.counts)
+            if missing == 'task': counts['tasks'].pop('gsm8k')
+            elif missing == 'stage': counts['stages'].pop()
+            elif missing == 'population': counts['tasks']['mbpp'].pop('population')
+            else: counts['tasks']['humaneval']['benchmarks'].pop()
+            with self.subTest(missing=missing), self.assertRaises(ValueError): exported.validate_counts(counts, self.references)
+
+    def test_reject_counts_claimed_as_original_outcomes(self):
+        for field, value in [('source','per_example_log'), ('original_later_run_files_attached',True), ('generation_sample_count',164), ('count_unit','generated_responses')]:
+            counts = copy.deepcopy(self.counts)
+            counts[field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError): exported.validate_counts(counts, self.references)
+
+    def test_reject_wrong_reference_group_or_task(self):
+        for field, value in [('reference_group','mc'), ('reference_task','gsm8k')]:
+            counts = copy.deepcopy(self.counts)
+            counts['tasks']['mbpp'][field] = value
+            with self.subTest(field=field), self.assertRaises(ValueError): exported.validate_counts(counts, self.references)
+
+    def test_count_table_is_visible_in_every_report(self):
+        files = exported.generate(ROOT)
+        overview = files[str(exported.DEST / 'README.md')]
+        self.assertIn('378-problem EvalPlus', overview)
+        self.assertIn('14,042', overview)
+        for stage in exported.STAGES:
+            page = files[str(exported.DEST / stage / 'README.md')]
+            self.assertIn('Full evaluation problems', page)
+            self.assertIn('1,319', page)
+            self.assertIn('14,042', page)
+            self.assertNotIn('`n`, checkpoint step/hash', page)
+
+    def test_counts_dont_mutate_archived_count_fields(self):
+        exported.generate(ROOT)
+        self.assertEqual((ROOT / exported.SOURCE).read_bytes(), self.raw)
+        self.assertEqual((ROOT / exported.COUNT_SOURCE).read_bytes(), self.count_raw)
+        for row in exported.validate(self.source).values():
+            self.assertIsNone(row['n_archived'])
+            self.assertIsNone(row['passed_archived'])
+
     def test_generated_paths_are_not_raw_evidence(self):
         for path in exported.generate(ROOT):
             self.assertTrue(path.startswith('results/reported_evaluations/'))
@@ -90,8 +161,7 @@ class ReportedEvaluationTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as t:
             dest = Path(t)
             exported.build(ROOT, dest)
-            with self.assertRaises(ValueError):
-                evaluation_evidence.verify_bundle(dest / exported.DEST / '100B', 'a' * 64)
+            with self.assertRaises(ValueError): evaluation_evidence.verify_bundle(dest / exported.DEST / '100B', 'a'*64)
 
     def test_determinism_and_source_unchanged(self):
         self.assertEqual(exported.generate(ROOT), exported.generate(ROOT))
@@ -105,16 +175,15 @@ class ReportedEvaluationTests(unittest.TestCase):
         files = exported.generate(ROOT)
         manifest = json.loads(files[str(exported.DEST / 'manifest.json')])
         self.assertEqual(manifest['source_sha256'], exported.digest(self.raw))
+        self.assertEqual(manifest['sample_count_source_sha256'], exported.digest(self.count_raw))
         self.assertEqual(len(manifest['files']), 17)
-        for path, checksum in manifest['files'].items():
-            self.assertEqual(exported.digest(files[path].encode()), checksum)
+        for path, checksum in manifest['files'].items(): self.assertEqual(exported.digest(files[path].encode()), checksum)
 
     def test_reject_changed_output_and_unexpected_files(self):
         with tempfile.TemporaryDirectory() as t:
             dest = Path(t)
             exported.build(ROOT, dest)
-            index = dest / exported.DEST / 'index.json'
-            index.write_text('{}\n')
+            (dest / exported.DEST / 'index.json').write_text('{}\n')
             with self.assertRaises(ValueError): exported.build(ROOT, dest, check=True)
             exported.build(ROOT, dest)
             (dest / exported.DEST / '100B' / 'fabricated.details.json').write_text('{}')
@@ -129,8 +198,7 @@ class ReportedEvaluationTests(unittest.TestCase):
 
     def test_reject_invalid_percentages(self):
         for value in ('NaN', 'Infinity', '-1', '101', '1e2', ' 30', '', True, 30.5):
-            with self.subTest(value=value), self.assertRaises(ValueError):
-                exported.percentage(value)
+            with self.subTest(value=value), self.assertRaises(ValueError): exported.percentage(value)
 
     def test_reject_missing_benchmark_or_stage(self):
         for kind in ('benchmark', 'stage', 'score'):
@@ -157,5 +225,4 @@ class ReportedEvaluationTests(unittest.TestCase):
             with self.assertRaises(ValueError): exported.load_json(value)
 
 
-if __name__ == '__main__':
-    unittest.main()
+if __name__ == '__main__': unittest.main()

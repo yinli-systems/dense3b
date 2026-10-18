@@ -2,8 +2,8 @@
 """Export reported evaluation aggregates in the archived suite/MC task structure.
 
 This does not reconstruct an evaluator run, sample outcomes or missing metadata.
-Canonical author-confirmed scores are the only numeric input. Outputs live outside
-raw evidence directories and explicitly identify themselves as summary exports.
+Canonical author-confirmed scores and problem counts are the numeric inputs.
+Outputs live outside raw evidence directories and identify themselves as summaries.
 """
 from __future__ import annotations
 
@@ -19,6 +19,7 @@ from pathlib import Path
 from typing import Any
 
 SOURCE = Path('results/measured/2026-10-18.json')
+COUNT_SOURCE = Path('results/measured/full_dataset_counts-2026-10-18.json')
 DEST = Path('results/reported_evaluations')
 STAGES = ('20B', '40B', '60B', '80B', '100B')
 BENCHMARKS = ('humaneval', 'humaneval_plus', 'mbpp', 'mbpp_plus',
@@ -130,6 +131,51 @@ def validate(source: dict[str, Any]) -> dict[tuple[str, str], dict[str, Any]]:
     return lookup
 
 
+def validate_counts(counts: dict[str, Any], references: dict[str, dict]) -> dict[str, dict]:
+    """Confirm supplied problem counts against the original full evaluation split.
+
+    No correct counts, raw outcomes or prompt settings are derived here.
+    """
+    require(counts.get('schema_version') == 1, 'Unsupported sample-count schema')
+    require(counts.get('record_kind') == 'author_confirmed_full_evaluation_sample_counts',
+            'Sample-count record must have an explicit provenance kind')
+    require(counts.get('source') == 'author_confirmation', 'Missing author count confirmation')
+    require(counts.get('count_unit') == 'unique_benchmark_problems', 'Count unit is not problems')
+    require(counts.get('stages') == list(STAGES), 'Sample-count coverage does not match stages')
+    require(counts.get('original_later_run_files_attached') is False, 'No new raw evidence is attached')
+    require(counts.get('generation_sample_count') is None, 'Problem counts are not generation counts')
+    tasks = counts.get('tasks')
+    require(isinstance(tasks, dict), 'Missing task sample counts')
+    expected_tasks = {task for group in GROUPS.values() for task in group}
+    require(set(tasks) == expected_tasks, 'Missing or extra task sample count')
+    seen = set()
+    for group, task_map in GROUPS.items():
+        for task, metrics in task_map.items():
+            record = tasks[task]
+            require(isinstance(record, dict), 'Invalid task sample-count record')
+            require(type(record.get('n')) is int and record['n'] > 0, 'Invalid problem count')
+            require(record.get('reference_group') == group, 'Wrong sample-count reference group')
+            reference_task = 'mmlu_mc5' if task == 'mmlu' else task
+            require(record.get('reference_task') == reference_task, 'Wrong sample-count reference task')
+            names = record.get('benchmarks')
+            require(isinstance(names, list) and len(names) == len(set(names)) and
+                    set(names) == set(metrics.values()), 'Benchmark/count mapping mismatch')
+            old_n = references[group].get('tasks', {}).get(reference_task, {}).get('n')
+            require(type(old_n) is int and record['n'] == old_n,
+                    'Count differs from original full evaluation split: ' + task)
+            require(isinstance(record.get('population'), str) and record['population'].strip(),
+                    'Evaluation population must be described')
+            seen.update(names)
+    require(seen == set(BENCHMARKS), 'Not all benchmark counts are covered')
+    return tasks
+
+
+def count_for_benchmark(counts: dict[str, dict], benchmark: str) -> int:
+    matches = [entry['n'] for entry in counts.values() if benchmark in entry['benchmarks']]
+    require(len(matches) == 1, 'Ambiguous sample-count lookup: ' + benchmark)
+    return matches[0]
+
+
 def render_json(value: Any) -> str:
     return json.dumps(value, ensure_ascii=False, indent=2, allow_nan=False) + '\n'
 
@@ -139,7 +185,7 @@ def display(v: dict) -> str:
 
 
 def stage_document(source: dict, lookup: dict, stage: str, group: str,
-                   source_hash: str) -> dict:
+                   source_hash: str, counts: dict[str, dict], count_source_hash: str) -> dict:
     tasks, reported, qualifiers, origins = {}, {}, {}, {}
     for task, mappings in GROUPS[group].items():
         body = {}
@@ -155,7 +201,9 @@ def stage_document(source: dict, lookup: dict, stage: str, group: str,
             body['strict_accuracy'] = None
         if group == 'mc':
             body['acc_norm'] = None
-        body.update(n=None, seconds=None)
+        body.update(n=counts[task]['n'], seconds=None)
+        body['n_source'] = 'author_confirmed_full_evaluation_split'
+        body['count_unit'] = 'unique_benchmark_problems'
         if task in ('humaneval', 'mbpp'):
             body['official_result_file'] = None
         tasks[task] = body
@@ -191,6 +239,9 @@ def stage_document(source: dict, lookup: dict, stage: str, group: str,
             'source_release_id': source['release_id'],
             'source_publication_date': source['publication_date'],
             'metric_source_ids': origins,
+            'sample_count_source': COUNT_SOURCE.as_posix(),
+            'sample_count_source_sha256': count_source_hash,
+            'sample_counts_recounted_from_later_logs': False,
             'format_reference': REFERENCES[group],
             'format_reference_only': True,
             'archived_protocol_inherited': False,
@@ -205,7 +256,9 @@ def stage_document(source: dict, lookup: dict, stage: str, group: str,
         'notes': [
             'Reported aggregate scores reformatted into task groups; this file is not an original run log.',
             'Percent strings and qualifiers retain the supplied precision; task numbers are percentage/100.',
-            'Missing counts, timestamps, runtime settings and weight hashes remain null.',
+            'n records author-confirmed full evaluation-set problem counts, not generated-response counts.',
+            'Full means the original benchmark evaluation split; it does not include every source-data partition.',
+            'Timestamps, runtime settings, correct counts and weight hashes were not inferred or supplied.',
         ] + (['MMLU is not assigned to MC5 or CF because the later evaluator protocol was not supplied.']
              if group == 'mc' else []),
     }
@@ -218,14 +271,20 @@ def generate(root: Path) -> dict[str, str]:
     source_hash = digest(raw)
     labels = {b['id']: b['label'] for b in source['benchmarks']}
     files = {}
+    reference_data = {}
     for group, reference in REFERENCES.items():
         require((root / reference).is_file(), 'Missing format reference: ' + group)
+        reference_data[group] = load_json((root / reference).read_bytes())
+    count_raw = (root / COUNT_SOURCE).read_bytes()
+    counts = validate_counts(load_json(count_raw), reference_data)
+    count_source_hash = digest(count_raw)
     for stage in STAGES:
         folder = DEST / stage
         for group in GROUPS:
             files[(folder / (group + '.json')).as_posix()] = render_json(
-                stage_document(source, lookup, stage, group, source_hash))
-        rows = '\n'.join('| ' + labels[b] + ' | ' + display(lookup[b, stage]) + ' |'
+                stage_document(source, lookup, stage, group, source_hash, counts, count_source_hash))
+        rows = '\n'.join('| ' + labels[b] + ' | ' + display(lookup[b, stage]) + ' | ' +
+                         f"{count_for_benchmark(counts, b):,}" + ' |'
                          for b in BENCHMARKS)
         files[(folder / 'README.md').as_posix()] = f'''# Dense3B · {stage} reported evaluation summary
 
@@ -233,14 +292,16 @@ def generate(root: Path) -> dict[str, str]:
 
 The values below are the model author's confirmed aggregate measurements, reformatted into the same task grouping as the early evaluation summaries. **These exports are not original evaluator output or per-example logs.** No new model evaluation was executed.
 
-| Benchmark | Reported score |
-|---|---:|
+| Benchmark | Reported score | Full evaluation problems |
+|---|---:|---:|
 {rows}
 
-`n`, checkpoint step/hash, run settings, elapsed time and job identifiers are null because the corresponding later-run records have not been supplied. No early-run metadata was copied into those fields. MMLU remains protocol-unspecified rather than being relabelled MC5 or CF.
+`n` now records the author-confirmed count of problems in the full evaluation split used by the original pipeline. [Sample-count source](../../measured/full_dataset_counts-2026-10-18.json). For MBPP this is the project's 378-problem EvalPlus split, not all source-data partitions. Correct counts, checkpoint step/hash, run settings, elapsed time and job identifiers remain unprovided. No count was reverse-engineered from an accuracy. MMLU remains protocol-unspecified rather than being relabelled MC5 or CF.
 
 Percent strings preserve the source precision: final MBPP is integer-rounded and final MMLU is approximate. [Recover or rerun actual evidence](../../../EVALUATION_EVIDENCE.md).
 '''
+    count_rows = '\n'.join('| ' + labels[b] + ' | ' + f"{count_for_benchmark(counts, b):,}" + ' |'
+                           for b in BENCHMARKS)
     header = '| Benchmark | ' + ' | '.join('[' + s + '](' + s + '/README.md)' for s in STAGES) + ' |'
     matrix = '\n'.join([header, '|---|' + '---:|' * 5] + [
         '| ' + labels[b] + ' | ' + ' | '.join(display(lookup[b, s]) for s in STAGES) + ' |'
@@ -253,9 +314,19 @@ These are precision-preserving exports of the author's confirmed scores, using t
 
 {matrix}
 
+## Full evaluation-set sample counts
+
+The author confirmed complete evaluation-set coverage for all five checkpoints. Counts below refer to the original project evaluation populations, not the union of dataset training, validation and test partitions. They count benchmark problems, not the number of generated responses.
+
+| Benchmark | Problems per checkpoint |
+|---|---:|
+{count_rows}
+
+MBPP / MBPP+ use the complete **378-problem EvalPlus evaluation split** in the existing pipeline. MMLU uses **14,042 questions**; this count does not establish MC5/CF, shot count, dataset revision or prompt settings. Base and Plus reuse the same problems rather than doubling sample counts. [Author-confirmed sample-count source](../measured/full_dataset_counts-2026-10-18.json).
+
 ## Contents and interpretation
 
-Each stage directory contains `suite.json` (HumanEval, MBPP, CRUXEval and GSM8K), `mc.json` (ARC-Challenge and protocol-unspecified MMLU), and a readable summary. JSON task scores are fractions in [0,1]. `reported_percent` and `reporting_qualifiers` preserve exact published strings and approximation/rounding annotations. Unprovided counts, execution times, settings and model fingerprints are null, not zero or inferred values.
+Each stage directory contains `suite.json` (HumanEval, MBPP, CRUXEval and GSM8K), `mc.json` (ARC-Challenge and protocol-unspecified MMLU), and a readable summary. JSON task scores are fractions in [0,1]. `reported_percent` and `reporting_qualifiers` preserve exact published strings and approximation/rounding annotations. Each task's `n` is supplied from the separate author-confirmed full-evaluation sample-count record. Correct counts, execution times, settings and model fingerprints are not inferred; unprovided metadata remains null.
 
 `manifest.json` hashes these exported files; those hashes identify **summary exports**, not an original model or evaluator run. `index.json` records five-stage coverage. The [source scores](../measured/2026-10-18.json) are not modified.
 
@@ -274,6 +345,10 @@ The [evidence recovery tools](../../EVALUATION_EVIDENCE.md) deliberately reject 
         'canonical_source': SOURCE.as_posix(),
         'canonical_source_sha256': source_hash,
         'reported_metric_count': 45,
+        'sample_count_source': COUNT_SOURCE.as_posix(),
+        'sample_count_source_sha256': count_source_hash,
+        'count_unit': 'unique_benchmark_problems',
+        'reported_problem_counts': {task: record['n'] for task, record in counts.items()},
         'original_logs_created': 0,
         'model_evaluations_executed': 0,
         'stages': [{'stage_id': s, 'reported_metrics': 9, 'raw_outputs_attached': False,
@@ -283,6 +358,8 @@ The [evidence recovery tools](../../EVALUATION_EVIDENCE.md) deliberately reject 
     files[(DEST / 'index.json').as_posix()] = render_json(index)
     manifest = {'schema_version': 1, 'kind': 'reported_summary_export_integrity',
                 'source_path': SOURCE.as_posix(), 'source_sha256': source_hash,
+                'sample_count_source': COUNT_SOURCE.as_posix(),
+                'sample_count_source_sha256': count_source_hash,
                 'generator': 'scripts/build_reported_evaluations.py',
                 'files': {p: digest(text.encode('utf-8')) for p, text in sorted(files.items())}}
     files[(DEST / 'manifest.json').as_posix()] = render_json(manifest)

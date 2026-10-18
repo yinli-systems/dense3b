@@ -25,28 +25,36 @@
     "humaneval": {
       "humaneval": 0.409,
       "humaneval_plus": 0.39,
-      "n": null,
+      "n": 164,
       "seconds": null,
+      "n_source": "author_confirmed_full_evaluation_split",
+      "count_unit": "unique_benchmark_problems",
       "official_result_file": null
     },
     "mbpp": {
       "mbpp": 0.429,
       "mbpp_plus": 0.389,
-      "n": null,
+      "n": 378,
       "seconds": null,
+      "n_source": "author_confirmed_full_evaluation_split",
+      "count_unit": "unique_benchmark_problems",
       "official_result_file": null
     },
     "cruxeval": {
       "cruxeval_o": 0.294,
       "cruxeval_i": 0.258,
-      "n": null,
-      "seconds": null
+      "n": 800,
+      "seconds": null,
+      "n_source": "author_confirmed_full_evaluation_split",
+      "count_unit": "unique_benchmark_problems"
     },
     "gsm8k": {
       "gsm8k": 0.335,
       "strict_accuracy": null,
-      "n": null,
-      "seconds": null
+      "n": 1319,
+      "seconds": null,
+      "n_source": "author_confirmed_full_evaluation_split",
+      "count_unit": "unique_benchmark_problems"
     }
   },
   "reported_percent": {
@@ -102,6 +110,9 @@
       "cruxeval_i": "author_confirmation_20261018",
       "gsm8k": "author_confirmation_20261018"
     },
+    "sample_count_source": "results/measured/full_dataset_counts-2026-10-18.json",
+    "sample_count_source_sha256": "f1b9a98becdff27736a8ab75af84f9e667cc051456e193225b5fe446eeb1080f",
+    "sample_counts_recounted_from_later_logs": false,
     "format_reference": "evidence/sync-20261009T2354Z/new_campaign/dense3b-step_00006499/suite.json",
     "format_reference_only": true,
     "archived_protocol_inherited": false
@@ -116,6 +127,8 @@
   "notes": [
     "Reported aggregate scores reformatted into task groups; this file is not an original run log.",
     "Percent strings and qualifiers retain the supplied precision; task numbers are percentage/100.",
-    "Missing counts, timestamps, runtime settings and weight hashes remain null."
+    "n records author-confirmed full evaluation-set problem counts, not generated-response counts.",
+    "Full means the original benchmark evaluation split; it does not include every source-data partition.",
+    "Timestamps, runtime settings, correct counts and weight hashes were not inferred or supplied."
   ]
 }
