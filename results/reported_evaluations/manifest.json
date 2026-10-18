@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "kind": "reported_summary_export_integrity",
+  "source_path": "results/measured/2026-10-18.json",
+  "source_sha256": "cde60b0457ea030a7219dd5d3f692197b92abfd878e7ad4259fd5c7d0fd6589c",
+  "generator": "scripts/build_reported_evaluations.py",
+  "files": {
+    "results/reported_evaluations/100B/README.md": "081eb9ad13f11934e12903031e9c9b641f0ea8ecde25e9d57229eedb3006088a",
+    "results/reported_evaluations/100B/mc.json": "8674e2e6eea26b58a00e7f3db50297f641d6c5c06803b12a46be08deb2116a00",
+    "results/reported_evaluations/100B/suite.json": "95d9f8c31c4c32222d3a5f8e9920fc988175ece54ef72fd2b914af4c8abba557",
+    "results/reported_evaluations/20B/README.md": "4d4759caf3516176b71b47d670bd07cdd84fecdd1dc16410468f8fbb852f21a2",
+    "results/reported_evaluations/20B/mc.json": "3f09a11e93628e75613a8dcdefe517437b063c164b04273f8a829f4705d8357e",
+    "results/reported_evaluations/20B/suite.json": "5407ade34c5e40b3d9c1f542dd2427a05cec5e46dbce9b334a7d15932810634a",
+    "results/reported_evaluations/40B/README.md": "a96a0353026a6f778ec7f3f39ee5748fdcd5b68d4ae879f02fd8d2e6c7a22c5f",
+    "results/reported_evaluations/40B/mc.json": "b2d9c7e4f8a42b6681033bd0aa63f1b802e67b41220b1e9445e1a90d254c3355",
+    "results/reported_evaluations/40B/suite.json": "96d5f597eb9b6943bc4455538c5aa8ca1a7aa2aa2b935b5d417d3ce733399fea",
+    "results/reported_evaluations/60B/README.md": "328c9823cba68c2de065689446eb80530c93ee232662d0a971a5233c05dfd4b2",
+    "results/reported_evaluations/60B/mc.json": "2f189c8a6050b5278e9007ceea843344647fdc7656e2dd0cf7ed16b3553158e6",
+    "results/reported_evaluations/60B/suite.json": "cee68d7b96413a4c0ba9fbe8017830ff7dbf70e679cfe276b9817839e1303f18",
+    "results/reported_evaluations/80B/README.md": "414d9747632875fc503dc92f291a0983aa26428539e4f7b76c03e75de04f9220",
+    "results/reported_evaluations/80B/mc.json": "04b171346fd729e0b38906a9c6786ad9d81aba77250668d148485a3a6ec55941",
+    "results/reported_evaluations/80B/suite.json": "81be789e78168f06a91bc46ee003c94ae594e0eb15dd76a52ca1a4903c9b85fd",
+    "results/reported_evaluations/README.md": "99773acc938ada2b8836bc59e2e849457f8a88ea1de750dc5c2e7c3750743cd1",
+    "results/reported_evaluations/index.json": "7e373407598d3161fd14dd9746088e373ed8f6cf69fa7b38d560d4992457e80f"
+  }
+}

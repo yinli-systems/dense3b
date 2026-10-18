@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "record_kind": "author_reported_aggregate_summary",
+  "is_original_evaluation_output": false,
+  "stage_id": "100B",
+  "ckpt": null,
+  "step": null,
+  "preset": "dense3b",
+  "tokens_B": 100,
+  "token_count_basis": "author_reported",
+  "manifest": {
+    "protocol": null,
+    "checkpoint_model_sha256": null,
+    "metadata_sha256": null,
+    "tokenizer_sha256": null,
+    "evaluator_revision": null,
+    "dataset_hashes": null,
+    "dtype": null,
+    "temperature": null,
+    "batch": null,
+    "max_new": null,
+    "job_id": null
+  },
+  "tasks": {
+    "arc_challenge": {
+      "acc": 0.601,
+      "acc_norm": null,
+      "n": null,
+      "seconds": null
+    },
+    "mmlu": {
+      "acc": 0.52,
+      "acc_norm": null,
+      "n": null,
+      "seconds": null
+    }
+  },
+  "reported_percent": {
+    "arc_challenge": "60.1",
+    "mmlu": "52.0"
+  },
+  "reporting_qualifiers": {
+    "arc_challenge": {
+      "approximate": false,
+      "rounding_note": null
+    },
+    "mmlu": {
+      "approximate": true,
+      "rounding_note": null
+    }
+  },
+  "provenance": {
+    "canonical_source": "results/measured/2026-10-18.json",
+    "canonical_source_sha256": "cde60b0457ea030a7219dd5d3f692197b92abfd878e7ad4259fd5c7d0fd6589c",
+    "source_release_id": "dense3b-measured-20261018",
+    "source_publication_date": "2026-10-18",
+    "metric_source_ids": {
+      "arc_challenge": "author_confirmation_20261018",
+      "mmlu": "author_confirmation_20261018"
+    },
+    "format_reference": "evidence/sync-20261009T2354Z/new_campaign/dense3b-step_00006499/mc.json",
+    "format_reference_only": true,
+    "archived_protocol_inherited": false
+  },
+  "evidence": {
+    "raw_outputs_attached": false,
+    "per_example_files": [],
+    "model_evaluation_executed_by_exporter": false,
+    "evaluation_started_at": null,
+    "evaluation_finished_at": null
+  },
+  "notes": [
+    "Reported aggregate scores reformatted into task groups; this file is not an original run log.",
+    "Percent strings and qualifiers retain the supplied precision; task numbers are percentage/100.",
+    "Missing counts, timestamps, runtime settings and weight hashes remain null.",
+    "MMLU is not assigned to MC5 or CF because the later evaluator protocol was not supplied."
+  ]
+}

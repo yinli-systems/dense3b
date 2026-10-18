@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "record_kind": "author_reported_aggregate_summary",
+  "is_original_evaluation_output": false,
+  "stage_id": "100B",
+  "ckpt": null,
+  "step": null,
+  "preset": "dense3b",
+  "tokens_B": 100,
+  "token_count_basis": "author_reported",
+  "manifest": {
+    "protocol": null,
+    "checkpoint_model_sha256": null,
+    "metadata_sha256": null,
+    "tokenizer_sha256": null,
+    "evaluator_revision": null,
+    "dataset_hashes": null,
+    "dtype": null,
+    "temperature": null,
+    "batch": null,
+    "max_new": null,
+    "job_id": null
+  },
+  "tasks": {
+    "humaneval": {
+      "humaneval": 0.494,
+      "humaneval_plus": 0.463,
+      "n": null,
+      "seconds": null,
+      "official_result_file": null
+    },
+    "mbpp": {
+      "mbpp": 0.52,
+      "mbpp_plus": 0.513228,
+      "n": null,
+      "seconds": null,
+      "official_result_file": null
+    },
+    "cruxeval": {
+      "cruxeval_o": 0.391,
+      "cruxeval_i": 0.401,
+      "n": null,
+      "seconds": null
+    },
+    "gsm8k": {
+      "gsm8k": 0.598,
+      "strict_accuracy": null,
+      "n": null,
+      "seconds": null
+    }
+  },
+  "reported_percent": {
+    "humaneval": "49.4",
+    "humaneval_plus": "46.3",
+    "mbpp": "52",
+    "mbpp_plus": "51.3228",
+    "cruxeval_o": "39.1",
+    "cruxeval_i": "40.1",
+    "gsm8k": "59.8"
+  },
+  "reporting_qualifiers": {
+    "humaneval": {
+      "approximate": false,
+      "rounding_note": null
+    },
+    "humaneval_plus": {
+      "approximate": false,
+      "rounding_note": null
+    },
+    "mbpp": {
+      "approximate": false,
+      "rounding_note": "integer_percentage"
+    },
+    "mbpp_plus": {
+      "approximate": false,
+      "rounding_note": null
+    },
+    "cruxeval_o": {
+      "approximate": false,
+      "rounding_note": null
+    },
+    "cruxeval_i": {
+      "approximate": false,
+      "rounding_note": null
+    },
+    "gsm8k": {
+      "approximate": false,
+      "rounding_note": null
+    }
+  },
+  "provenance": {
+    "canonical_source": "results/measured/2026-10-18.json",
+    "canonical_source_sha256": "cde60b0457ea030a7219dd5d3f692197b92abfd878e7ad4259fd5c7d0fd6589c",
+    "source_release_id": "dense3b-measured-20261018",
+    "source_publication_date": "2026-10-18",
+    "metric_source_ids": {
+      "humaneval": "author_confirmation_20261018",
+      "humaneval_plus": "author_confirmation_20261018",
+      "mbpp": "author_confirmation_20261018",
+      "mbpp_plus": "author_corrections_20261018",
+      "cruxeval_o": "author_confirmation_20261018",
+      "cruxeval_i": "author_confirmation_20261018",
+      "gsm8k": "author_confirmation_20261018"
+    },
+    "format_reference": "evidence/sync-20261009T2354Z/new_campaign/dense3b-step_00006499/suite.json",
+    "format_reference_only": true,
+    "archived_protocol_inherited": false
+  },
+  "evidence": {
+    "raw_outputs_attached": false,
+    "per_example_files": [],
+    "model_evaluation_executed_by_exporter": false,
+    "evaluation_started_at": null,
+    "evaluation_finished_at": null
+  },
+  "notes": [
+    "Reported aggregate scores reformatted into task groups; this file is not an original run log.",
+    "Percent strings and qualifiers retain the supplied precision; task numbers are percentage/100.",
+    "Missing counts, timestamps, runtime settings and weight hashes remain null."
+  ]
+}
