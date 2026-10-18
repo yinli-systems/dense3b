@@ -1,0 +1,64 @@
+name: Evaluation evidence integrity
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Run publication and evidence tests
+        run: python3 -m unittest discover -s tests/publication -v
+      - name: Recount original archived outcomes
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/dense3b-evidence"
+          python3 scripts/evaluation_evidence.py audit --root . --out "$RUNNER_TEMP/dense3b-evidence/archive-audit.json" | tee "$RUNNER_TEMP/dense3b-evidence/audit-console.log"
+      - name: Package actual step-6499 artifacts and recovery toolkit
+        run: |
+          python3 - <<'PY'
+          import json, os, shutil, sys
+          from pathlib import Path
+          sys.path.insert(0, 'scripts')
+          from evaluation_evidence import pack
+          out = Path(os.environ['RUNNER_TEMP']) / 'dense3b-evidence'
+          audit = json.loads((out / 'archive-audit.json').read_text())
+          tasks = audit['stages'][0]['tasks']
+          parents = {str(Path(t['summary_source']).parent) for t in tasks}
+          parents.update(str(Path(t['details_source']).parent) for t in tasks)
+          if len(parents) != 1:
+              raise ValueError('Multiple source directories; preserve the exact archive map')
+          receipt = pack(Path(next(iter(parents))), out / 'step-6499-raw',
+                         audit['checkpoint_weight_hashes'][0], '6p82B', 'recovered_original')
+          print(json.dumps({'packed_task_families': len(receipt['tasks']),
+                            'packed_original_files': len(receipt['artifacts']),
+                            'model_evaluation_executed': False}))
+          for name in ['scripts/evaluation_evidence.py',
+                       'tests/publication/test_evaluation_evidence.py',
+                       'configs/evaluation_recovery_plan.json',
+                       'EVALUATION_EVIDENCE.md', 'reports/evidence/README.md']:
+              dst = out / 'toolkit' / name
+              dst.parent.mkdir(parents=True, exist_ok=True)
+              shutil.copyfile(name, dst)
+          PY
+      - name: Inventory repository evidence files
+        run: |
+          python3 scripts/evaluation_evidence.py inventory --roots evidence --out "$RUNNER_TEMP/dense3b-evidence/repository-inventory.json"
+      - name: Publish original evidence bundle and audit
+        uses: actions/upload-artifact@v4
+        with:
+          name: dense3b-evaluation-evidence-audit
+          path: ${{ runner.temp }}/dense3b-evidence/
+          if-no-files-found: error
+          retention-days: 30
