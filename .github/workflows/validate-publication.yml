@@ -22,7 +22,13 @@ jobs:
           python-version: "3.11"
       - name: Check generated publication
         run: python3 scripts/build_measured_results.py --root . --check
+      - name: Diagnose generated-file mismatch
+        if: failure()
+        run: |
+          python3 scripts/build_measured_results.py --root .
+          git diff -- reports/CONFIRMED_RESULTS.md reports/measured/publication_manifest.json | head -160
       - name: Run publication tests
+        if: always()
         run: python3 -m unittest discover -s tests/publication -v
       - name: Verify archived source integrity
         run: python3 scripts/verify_publication.py
