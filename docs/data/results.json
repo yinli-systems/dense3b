@@ -27,6 +27,11 @@
       "kind": "author_confirmed_measurement",
       "date": "2026-10-18",
       "scope": "Explicit final corrections listed in corrections."
+    },
+    "author_later_throughput_20261018": {
+      "kind": "author_confirmed_system_metric",
+      "date": "2026-10-18",
+      "scope": "Later-run average global training token throughput (time window not specified)."
     }
   },
   "stages": [
@@ -734,5 +739,16 @@
     "Later per-run sample counts, prompt/shot settings, decoding settings, extraction rules and evaluator hashes remain unreported in this release.",
     "Integer counts are retained only where the archived evaluation provides them. Arithmetic compatibility does not create a new per-example record.",
     "The initial data mixture remains available in the original manifest. No revised mixture or switch point is supplied in this release."
-  ]
+  ],
+  "systems_measurements": {
+    "later_training_global_throughput": {
+      "value": 45380,
+      "unit": "tokens/s",
+      "statistic": "mean",
+      "scope": "later_training",
+      "aggregation_window": null,
+      "source": "author_later_throughput_20261018",
+      "source_logs_attached": false
+    }
+  }
 }
