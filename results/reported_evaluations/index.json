@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "record_kind": "author_reported_aggregate_summary_index",
+  "canonical_source": "results/measured/2026-10-18.json",
+  "canonical_source_sha256": "cde60b0457ea030a7219dd5d3f692197b92abfd878e7ad4259fd5c7d0fd6589c",
+  "reported_metric_count": 45,
+  "original_logs_created": 0,
+  "model_evaluations_executed": 0,
+  "stages": [
+    {
+      "stage_id": "20B",
+      "reported_metrics": 9,
+      "raw_outputs_attached": false,
+      "suite": "20B/suite.json",
+      "mc": "20B/mc.json",
+      "report": "20B/README.md"
+    },
+    {
+      "stage_id": "40B",
+      "reported_metrics": 9,
+      "raw_outputs_attached": false,
+      "suite": "40B/suite.json",
+      "mc": "40B/mc.json",
+      "report": "40B/README.md"
+    },
+    {
+      "stage_id": "60B",
+      "reported_metrics": 9,
+      "raw_outputs_attached": false,
+      "suite": "60B/suite.json",
+      "mc": "60B/mc.json",
+      "report": "60B/README.md"
+    },
+    {
+      "stage_id": "80B",
+      "reported_metrics": 9,
+      "raw_outputs_attached": false,
+      "suite": "80B/suite.json",
+      "mc": "80B/mc.json",
+      "report": "80B/README.md"
+    },
+    {
+      "stage_id": "100B",
+      "reported_metrics": 9,
+      "raw_outputs_attached": false,
+      "suite": "100B/suite.json",
+      "mc": "100B/mc.json",
+      "report": "100B/README.md"
+    }
+  ]
+}
