@@ -38,6 +38,10 @@ MMLU-CF at 6.82B: **28.57%**. It is distinct from MMLU-MC5. No later MMLU-CF sco
 
 Points are observations, not fitted curves. Their presence on one plot does not independently establish matching evaluator protocols.
 
+## Theoretical training chronology
+
+[Weight-lineage statement, date back-calculation and unresolved historical conflict](CHRONOLOGY.md). These dates are **not** independently verified checkpoint creation times.
+
 ## Later-run training throughput
 
 **45,380 tokens/s** global average throughput, author-reported for later training. The averaging window and raw logs are not attached; the separate 9 October snapshot median is **41,780 tokens/s**. [Systems reporting notes](measured/SOURCES.md).
