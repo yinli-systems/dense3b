@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - evidence/reported-summary-exports-20261018
+      - evidence/full-dataset-counts-20261018
   pull_request:
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   materialize:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/evidence/reported-summary-exports-20261018' && github.actor == github.repository_owner
+    if: github.event_name == 'push' && github.ref == 'refs/heads/evidence/full-dataset-counts-20261018' && github.actor == github.repository_owner
     runs-on: ubuntu-latest
     timeout-minutes: 10
     permissions:
@@ -24,7 +24,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Export author-reported aggregates only
+      - name: Export scores and author-confirmed problem counts
         run: python3 scripts/build_reported_evaluations.py --root .
       - name: Validate all publication and evidence tests
         run: python3 -m unittest discover -s tests/publication -v
@@ -32,7 +32,7 @@ jobs:
         run: python3 scripts/build_reported_evaluations.py --root . --check
       - name: Commit only generated summaries to the topic branch
         env:
-          TARGET_BRANCH: evidence/reported-summary-exports-20261018
+          TARGET_BRANCH: evidence/full-dataset-counts-20261018
         run: |
           set -euo pipefail
           test "$(git rev-parse HEAD)" = "$(git ls-remote origin "refs/heads/$TARGET_BRANCH" | cut -f1)"
@@ -46,16 +46,17 @@ jobs:
           if ! git diff --cached --quiet; then
             git config user.name 'github-actions[bot]'
             git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'data: export five stages of author-reported aggregate summaries'
+            git commit -m 'data: fill full evaluation-set counts across five reported checkpoint bundles'
             git push origin "HEAD:refs/heads/$TARGET_BRANCH"
           fi
-      - name: Publish summary-export download
+      - name: Publish updated summary-export download
         uses: actions/upload-artifact@v4
         with:
-          name: dense3b-reported-summary-exports
+          name: dense3b-reported-summaries-full-counts
           path: |
             results/reported_evaluations/
             results/measured/2026-10-18.json
+            results/measured/full_dataset_counts-2026-10-18.json
             scripts/build_reported_evaluations.py
             tests/publication/test_reported_evaluations.py
           if-no-files-found: error
