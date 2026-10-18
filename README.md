@@ -77,3 +77,7 @@ Original logs/results and deployed source snapshots are preserved by hash. No or
 New Plus results use the documented corrected EvalPlus backend; historical custom Plus scores are not silently merged into the same protocol. MC accuracy and byte-normalized accuracy remain separate. GSM8K strict phrase extraction and relaxed answer extraction are separate metrics. A sample-flag recount verifies arithmetic, not all assumptions of the original execution harness.
 
 [Build verification](reports/sync_verification.json) · [Input/capture issues](reports/sync_issues.json) · [All figures](reports/figures/all/index.json)
+
+## Public-history network redaction
+
+Historical runtime network addresses were redacted from the public Git history. Original and public artifact hashes are distinguished in [publication security notes](docs/PUBLICATION_SECURITY.md). No model training or evaluation was rerun.
