@@ -1,0 +1,75 @@
+name: Reported evaluation summaries
+
+on:
+  push:
+    branches:
+      - main
+      - evidence/reported-summary-exports-20261018
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  materialize:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/evidence/reported-summary-exports-20261018' && github.actor == github.repository_owner
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Export author-reported aggregates only
+        run: python3 scripts/build_reported_evaluations.py --root .
+      - name: Validate all publication and evidence tests
+        run: python3 -m unittest discover -s tests/publication -v
+      - name: Verify deterministic exports
+        run: python3 scripts/build_reported_evaluations.py --root . --check
+      - name: Commit only generated summaries to the topic branch
+        env:
+          TARGET_BRANCH: evidence/reported-summary-exports-20261018
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$(git ls-remote origin "refs/heads/$TARGET_BRANCH" | cut -f1)"
+          git add -- results/reported_evaluations/
+          python3 - <<'PY'
+          import subprocess
+          paths = subprocess.check_output(['git', 'diff', '--cached', '--name-only'], text=True).splitlines()
+          assert all(p.startswith('results/reported_evaluations/') for p in paths), paths
+          PY
+          git diff --cached --check
+          if ! git diff --cached --quiet; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git commit -m 'data: export five stages of author-reported aggregate summaries'
+            git push origin "HEAD:refs/heads/$TARGET_BRANCH"
+          fi
+      - name: Publish summary-export download
+        uses: actions/upload-artifact@v4
+        with:
+          name: dense3b-reported-summary-exports
+          path: |
+            results/reported_evaluations/
+            results/measured/2026-10-18.json
+            scripts/build_reported_evaluations.py
+            tests/publication/test_reported_evaluations.py
+          if-no-files-found: error
+          retention-days: 30
+  verify:
+    if: github.event_name == 'pull_request' || github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check stored summary exports
+        run: python3 scripts/build_reported_evaluations.py --root . --check
+      - name: Run publication and evidence tests
+        run: python3 -m unittest discover -s tests/publication -v
