@@ -401,7 +401,13 @@ The historical capture is dated 9 October 2026. The measured-results release is 
     files['docs/.nojekyll'] = ''
     for group in GROUPS:
         files['docs/assets/'+group+'.svg'] = svg_chart(d,group)
+    chronology_meta = None
+    if (root/'results/chronology/2026-10-18.json').is_file():
+        from build_chronology import apply_chronology
+        chronology_meta = apply_chronology(files, root)
     manifest = {'schema_version':1, 'source_path':SOURCE.as_posix(), 'source_sha256':source_sha, 'measurement_count':54, 'auxiliary_measurement_count':1, 'model_evaluation_executed':False, 'generated_files':{p:hashlib.sha256(text.encode()).hexdigest() for p,text in sorted(files.items())}}
+    if chronology_meta is not None:
+        manifest['chronology'] = chronology_meta
     files['reports/measured/publication_manifest.json'] = json.dumps(manifest,indent=2,sort_keys=True)+'\n'
     return files
 
