@@ -27,6 +27,7 @@ class ChronologyTests(unittest.TestCase):
         d = json.loads((ROOT / build_measured_results.SOURCE).read_text())
         outputs = build_measured_results.generate(ROOT, d)
         self.assertIn('## Theoretical training chronology', outputs['README.md'])
+        self.assertNotIn('These are **not audited checkpoint creation dates**', outputs['README.md'])
         self.assertIn('id="chronology"', outputs['docs/index.html'])
         self.assertIn('2026-09-24', outputs['docs/index.html'])
         self.assertIn('not audited checkpoint creation dates', outputs['docs/index.html'].lower())

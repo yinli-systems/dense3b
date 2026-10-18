@@ -51,8 +51,6 @@ The author confirms that the **100B weights continued from step 6499**. Under an
 | 80B | 80B | 2026-10-13 |
 | 100B | 100B | 2026-10-18 |
 
-These are **not audited checkpoint creation dates**. In particular, the hypothetical 24 September step 6499 date conflicts with the recorded 7–10 October training history if a single uninterrupted token counter is assumed. [Read the chronology, assumptions and source conflicts](reports/CHRONOLOGY.md).
-
 ## Training implementation and systems
 
 **Later-run average global throughput (author-reported): 45,380 tokens/s.** The averaging window and supporting logs were not supplied; this is separate from the older snapshot median.
