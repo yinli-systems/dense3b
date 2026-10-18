@@ -16,9 +16,27 @@ These are precision-preserving exports of the author's confirmed scores, using t
 | ARC-Challenge | 36.9% | 44.3% | 50.1% | 55.3% | 60.1% |
 | MMLU | 31.4% | 37.2% | 42.4% | 47.4% | ≈52.0% |
 
+## Full evaluation-set sample counts
+
+The author confirmed complete evaluation-set coverage for all five checkpoints. Counts below refer to the original project evaluation populations, not the union of dataset training, validation and test partitions. They count benchmark problems, not the number of generated responses.
+
+| Benchmark | Problems per checkpoint |
+|---|---:|
+| HumanEval | 164 |
+| HumanEval+ | 164 |
+| MBPP | 378 |
+| MBPP+ | 378 |
+| CRUXEval-I | 800 |
+| CRUXEval-O | 800 |
+| GSM8K | 1,319 |
+| ARC-Challenge | 1,172 |
+| MMLU | 14,042 |
+
+MBPP / MBPP+ use the complete **378-problem EvalPlus evaluation split** in the existing pipeline. MMLU uses **14,042 questions**; this count does not establish MC5/CF, shot count, dataset revision or prompt settings. Base and Plus reuse the same problems rather than doubling sample counts. [Author-confirmed sample-count source](../measured/full_dataset_counts-2026-10-18.json).
+
 ## Contents and interpretation
 
-Each stage directory contains `suite.json` (HumanEval, MBPP, CRUXEval and GSM8K), `mc.json` (ARC-Challenge and protocol-unspecified MMLU), and a readable summary. JSON task scores are fractions in [0,1]. `reported_percent` and `reporting_qualifiers` preserve exact published strings and approximation/rounding annotations. Unprovided counts, execution times, settings and model fingerprints are null, not zero or inferred values.
+Each stage directory contains `suite.json` (HumanEval, MBPP, CRUXEval and GSM8K), `mc.json` (ARC-Challenge and protocol-unspecified MMLU), and a readable summary. JSON task scores are fractions in [0,1]. `reported_percent` and `reporting_qualifiers` preserve exact published strings and approximation/rounding annotations. Each task's `n` is supplied from the separate author-confirmed full-evaluation sample-count record. Correct counts, execution times, settings and model fingerprints are not inferred; unprovided metadata remains null.
 
 `manifest.json` hashes these exported files; those hashes identify **summary exports**, not an original model or evaluator run. `index.json` records five-stage coverage. The [source scores](../measured/2026-10-18.json) are not modified.
 

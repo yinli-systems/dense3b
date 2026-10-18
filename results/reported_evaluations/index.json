@@ -4,6 +4,17 @@
   "canonical_source": "results/measured/2026-10-18.json",
   "canonical_source_sha256": "cde60b0457ea030a7219dd5d3f692197b92abfd878e7ad4259fd5c7d0fd6589c",
   "reported_metric_count": 45,
+  "sample_count_source": "results/measured/full_dataset_counts-2026-10-18.json",
+  "sample_count_source_sha256": "f1b9a98becdff27736a8ab75af84f9e667cc051456e193225b5fe446eeb1080f",
+  "count_unit": "unique_benchmark_problems",
+  "reported_problem_counts": {
+    "humaneval": 164,
+    "mbpp": 378,
+    "cruxeval": 800,
+    "gsm8k": 1319,
+    "arc_challenge": 1172,
+    "mmlu": 14042
+  },
   "original_logs_created": 0,
   "model_evaluations_executed": 0,
   "stages": [
