@@ -22,6 +22,10 @@ The 6.82B row is linked to the archived step 6499 evaluation. Its token label is
 - Integer counts are retained only where the archived evaluation provides them. Arithmetic compatibility does not create a new per-example record.
 - The initial data mixture remains available in the original manifest. No revised mixture or switch point is supplied in this release.
 
+## Later-run systems measurement
+
+The author reported **45,380 tokens/s** mean global training throughput during later training. The averaging interval and supporting logs were not supplied. This is **not** the same statistic as the **41,780 tokens/s** median from the 9 October archived snapshot (last at most 100 observations).
+
 ## Final author corrections
 
 | Benchmark | Stage | Confirmed score (%) |
@@ -37,10 +41,10 @@ The 6.82B row is linked to the archived step 6499 evaluation. Its token label is
 
 Canonical source: [`results/measured/2026-10-18.json`](../../results/measured/2026-10-18.json).
 
-Source SHA-256: `f197636478b7ab580ff21a9dfa10a7bed2bcdaf3ec1bc74c81d80f052954b160`.
+Source SHA-256: `cde60b0457ea030a7219dd5d3f692197b92abfd878e7ad4259fd5c7d0fd6589c`.
 
 The page builder checks schema, ranges, stage coverage, exact corrections, Plus/base ordering and archived-count compatibility. These checks do not independently verify the author's later measurements. No model weights, synthetic per-example records, optimizer states, credentials or datasets are added by this release.
 
 The historical evaluation and training archive remains at its original paths. Original capture receipts and artifact bytes are unchanged. Archive rebuilds validate sanctioned public redactions against the [existing audit](../../provenance/PUBLIC_NETWORK_REDACTION_AUDIT.json) and [two explicitly verified byte-identical aliases](../../provenance/PUBLIC_NETWORK_REDACTION_ALIASES.json). Unlisted changes still fail hash validation.
 
-[Publication validation record](validation.json) includes unit tests, artifact integrity, responsive browser checks and an isolated archive rebuild.
+The [original publication validation record](validation.json) predates this throughput update. The updated reporting code contains metric validation and a regression test; those Python tests have not been rerun for this patch.

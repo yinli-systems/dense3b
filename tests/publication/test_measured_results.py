@@ -29,6 +29,16 @@ class MeasuredResultsTests(unittest.TestCase):
         for k,v in {('humaneval_plus','40B'):'39.0',('mbpp','20B'):'38.4',('mbpp','40B'):'42.9',('mbpp','60B'):'46.3',('cruxeval_i','60B'):'30.750',('mbpp_plus','100B'):'51.3228'}.items():
             self.assertEqual(l[k]['value_pct'],v)
 
+    def test_later_run_global_throughput_is_distinct_from_archive(self):
+        m=self.d['systems_measurements']['later_training_global_throughput']
+        self.assertEqual(m['value'],45380)
+        self.assertEqual(m['statistic'],'mean')
+        self.assertEqual(m['unit'],'tokens/s')
+        self.assertIsNone(m['aggregation_window'])
+        self.assertFalse(m['source_logs_attached'])
+        self.assertIn('45,380 tokens/s',pub.site(self.d))
+        self.assertIn('41,780 tokens/s',pub.site(self.d))
+
     def test_approximate_and_coarse_endpoints(self):
         l=pub.validate(self.d)
         self.assertEqual(pub.score(l['mmlu','100B']),'≈52.0')

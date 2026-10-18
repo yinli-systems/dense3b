@@ -12,7 +12,7 @@ Dense3B is a dense pretraining model with **3,237,529,600 parameters** in the ar
 
 ## Training and data
 
-The archived training code and run metadata describe RTX 4090-based training. Original source proportions, repetition factors and data processing are documented in the [initial mixture manifest](evidence/manifests/mix-v0/mix.json) and [`code3b/`](code3b/). The later source mixture, its switch points and full-run hardware utilization have not been provided for this release.
+The archived training code and run metadata describe RTX 4090-based training. Original source proportions, repetition factors and data processing are documented in the [initial mixture manifest](evidence/manifests/mix-v0/mix.json) and [`code3b/`](code3b/). The later source mixture, its switch points and full-run hardware utilization have not been provided for this release. The author separately reported a later-run average global throughput of **45,380 tokens/s**. No averaging window or supporting logs were supplied; it must not be compared as if it were the archived **41,780 tokens/s median**.
 
 ## Scope and limitations
 
