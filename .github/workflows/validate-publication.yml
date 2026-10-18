@@ -1,0 +1,28 @@
+name: Validate Dense3B publication
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - docs/theoretical-chronology-lineage-20261018
+
+permissions:
+  contents: read
+
+jobs:
+  publication:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Check generated publication
+        run: python3 scripts/build_measured_results.py --root . --check
+      - name: Run publication tests
+        run: python3 -m unittest discover -s tests/publication -v
+      - name: Verify archived source integrity
+        run: python3 scripts/verify_publication.py
