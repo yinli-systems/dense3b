@@ -38,6 +38,8 @@ The final author corrections include **HumanEval+ 40B: 39.0%**, **MBPP 20B/40B/6
 
 ## Training implementation and systems
 
+**Later-run average global throughput (author-reported): 45,380 tokens/s.** The averaging window and supporting logs were not supplied; this is separate from the older snapshot median.
+
 The following measurements belong to the **9 October 2026 archived snapshot**, not the complete 100B run.
 
 | Archived field | Value |
