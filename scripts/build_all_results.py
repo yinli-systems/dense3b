@@ -391,6 +391,10 @@ def build(root:Path,make_plots=True)->dict:
     dump(root/'reports/training_events.json',events)
     verification={'manifest_records_verified':verified,'new_per_example_records_recounted':checked,'new_score_checks':sum(len(x['checks']) for x in checks),'arithmetic_mismatches':0,'input_capture_issues':issues,'tensor_payloads_read':0,'new_gpu_tests_run_by_publication':0}
     dump(root/'reports/sync_verification.json',verification)
+    # Keep the current author-confirmed release visible after rebuilding the archive.
+    if (root/'results/measured/2026-10-18.json').exists():
+        from build_measured_results import build as build_measured
+        build_measured(root)
     return {k:v for k,v in summary.items() if k!='systems'}
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--root',type=Path,default=Path(__file__).resolve().parents[1]);p.add_argument('--no-plots',action='store_true');a=p.parse_args()

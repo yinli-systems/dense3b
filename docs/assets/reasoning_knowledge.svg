@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1024 420">
+<title id="title">Mathematics and knowledge: measured checkpoint scores</title>
+<desc id="desc">Reported measurements only. Each point has its exact value in a title. No fitted lines are drawn. Early points have archived outputs; later points are author-confirmed measurements. Later evaluator manifests are not attached.</desc>
+<rect width="1024" height="420" rx="16" fill="#FFFFFF"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#233447">
+<text x="30" y="35" font-size="20" font-weight="700">Mathematics and knowledge</text>
+<circle cx="40" cy="64" r="4" fill="#146C94"/>
+<text x="52" y="69" font-size="13">GSM8K</text>
+<circle cx="275" cy="64" r="4" fill="#16866D"/>
+<text x="287" y="69" font-size="13">ARC-Challenge</text>
+<circle cx="510" cy="64" r="4" fill="#A46318"/>
+<text x="522" y="69" font-size="13">MMLU</text>
+<path d="M70,345.000 H975" stroke="#E4EAF0"/>
+<text x="58" y="349.000" text-anchor="end" font-size="12">0</text>
+<path d="M70,309.714 H975" stroke="#E4EAF0"/>
+<text x="58" y="313.714" text-anchor="end" font-size="12">10</text>
+<path d="M70,274.429 H975" stroke="#E4EAF0"/>
+<text x="58" y="278.429" text-anchor="end" font-size="12">20</text>
+<path d="M70,239.143 H975" stroke="#E4EAF0"/>
+<text x="58" y="243.143" text-anchor="end" font-size="12">30</text>
+<path d="M70,203.857 H975" stroke="#E4EAF0"/>
+<text x="58" y="207.857" text-anchor="end" font-size="12">40</text>
+<path d="M70,168.571 H975" stroke="#E4EAF0"/>
+<text x="58" y="172.571" text-anchor="end" font-size="12">50</text>
+<path d="M70,133.286 H975" stroke="#E4EAF0"/>
+<text x="58" y="137.286" text-anchor="end" font-size="12">60</text>
+<path d="M70,98.000 H975" stroke="#E4EAF0"/>
+<text x="58" y="102.000" text-anchor="end" font-size="12">70</text>
+<text x="131.721" y="369" text-anchor="middle" font-size="12">6.82</text>
+<text x="251.000" y="369" text-anchor="middle" font-size="12">20</text>
+<text x="432.000" y="369" text-anchor="middle" font-size="12">40</text>
+<text x="613.000" y="369" text-anchor="middle" font-size="12">60</text>
+<text x="794.000" y="369" text-anchor="middle" font-size="12">80</text>
+<text x="975.000" y="369" text-anchor="middle" font-size="12">100</text>
+<text x="523" y="396" text-anchor="middle" font-size="12">Training tokens (billions, author-reported labels)</text>
+<text x="20" y="225" transform="rotate(-90 20 225)" text-anchor="middle" font-size="12">Score (%)</text>
+<circle cx="131.721" cy="304.351" r="5" fill="#FFFFFF" stroke="#146C94" stroke-width="2"><title>GSM8K · 6.82B: 11.52%</title></circle>
+<circle cx="251.000" cy="263.137" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>GSM8K · 20B: 23.2%</title></circle>
+<circle cx="432.000" cy="226.793" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>GSM8K · 40B: 33.5%</title></circle>
+<circle cx="613.000" cy="195.036" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>GSM8K · 60B: 42.5%</title></circle>
+<circle cx="794.000" cy="163.984" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>GSM8K · 80B: 51.3%</title></circle>
+<circle cx="975.000" cy="133.991" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>GSM8K · 100B: 59.8%</title></circle>
+<circle cx="131.721" cy="243.836" r="5" fill="#FFFFFF" stroke="#16866D" stroke-width="2"><title>ARC-Challenge · 6.82B: 28.67%</title></circle>
+<circle cx="251.000" cy="214.796" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>ARC-Challenge · 20B: 36.9%</title></circle>
+<circle cx="432.000" cy="188.684" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>ARC-Challenge · 40B: 44.3%</title></circle>
+<circle cx="613.000" cy="168.219" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>ARC-Challenge · 60B: 50.1%</title></circle>
+<circle cx="794.000" cy="149.870" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>ARC-Challenge · 80B: 55.3%</title></circle>
+<circle cx="975.000" cy="132.933" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>ARC-Challenge · 100B: 60.1%</title></circle>
+<circle cx="131.721" cy="255.974" r="5" fill="#FFFFFF" stroke="#A46318" stroke-width="2"><title>MMLU · 6.82B: 25.23%</title></circle>
+<circle cx="251.000" cy="234.203" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MMLU · 20B: 31.4%</title></circle>
+<circle cx="432.000" cy="213.737" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MMLU · 40B: 37.2%</title></circle>
+<circle cx="613.000" cy="195.389" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MMLU · 60B: 42.4%</title></circle>
+<circle cx="794.000" cy="177.746" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MMLU · 80B: 47.4%</title></circle>
+<circle cx="975.000" cy="161.514" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MMLU · 100B: ≈52.0%</title></circle>
+</g></svg>

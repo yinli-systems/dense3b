@@ -1,0 +1,738 @@
+{
+  "schema_version": 1,
+  "release_id": "dense3b-measured-20261018",
+  "publication_date": "2026-10-18",
+  "title": "Dense3B measured checkpoint results",
+  "model": {
+    "name": "Dense3B",
+    "architecture": "dense",
+    "parameter_count": 3237529600,
+    "training_tokens_b_reported": "100",
+    "weights_in_repository": false
+  },
+  "source_statement": "The model author confirmed every value as a measured result and supplied final corrections on 2026-10-18. This publication records those measurements; it does not execute model evaluation.",
+  "evidence_statement": "The 6.82B row is linked to the archived step 6499 evaluation. Its token label is author-reported and rounded. The 20B through 100B rows are author-confirmed measurement reports; their per-example outputs, checkpoint hashes and evaluator manifests were not supplied with this release.",
+  "sources": {
+    "archive_6499": {
+      "kind": "archived_evaluation",
+      "path": "reports/checkpoints/dense3b-step_00006499.md",
+      "capture_date": "2026-10-09"
+    },
+    "author_confirmation_20261018": {
+      "kind": "author_confirmed_measurement",
+      "date": "2026-10-18",
+      "scope": "All intermediate cells in the confirmed checkpoint table, together with the previously reported final endpoints."
+    },
+    "author_corrections_20261018": {
+      "kind": "author_confirmed_measurement",
+      "date": "2026-10-18",
+      "scope": "Explicit final corrections listed in corrections."
+    }
+  },
+  "stages": [
+    {
+      "id": "6p82B",
+      "tokens_b": "6.82",
+      "token_count_basis": "author_reported_rounded",
+      "checkpoint_step": 6499,
+      "checkpoint_sha256": null
+    },
+    {
+      "id": "20B",
+      "tokens_b": "20",
+      "token_count_basis": "author_reported",
+      "checkpoint_step": null,
+      "checkpoint_sha256": null
+    },
+    {
+      "id": "40B",
+      "tokens_b": "40",
+      "token_count_basis": "author_reported",
+      "checkpoint_step": null,
+      "checkpoint_sha256": null
+    },
+    {
+      "id": "60B",
+      "tokens_b": "60",
+      "token_count_basis": "author_reported",
+      "checkpoint_step": null,
+      "checkpoint_sha256": null
+    },
+    {
+      "id": "80B",
+      "tokens_b": "80",
+      "token_count_basis": "author_reported",
+      "checkpoint_step": null,
+      "checkpoint_sha256": null
+    },
+    {
+      "id": "100B",
+      "tokens_b": "100",
+      "token_count_basis": "author_reported",
+      "checkpoint_step": null,
+      "checkpoint_sha256": null
+    }
+  ],
+  "benchmarks": [
+    {
+      "id": "humaneval",
+      "label": "HumanEval",
+      "group": "code_generation",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "25.61",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 164,
+          "passed_archived": 42
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "35.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "40.9",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "44.5",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "47.0",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "49.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    },
+    {
+      "id": "humaneval_plus",
+      "label": "HumanEval+",
+      "group": "code_generation",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "25.00",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 164,
+          "passed_archived": 41
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "33.5",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "39.0",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_corrections_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "42.1",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "44.5",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "46.3",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    },
+    {
+      "id": "mbpp",
+      "label": "MBPP",
+      "group": "code_generation",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "33.33",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 378,
+          "passed_archived": 126
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "38.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_corrections_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "42.9",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_corrections_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "46.3",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_corrections_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "49.2",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "52",
+          "approximate": false,
+          "rounding_note": "integer_percentage",
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    },
+    {
+      "id": "mbpp_plus",
+      "label": "MBPP+",
+      "group": "code_generation",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "26.98",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 378,
+          "passed_archived": 102
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "33.3",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "38.9",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "43.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "47.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "51.3228",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_corrections_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    },
+    {
+      "id": "cruxeval_i",
+      "label": "CRUXEval-I",
+      "group": "code_reasoning",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "13.38",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 800,
+          "passed_archived": 107
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "20.0",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "25.8",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "30.750",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_corrections_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "35.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "40.1",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    },
+    {
+      "id": "cruxeval_o",
+      "label": "CRUXEval-O",
+      "group": "code_reasoning",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "20.25",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 800,
+          "passed_archived": 162
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "25.1",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "29.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "32.8",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "36.0",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "39.1",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    },
+    {
+      "id": "gsm8k",
+      "label": "GSM8K",
+      "group": "reasoning_knowledge",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "11.52",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 1319,
+          "passed_archived": 152
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "23.2",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "33.5",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "42.5",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "51.3",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "59.8",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    },
+    {
+      "id": "arc_challenge",
+      "label": "ARC-Challenge",
+      "group": "reasoning_knowledge",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "28.67",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 1172,
+          "passed_archived": 336
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "36.9",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "44.3",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "50.1",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "55.3",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "60.1",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    },
+    {
+      "id": "mmlu",
+      "label": "MMLU",
+      "group": "reasoning_knowledge",
+      "values": [
+        {
+          "stage_id": "6p82B",
+          "value_pct": "25.23",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "archive_6499",
+          "raw_outputs_attached": true,
+          "n_archived": 14042,
+          "passed_archived": 3543
+        },
+        {
+          "stage_id": "20B",
+          "value_pct": "31.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "40B",
+          "value_pct": "37.2",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "60B",
+          "value_pct": "42.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "80B",
+          "value_pct": "47.4",
+          "approximate": false,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        },
+        {
+          "stage_id": "100B",
+          "value_pct": "52.0",
+          "approximate": true,
+          "rounding_note": null,
+          "source": "author_confirmation_20261018",
+          "raw_outputs_attached": false,
+          "n_archived": null,
+          "passed_archived": null
+        }
+      ]
+    }
+  ],
+  "corrections": [
+    {
+      "benchmark_id": "humaneval_plus",
+      "stage_id": "40B",
+      "confirmed_value_pct": "39.0",
+      "source": "author_corrections_20261018"
+    },
+    {
+      "benchmark_id": "mbpp",
+      "stage_id": "20B",
+      "confirmed_value_pct": "38.4",
+      "source": "author_corrections_20261018"
+    },
+    {
+      "benchmark_id": "mbpp",
+      "stage_id": "40B",
+      "confirmed_value_pct": "42.9",
+      "source": "author_corrections_20261018"
+    },
+    {
+      "benchmark_id": "mbpp",
+      "stage_id": "60B",
+      "confirmed_value_pct": "46.3",
+      "source": "author_corrections_20261018"
+    },
+    {
+      "benchmark_id": "cruxeval_i",
+      "stage_id": "60B",
+      "confirmed_value_pct": "30.750",
+      "source": "author_corrections_20261018"
+    },
+    {
+      "benchmark_id": "mbpp_plus",
+      "stage_id": "100B",
+      "confirmed_value_pct": "51.3228",
+      "source": "author_corrections_20261018"
+    }
+  ],
+  "auxiliary_results": [
+    {
+      "benchmark": "MMLU-CF",
+      "stage_id": "6p82B",
+      "value_pct": "28.57",
+      "source": "archive_6499",
+      "n_archived": 14042,
+      "passed_archived": 4012,
+      "later_results": null
+    }
+  ],
+  "protocol_notes": [
+    "Percentages retain the precision supplied by the author; display precision is not uncertainty.",
+    "MBPP at 100B is reported as 52%, rounded to an integer percentage. No exact decimal or passed count is assigned.",
+    "MMLU at 100B is approximately 52%. The 6.82B anchor uses MMLU-MC5; later reports are labelled MMLU without assigning an unprovided evaluator protocol. MMLU-CF stays separate.",
+    "Later per-run sample counts, prompt/shot settings, decoding settings, extraction rules and evaluator hashes remain unreported in this release.",
+    "Integer counts are retained only where the archived evaluation provides them. Arithmetic compatibility does not create a new per-example record.",
+    "The initial data mixture remains available in the original manifest. No revised mixture or switch point is supplied in this release."
+  ]
+}

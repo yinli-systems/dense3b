@@ -1,9 +1,11 @@
-# dense3b — report navigation
+# Dense3B — report navigation
 
-[All checkpoint results](RESULTS.md) · [All system metrics and MFU](SYSTEMS.md) · [Backfill progress](CAMPAIGN.md)
+## Current measured results
 
-[Every evaluation value/version (CSV)](evaluation_history.csv) · [Raw training observations](training_all.csv) · [Resume-display sequence](training_retained.csv) · [Metric catalog](metrics_catalog.csv) · [Every figure](figures/all/index.json)
+[All measured milestones through 100B](CONFIRMED_RESULTS.md) · [Source notes](measured/SOURCES.md) · [Long CSV](measured/results.csv) · [Matrix CSV](measured/results_wide.csv) · [Canonical JSON](../results/measured/2026-10-18.json).
 
-[Source and sample verification](sync_verification.json) · [Capture issues](sync_issues.json) · [Older checkpoint audit](checkpoint_audit/CHECKPOINTS.md)
+## Historical evidence
 
-These reports describe explicitly timestamped source captures. Ongoing training and queued evaluations are not automatically synchronized into GitHub.
+[All archived checkpoint entries](RESULTS.md) · [All archived metric values and versions](evaluation_history.csv) · [System metrics](SYSTEMS.md) · [Raw training observations](training_all.csv) · [Sample recounts](sample_verification.json) · [Evaluator manifests](evaluation_versions.json) · [Capture issues](sync_issues.json).
+
+The historical capture is dated 9 October 2026. The measured-results release is dated 18 October 2026. These source classes are retained separately.

@@ -1,83 +1,90 @@
-# dense3b
+# Dense3B
 
-Dense 3B-class code pretraining: deployed implementation, data pipeline, checkpoint results and auditable training curves.
+### 3.238B dense parameters. 100B training tokens. Measured checkpoint results.
 
-**[All checkpoints and results](reports/RESULTS.md) · [MFU, loss, throughput and every system metric](reports/SYSTEMS.md) · [Backfill progress](reports/CAMPAIGN.md)**
+An end-to-end dense-model pretraining project with training code, data preparation, checkpoint measurements and archived execution evidence.
 
-Training/evaluation capture started **2026-10-09T23:55:40.432744+00:00 / 2026-10-09T23:55:40.429869+00:00**. Jobs continued while files were copied; these are timestamped snapshots, not a live dashboard.
+**[Project page](https://yinli-systems.github.io/dense3b/) · [Full results](reports/CONFIRMED_RESULTS.md) · [CSV](reports/measured/results.csv) · [JSON](results/measured/2026-10-18.json) · [Model card](MODEL_CARD.md) · [Historical archive](reports/RESULTS.md)**
 
-## Training and efficiency
+## 100B-token results
 
-| Variant | Latest logged step | Latest loss | MFU median, last ≤100 | Global tok/s median, last ≤100 | Peak allocated GB, latest |
-|---|---:|---:|---:|---:|---:|
-| dense3b | 6615 | 1.0351 | 68.09% | 41,780 | 22.387 |
+| HumanEval | HumanEval+ | GSM8K | ARC-Challenge | MBPP+ | MMLU* |
+|---:|---:|---:|---:|---:|---:|
+| **49.4%** | **46.3%** | **59.8%** | **60.1%** | **51.3228%** | **≈52.0%** |
 
-MFU is the logged model-FLOP estimate, not device utilization. Per-step throughput excludes unrecorded downtime. The systems page includes every numeric logged field, full unsmoothed data, per-run provenance and the explicit resume-display policy.
+## Measured checkpoint matrix
 
-![loss](reports/figures/all/training_loss.png)
+All values below are author-confirmed measurements. Percentages retain the supplied precision. [Measurement sources and evaluation conventions](reports/measured/SOURCES.md) distinguish archived raw evidence from later author-confirmed reports.
 
-![mfu](reports/figures/all/training_mfu.png)
+| Benchmark | [6.82B](reports/measured/checkpoints/6p82B.md) | [20B](reports/measured/checkpoints/20B.md) | [40B](reports/measured/checkpoints/40B.md) | [60B](reports/measured/checkpoints/60B.md) | [80B](reports/measured/checkpoints/80B.md) | [100B](reports/measured/checkpoints/100B.md) |
+|---|---:|---:|---:|---:|---:|---:|
+| HumanEval | 25.61 | 35.4 | 40.9 | 44.5 | 47.0 | 49.4 |
+| HumanEval+ | 25.00 | 33.5 | 39.0 | 42.1 | 44.5 | 46.3 |
+| MBPP | 33.33 | 38.4 | 42.9 | 46.3 | 49.2 | 52 |
+| MBPP+ | 26.98 | 33.3 | 38.9 | 43.4 | 47.4 | 51.3228 |
+| CRUXEval-I | 13.38 | 20.0 | 25.8 | 30.750 | 35.4 | 40.1 |
+| CRUXEval-O | 20.25 | 25.1 | 29.4 | 32.8 | 36.0 | 39.1 |
+| GSM8K | 11.52 | 23.2 | 33.5 | 42.5 | 51.3 | 59.8 |
+| ARC-Challenge | 28.67 | 36.9 | 44.3 | 50.1 | 55.3 | 60.1 |
+| MMLU* | 25.23 | 31.4 | 37.2 | 42.4 | 47.4 | ≈52.0 |
 
-![tok_per_s](reports/figures/all/training_tok_per_s.png)
+*Early MMLU uses MC5; later MMLU evaluator manifests are not attached. The final MMLU value is approximate. MBPP at 100B is reported at integer precision (52%). The 6.82B token label is rounded.*
 
-## Latest completed task results in the new scoring campaign
+The final author corrections include **HumanEval+ 40B: 39.0%**, **MBPP 20B/40B/60B: 38.4% / 42.9% / 46.3%**, **CRUXEval-I 60B: 30.750%**, and **MBPP+ 100B: 51.3228%**.
 
-Latest checkpoint per variant/task/metric, not the highest score. The table may combine tasks at different steps, which are shown explicitly. Historical results and all protocols remain in the complete result index.
+![Code generation measured checkpoint scores](docs/assets/code_generation.svg)
 
-| Variant | Step | Task / metric | Score | n | Verified count |
-|---|---:|---|---:|---:|---|
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | arc_challenge / acc | 28.6689% | 1172 | 336/1172 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | arc_challenge / acc_norm | 31.0580% | 1172 | 364/1172 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | arc_easy / acc | 61.9949% | 2376 | 1473/2376 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | arc_easy / acc_norm | 53.4933% | 2376 | 1271/2376 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | boolq / acc | 58.6544% | 3270 | 1918/3270 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | boolq / acc_norm | 62.2324% | 3270 | 2035/3270 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | cruxeval / cruxeval_i | 13.3800% | 800 | 107/800 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | cruxeval / cruxeval_o | 20.2500% | 800 | 162/800 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | gsm8k / gsm8k | 11.5239% | 1319 | 152/1319 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | gsm8k / strict_accuracy | 11.3723% | 1319 | 150/1319 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | hellaswag / acc | 31.1691% | 10042 | 3130/10042 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | hellaswag / acc_norm | 35.7499% | 10042 | 3590/10042 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | humaneval / humaneval | 25.6098% | 164 | 42/164 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | humaneval / humaneval_plus | 25.0000% | 164 | 41/164 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mbpp / mbpp | 33.3333% | 378 | 126/378 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mbpp / mbpp_plus | 26.9841% | 378 | 102/378 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mmlu_cf / acc | 28.5714% | 14042 | 4012/14042 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mmlu_cf / acc_norm | 29.8462% | 14042 | 4191/14042 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mmlu_mc5 / acc | 25.2314% | 14042 | 3543/14042 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | mmlu_mc5 / acc_norm | 25.2314% | 14042 | 3543/14042 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | openbookqa / acc | 22.0000% | 500 | 110/500 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | openbookqa / acc_norm | 32.6000% | 500 | 163/500 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | sciq / acc | 84.3000% | 1000 | 843/1000 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | sciq / acc_norm | 79.6000% | 1000 | 796/1000 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | winogrande / acc | 51.9337% | 1267 | 658/1267 |
-| dense3b | [6499](reports/checkpoints/dense3b-step_00006499.md) | winogrande / acc_norm | 51.9337% | 1267 | 658/1267 |
+[Code reasoning and mathematics/knowledge plots](reports/CONFIRMED_RESULTS.md#capability-plots).
 
-## Archived architecture and accounting
+## Training implementation and systems
 
-| Variant | Total parameters | Active parameters |
-|---|---:|---:|
-| dense3b | 3,237,529,600 | 3,237,529,600 |
+The following measurements belong to the **9 October 2026 archived snapshot**, not the complete 100B run.
 
-These are archived configuration counts, including embeddings; they are not task-quality rankings.
+| Archived field | Value |
+|---|---:|
+| Dense parameters, including embeddings | 3,237,529,600 |
+| Training GPUs | 8 × NVIDIA GeForce RTX 4090 |
+| Model FLOP utilization, median of last ≤100 records | 68.09% |
+| Global training throughput, same window | 41,780 tokens/s |
+| Peak allocated memory, latest logged observation | 22.387 GB |
 
-## Reproduction and provenance
+MFU is the implementation's model-FLOP estimate, not device utilization. Loop throughput excludes unrecorded stalls and downtime. [All system metrics and training curves](reports/SYSTEMS.md) · [Raw observations](reports/training_all.csv) · [Recorded run metadata](reports/run_index.json).
+
+## Repository map
+
+| Area | Contents |
+|---|---|
+| [`results/measured/`](results/measured/) | Canonical, precision-preserving author-confirmed measurements |
+| [`reports/measured/`](reports/measured/) | CSV exports, source notes and six milestone pages |
+| [`docs/`](docs/) | Static project site and three capability plots |
+| [`model/`](model/) · [`train/`](train/) | Architecture, optimization, parallelism and training |
+| [`code3b/`](code3b/) · [`data_pipeline/`](data_pipeline/) | Filtering, decontamination, deduplication and token packing |
+| [`bench/`](bench/) · [`tokenizer/`](tokenizer/) | Evaluation code and tokenizer artifacts |
+| [`evidence/`](evidence/) · [`provenance/`](provenance/) | Original source captures, logs, manifests and hash inventories |
+| [`reports/RESULTS.md`](reports/RESULTS.md) | All 13 archived checkpoint entries and 607 archived metric rows |
+
+## Rebuild the presentation
+
+The measured-results presentation uses only the Python standard library; it does not execute model evaluation.
 
 ```bash
-python -m pip install -r requirements-report.txt
-python scripts/verify_publication.py
-python scripts/build_all_results.py --root .
-python -m unittest discover -s tests/publication -v
+python3 scripts/build_measured_results.py --root .
+python3 scripts/build_measured_results.py --root . --check
+python3 -m unittest discover -s tests/publication -v
+python3 scripts/verify_publication.py
 ```
 
-[Current immutable capture manifest](provenance/sync-20261009T2354Z/manifest.json) · [Latest capture pointer](provenance/sync_latest.json) · [Original snapshot inventory](provenance/snapshot.json) · [Earlier checkpoint audit](reports/checkpoint_audit/CHECKPOINTS.md)
+To rebuild the original archive and then refresh the current results presentation:
 
-Original logs/results and deployed source snapshots are preserved by hash. No original training source was overwritten by this synchronization. Tensor weights, optimizer states, data shards, credentials and installed binary caches are not Git payloads. Live file/pin inventories include exact paths, sizes and capture times. Loss values keep cross-entropy units; unmeasured values stay absent.
+```bash
+python3 -m pip install -r requirements-report.txt
+python3 scripts/build_all_results.py --root .
+```
 
-New Plus results use the documented corrected EvalPlus backend; historical custom Plus scores are not silently merged into the same protocol. MC accuracy and byte-normalized accuracy remain separate. GSM8K strict phrase extraction and relaxed answer extraction are separate metrics. A sample-flag recount verifies arithmetic, not all assumptions of the original execution harness.
+The archive builder automatically refreshes the current measured-results pages when the canonical release is present. Original raw evidence is not rewritten by the new presentation builder.
 
-[Build verification](reports/sync_verification.json) · [Input/capture issues](reports/sync_issues.json) · [All figures](reports/figures/all/index.json)
+## Availability and provenance
 
-## Public-history network redaction
+The author confirmed all milestone scores as measurements on **18 October 2026**. Early scores have archived evaluation outputs; later per-example logs, evaluator manifests and weight hashes are not attached to this release. No independent rerun of later evaluations is claimed.
 
-Historical runtime network addresses were redacted from the public Git history. Original and public artifact hashes are distinguished in [publication security notes](docs/PUBLICATION_SECURITY.md). No model training or evaluation was rerun.
+Model weights, optimizer states and data shards are not distributed in Git. Updated data-mixing weights and change points are not reported here. The [initial mixture](evidence/manifests/mix-v0/mix.json), [historical homepage](ARCHIVED_README.md), [evaluation protocols](reports/evaluation_versions.json) and [network-redaction notes](docs/PUBLICATION_SECURITY.md) remain available.

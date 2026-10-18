@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1024 420">
+<title id="title">Code generation: measured checkpoint scores</title>
+<desc id="desc">Reported measurements only. Each point has its exact value in a title. No fitted lines are drawn. Early points have archived outputs; later points are author-confirmed measurements. Later evaluator manifests are not attached.</desc>
+<rect width="1024" height="420" rx="16" fill="#FFFFFF"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#233447">
+<text x="30" y="35" font-size="20" font-weight="700">Code generation</text>
+<circle cx="40" cy="64" r="4" fill="#146C94"/>
+<text x="52" y="69" font-size="13">HumanEval</text>
+<circle cx="275" cy="64" r="4" fill="#16866D"/>
+<text x="287" y="69" font-size="13">HumanEval+</text>
+<circle cx="510" cy="64" r="4" fill="#A46318"/>
+<text x="522" y="69" font-size="13">MBPP</text>
+<circle cx="745" cy="64" r="4" fill="#8052A4"/>
+<text x="757" y="69" font-size="13">MBPP+</text>
+<path d="M70,345.000 H975" stroke="#E4EAF0"/>
+<text x="58" y="349.000" text-anchor="end" font-size="12">0</text>
+<path d="M70,309.714 H975" stroke="#E4EAF0"/>
+<text x="58" y="313.714" text-anchor="end" font-size="12">10</text>
+<path d="M70,274.429 H975" stroke="#E4EAF0"/>
+<text x="58" y="278.429" text-anchor="end" font-size="12">20</text>
+<path d="M70,239.143 H975" stroke="#E4EAF0"/>
+<text x="58" y="243.143" text-anchor="end" font-size="12">30</text>
+<path d="M70,203.857 H975" stroke="#E4EAF0"/>
+<text x="58" y="207.857" text-anchor="end" font-size="12">40</text>
+<path d="M70,168.571 H975" stroke="#E4EAF0"/>
+<text x="58" y="172.571" text-anchor="end" font-size="12">50</text>
+<path d="M70,133.286 H975" stroke="#E4EAF0"/>
+<text x="58" y="137.286" text-anchor="end" font-size="12">60</text>
+<path d="M70,98.000 H975" stroke="#E4EAF0"/>
+<text x="58" y="102.000" text-anchor="end" font-size="12">70</text>
+<text x="131.721" y="369" text-anchor="middle" font-size="12">6.82</text>
+<text x="251.000" y="369" text-anchor="middle" font-size="12">20</text>
+<text x="432.000" y="369" text-anchor="middle" font-size="12">40</text>
+<text x="613.000" y="369" text-anchor="middle" font-size="12">60</text>
+<text x="794.000" y="369" text-anchor="middle" font-size="12">80</text>
+<text x="975.000" y="369" text-anchor="middle" font-size="12">100</text>
+<text x="523" y="396" text-anchor="middle" font-size="12">Training tokens (billions, author-reported labels)</text>
+<text x="20" y="225" transform="rotate(-90 20 225)" text-anchor="middle" font-size="12">Score (%)</text>
+<circle cx="131.721" cy="254.633" r="5" fill="#FFFFFF" stroke="#146C94" stroke-width="2"><title>HumanEval · 6.82B: 25.61%</title></circle>
+<circle cx="251.000" cy="220.089" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>HumanEval · 20B: 35.4%</title></circle>
+<circle cx="432.000" cy="200.681" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>HumanEval · 40B: 40.9%</title></circle>
+<circle cx="613.000" cy="187.979" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>HumanEval · 60B: 44.5%</title></circle>
+<circle cx="794.000" cy="179.157" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>HumanEval · 80B: 47.0%</title></circle>
+<circle cx="975.000" cy="170.689" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>HumanEval · 100B: 49.4%</title></circle>
+<circle cx="131.721" cy="256.786" r="5" fill="#FFFFFF" stroke="#16866D" stroke-width="2"><title>HumanEval+ · 6.82B: 25.00%</title></circle>
+<circle cx="251.000" cy="226.793" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>HumanEval+ · 20B: 33.5%</title></circle>
+<circle cx="432.000" cy="207.386" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>HumanEval+ · 40B: 39.0%</title></circle>
+<circle cx="613.000" cy="196.447" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>HumanEval+ · 60B: 42.1%</title></circle>
+<circle cx="794.000" cy="187.979" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>HumanEval+ · 80B: 44.5%</title></circle>
+<circle cx="975.000" cy="181.627" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>HumanEval+ · 100B: 46.3%</title></circle>
+<circle cx="131.721" cy="227.393" r="5" fill="#FFFFFF" stroke="#A46318" stroke-width="2"><title>MBPP · 6.82B: 33.33%</title></circle>
+<circle cx="251.000" cy="209.503" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MBPP · 20B: 38.4%</title></circle>
+<circle cx="432.000" cy="193.624" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MBPP · 40B: 42.9%</title></circle>
+<circle cx="613.000" cy="181.627" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MBPP · 60B: 46.3%</title></circle>
+<circle cx="794.000" cy="171.394" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MBPP · 80B: 49.2%</title></circle>
+<circle cx="975.000" cy="161.514" r="5" fill="#A46318" stroke="#A46318" stroke-width="2"><title>MBPP · 100B: 52%</title></circle>
+<circle cx="131.721" cy="249.799" r="5" fill="#FFFFFF" stroke="#8052A4" stroke-width="2"><title>MBPP+ · 6.82B: 26.98%</title></circle>
+<circle cx="251.000" cy="227.499" r="5" fill="#8052A4" stroke="#8052A4" stroke-width="2"><title>MBPP+ · 20B: 33.3%</title></circle>
+<circle cx="432.000" cy="207.739" r="5" fill="#8052A4" stroke="#8052A4" stroke-width="2"><title>MBPP+ · 40B: 38.9%</title></circle>
+<circle cx="613.000" cy="191.860" r="5" fill="#8052A4" stroke="#8052A4" stroke-width="2"><title>MBPP+ · 60B: 43.4%</title></circle>
+<circle cx="794.000" cy="177.746" r="5" fill="#8052A4" stroke="#8052A4" stroke-width="2"><title>MBPP+ · 80B: 47.4%</title></circle>
+<circle cx="975.000" cy="163.904" r="5" fill="#8052A4" stroke="#8052A4" stroke-width="2"><title>MBPP+ · 100B: 51.3228%</title></circle>
+</g></svg>

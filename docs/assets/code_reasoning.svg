@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 1024 420">
+<title id="title">Code reasoning: measured checkpoint scores</title>
+<desc id="desc">Reported measurements only. Each point has its exact value in a title. No fitted lines are drawn. Early points have archived outputs; later points are author-confirmed measurements. Later evaluator manifests are not attached.</desc>
+<rect width="1024" height="420" rx="16" fill="#FFFFFF"/>
+<g font-family="Arial,Helvetica,sans-serif" fill="#233447">
+<text x="30" y="35" font-size="20" font-weight="700">Code reasoning</text>
+<circle cx="40" cy="64" r="4" fill="#146C94"/>
+<text x="52" y="69" font-size="13">CRUXEval-I</text>
+<circle cx="275" cy="64" r="4" fill="#16866D"/>
+<text x="287" y="69" font-size="13">CRUXEval-O</text>
+<path d="M70,345.000 H975" stroke="#E4EAF0"/>
+<text x="58" y="349.000" text-anchor="end" font-size="12">0</text>
+<path d="M70,309.714 H975" stroke="#E4EAF0"/>
+<text x="58" y="313.714" text-anchor="end" font-size="12">10</text>
+<path d="M70,274.429 H975" stroke="#E4EAF0"/>
+<text x="58" y="278.429" text-anchor="end" font-size="12">20</text>
+<path d="M70,239.143 H975" stroke="#E4EAF0"/>
+<text x="58" y="243.143" text-anchor="end" font-size="12">30</text>
+<path d="M70,203.857 H975" stroke="#E4EAF0"/>
+<text x="58" y="207.857" text-anchor="end" font-size="12">40</text>
+<path d="M70,168.571 H975" stroke="#E4EAF0"/>
+<text x="58" y="172.571" text-anchor="end" font-size="12">50</text>
+<path d="M70,133.286 H975" stroke="#E4EAF0"/>
+<text x="58" y="137.286" text-anchor="end" font-size="12">60</text>
+<path d="M70,98.000 H975" stroke="#E4EAF0"/>
+<text x="58" y="102.000" text-anchor="end" font-size="12">70</text>
+<text x="131.721" y="369" text-anchor="middle" font-size="12">6.82</text>
+<text x="251.000" y="369" text-anchor="middle" font-size="12">20</text>
+<text x="432.000" y="369" text-anchor="middle" font-size="12">40</text>
+<text x="613.000" y="369" text-anchor="middle" font-size="12">60</text>
+<text x="794.000" y="369" text-anchor="middle" font-size="12">80</text>
+<text x="975.000" y="369" text-anchor="middle" font-size="12">100</text>
+<text x="523" y="396" text-anchor="middle" font-size="12">Training tokens (billions, author-reported labels)</text>
+<text x="20" y="225" transform="rotate(-90 20 225)" text-anchor="middle" font-size="12">Score (%)</text>
+<circle cx="131.721" cy="297.788" r="5" fill="#FFFFFF" stroke="#146C94" stroke-width="2"><title>CRUXEval-I · 6.82B: 13.38%</title></circle>
+<circle cx="251.000" cy="274.429" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>CRUXEval-I · 20B: 20.0%</title></circle>
+<circle cx="432.000" cy="253.963" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>CRUXEval-I · 40B: 25.8%</title></circle>
+<circle cx="613.000" cy="236.496" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>CRUXEval-I · 60B: 30.750%</title></circle>
+<circle cx="794.000" cy="220.089" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>CRUXEval-I · 80B: 35.4%</title></circle>
+<circle cx="975.000" cy="203.504" r="5" fill="#146C94" stroke="#146C94" stroke-width="2"><title>CRUXEval-I · 100B: 40.1%</title></circle>
+<circle cx="131.721" cy="273.546" r="5" fill="#FFFFFF" stroke="#16866D" stroke-width="2"><title>CRUXEval-O · 6.82B: 20.25%</title></circle>
+<circle cx="251.000" cy="256.433" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>CRUXEval-O · 20B: 25.1%</title></circle>
+<circle cx="432.000" cy="241.260" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>CRUXEval-O · 40B: 29.4%</title></circle>
+<circle cx="613.000" cy="229.263" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>CRUXEval-O · 60B: 32.8%</title></circle>
+<circle cx="794.000" cy="217.971" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>CRUXEval-O · 80B: 36.0%</title></circle>
+<circle cx="975.000" cy="207.033" r="5" fill="#16866D" stroke="#16866D" stroke-width="2"><title>CRUXEval-O · 100B: 39.1%</title></circle>
+</g></svg>

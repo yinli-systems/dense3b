@@ -1,0 +1,55 @@
+benchmark,benchmark_id,stage,training_tokens_b_reported,score_pct,approximate,measurement_status,source_kind,source_id,raw_outputs_attached,n_archived,passed_archived,checkpoint_step_archived,protocol_note
+HumanEval,humaneval,6p82B,6.82,25.61,false,measured,archived_evaluation,archive_6499,true,164,42,6499,See release source notes
+HumanEval,humaneval,20B,20,35.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+HumanEval,humaneval,40B,40,40.9,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+HumanEval,humaneval,60B,60,44.5,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+HumanEval,humaneval,80B,80,47.0,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+HumanEval,humaneval,100B,100,49.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+HumanEval+,humaneval_plus,6p82B,6.82,25.00,false,measured,archived_evaluation,archive_6499,true,164,41,6499,See release source notes
+HumanEval+,humaneval_plus,20B,20,33.5,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+HumanEval+,humaneval_plus,40B,40,39.0,false,measured,author_confirmed_measurement,author_corrections_20261018,false,,,,See release source notes
+HumanEval+,humaneval_plus,60B,60,42.1,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+HumanEval+,humaneval_plus,80B,80,44.5,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+HumanEval+,humaneval_plus,100B,100,46.3,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+MBPP,mbpp,6p82B,6.82,33.33,false,measured,archived_evaluation,archive_6499,true,378,126,6499,See release source notes
+MBPP,mbpp,20B,20,38.4,false,measured,author_confirmed_measurement,author_corrections_20261018,false,,,,See release source notes
+MBPP,mbpp,40B,40,42.9,false,measured,author_confirmed_measurement,author_corrections_20261018,false,,,,See release source notes
+MBPP,mbpp,60B,60,46.3,false,measured,author_confirmed_measurement,author_corrections_20261018,false,,,,See release source notes
+MBPP,mbpp,80B,80,49.2,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+MBPP,mbpp,100B,100,52,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+MBPP+,mbpp_plus,6p82B,6.82,26.98,false,measured,archived_evaluation,archive_6499,true,378,102,6499,See release source notes
+MBPP+,mbpp_plus,20B,20,33.3,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+MBPP+,mbpp_plus,40B,40,38.9,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+MBPP+,mbpp_plus,60B,60,43.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+MBPP+,mbpp_plus,80B,80,47.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+MBPP+,mbpp_plus,100B,100,51.3228,false,measured,author_confirmed_measurement,author_corrections_20261018,false,,,,See release source notes
+CRUXEval-I,cruxeval_i,6p82B,6.82,13.38,false,measured,archived_evaluation,archive_6499,true,800,107,6499,See release source notes
+CRUXEval-I,cruxeval_i,20B,20,20.0,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+CRUXEval-I,cruxeval_i,40B,40,25.8,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+CRUXEval-I,cruxeval_i,60B,60,30.750,false,measured,author_confirmed_measurement,author_corrections_20261018,false,,,,See release source notes
+CRUXEval-I,cruxeval_i,80B,80,35.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+CRUXEval-I,cruxeval_i,100B,100,40.1,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+CRUXEval-O,cruxeval_o,6p82B,6.82,20.25,false,measured,archived_evaluation,archive_6499,true,800,162,6499,See release source notes
+CRUXEval-O,cruxeval_o,20B,20,25.1,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+CRUXEval-O,cruxeval_o,40B,40,29.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+CRUXEval-O,cruxeval_o,60B,60,32.8,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+CRUXEval-O,cruxeval_o,80B,80,36.0,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+CRUXEval-O,cruxeval_o,100B,100,39.1,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+GSM8K,gsm8k,6p82B,6.82,11.52,false,measured,archived_evaluation,archive_6499,true,1319,152,6499,See release source notes
+GSM8K,gsm8k,20B,20,23.2,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+GSM8K,gsm8k,40B,40,33.5,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+GSM8K,gsm8k,60B,60,42.5,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+GSM8K,gsm8k,80B,80,51.3,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+GSM8K,gsm8k,100B,100,59.8,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+ARC-Challenge,arc_challenge,6p82B,6.82,28.67,false,measured,archived_evaluation,archive_6499,true,1172,336,6499,See release source notes
+ARC-Challenge,arc_challenge,20B,20,36.9,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+ARC-Challenge,arc_challenge,40B,40,44.3,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+ARC-Challenge,arc_challenge,60B,60,50.1,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+ARC-Challenge,arc_challenge,80B,80,55.3,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+ARC-Challenge,arc_challenge,100B,100,60.1,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,See release source notes
+MMLU,mmlu,6p82B,6.82,25.23,false,measured,archived_evaluation,archive_6499,true,14042,3543,6499,Early anchor is MC5; later protocol not supplied
+MMLU,mmlu,20B,20,31.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,Early anchor is MC5; later protocol not supplied
+MMLU,mmlu,40B,40,37.2,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,Early anchor is MC5; later protocol not supplied
+MMLU,mmlu,60B,60,42.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,Early anchor is MC5; later protocol not supplied
+MMLU,mmlu,80B,80,47.4,false,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,Early anchor is MC5; later protocol not supplied
+MMLU,mmlu,100B,100,52.0,true,measured,author_confirmed_measurement,author_confirmation_20261018,false,,,,Early anchor is MC5; later protocol not supplied

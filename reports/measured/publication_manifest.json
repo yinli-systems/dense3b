@@ -1,0 +1,33 @@
+{
+  "auxiliary_measurement_count": 1,
+  "generated_files": {
+    "MODEL_CARD.md": "88c5d1a67863a05943bf12d2a6fa8dc51e77199f35848a6d00defb010b7f9ae0",
+    "README.md": "25964f75b6c54346ace08016237c5413a0c021a6bc65453b3e2b3d842a1a112f",
+    "docs/.nojekyll": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "docs/assets/app.js": "96bfeda0327a1f186dbc499deaec1ccb1cc1aa313d1f6fe19814630a67df2d6f",
+    "docs/assets/code_generation.svg": "3a156adf3045bf844f17a9a3d23c0d3d7e40f51d352d8d794b108b7c40def527",
+    "docs/assets/code_reasoning.svg": "2771274854bfed7f299d4ab7cc7db78a62f59489daa35f27f5b20b85b28e4431",
+    "docs/assets/reasoning_knowledge.svg": "b5335cb8756330964455a8ba553e3b44dfc81c285c25bcca205fbe38dc43023c",
+    "docs/assets/style.css": "2bea05851f6f7443ee48ddf10da467588dbc1c713c541ba5426c462ca4a2e5ae",
+    "docs/data/results.csv": "b6eccbb460df39c57ecbabe6d4a31e126ac6a81d455efca1637db43a770249cb",
+    "docs/data/results.json": "f197636478b7ab580ff21a9dfa10a7bed2bcdaf3ec1bc74c81d80f052954b160",
+    "docs/data/results_wide.csv": "c393dbd32b8603448b3625b4edf8b6d5990d402ae81dc5dd4098cb5dda3f9c1e",
+    "docs/index.html": "c55ca121c8fee7e13757cbcd96e2447e62f74c8d9f2e96b027401267b38d6a7b",
+    "reports/CONFIRMED_RESULTS.md": "3c4a480cf21d54b098cd26394dde7b53b70f3dd20078fe31216ae9dbdb2a9528",
+    "reports/README.md": "75e5487aba7784b31813d1da31dbdb1c1b6c76f3340cd59fc4f2d290d1198675",
+    "reports/measured/SOURCES.md": "a3bc380fdb9155301f3db44fc8ef9d9ea656c2e7109a1cdac8ae4c172f4ae59c",
+    "reports/measured/checkpoints/100B.md": "0383f346d016b3913b7918500386f977a6a998f8fe813e1a8ea7da9e21c0f4bd",
+    "reports/measured/checkpoints/20B.md": "3aef6277aca083fdb8ea02e099a73c4cea9113b07480d27c6fce46c53e41ab93",
+    "reports/measured/checkpoints/40B.md": "e0a98e384edea3d0f8a0f4387e6bd8cc3f5e528bb22d0c59a70695acaf83862d",
+    "reports/measured/checkpoints/60B.md": "1d0e3d326d0b006c7ce9efb75dd2c06f2cfd0421ddba0fb7930090403b9fd601",
+    "reports/measured/checkpoints/6p82B.md": "810ab84a66b3e6cb086532e4d532f055b143012ed85c5dc468e773b974d1c145",
+    "reports/measured/checkpoints/80B.md": "92f3563a38b40ae2b59ab2dda9763325166402ea9d845635a575efc28bc45572",
+    "reports/measured/results.csv": "b6eccbb460df39c57ecbabe6d4a31e126ac6a81d455efca1637db43a770249cb",
+    "reports/measured/results_wide.csv": "c393dbd32b8603448b3625b4edf8b6d5990d402ae81dc5dd4098cb5dda3f9c1e"
+  },
+  "measurement_count": 54,
+  "model_evaluation_executed": false,
+  "schema_version": 1,
+  "source_path": "results/measured/2026-10-18.json",
+  "source_sha256": "f197636478b7ab580ff21a9dfa10a7bed2bcdaf3ec1bc74c81d80f052954b160"
+}
