@@ -220,7 +220,7 @@ The page builder checks schema, ranges, stage coverage, exact corrections, Plus/
 
 The historical evaluation and training archive remains at its original paths. Original capture receipts and artifact bytes are unchanged. Archive rebuilds validate sanctioned public redactions against the [existing audit](../../provenance/PUBLIC_NETWORK_REDACTION_AUDIT.json) and [two explicitly verified byte-identical aliases](../../provenance/PUBLIC_NETWORK_REDACTION_ALIASES.json). Unlisted changes still fail hash validation.
 
-[Publication validation record](validation.json) includes unit tests, artifact integrity, responsive browser checks and an isolated archive rebuild.
+The [original publication validation record](validation.json) predates this throughput update. The updated reporting code contains metric validation and a regression test; those Python tests have not been rerun for this patch.
 '''
     common = 'All percentages are measured results confirmed by the model author. The early row also has archived outputs; later raw outputs and evaluator manifests are not attached. [Source and protocol notes](measured/SOURCES.md).'
     files['reports/CONFIRMED_RESULTS.md'] = f'''# Dense3B — measured results through 100B tokens
