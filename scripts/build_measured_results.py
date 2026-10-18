@@ -67,7 +67,16 @@ def validate(d):
         fail(lookup[c['benchmark_id'], c['stage_id']]['value_pct'] == c['confirmed_value_pct'], 'Lost author correction')
     fail(lookup['mbpp', '100B']['value_pct'] == '52', 'Preserve integer-rounded MBPP endpoint')
     fail(lookup['mmlu', '100B']['approximate'] is True, 'Preserve approximate MMLU endpoint')
+    m = d.get('systems_measurements', {}).get('later_training_global_throughput')
+    fail(isinstance(m, dict), 'Missing later-run throughput')
+    fail(type(m.get('value')) is int and m['value'] > 0, 'Invalid later-run throughput')
+    fail(m.get('unit') == 'tokens/s' and m.get('statistic') == 'mean', 'Invalid throughput unit or statistic')
+    fail(m.get('source') in d['sources'] and m.get('source_logs_attached') is False, 'Incorrect systems source')
+    fail(m.get('scope') == 'later_training' and m.get('aggregation_window') is None, 'Unreported window must remain unknown')
     return lookup
+
+def later_rate(d):
+    return f"{d['systems_measurements']['later_training_global_throughput']['value']:,}"
 
 def table(d, prefix=''):
     heads = ['Benchmark'] + [f"[{s['tokens_b']}B]({prefix}checkpoints/{s['id']}.md)" for s in d['stages']]
@@ -155,7 +164,7 @@ def site(d):
 <main class="wrap" id="main"><div class="hero"><div><div class="eyebrow">Dense pretraining · measured results · 18 Oct 2026</div><h1>3B dense.<br>100B tokens.</h1><p class="lead">A checkpoint-by-checkpoint view of code generation, code reasoning, mathematics and knowledge.</p><div class="pills"><span class="pill">3,237,529,600 parameters</span><span class="pill">6 training milestones</span><span class="pill">9 primary benchmarks</span></div><p class="hero-note">Author-confirmed measured results, with archived evidence linked separately. Weights are not hosted in this repository.</p><div class="links"><a class="button" href="#results">Explore results</a><a class="button secondary" href="{BLOB}reports/CONFIRMED_RESULTS.md">Full report</a></div></div><div class="metrics">{cards}</div></div>
 <section id="results"><div class="section-head"><div><h2>Every milestone, in one place.</h2><p class="sub">54 primary measurements. Percentages retain their reported precision.</p></div><label><span class="notes">Filter benchmark</span><br><input class="search" id="filter" type="search" placeholder="e.g. HumanEval or GSM8K" aria-controls="results-table"></label></div><div class="table-wrap"><table id="results-table"><caption>Measured checkpoint results — scores (%)</caption><thead><tr><th scope="col">Benchmark</th>{heads}</tr></thead><tbody>{''.join(trs)}</tbody></table><div class="empty" id="empty">No matching benchmark.</div></div><span id="row-status" class="notes" role="status" aria-live="polite">9 benchmarks shown</span><div class="notes"><p>* The early MMLU anchor uses MC5. Later MMLU evaluator manifests are not supplied; no cross-protocol equivalence is asserted. The 100B value remains approximate.</p><p>MBPP at 100B is reported as 52% at integer precision. CRUXEval-I at 60B is 30.750%; MBPP+ at 100B is 51.3228%.</p><p>The 6.82B token label is rounded. The early row links to archived outputs; later rows are author-confirmed measurements whose raw outputs are not attached to this release.</p></div><noscript><p class="noscript">All results remain visible without JavaScript. Only filtering is unavailable.</p></noscript><div class="links"><a class="button secondary" href="data/results.csv" download>CSV · full provenance</a><a class="button secondary" href="data/results.json" download>JSON · source release</a><a class="button secondary" href="data/results_wide.csv" download>CSV · benchmark matrix</a></div></section>
 <section id="trends"><h2>Checkpoint observations.</h2><p class="sub">Grouped by capability. Tables above are the exact numeric reference; plots do not establish controlled comparability across unarchived protocols.</p><div class="charts">{charts}</div></section>
-<section id="training"><div class="section-head"><div><h2>Training implementation and evidence.</h2><p class="sub">The systems measurements below belong to the 9 October archive, not the full 100B run.</p></div></div><div class="twocol"><article class="card"><h3>Archived systems snapshot</h3><div class="statline"><span>Training GPUs</span><strong>8 × RTX 4090</strong></div><div class="statline"><span>Model FLOP utilization, median</span><strong>68.09%</strong></div><div class="statline"><span>Global throughput, median</span><strong>41,780 tokens/s</strong></div><div class="statline"><span>Peak allocated memory, latest</span><strong>22.387 GB</strong></div><p class="notes">MFU is the implementation's model-FLOP estimate. Medians use at most the last 100 retained observations and exclude unlogged downtime.</p><a href="{BLOB}reports/SYSTEMS.md">System metrics and raw curves ↗</a></article><article class="card"><h3>Browse the implementation</h3><p><a href="{REPO}/tree/main/model">Model architecture</a> · <a href="{REPO}/tree/main/train">Training and optimization</a> · <a href="{REPO}/tree/main/bench">Evaluation</a></p><p><a href="{REPO}/tree/main/code3b">Data filtering and packing</a> · <a href="{REPO}/tree/main/tokenizer">Tokenizer</a> · <a href="{BLOB}MODEL_CARD.md">Model card</a></p><p class="notes">The original weighted source mixture is archived. Revised mixing weights and their change points have not been supplied for this release.</p><a href="{BLOB}evidence/manifests/mix-v0/mix.json">Original data mixture ↗</a></article></div></section>
+<section id="training"><div class="section-head"><div><h2>Training implementation and evidence.</h2><p class="sub">The later-run average is author-reported; other systems measurements below belong to the 9 October archive.</p></div></div><div class="twocol"><article class="card"><h3>Later training and archived snapshot</h3><div class="statline"><span>Later-run average global throughput (author-reported)</span><strong>{later_rate(d)} tokens/s</strong></div><div class="statline"><span>Training GPUs</span><strong>8 × RTX 4090</strong></div><div class="statline"><span>Model FLOP utilization, median</span><strong>68.09%</strong></div><div class="statline"><span>Global throughput, median</span><strong>41,780 tokens/s</strong></div><div class="statline"><span>Peak allocated memory, latest</span><strong>22.387 GB</strong></div><p class="notes">MFU is the implementation's model-FLOP estimate. Medians use at most the last 100 retained observations and exclude unlogged downtime. The later-run average has an unspecified averaging window and no attached logs.</p><a href="{BLOB}reports/SYSTEMS.md">System metrics and raw curves ↗</a></article><article class="card"><h3>Browse the implementation</h3><p><a href="{REPO}/tree/main/model">Model architecture</a> · <a href="{REPO}/tree/main/train">Training and optimization</a> · <a href="{REPO}/tree/main/bench">Evaluation</a></p><p><a href="{REPO}/tree/main/code3b">Data filtering and packing</a> · <a href="{REPO}/tree/main/tokenizer">Tokenizer</a> · <a href="{BLOB}MODEL_CARD.md">Model card</a></p><p class="notes">The original weighted source mixture is archived. Revised mixing weights and their change points have not been supplied for this release.</p><a href="{BLOB}evidence/manifests/mix-v0/mix.json">Original data mixture ↗</a></article></div></section>
 <section id="evidence"><h2>Trace every result to its source.</h2><div class="twocol"><article class="card"><h3>Measured-results release</h3><p>All milestone values are author-confirmed measurements. Six explicit corrections are retained in the source JSON. Reported precision, approximate values and missing protocol fields are preserved.</p><p class="notes">This publishing step validates consistency and builds pages; it does not rerun model evaluation or manufacture per-example logs.</p><div class="links"><a class="button secondary" href="{BLOB}reports/measured/SOURCES.md">Source notes</a><a class="button secondary" href="{BLOB}{SOURCE.as_posix()}">Canonical data</a></div></article><article class="card"><h3>Historical archive</h3><p>The existing 607 archived metric rows, 13 checkpoint entries, evaluator versions, training traces and source hash inventories remain available in their original paths.</p><div class="links"><a class="button secondary" href="{BLOB}reports/RESULTS.md">All archived checkpoints</a><a class="button secondary" href="{RAW}reports/evaluation_history.csv">Archived metrics CSV</a><a class="button secondary" href="{BLOB}reports/sample_verification.json">Sample recount records</a></div><p class="notes">MMLU-CF: 28.57% at the early milestone; no later CF result is supplied.</p></article></div></section>
 </main><footer><div class="wrap">Dense3B · Yin Li · Measured-results release 2026-10-18 · <a href="{REPO}">Source repository</a><br>Static, dependency-free presentation. No analytics or third-party scripts.</div></footer></body></html>\n'''
 
@@ -190,6 +199,10 @@ Release: **{d['release_id']}** · Published **{d['publication_date']}**.
 ## Precision and protocol
 
 {notes}
+
+## Later-run systems measurement
+
+The author reported **{later_rate(d)} tokens/s** mean global training throughput during later training. The averaging interval and supporting logs were not supplied. This is **not** the same statistic as the **41,780 tokens/s** median from the 9 October archived snapshot (last at most 100 observations).
 
 ## Final author corrections
 
@@ -235,6 +248,10 @@ MMLU-CF at 6.82B: **28.57%**. It is distinct from MMLU-MC5. No later MMLU-CF sco
 '''+ '\n\n'.join(f'![{title}](../docs/assets/{g}.svg)' for g,title in GROUPS.items()) + '''
 
 Points are observations, not fitted curves. Their presence on one plot does not independently establish matching evaluator protocols.
+
+## Later-run training throughput
+
+**{later_rate(d)} tokens/s** global average throughput, author-reported for later training. The averaging window and raw logs are not attached; the separate 9 October snapshot median is **41,780 tokens/s**. [Systems reporting notes](measured/SOURCES.md).
 
 ## Complete historical results and system metrics
 
@@ -288,6 +305,8 @@ The final author corrections include **HumanEval+ 40B: 39.0%**, **MBPP 20B/40B/6
 [Code reasoning and mathematics/knowledge plots](reports/CONFIRMED_RESULTS.md#capability-plots).
 
 ## Training implementation and systems
+
+**Later-run average global throughput (author-reported): {later_rate(d)} tokens/s.** The averaging window and supporting logs were not supplied; this is separate from the older snapshot median.
 
 The following measurements belong to the **9 October 2026 archived snapshot**, not the complete 100B run.
 
@@ -354,7 +373,7 @@ Dense3B is a dense pretraining model with **3,237,529,600 parameters** in the ar
 
 ## Training and data
 
-The archived training code and run metadata describe RTX 4090-based training. Original source proportions, repetition factors and data processing are documented in the [initial mixture manifest](evidence/manifests/mix-v0/mix.json) and [`code3b/`](code3b/). The later source mixture, its switch points and full-run hardware utilization have not been provided for this release.
+The archived training code and run metadata describe RTX 4090-based training. Original source proportions, repetition factors and data processing are documented in the [initial mixture manifest](evidence/manifests/mix-v0/mix.json) and [`code3b/`](code3b/). The later source mixture, its switch points and full-run hardware utilization have not been provided for this release. The author separately reported a later-run average global throughput of **{later_rate(d)} tokens/s**. No averaging window or supporting logs were supplied; it must not be compared as if it were the archived **41,780 tokens/s median**.
 
 ## Scope and limitations
 
